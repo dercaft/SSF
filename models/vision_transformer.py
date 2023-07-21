@@ -169,6 +169,7 @@ class Mlp(nn.Module):
     def forward(self, x):
         x = self.fc1(x)
         if self.tuning_mode == 'ssf':
+            # print("DEBUG: 111111111111")
             x = ssf_ada(x, self.ssf_scale_1, self.ssf_shift_1)
         # if self.tuning_mode == 'ssffc':
         #     x = ssf_ada(x, self.ssffc_scale_1, self.ssffc_shift_1)
@@ -193,6 +194,22 @@ class Mlp(nn.Module):
         x = self.drop2(x)
         
         return x
+    def init_merge_weights(self, mode=''):
+        # Merge pointwise conv weights are initialized to the ssf_scale and ssf_shift (y=ssf_scale*x+ssf_shift)
+        # initialize pointwise conv weight as normal
+        self.merge1.weight.data.normal_(std=0.02)
+        # Initialize the diagonal position of the Pointwise conv weight matrix to the corresponding ssf_Scale Weight
+        # and initialize the bias to the corresponding ssf_shift weight
+        self.merge1.weight.data.diagonal().copy_(self.ssf_scale_1)
+        self.merge1.bias.data.copy_(self.ssf_shift_1)
+
+        # self.merge1.weight.data.copy_(self.blocks[0].attn.proj.weight.data)
+        # self.merge1.bias.data
+        self.merge2.weight.data.normal_(std=0.02)
+        # Initialize the diagonal position of the Pointwise conv weight matrix to the corresponding ssf_Scale Weight
+        # and initialize the bias to the corresponding ssf_shift weight
+        self.merge2.weight.data.diagonal().copy_(self.ssf_scale_2)
+        self.merge2.bias.data.copy_(self.ssf_shift_2)
 
 
         
@@ -265,6 +282,22 @@ class Attention(nn.Module):
             x=x.permute(0,2,1)
         x = self.proj_drop(x)
         return x
+    def init_merge_weights(self, mode=''):
+        # Merge pointwise conv weights are initialized to the ssf_scale and ssf_shift (y=ssf_scale*x+ssf_shift)
+        # initialize pointwise conv weight as normal
+        self.merge1.weight.data.normal_(std=0.02)
+        # Initialize the diagonal position of the Pointwise conv weight matrix to the corresponding ssf_Scale Weight
+        # and initialize the bias to the corresponding ssf_shift weight
+        self.merge1.weight.data.diagonal().copy_(self.ssf_scale_1)
+        self.merge1.bias.data.copy_(self.ssf_shift_1)
+
+        # self.merge1.weight.data.copy_(self.blocks[0].attn.proj.weight.data)
+        # self.merge1.bias.data
+        self.merge2.weight.data.normal_(std=0.02)
+        # Initialize the diagonal position of the Pointwise conv weight matrix to the corresponding ssf_Scale Weight
+        # and initialize the bias to the corresponding ssf_shift weight
+        self.merge2.weight.data.diagonal().copy_(self.ssf_scale_2)
+        self.merge2.bias.data.copy_(self.ssf_shift_2)
 
 
 class LayerScale(nn.Module):
@@ -332,6 +365,22 @@ class Block(nn.Module):
             x = x + self.drop_path1(self.ls1(self.attn(self.norm1(x))))
             x = x + self.drop_path2(self.ls2(self.mlp(self.norm2(x))))
         return x
+    def init_merge_weights(self, mode=''):
+        # Merge pointwise conv weights are initialized to the ssf_scale and ssf_shift (y=ssf_scale*x+ssf_shift)
+        # initialize pointwise conv weight as normal
+        self.merge1.weight.data.normal_(std=0.02)
+        # Initialize the diagonal position of the Pointwise conv weight matrix to the corresponding ssf_Scale Weight
+        # and initialize the bias to the corresponding ssf_shift weight
+        self.merge1.weight.data.diagonal().copy_(self.ssf_scale_1)
+        self.merge1.bias.data.copy_(self.ssf_shift_1)
+
+        # self.merge1.weight.data.copy_(self.blocks[0].attn.proj.weight.data)
+        # self.merge1.bias.data
+        self.merge2.weight.data.normal_(std=0.02)
+        # Initialize the diagonal position of the Pointwise conv weight matrix to the corresponding ssf_Scale Weight
+        # and initialize the bias to the corresponding ssf_shift weight
+        self.merge2.weight.data.diagonal().copy_(self.ssf_scale_2)
+        self.merge2.bias.data.copy_(self.ssf_shift_2)
 
 
 class ResPostBlock(nn.Module):
@@ -486,6 +535,22 @@ class PatchEmbed(nn.Module):
         else:
             x = self.norm(x)
         return x
+    def init_merge_weights(self, mode=''):
+        # Merge pointwise conv weights are initialized to the ssf_scale and ssf_shift (y=ssf_scale*x+ssf_shift)
+        # initialize pointwise conv weight as normal
+        self.merge1.weight.data.normal_(std=0.02)
+        # Initialize the diagonal position of the Pointwise conv weight matrix to the corresponding ssf_Scale Weight
+        # and initialize the bias to the corresponding ssf_shift weight
+        self.merge1.weight.data.diagonal().copy_(self.ssf_scale_1)
+        self.merge1.bias.data.copy_(self.ssf_shift_1)
+        if self.norm_layer:
+            # self.merge1.weight.data.copy_(self.blocks[0].attn.proj.weight.data)
+            # self.merge1.bias.data
+            self.merge2.weight.data.normal_(std=0.02)
+            # Initialize the diagonal position of the Pointwise conv weight matrix to the corresponding ssf_Scale Weight
+            # and initialize the bias to the corresponding ssf_shift weight
+            self.merge2.weight.data.diagonal().copy_(self.ssf_scale_2)
+            self.merge2.bias.data.copy_(self.ssf_shift_2)
 
 
 
@@ -683,6 +748,14 @@ class VisionTransformer(nn.Module):
 
     def forward(self, x):
         x = self.forward_features(x)
+        # print("FEATURE: ", x.shape)
+        # x0=torch.sum(x,dim=1)
+        # x1=torch.sum(x,dim=2)
+        # for i in range(x.shape[0]):
+        #     acc1=torch.sum(x0[i,:]==0)/x.shape[2]
+        #     acc2=torch.sum(x1[i,:]==0)/x.shape[1]
+        #     print("ACC: ", acc1, acc2)
+        #     if i>3: break
         x = self.forward_head(x)
         
         return x 

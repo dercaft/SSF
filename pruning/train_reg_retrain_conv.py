@@ -346,6 +346,7 @@ parser.add_argument('--no-save', action='store_true', default=False,)
 parser.add_argument('--zero_threshold', type=float, default=0.01,
                     help='Threshold below which ssf weight will be zeroed out')
 parser.add_argument('--reg', type=float, default=1e-4,)
+parser.add_argument('--only-scale', action='store_true', default=False,)
 
 def _parse_args():
     # Do we have a config file to parse?
@@ -727,17 +728,52 @@ def main():
             f.write(args_text)
 
     if args.evaluate:
-        for name, param in model.named_parameters():
-            if 'ssf_scale' in name or 'ssf_shift' in name:
-                param.data[torch.abs(param.data) < TH] = 0
-
         if args.distributed and args.dist_bn in ('broadcast', 'reduce'):
             if args.local_rank == 0:
                 _logger.info("Distributing BatchNorm running means and vars")
             distribute_bn(model, args.world_size, args.dist_bn == 'reduce')
+        for name,module in model.named_modules():
+            if hasattr(module, 'tuning_mode'):
+                module.tuning_mode = 'ssf'
+        print("BEFORE PRUNING")
+        eval_metrics = validate(model, loader_eval, validate_loss_fn, args, amp_autocast=amp_autocast)
+
+        TH=0.001
+        print(f"AFTER PRUNING {TH}")
+        pruned,total=0,0
+        for name, param in model.named_parameters():
+            if 'ssf_scale' in name:# or 'ssf_shift' in name:
+                param.data[torch.abs(param.data) < TH] = 0
+                total+=param.numel()
+                pruned+=(param.data==0).sum().item()
+            if 'ssf_shift' in name:# or 'ssf_shift' in name:
+                param.data[torch.abs(param.data) < TH] = 0
+                # mask_dict[name]=(param.data==0)
+        print("Set to zeros: {:.2f}%".format(100 * pruned / total))
 
         eval_metrics = validate(model, loader_eval, validate_loss_fn, args, amp_autocast=amp_autocast)
 
+        TH=0.01
+        print(f"AFTER PRUNING {TH}")
+        pruned,total=0,0
+        for name, param in model.named_parameters():
+            if 'ssf_scale' in name:# or 'ssf_shift' in name:
+                param.data[torch.abs(param.data) < TH] = 0
+                total+=param.numel()
+                pruned+=(param.data==0).sum().item()
+            if 'ssf_shift' in name:# or 'ssf_shift' in name:
+                param.data[torch.abs(param.data) < TH] = 0
+                # mask_dict[name]=(param.data==0)
+        print("Set to zeros: {:.2f}%".format(100 * pruned / total))
+
+        eval_metrics = validate(model, loader_eval, validate_loss_fn, args, amp_autocast=amp_autocast)
+
+        for name,module in model.named_modules():
+            if hasattr(module, 'tuning_mode'):
+                module.tuning_mode = 'ssfmerge'
+        print("Set to ssfmerge:")
+        eval_metrics = validate(model, loader_eval, validate_loss_fn, args, amp_autocast=amp_autocast)
+         
         if model_ema is not None and not args.model_ema_force_cpu:
             for name, param in model_ema.named_parameters():
                 if 'ssf_scale' in name or 'ssf_shift' in name:
@@ -748,6 +784,7 @@ def main():
             ema_eval_metrics = validate(
                 model_ema.module, loader_eval, validate_loss_fn, args, amp_autocast=amp_autocast, log_suffix=' (EMA)')
             eval_metrics = ema_eval_metrics
+
         if saver is not None:
             # save proper checkpoint with eval metric
             save_metric = eval_metrics[eval_metric]
@@ -839,12 +876,6 @@ def main():
         # # 
 
         # Naive set ssf_scale and ssf_shift's values that small than TH to zero
-        for name, module in model.named_modules():
-            if hasattr(module, 'init_merge_weights'):
-                module.init_merge_weights()
-        for name,module in model.named_modules():
-            if hasattr(module, 'tuning_mode'):
-                module.tuning_mode = 'ssfmerge'
 
         mask_dict={}
         total,pruned=0,0
@@ -854,6 +885,7 @@ def main():
                 total+=param.numel()
                 pruned+=(param.data==0).sum().item()
                 mask_dict[name]=(param.data==0)
+        print("Set to zeros: {:.2f}%".format(100 * pruned / total))
         eval_metrics = validate(model, loader_eval, validate_loss_fn, args, amp_autocast=amp_autocast)
 
         # print(mask_dict)
@@ -862,6 +894,12 @@ def main():
         if args.rank == 0:
             _logger.info('*** Pruned results: {0}'.format(eval_metrics))
             print("Pruned: {:.2f}%".format(100 * pruned / total))
+        for name, module in model.named_modules():
+            if hasattr(module, 'init_merge_weights'):
+                module.init_merge_weights()
+        for name,module in model.named_modules():
+            if hasattr(module, 'tuning_mode'):
+                module.tuning_mode = 'ssfmerge'
 
         # for j,(name,parameters) in enumerate(model.named_parameters()):
         #     key=["ssf_scale","ssf_shift"]
@@ -956,7 +994,11 @@ def train_one_epoch(
     losses_m = AverageMeter()
 
     model.train()
-
+    if args.only_scale:
+        for name,parameter in model.named_parameters():
+            if 'ssf_shift' in name:
+                parameter.requires_grad = False
+                parameter.data.zero_()
     end = time.time()
     last_idx = len(loader) - 1
     num_updates = epoch * len(loader)
@@ -978,6 +1020,7 @@ def train_one_epoch(
             losses_m.update(loss.item(), input.size(0))
 
         optimizer.zero_grad()
+
         if loss_scaler is not None:
         # ADDED for Pruning: add regularize.
             # loss_scaler(
@@ -998,7 +1041,7 @@ def train_one_epoch(
             elif ssf_mask:
                 loss_scaler._scaler.unscale_(optimizer)
                 ssf_mask(model)
-            
+
             loss_scaler._scaler.step(optimizer)
             loss_scaler._scaler.update()      
 
@@ -1008,12 +1051,16 @@ def train_one_epoch(
                 regularizer(model)
             elif ssf_mask:
                 ssf_mask(model)
+
             if args.clip_grad is not None:
                 dispatch_clip_grad(
                     model_parameters(model, exclude_head='agc' in args.clip_mode),
                     value=args.clip_grad, mode=args.clip_mode)
             optimizer.step()
-
+        # for name,module in model.named_modules():
+        #     if 'merge' in name:
+        #         ot=f"{name}: {type(module)} - {module.weight.data.requires_grad}"
+        #         print(ot)
         if model_ema is not None:
             model_ema.update(model)
 
@@ -1067,7 +1114,6 @@ def train_one_epoch(
         optimizer.sync_lookahead()
 
     return OrderedDict([('loss', losses_m.avg)])
-
 
 def validate(model, loader, loss_fn, args, amp_autocast=suppress, log_suffix=''):
     batch_time_m = AverageMeter()
