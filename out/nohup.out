@@ -1,0 +1,244 @@
+/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/launch.py:180: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+Training with a single process on 1 GPUs.
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.5, 0.5, 0.5)
+	std: (0.5, 0.5, 0.5)
+	crop_pct: 0.9
+/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch_pruning/dependency.py:360: UserWarning: Unwrapped parameters detected: ['ssf_scale_1', 'blocks.0.mlp.ssf_scale_2', 'blocks.5.attn.ssf_scale_1', 'blocks.7.ssf_scale_2', 'blocks.9.attn.ssf_scale_1', 'blocks.11.ssf_scale_2', 'blocks.1.attn.ssf_shift_1', 'blocks.3.ssf_shift_2', 'blocks.5.mlp.ssf_shift_2', 'blocks.9.mlp.ssf_shift_2', 'blocks.0.attn.ssf_shift_1', 'blocks.1.ssf_scale_1', 'blocks.6.attn.ssf_scale_2', 'blocks.7.mlp.ssf_scale_1', 'blocks.10.attn.ssf_scale_2', 'blocks.11.mlp.ssf_scale_1', 'blocks.2.attn.ssf_shift_2', 'blocks.3.mlp.ssf_shift_1', 'blocks.6.ssf_shift_1', 'blocks.10.ssf_shift_1', 'blocks.2.ssf_scale_2', 'blocks.4.attn.ssf_scale_1', 'blocks.4.mlp.ssf_scale_2', 'blocks.8.mlp.ssf_scale_2', 'blocks.0.mlp.ssf_shift_2', 'blocks.5.attn.ssf_shift_1', 'blocks.7.ssf_shift_2', 'blocks.9.attn.ssf_shift_1', 'blocks.11.ssf_shift_2', 'blocks.5.ssf_scale_1', 'blocks.1.attn.ssf_scale_2', 'blocks.2.mlp.ssf_scale_1', 'blocks.9.ssf_scale_1', 'blocks.0.attn.ssf_scale_2', 'blocks.1.ssf_shift_1', 'blocks.6.attn.ssf_shift_2', 'blocks.7.mlp.ssf_shift_1', 'blocks.10.attn.ssf_shift_2', 'blocks.11.mlp.ssf_shift_1', 'blocks.3.mlp.ssf_scale_2', 'blocks.6.ssf_scale_2', 'blocks.8.attn.ssf_scale_1', 'blocks.10.ssf_scale_2', 'ssf_shift_1', 'blocks.2.ssf_shift_2', 'blocks.4.attn.ssf_shift_1', 'blocks.4.mlp.ssf_shift_2', 'blocks.8.mlp.ssf_shift_2', 'blocks.0.ssf_scale_1', 'blocks.5.attn.ssf_scale_2', 'blocks.6.mlp.ssf_scale_1', 'blocks.9.attn.ssf_scale_2', 'blocks.10.mlp.ssf_scale_1', 'blocks.1.attn.ssf_shift_2', 'blocks.2.mlp.ssf_shift_1', 'blocks.5.ssf_shift_1', 'blocks.9.ssf_shift_1', 'blocks.0.attn.ssf_shift_2', 'blocks.1.ssf_scale_2', 'blocks.3.attn.ssf_scale_1', 'blocks.7.mlp.ssf_scale_2', 'blocks.11.mlp.ssf_scale_2', 'blocks.3.mlp.ssf_shift_2', 'blocks.6.ssf_shift_2', 'blocks.8.attn.ssf_shift_1', 'blocks.10.ssf_shift_2', 'blocks.1.mlp.ssf_scale_1', 'blocks.4.ssf_scale_1', 'blocks.4.attn.ssf_scale_2', 'blocks.8.ssf_scale_1', 'blocks.0.ssf_shift_1', 'blocks.5.attn.ssf_shift_2', 'blocks.6.mlp.ssf_shift_1', 'blocks.9.attn.ssf_shift_2', 'blocks.10.mlp.ssf_shift_1', 'blocks.2.mlp.ssf_scale_2', 'blocks.5.ssf_scale_2', 'blocks.7.attn.ssf_scale_1', 'blocks.9.ssf_scale_2', 'blocks.11.attn.ssf_scale_1', 'blocks.1.ssf_shift_2', 'blocks.3.attn.ssf_shift_1', 'blocks.7.mlp.ssf_shift_2', 'blocks.11.mlp.ssf_shift_2', 'blocks.3.ssf_scale_1', 'blocks.5.mlp.ssf_scale_1', 'blocks.8.attn.ssf_scale_2', 'blocks.9.mlp.ssf_scale_1', 'blocks.1.mlp.ssf_shift_1', 'blocks.4.ssf_shift_1', 'blocks.4.attn.ssf_shift_2', 'blocks.8.ssf_shift_1', 'blocks.0.ssf_scale_2', 'blocks.2.attn.ssf_scale_1', 'blocks.6.mlp.ssf_scale_2', 'blocks.10.mlp.ssf_scale_2', 'blocks.2.mlp.ssf_shift_2', 'blocks.5.ssf_shift_2', 'blocks.7.attn.ssf_shift_1', 'blocks.9.ssf_shift_2', 'blocks.11.attn.ssf_shift_1', 'blocks.0.mlp.ssf_scale_1', 'blocks.3.attn.ssf_scale_2', 'blocks.4.mlp.ssf_scale_1', 'blocks.7.ssf_scale_1', 'blocks.11.ssf_scale_1', 'blocks.3.ssf_shift_1', 'blocks.5.mlp.ssf_shift_1', 'blocks.8.attn.ssf_shift_2', 'blocks.9.mlp.ssf_shift_1', 'blocks.1.mlp.ssf_scale_2', 'blocks.4.ssf_scale_2', 'blocks.6.attn.ssf_scale_1', 'blocks.8.ssf_scale_2', 'blocks.10.attn.ssf_scale_1', 'blocks.0.ssf_shift_2', 'blocks.2.attn.ssf_shift_1', 'blocks.6.mlp.ssf_shift_2', 'blocks.10.mlp.ssf_shift_2', 'patch_embed.ssf_scale_1', 'blocks.2.ssf_scale_1', 'blocks.7.attn.ssf_scale_2', 'blocks.8.mlp.ssf_scale_1', 'blocks.11.attn.ssf_scale_2', 'blocks.0.mlp.ssf_shift_1', 'blocks.3.attn.ssf_shift_2', 'blocks.4.mlp.ssf_shift_1', 'blocks.7.ssf_shift_1', 'blocks.11.ssf_shift_1', 'blocks.1.attn.ssf_scale_1', 'blocks.3.ssf_scale_2', 'blocks.5.mlp.ssf_scale_2', 'blocks.9.mlp.ssf_scale_2', 'blocks.0.attn.ssf_scale_1', 'blocks.1.mlp.ssf_shift_2', 'blocks.4.ssf_shift_2', 'blocks.6.attn.ssf_shift_1', 'blocks.8.ssf_shift_2', 'blocks.10.attn.ssf_shift_1', 'blocks.2.attn.ssf_scale_2', 'blocks.3.mlp.ssf_scale_1', 'blocks.6.ssf_scale_1', 'blocks.10.ssf_scale_1', 'patch_embed.ssf_shift_1', 'blocks.2.ssf_shift_1', 'blocks.7.attn.ssf_shift_2', 'blocks.8.mlp.ssf_shift_1', 'blocks.11.attn.ssf_shift_2'].
+ Torch-Pruning will prune the last non-singleton dimension of a parameter. If you wish to customize this behavior, please provide an unwrapped_parameters argument.
+  warnings.warn("Unwrapped parameters detected: {}.\n Torch-Pruning will prune the last non-singleton dimension of a parameter. If you wish to customize this behavior, please provide an unwrapped_parameters argument.".format([_param_to_name[p] for p in unwrapped_detected]))
+Params: 86.0814 M
+ops: 16.8553 G
+ssf_scale_1
+ssf_shift_1
+patch_embed.ssf_scale_1
+patch_embed.ssf_shift_1
+blocks.0.ssf_scale_1
+blocks.0.ssf_shift_1
+blocks.0.ssf_scale_2
+blocks.0.ssf_shift_2
+blocks.0.attn.ssf_scale_1
+blocks.0.attn.ssf_shift_1
+blocks.0.attn.ssf_scale_2
+blocks.0.attn.ssf_shift_2
+blocks.0.mlp.ssf_scale_1
+blocks.0.mlp.ssf_shift_1
+blocks.0.mlp.ssf_scale_2
+blocks.0.mlp.ssf_shift_2
+blocks.1.ssf_scale_1
+blocks.1.ssf_shift_1
+blocks.1.ssf_scale_2
+blocks.1.ssf_shift_2
+blocks.1.attn.ssf_scale_1
+blocks.1.attn.ssf_shift_1
+blocks.1.attn.ssf_scale_2
+blocks.1.attn.ssf_shift_2
+blocks.1.mlp.ssf_scale_1
+blocks.1.mlp.ssf_shift_1
+blocks.1.mlp.ssf_scale_2
+blocks.1.mlp.ssf_shift_2
+blocks.2.ssf_scale_1
+blocks.2.ssf_shift_1
+blocks.2.ssf_scale_2
+blocks.2.ssf_shift_2
+blocks.2.attn.ssf_scale_1
+blocks.2.attn.ssf_shift_1
+blocks.2.attn.ssf_scale_2
+blocks.2.attn.ssf_shift_2
+blocks.2.mlp.ssf_scale_1
+blocks.2.mlp.ssf_shift_1
+blocks.2.mlp.ssf_scale_2
+blocks.2.mlp.ssf_shift_2
+blocks.3.ssf_scale_1
+blocks.3.ssf_shift_1
+blocks.3.ssf_scale_2
+blocks.3.ssf_shift_2
+blocks.3.attn.ssf_scale_1
+blocks.3.attn.ssf_shift_1
+blocks.3.attn.ssf_scale_2
+blocks.3.attn.ssf_shift_2
+blocks.3.mlp.ssf_scale_1
+blocks.3.mlp.ssf_shift_1
+blocks.3.mlp.ssf_scale_2
+blocks.3.mlp.ssf_shift_2
+blocks.4.ssf_scale_1
+blocks.4.ssf_shift_1
+blocks.4.ssf_scale_2
+blocks.4.ssf_shift_2
+blocks.4.attn.ssf_scale_1
+blocks.4.attn.ssf_shift_1
+blocks.4.attn.ssf_scale_2
+blocks.4.attn.ssf_shift_2
+blocks.4.mlp.ssf_scale_1
+blocks.4.mlp.ssf_shift_1
+blocks.4.mlp.ssf_scale_2
+blocks.4.mlp.ssf_shift_2
+blocks.5.ssf_scale_1
+blocks.5.ssf_shift_1
+blocks.5.ssf_scale_2
+blocks.5.ssf_shift_2
+blocks.5.attn.ssf_scale_1
+blocks.5.attn.ssf_shift_1
+blocks.5.attn.ssf_scale_2
+blocks.5.attn.ssf_shift_2
+blocks.5.mlp.ssf_scale_1
+blocks.5.mlp.ssf_shift_1
+blocks.5.mlp.ssf_scale_2
+blocks.5.mlp.ssf_shift_2
+blocks.6.ssf_scale_1
+blocks.6.ssf_shift_1
+blocks.6.ssf_scale_2
+blocks.6.ssf_shift_2
+blocks.6.attn.ssf_scale_1
+blocks.6.attn.ssf_shift_1
+blocks.6.attn.ssf_scale_2
+blocks.6.attn.ssf_shift_2
+blocks.6.mlp.ssf_scale_1
+blocks.6.mlp.ssf_shift_1
+blocks.6.mlp.ssf_scale_2
+blocks.6.mlp.ssf_shift_2
+blocks.7.ssf_scale_1
+blocks.7.ssf_shift_1
+blocks.7.ssf_scale_2
+blocks.7.ssf_shift_2
+blocks.7.attn.ssf_scale_1
+blocks.7.attn.ssf_shift_1
+blocks.7.attn.ssf_scale_2
+blocks.7.attn.ssf_shift_2
+blocks.7.mlp.ssf_scale_1
+blocks.7.mlp.ssf_shift_1
+blocks.7.mlp.ssf_scale_2
+blocks.7.mlp.ssf_shift_2
+blocks.8.ssf_scale_1
+blocks.8.ssf_shift_1
+blocks.8.ssf_scale_2
+blocks.8.ssf_shift_2
+blocks.8.attn.ssf_scale_1
+blocks.8.attn.ssf_shift_1
+blocks.8.attn.ssf_scale_2
+blocks.8.attn.ssf_shift_2
+blocks.8.mlp.ssf_scale_1
+blocks.8.mlp.ssf_shift_1
+blocks.8.mlp.ssf_scale_2
+blocks.8.mlp.ssf_shift_2
+blocks.9.ssf_scale_1
+blocks.9.ssf_shift_1
+blocks.9.ssf_scale_2
+blocks.9.ssf_shift_2
+blocks.9.attn.ssf_scale_1
+blocks.9.attn.ssf_shift_1
+blocks.9.attn.ssf_scale_2
+blocks.9.attn.ssf_shift_2
+blocks.9.mlp.ssf_scale_1
+blocks.9.mlp.ssf_shift_1
+blocks.9.mlp.ssf_scale_2
+blocks.9.mlp.ssf_shift_2
+blocks.10.ssf_scale_1
+blocks.10.ssf_shift_1
+blocks.10.ssf_scale_2
+blocks.10.ssf_shift_2
+blocks.10.attn.ssf_scale_1
+blocks.10.attn.ssf_shift_1
+blocks.10.attn.ssf_scale_2
+blocks.10.attn.ssf_shift_2
+blocks.10.mlp.ssf_scale_1
+blocks.10.mlp.ssf_shift_1
+blocks.10.mlp.ssf_scale_2
+blocks.10.mlp.ssf_shift_2
+blocks.11.ssf_scale_1
+blocks.11.ssf_shift_1
+blocks.11.ssf_scale_2
+blocks.11.ssf_shift_2
+blocks.11.attn.ssf_scale_1
+blocks.11.attn.ssf_shift_1
+blocks.11.attn.ssf_scale_2
+blocks.11.attn.ssf_shift_2
+blocks.11.mlp.ssf_scale_1
+blocks.11.mlp.ssf_shift_1
+blocks.11.mlp.ssf_scale_2
+blocks.11.mlp.ssf_shift_2
+head.weight
+head.bias
+freezing parameters finished!
+Model vit_base_patch16_224_in21k created, param count:86081380
+number of params for requires grad: 282724
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 310
+Train: 0 [   0/390 (  0%)]  Loss: 5.723 (5.72)  Time: 3.770s,   33.95/s  (3.770s,   33.95/s)  LR: 1.000e-03  Data: 0.900 (0.900)
+Train: 0 [ 100/390 ( 26%)]  Loss: 3.498 (3.71)  Time: 0.309s,  414.55/s  (0.335s,  381.54/s)  LR: 1.000e-03  Data: 0.014 (0.020)
+Train: 0 [ 200/390 ( 51%)]  Loss: 3.159 (3.36)  Time: 0.303s,  422.40/s  (0.318s,  403.07/s)  LR: 1.000e-03  Data: 0.013 (0.015)
+Train: 0 [ 300/390 ( 77%)]  Loss: 2.063 (3.18)  Time: 0.303s,  422.83/s  (0.313s,  409.16/s)  LR: 1.000e-03  Data: 0.013 (0.014)
+Train: 0 [ 389/390 (100%)]  Loss: 3.413 (3.10)  Time: 0.292s,  438.86/s  (0.310s,  412.51/s)  LR: 1.000e-03  Data: 0.000 (0.013)
+Train: 0 [   0/390 (  0%)]  Loss: 2.019 (2.02)  Time: 0.744s,  171.95/s  (0.744s,  171.95/s)  LR: 1.000e-03  Data: 0.454 (0.454)
+Train: 0 [ 100/390 ( 26%)]  Loss: 2.835 (2.79)  Time: 0.302s,  424.00/s  (0.308s,  415.83/s)  LR: 1.000e-03  Data: 0.010 (0.015)
+Train: 0 [ 200/390 ( 51%)]  Loss: 2.461 (2.76)  Time: 0.309s,  413.89/s  (0.306s,  418.26/s)  LR: 1.000e-03  Data: 0.011 (0.013)
+Train: 0 [ 300/390 ( 77%)]  Loss: 3.191 (2.79)  Time: 0.311s,  411.96/s  (0.306s,  418.22/s)  LR: 1.000e-03  Data: 0.011 (0.012)
+Train: 0 [ 389/390 (100%)]  Loss: 2.223 (2.79)  Time: 0.294s,  435.93/s  (0.305s,  418.99/s)  LR: 1.000e-03  Data: 0.000 (0.012)
+Train: 0 [   0/390 (  0%)]  Loss: 2.995 (2.99)  Time: 0.735s,  174.05/s  (0.735s,  174.05/s)  LR: 1.000e-03  Data: 0.443 (0.443)
+Train: 0 [ 100/390 ( 26%)]  Loss: 3.177 (2.76)  Time: 0.303s,  421.98/s  (0.308s,  416.06/s)  LR: 1.000e-03  Data: 0.011 (0.014)
+Train: 0 [ 200/390 ( 51%)]  Loss: 3.077 (2.73)  Time: 0.303s,  422.09/s  (0.305s,  419.11/s)  LR: 1.000e-03  Data: 0.010 (0.012)
+Train: 0 [ 300/390 ( 77%)]  Loss: 2.471 (2.74)  Time: 0.303s,  422.59/s  (0.305s,  420.22/s)  LR: 1.000e-03  Data: 0.010 (0.012)
+Train: 0 [ 389/390 (100%)]  Loss: 2.704 (2.74)  Time: 0.291s,  439.19/s  (0.304s,  420.95/s)  LR: 1.000e-03  Data: 0.000 (0.011)
+Train: 0 [   0/390 (  0%)]  Loss: 3.374 (3.37)  Time: 0.729s,  175.50/s  (0.729s,  175.50/s)  LR: 1.000e-03  Data: 0.438 (0.438)
+Train: 0 [ 100/390 ( 26%)]  Loss: 3.151 (2.68)  Time: 0.302s,  424.43/s  (0.309s,  414.39/s)  LR: 1.000e-03  Data: 0.010 (0.015)
+Train: 0 [ 200/390 ( 51%)]  Loss: 2.519 (2.71)  Time: 0.302s,  424.45/s  (0.305s,  419.28/s)  LR: 1.000e-03  Data: 0.010 (0.012)
+Train: 0 [ 300/390 ( 77%)]  Loss: 3.246 (2.71)  Time: 0.308s,  415.00/s  (0.304s,  420.47/s)  LR: 1.000e-03  Data: 0.011 (0.012)
+Train: 0 [ 389/390 (100%)]  Loss: 2.637 (2.72)  Time: 0.291s,  440.25/s  (0.304s,  421.09/s)  LR: 1.000e-03  Data: 0.000 (0.011)
+Train: 0 [   0/390 (  0%)]  Loss: 3.136 (3.14)  Time: 0.729s,  175.62/s  (0.729s,  175.62/s)  LR: 1.000e-03  Data: 0.432 (0.432)
+Train: 0 [ 100/390 ( 26%)]  Loss: 2.969 (2.75)  Time: 0.302s,  424.00/s  (0.309s,  414.07/s)  LR: 1.000e-03  Data: 0.010 (0.015)
+Train: 0 [ 200/390 ( 51%)]  Loss: 3.421 (2.76)  Time: 0.302s,  424.36/s  (0.306s,  418.92/s)  LR: 1.000e-03  Data: 0.010 (0.012)
+Train: 0 [ 300/390 ( 77%)]  Loss: 2.323 (2.78)  Time: 0.302s,  424.03/s  (0.304s,  420.68/s)  LR: 1.000e-03  Data: 0.010 (0.012)
+Train: 0 [ 389/390 (100%)]  Loss: 3.196 (2.78)  Time: 0.292s,  438.06/s  (0.304s,  420.63/s)  LR: 1.000e-03  Data: 0.000 (0.011)
+Test: [   0/78]  Time: 1.015 (1.015)  Loss:  4.9023 (4.9023)  Acc@1:  0.7812 ( 0.7812)  Acc@5:  7.0312 ( 7.0312)
+Test: [  78/78]  Time: 0.057 (0.128)  Loss:  5.1289 (4.9768)  Acc@1:  0.0000 ( 1.0000)  Acc@5:  6.2500 ( 5.7300)
+Test: [Whole Val]  Time: 10.146  Loss: 4.9768  Acc@1:  1.0000 Pruned: 49.63% 
+*** Pruned results: OrderedDict([('loss', 4.97680625), ('top1', 1.0), ('top5', 5.73), ('pruned', 0.4962880907960199)])
+Pruned: 50.00%
+Train: 0 [   0/390 (  0%)]  Loss: 5.027 (5.03)  Time: 0.780s,  164.15/s  (0.780s,  164.15/s)  LR: 1.000e-07  Data: 0.493 (0.493)
+Train: 0 [ 100/390 ( 26%)]  Loss: 5.052 (5.00)  Time: 0.298s,  428.98/s  (0.306s,  418.51/s)  LR: 1.000e-07  Data: 0.010 (0.015)
+Train: 0 [ 200/390 ( 51%)]  Loss: 4.927 (5.00)  Time: 0.297s,  430.44/s  (0.302s,  423.52/s)  LR: 1.000e-07  Data: 0.009 (0.012)
+Train: 0 [ 300/390 ( 77%)]  Loss: 5.079 (4.99)  Time: 0.298s,  430.18/s  (0.301s,  425.18/s)  LR: 1.000e-07  Data: 0.009 (0.011)
+Train: 0 [ 389/390 (100%)]  Loss: 5.049 (4.99)  Time: 0.289s,  443.05/s  (0.301s,  425.88/s)  LR: 1.000e-07  Data: 0.000 (0.011)
+Test: [   0/78]  Time: 0.310 (0.310)  Loss:  4.8828 (4.8828)  Acc@1:  0.7812 ( 0.7812)  Acc@5:  7.0312 ( 7.0312)
+Test: [  78/78]  Time: 0.017 (0.120)  Loss:  5.1016 (4.9542)  Acc@1:  0.0000 ( 1.0000)  Acc@5:  6.2500 ( 5.8300)
+Test: [Whole Val]  Time: 9.467  Loss: 4.9542  Acc@1:  1.0000 Pruned: 49.63% 
+Train: 1 [   0/390 (  0%)]  Loss: 4.892 (4.89)  Time: 0.734s,  174.38/s  (0.734s,  174.38/s)  LR: 1.001e-04  Data: 0.447 (0.447)
+Train: 1 [ 100/390 ( 26%)]  Loss: 4.593 (4.64)  Time: 0.298s,  428.87/s  (0.303s,  422.48/s)  LR: 1.001e-04  Data: 0.010 (0.014)
+WARNING:torch.distributed.elastic.agent.server.api:Received 1 death signal, shutting down workers
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 3336924 closing signal SIGHUP
+Traceback (most recent call last):
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/launch.py", line 195, in <module>
+    main()
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/launch.py", line 191, in main
+    launch(args)
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/launch.py", line 176, in launch
+    run(args)
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/run.py", line 753, in run
+    elastic_launch(
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 237, in launch_agent
+    result = agent.run()
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 709, in run
+    result = self._invoke_run(role)
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 850, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/home/zxy21/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 62, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 3336918 got signal: 1
