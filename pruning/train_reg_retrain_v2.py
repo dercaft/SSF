@@ -55,7 +55,6 @@ from models import vision_transformer, swin_transformer, convnext, as_mlp
 ## ADDED for Pruning
 import torch_pruning as tp
 from pruning.group_pruning import SSFScalePruner, BNScaleImportance
-TH=0.01
 
 import ipdb
 
@@ -505,17 +504,17 @@ def main():
     unwrapped_parameters = (
         [(model.pos_embed,0), (model.cls_token,0)] if "vit" in args.model else None
     )
-    ignored_layers = []
-    ch_sparsity_dict = {}
+    # ignored_layers = []
+    # ch_sparsity_dict = {}
         
-    for n,m in model.named_modules():
-        if isinstance(m, torch.nn.Linear) and "head" in n :
-            ignored_layers.append(m)
-    round_to = None
-    if 'vit' in args.model:
-        # round_to = model.encoder.layers[0].num_heads
-        round_to = 12 # ADDED
-    SPARISTY=0.5
+    # for n,m in model.named_modules():
+    #     if isinstance(m, torch.nn.Linear) and "head" in n :
+    #         ignored_layers.append(m)
+    # round_to = None
+    # if 'vit' in args.model:
+    #     # round_to = model.encoder.layers[0].num_heads
+    #     round_to = 12 # ADDED
+    # SPARISTY=0.5
     # pruner = SSFScalePruner(
     #     model,
     #     example_inputs,
@@ -783,31 +782,30 @@ def main():
         print("BEFORE PRUNING")
         eval_metrics = validate(model, loader_eval, validate_loss_fn, args, amp_autocast=amp_autocast)
 
-        TH=0.001
-        print(f"AFTER PRUNING {TH}")
+        print(f"AFTER PRUNING {args.zero_threshold}")
         pruned,total=0,0
         for name, param in model.named_parameters():
             if 'ssf_scale' in name:# or 'ssf_shift' in name:
-                param.data[torch.abs(param.data) < TH] = 0
+                param.data[torch.abs(param.data) < args.zero_threshold] = 0
                 total+=param.numel()
                 pruned+=(param.data==0).sum().item()
             if 'ssf_shift' in name:# or 'ssf_shift' in name:
-                param.data[torch.abs(param.data) < TH] = 0
+                param.data[torch.abs(param.data) < args.zero_threshold] = 0
                 # mask_dict[name]=(param.data==0)
         print("Set to zeros: {:.2f}%".format(100 * pruned / total))
 
         eval_metrics = validate(model, loader_eval, validate_loss_fn, args, amp_autocast=amp_autocast)
 
-        TH=0.01
-        print(f"AFTER PRUNING {TH}")
+        # args.zero_threshold=0.01
+        print(f"AFTER PRUNING {args.zero_threshold}")
         pruned,total=0,0
         for name, param in model.named_parameters():
             if 'ssf_scale' in name:# or 'ssf_shift' in name:
-                param.data[torch.abs(param.data) < TH] = 0
+                param.data[torch.abs(param.data) < args.zero_threshold] = 0
                 total+=param.numel()
                 pruned+=(param.data==0).sum().item()
             if 'ssf_shift' in name:# or 'ssf_shift' in name:
-                param.data[torch.abs(param.data) < TH] = 0
+                param.data[torch.abs(param.data) < args.zero_threshold] = 0
                 # mask_dict[name]=(param.data==0)
         print("Set to zeros: {:.2f}%".format(100 * pruned / total))
 
@@ -822,7 +820,7 @@ def main():
         if model_ema is not None and not args.model_ema_force_cpu:
             for name, param in model_ema.named_parameters():
                 if 'ssf_scale' in name or 'ssf_shift' in name:
-                    param.data[torch.abs(param.data) < TH] = 0
+                    param.data[torch.abs(param.data) < args.zero_threshold] = 0
 
             if args.distributed and args.dist_bn in ('broadcast', 'reduce'):
                 distribute_bn(model_ema, args.world_size, args.dist_bn == 'reduce')
@@ -920,13 +918,13 @@ def main():
         # print("PRUNED RESULTS:")
         # # 
 
-        # Naive set ssf_scale and ssf_shift's values that small than TH to zero
+        # Naive set ssf_scale and ssf_shift's values that small than args.zero_threshold to zero
 
         mask_dict={}
         total,pruned=0,0
         for name, param in model.named_parameters():
             if 'ssf_scale' in name:# or 'ssf_shift' in name:
-                param.data[torch.abs(param.data) < TH] = 0
+                param.data[torch.abs(param.data) < args.zero_threshold] = 0
                 total+=param.numel()
                 pruned+=(param.data==0).sum().item()
                 mask_dict[name]=(param.data==0)
@@ -954,6 +952,12 @@ def main():
 
         # Create a deepcopy of the original arguments
         new_args = copy.deepcopy(args)
+        new_saver = None
+        if not args.no_save:
+            output_dir = get_outdir(args.output if args.output else './output/train', exp_name)
+            new_saver = CheckpointSaver(
+                model=model, optimizer=optimizer, args=args, model_ema=model_ema, amp_scaler=loss_scaler, checkpoint_prefix='retrain-checkpoint',
+                checkpoint_dir=output_dir, recovery_dir=output_dir, decreasing=decreasing, max_history=args.checkpoint_hist)
 
         # Remove the 'retrain' prefix from the argument names in the new_args
         for arg_name, arg_value in vars(new_args).items():
@@ -1007,10 +1011,11 @@ def main():
                     epoch, train_metrics, eval_metrics, os.path.join(output_dir, 'summary.csv'),
                     write_header=best_metric is None, log_wandb=new_args.log_wandb and has_wandb)
 
-            if saver is not None:
+            if new_saver is not None:
                 # save proper checkpoint with eval metric
                 save_metric = eval_metrics[eval_metric]
-                best_metric, best_epoch = saver.save_checkpoint(epoch, metric=save_metric)
+                # best_metric, best_epoch = saver.save_checkpoint(epoch, metric=save_metric)
+                best_metric, best_epoch = new_saver.save_checkpoint(epoch, metric=save_metric)
             elif new_args.rank == 0:
                 cmp= lambda x,y:x<y if decreasing else lambda x, y: x > y
                 if best_metric is not None:
@@ -1181,7 +1186,7 @@ def validate(model, loader, loss_fn, args, amp_autocast=suppress, log_suffix='')
     for name, param in model.named_parameters():
         if 'ssf_scale' in name: # or 'ssf_shift' in name:
             total+=param.numel()
-            pruned+=(torch.abs(param.data) < TH).sum().item()
+            pruned+=(torch.abs(param.data) < args.zero_threshold).sum().item()
     pruned=pruned/total
     with torch.no_grad():
         for batch_idx, (input, target) in enumerate(loader):
