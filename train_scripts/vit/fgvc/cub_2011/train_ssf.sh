@@ -1,8 +1,8 @@
 
 source DATA_PATH.sh
-CUDA_VISIBLE_DEVICES=0,1,  python  -m torch.distributed.launch --nproc_per_node=2  --master_port=14655  \
-	train.py /path/to/CUB_200_2011 --dataset cub2011 --num-classes 200 --simple-aug --model vit_base_patch16_224_in21k  \
-    --batch-size 32 --epochs 100 \
+CUDA_VISIBLE_DEVICES=3  python  -m torch.distributed.launch --nproc_per_node=1  --master_port=10453  \
+	train.py ${FGVC_PATH} --dataset cub2011 --num-classes 200 --simple-aug --model vit_base_patch16_224_in21k  \
+    --batch-size 128 --epochs 200 \
 	--opt adamw  --weight-decay 5e-2 \
     --warmup-lr 1e-7 --warmup-epochs 10  \
     --lr 1e-2 --min-lr 1e-8 \
