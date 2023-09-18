@@ -1,8 +1,8 @@
 
 source DATA_PATH.sh
-CUDA_VISIBLE_DEVICES=3  python -m torch.distributed.launch --nproc_per_node=1  --master_port=10453 \
-    train.py /data/datasets/VTAB/VTAB/vtab-1k/oxford_flowers102  --dataset oxford_flowers --num-classes 102 --val-split val --simple-aug --model vit_base_patch16_224_in21k  \
-    --batch-size 32 --epochs 100 \
+CUDA_VISIBLE_DEVICES=5  python -m torch.distributed.launch --nproc_per_node=1  --master_port=10455 \
+    train.py /data/datasets/FGVC/flowers102  --dataset oxford_flowers --num-classes 102 --val-split val --simple-aug --model vit_base_patch16_224_in21k  \
+    --batch-size 128 --epochs 200 \
 	--opt adamw  --weight-decay 0.05 \
     --warmup-lr 1e-7 --warmup-epochs 10  \
     --lr 1e-2 --min-lr 1e-8 \
