@@ -1,0 +1,1491 @@
+/home/zxy/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/launch.py:180: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+Training with a single process on 1 GPUs.
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.5, 0.5, 0.5)
+	std: (0.5, 0.5, 0.5)
+	crop_pct: 0.9
+Params: 86.4313 M
+ops: 16.8557 G
+ssf_scale_1
+ssf_shift_1
+patch_embed.ssf_scale_1
+patch_embed.ssf_shift_1
+blocks.0.ssf_scale_1
+blocks.0.ssf_shift_1
+blocks.0.ssf_scale_2
+blocks.0.ssf_shift_2
+blocks.0.attn.ssf_scale_1
+blocks.0.attn.ssf_shift_1
+blocks.0.attn.ssf_scale_2
+blocks.0.attn.ssf_shift_2
+blocks.0.mlp.ssf_scale_1
+blocks.0.mlp.ssf_shift_1
+blocks.0.mlp.ssf_scale_2
+blocks.0.mlp.ssf_shift_2
+blocks.1.ssf_scale_1
+blocks.1.ssf_shift_1
+blocks.1.ssf_scale_2
+blocks.1.ssf_shift_2
+blocks.1.attn.ssf_scale_1
+blocks.1.attn.ssf_shift_1
+blocks.1.attn.ssf_scale_2
+blocks.1.attn.ssf_shift_2
+blocks.1.mlp.ssf_scale_1
+blocks.1.mlp.ssf_shift_1
+blocks.1.mlp.ssf_scale_2
+blocks.1.mlp.ssf_shift_2
+blocks.2.ssf_scale_1
+blocks.2.ssf_shift_1
+blocks.2.ssf_scale_2
+blocks.2.ssf_shift_2
+blocks.2.attn.ssf_scale_1
+blocks.2.attn.ssf_shift_1
+blocks.2.attn.ssf_scale_2
+blocks.2.attn.ssf_shift_2
+blocks.2.mlp.ssf_scale_1
+blocks.2.mlp.ssf_shift_1
+blocks.2.mlp.ssf_scale_2
+blocks.2.mlp.ssf_shift_2
+blocks.3.ssf_scale_1
+blocks.3.ssf_shift_1
+blocks.3.ssf_scale_2
+blocks.3.ssf_shift_2
+blocks.3.attn.ssf_scale_1
+blocks.3.attn.ssf_shift_1
+blocks.3.attn.ssf_scale_2
+blocks.3.attn.ssf_shift_2
+blocks.3.mlp.ssf_scale_1
+blocks.3.mlp.ssf_shift_1
+blocks.3.mlp.ssf_scale_2
+blocks.3.mlp.ssf_shift_2
+blocks.4.ssf_scale_1
+blocks.4.ssf_shift_1
+blocks.4.ssf_scale_2
+blocks.4.ssf_shift_2
+blocks.4.attn.ssf_scale_1
+blocks.4.attn.ssf_shift_1
+blocks.4.attn.ssf_scale_2
+blocks.4.attn.ssf_shift_2
+blocks.4.mlp.ssf_scale_1
+blocks.4.mlp.ssf_shift_1
+blocks.4.mlp.ssf_scale_2
+blocks.4.mlp.ssf_shift_2
+blocks.5.ssf_scale_1
+blocks.5.ssf_shift_1
+blocks.5.ssf_scale_2
+blocks.5.ssf_shift_2
+blocks.5.attn.ssf_scale_1
+blocks.5.attn.ssf_shift_1
+blocks.5.attn.ssf_scale_2
+blocks.5.attn.ssf_shift_2
+blocks.5.mlp.ssf_scale_1
+blocks.5.mlp.ssf_shift_1
+blocks.5.mlp.ssf_scale_2
+blocks.5.mlp.ssf_shift_2
+blocks.6.ssf_scale_1
+blocks.6.ssf_shift_1
+blocks.6.ssf_scale_2
+blocks.6.ssf_shift_2
+blocks.6.attn.ssf_scale_1
+blocks.6.attn.ssf_shift_1
+blocks.6.attn.ssf_scale_2
+blocks.6.attn.ssf_shift_2
+blocks.6.mlp.ssf_scale_1
+blocks.6.mlp.ssf_shift_1
+blocks.6.mlp.ssf_scale_2
+blocks.6.mlp.ssf_shift_2
+blocks.7.ssf_scale_1
+blocks.7.ssf_shift_1
+blocks.7.ssf_scale_2
+blocks.7.ssf_shift_2
+blocks.7.attn.ssf_scale_1
+blocks.7.attn.ssf_shift_1
+blocks.7.attn.ssf_scale_2
+blocks.7.attn.ssf_shift_2
+blocks.7.mlp.ssf_scale_1
+blocks.7.mlp.ssf_shift_1
+blocks.7.mlp.ssf_scale_2
+blocks.7.mlp.ssf_shift_2
+blocks.8.ssf_scale_1
+blocks.8.ssf_shift_1
+blocks.8.ssf_scale_2
+blocks.8.ssf_shift_2
+blocks.8.attn.ssf_scale_1
+blocks.8.attn.ssf_shift_1
+blocks.8.attn.ssf_scale_2
+blocks.8.attn.ssf_shift_2
+blocks.8.mlp.ssf_scale_1
+blocks.8.mlp.ssf_shift_1
+blocks.8.mlp.ssf_scale_2
+blocks.8.mlp.ssf_shift_2
+blocks.9.ssf_scale_1
+blocks.9.ssf_shift_1
+blocks.9.ssf_scale_2
+blocks.9.ssf_shift_2
+blocks.9.attn.ssf_scale_1
+blocks.9.attn.ssf_shift_1
+blocks.9.attn.ssf_scale_2
+blocks.9.attn.ssf_shift_2
+blocks.9.mlp.ssf_scale_1
+blocks.9.mlp.ssf_shift_1
+blocks.9.mlp.ssf_scale_2
+blocks.9.mlp.ssf_shift_2
+blocks.10.ssf_scale_1
+blocks.10.ssf_shift_1
+blocks.10.ssf_scale_2
+blocks.10.ssf_shift_2
+blocks.10.attn.ssf_scale_1
+blocks.10.attn.ssf_shift_1
+blocks.10.attn.ssf_scale_2
+blocks.10.attn.ssf_shift_2
+blocks.10.mlp.ssf_scale_1
+blocks.10.mlp.ssf_shift_1
+blocks.10.mlp.ssf_scale_2
+blocks.10.mlp.ssf_shift_2
+blocks.11.ssf_scale_1
+blocks.11.ssf_shift_1
+blocks.11.ssf_scale_2
+blocks.11.ssf_shift_2
+blocks.11.attn.ssf_scale_1
+blocks.11.attn.ssf_shift_1
+blocks.11.attn.ssf_scale_2
+blocks.11.attn.ssf_shift_2
+blocks.11.mlp.ssf_scale_1
+blocks.11.mlp.ssf_shift_1
+blocks.11.mlp.ssf_scale_2
+blocks.11.mlp.ssf_shift_2
+head.weight
+head.bias
+freezing parameters finished!
+Model vit_base_patch16_224_in21k created, param count:86431275
+number of params for requires grad: 632619
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 310
+Train: 0 [   0/186 (  0%)]  Loss: 9.245 (9.25)  Rec_Loss: 1.635 (1.64)  Rec_Weight: 0.90  Time: 86.057s,    1.49/s  (86.057s,    1.49/s)  LR: 1.000e-07  Data: 5.045 (5.045)
+Train: 0 [ 100/186 ( 54%)]  Loss: 9.541 (9.56)  Rec_Loss: 1.857 (1.76)  Rec_Weight: 0.90  Time: 1.297s,   98.70/s  (2.159s,   59.29/s)  LR: 1.000e-07  Data: 0.008 (0.093)
+Train: 0 [ 185/186 (100%)]  Loss: 9.640 (9.56)  Rec_Loss: 1.713 (1.75)  Rec_Weight: 0.90  Time: 1.277s,  100.24/s  (1.743s,   73.43/s)  LR: 1.000e-07  Data: 0.000 (0.057)
+Test: [   0/192]  Time: 5.294 (5.294)  Loss:  8.0469 (8.0469)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  0.7812 ( 0.7812)
+Test: [ 100/192]  Time: 0.593 (0.320)  Loss:  7.8711 (7.9375)  Acc@1:  0.0000 ( 0.1624)  Acc@5:  0.7812 ( 0.8199)
+Test: [ 192/192]  Time: 3.273 (0.323)  Loss:  7.8359 (7.9289)  Acc@1:  1.7544 ( 0.1827)  Acc@5:  3.5088 ( 0.8525)
+Test: [Whole Val]  Time: 62.351  Loss: 7.9289  Acc@1:  0.1827 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.1826817683208024)
+
+Train: 1 [   0/186 (  0%)]  Loss: 9.594 (9.59)  Rec_Loss: 1.652 (1.65)  Rec_Weight: 0.90  Time: 5.510s,   23.23/s  (5.510s,   23.23/s)  LR: 2.009e-05  Data: 2.163 (2.163)
+Train: 1 [ 100/186 ( 54%)]  Loss: 8.488 (8.90)  Rec_Loss: 1.712 (1.68)  Rec_Weight: 0.90  Time: 1.303s,   98.22/s  (1.313s,   97.49/s)  LR: 2.009e-05  Data: 0.009 (0.044)
+Train: 1 [ 185/186 (100%)]  Loss: 8.076 (8.54)  Rec_Loss: 1.617 (1.62)  Rec_Weight: 0.90  Time: 1.290s,   99.20/s  (1.286s,   99.54/s)  LR: 2.009e-05  Data: 0.000 (0.031)
+Test: [   0/192]  Time: 3.471 (3.471)  Loss:  6.2656 (6.2656)  Acc@1:  0.7812 ( 0.7812)  Acc@5:  3.9062 ( 3.9062)
+Test: [ 100/192]  Time: 0.223 (0.300)  Loss:  6.2930 (6.3124)  Acc@1:  0.0000 ( 0.4254)  Acc@5:  3.1250 ( 2.4907)
+Test: [ 192/192]  Time: 0.111 (0.288)  Loss:  6.3125 (6.3102)  Acc@1:  1.7544 ( 0.4912)  Acc@5:  1.7544 ( 2.6184)
+Test: [Whole Val]  Time: 55.537  Loss: 6.3102  Acc@1:  0.4912 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.49121097710576567)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.1826817683208024)
+
+Train: 2 [   0/186 (  0%)]  Loss: 7.976 (7.98)  Rec_Loss: 1.558 (1.56)  Rec_Weight: 0.90  Time: 3.266s,   39.19/s  (3.266s,   39.19/s)  LR: 4.008e-05  Data: 1.977 (1.977)
+Train: 2 [ 100/186 ( 54%)]  Loss: 7.453 (7.63)  Rec_Loss: 1.329 (1.44)  Rec_Weight: 0.90  Time: 1.126s,  113.63/s  (1.297s,   98.67/s)  LR: 4.008e-05  Data: 0.010 (0.059)
+Train: 2 [ 185/186 (100%)]  Loss: 7.177 (7.47)  Rec_Loss: 1.348 (1.39)  Rec_Weight: 0.90  Time: 1.288s,   99.37/s  (1.277s,  100.26/s)  LR: 4.008e-05  Data: 0.000 (0.040)
+Test: [   0/192]  Time: 5.112 (5.112)  Loss:  5.4570 (5.4570)  Acc@1:  6.2500 ( 6.2500)  Acc@5: 23.4375 (23.4375)
+Test: [ 100/192]  Time: 0.509 (0.311)  Loss:  5.5430 (5.5460)  Acc@1:  4.6875 ( 6.3815)  Acc@5: 12.5000 (17.8063)
+Test: [ 192/192]  Time: 0.111 (0.294)  Loss:  5.5820 (5.5421)  Acc@1:  5.2632 ( 6.6171)  Acc@5: 14.0351 (18.0084)
+Test: [Whole Val]  Time: 56.719  Loss: 5.5421  Acc@1:  6.6171 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-2.pth.tar', 6.617139609350829)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.49121097710576567)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.1826817683208024)
+
+Train: 3 [   0/186 (  0%)]  Loss: 6.956 (6.96)  Rec_Loss: 1.273 (1.27)  Rec_Weight: 0.90  Time: 3.534s,   36.22/s  (3.534s,   36.22/s)  LR: 6.007e-05  Data: 2.429 (2.429)
+Train: 3 [ 100/186 ( 54%)]  Loss: 6.185 (6.89)  Rec_Loss: 1.091 (1.23)  Rec_Weight: 0.90  Time: 1.302s,   98.29/s  (1.280s,  100.01/s)  LR: 6.007e-05  Data: 0.011 (0.043)
+Train: 3 [ 185/186 (100%)]  Loss: 6.360 (6.62)  Rec_Loss: 1.157 (1.19)  Rec_Weight: 0.90  Time: 1.293s,   99.03/s  (1.265s,  101.15/s)  LR: 6.007e-05  Data: 0.000 (0.029)
+Test: [   0/192]  Time: 2.765 (2.765)  Loss:  3.7461 (3.7461)  Acc@1: 32.0312 (32.0312)  Acc@5: 66.4062 (66.4062)
+Test: [ 100/192]  Time: 0.246 (0.300)  Loss:  3.9707 (3.8881)  Acc@1: 29.6875 (29.8035)  Acc@5: 63.2812 (59.0965)
+Test: [ 192/192]  Time: 0.111 (0.288)  Loss:  4.0234 (3.8825)  Acc@1: 28.0702 (30.7555)  Acc@5: 50.8772 (59.5664)
+Test: [Whole Val]  Time: 55.532  Loss: 3.8825  Acc@1: 30.7555 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-3.pth.tar', 30.755490601418472)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-2.pth.tar', 6.617139609350829)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.49121097710576567)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.1826817683208024)
+
+Train: 4 [   0/186 (  0%)]  Loss: 6.192 (6.19)  Rec_Loss: 1.199 (1.20)  Rec_Weight: 0.90  Time: 4.934s,   25.94/s  (4.934s,   25.94/s)  LR: 8.006e-05  Data: 3.650 (3.650)
+Train: 4 [ 100/186 ( 54%)]  Loss: 5.892 (5.71)  Rec_Loss: 1.052 (1.07)  Rec_Weight: 0.90  Time: 1.299s,   98.56/s  (1.309s,   97.78/s)  LR: 8.006e-05  Data: 0.009 (0.067)
+Train: 4 [ 185/186 (100%)]  Loss: 5.822 (5.49)  Rec_Loss: 1.001 (1.05)  Rec_Weight: 0.90  Time: 1.291s,   99.19/s  (1.284s,   99.70/s)  LR: 8.006e-05  Data: 0.000 (0.043)
+Test: [   0/192]  Time: 3.255 (3.255)  Loss:  1.9668 (1.9668)  Acc@1: 56.2500 (56.2500)  Acc@5: 87.5000 (87.5000)
+Test: [ 100/192]  Time: 0.246 (0.301)  Loss:  2.1523 (2.0787)  Acc@1: 57.8125 (53.5427)  Acc@5: 83.5938 (84.8236)
+Test: [ 192/192]  Time: 0.111 (0.288)  Loss:  2.2500 (2.0823)  Acc@1: 40.3509 (53.2578)  Acc@5: 84.2105 (84.5857)
+Test: [Whole Val]  Time: 55.607  Loss: 2.0823  Acc@1: 53.2578 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-4.pth.tar', 53.257824865980844)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-3.pth.tar', 30.755490601418472)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-2.pth.tar', 6.617139609350829)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.49121097710576567)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.1826817683208024)
+
+Train: 5 [   0/186 (  0%)]  Loss: 5.823 (5.82)  Rec_Loss: 1.077 (1.08)  Rec_Weight: 0.90  Time: 5.678s,   22.54/s  (5.678s,   22.54/s)  LR: 1.001e-04  Data: 4.382 (4.382)
+Train: 5 [ 100/186 ( 54%)]  Loss: 5.716 (4.90)  Rec_Loss: 0.9956 (0.949)  Rec_Weight: 0.90  Time: 1.512s,   84.67/s  (1.310s,   97.72/s)  LR: 1.001e-04  Data: 0.215 (0.069)
+Train: 5 [ 185/186 (100%)]  Loss: 4.431 (4.87)  Rec_Loss: 0.8148 (0.928)  Rec_Weight: 0.90  Time: 1.292s,   99.07/s  (1.286s,   99.53/s)  LR: 1.001e-04  Data: 0.000 (0.044)
+Test: [   0/192]  Time: 4.557 (4.557)  Loss:  1.3926 (1.3926)  Acc@1: 70.3125 (70.3125)  Acc@5: 92.9688 (92.9688)
+Test: [ 100/192]  Time: 0.653 (0.309)  Loss:  1.6084 (1.4785)  Acc@1: 66.4062 (65.3697)  Acc@5: 88.2812 (91.6383)
+Test: [ 192/192]  Time: 0.111 (0.293)  Loss:  1.6377 (1.4857)  Acc@1: 54.3860 (64.8561)  Acc@5: 91.2281 (91.5966)
+Test: [Whole Val]  Time: 56.606  Loss: 1.4857  Acc@1: 64.8561 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-5.pth.tar', 64.85608735907428)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-4.pth.tar', 53.257824865980844)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-3.pth.tar', 30.755490601418472)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-2.pth.tar', 6.617139609350829)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.49121097710576567)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.1826817683208024)
+
+Train: 6 [   0/186 (  0%)]  Loss: 5.436 (5.44)  Rec_Loss: 0.9568 (0.957)  Rec_Weight: 0.90  Time: 3.157s,   40.54/s  (3.157s,   40.54/s)  LR: 1.200e-04  Data: 1.993 (1.993)
+Train: 6 [ 100/186 ( 54%)]  Loss: 5.104 (4.42)  Rec_Loss: 0.9101 (0.832)  Rec_Weight: 0.90  Time: 1.310s,   97.75/s  (1.276s,  100.31/s)  LR: 1.200e-04  Data: 0.010 (0.040)
+Train: 6 [ 185/186 (100%)]  Loss: 4.839 (4.42)  Rec_Loss: 0.7757 (0.813)  Rec_Weight: 0.90  Time: 1.296s,   98.79/s  (1.264s,  101.23/s)  LR: 1.200e-04  Data: 0.000 (0.027)
+Test: [   0/192]  Time: 3.134 (3.134)  Loss:  1.1904 (1.1904)  Acc@1: 75.7812 (75.7812)  Acc@5: 95.3125 (95.3125)
+Test: [ 100/192]  Time: 0.244 (0.307)  Loss:  1.3525 (1.2593)  Acc@1: 75.7812 (71.3181)  Acc@5: 92.9688 (94.3998)
+Test: [ 192/192]  Time: 0.111 (0.291)  Loss:  1.3867 (1.2670)  Acc@1: 59.6491 (71.0957)  Acc@5: 94.7368 (94.3531)
+Test: [Whole Val]  Time: 56.136  Loss: 1.2670  Acc@1: 71.0957 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-6.pth.tar', 71.09568465376908)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-5.pth.tar', 64.85608735907428)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-4.pth.tar', 53.257824865980844)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-3.pth.tar', 30.755490601418472)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-2.pth.tar', 6.617139609350829)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.49121097710576567)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.1826817683208024)
+
+Train: 7 [   0/186 (  0%)]  Loss: 4.607 (4.61)  Rec_Loss: 0.8112 (0.811)  Rec_Weight: 0.90  Time: 4.493s,   28.49/s  (4.493s,   28.49/s)  LR: 1.400e-04  Data: 3.199 (3.199)
+Train: 7 [ 100/186 ( 54%)]  Loss: 5.278 (4.32)  Rec_Loss: 0.7885 (0.747)  Rec_Weight: 0.90  Time: 1.300s,   98.47/s  (1.290s,   99.22/s)  LR: 1.400e-04  Data: 0.009 (0.056)
+Train: 7 [ 185/186 (100%)]  Loss: 3.699 (4.18)  Rec_Loss: 0.6764 (0.719)  Rec_Weight: 0.90  Time: 1.121s,  114.14/s  (1.270s,  100.83/s)  LR: 1.400e-04  Data: 0.000 (0.034)
+Test: [   0/192]  Time: 5.085 (5.085)  Loss:  1.0488 (1.0488)  Acc@1: 78.1250 (78.1250)  Acc@5: 92.9688 (92.9688)
+Test: [ 100/192]  Time: 0.246 (0.317)  Loss:  1.1631 (1.0911)  Acc@1: 76.5625 (75.5028)  Acc@5: 92.9688 (95.6296)
+Test: [ 192/192]  Time: 0.111 (0.295)  Loss:  1.2461 (1.0992)  Acc@1: 71.9298 (75.2202)  Acc@5: 96.4912 (95.6441)
+Test: [Whole Val]  Time: 57.013  Loss: 1.0992  Acc@1: 75.2202 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-7.pth.tar', 75.22023302136398)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-6.pth.tar', 71.09568465376908)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-5.pth.tar', 64.85608735907428)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-4.pth.tar', 53.257824865980844)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-3.pth.tar', 30.755490601418472)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-2.pth.tar', 6.617139609350829)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.49121097710576567)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.1826817683208024)
+
+Train: 8 [   0/186 (  0%)]  Loss: 4.475 (4.47)  Rec_Loss: 0.7186 (0.719)  Rec_Weight: 0.90  Time: 3.756s,   34.08/s  (3.756s,   34.08/s)  LR: 1.600e-04  Data: 2.497 (2.497)
+Train: 8 [ 100/186 ( 54%)]  Loss: 3.870 (4.11)  Rec_Loss: 0.6489 (0.672)  Rec_Weight: 0.90  Time: 1.296s,   98.74/s  (1.274s,  100.45/s)  LR: 1.600e-04  Data: 0.008 (0.038)
+Train: 8 [ 185/186 (100%)]  Loss: 2.472 (4.04)  Rec_Loss: 0.5179 (0.655)  Rec_Weight: 0.90  Time: 1.131s,  113.22/s  (1.260s,  101.57/s)  LR: 1.600e-04  Data: 0.000 (0.025)
+Test: [   0/192]  Time: 3.362 (3.362)  Loss:  0.9761 (0.9761)  Acc@1: 81.2500 (81.2500)  Acc@5: 96.0938 (96.0938)
+Test: [ 100/192]  Time: 0.248 (0.306)  Loss:  1.0703 (0.9953)  Acc@1: 77.3438 (77.8620)  Acc@5: 94.5312 (96.1634)
+Test: [ 192/192]  Time: 0.101 (0.293)  Loss:  1.2031 (1.0010)  Acc@1: 75.4386 (77.5058)  Acc@5: 94.7368 (96.1962)
+Test: [Whole Val]  Time: 56.509  Loss: 1.0010  Acc@1: 77.5058 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-8.pth.tar', 77.50578492762028)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-7.pth.tar', 75.22023302136398)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-6.pth.tar', 71.09568465376908)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-5.pth.tar', 64.85608735907428)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-4.pth.tar', 53.257824865980844)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-3.pth.tar', 30.755490601418472)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-2.pth.tar', 6.617139609350829)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.49121097710576567)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.1826817683208024)
+
+Train: 9 [   0/186 (  0%)]  Loss: 4.178 (4.18)  Rec_Loss: 0.6140 (0.614)  Rec_Weight: 0.90  Time: 4.009s,   31.93/s  (4.009s,   31.93/s)  LR: 1.800e-04  Data: 2.828 (2.828)
+Train: 9 [ 100/186 ( 54%)]  Loss: 3.032 (3.85)  Rec_Loss: 0.5333 (0.606)  Rec_Weight: 0.90  Time: 1.146s,  111.72/s  (1.284s,   99.71/s)  LR: 1.800e-04  Data: 0.008 (0.045)
+Train: 9 [ 185/186 (100%)]  Loss: 4.031 (3.90)  Rec_Loss: 0.5861 (0.600)  Rec_Weight: 0.90  Time: 1.146s,  111.72/s  (1.268s,  100.99/s)  LR: 1.800e-04  Data: 0.000 (0.028)
+Test: [   0/192]  Time: 4.698 (4.698)  Loss:  0.9951 (0.9951)  Acc@1: 78.9062 (78.9062)  Acc@5: 96.8750 (96.8750)
+Test: [ 100/192]  Time: 0.246 (0.316)  Loss:  1.1035 (1.0333)  Acc@1: 80.4688 (78.6587)  Acc@5: 96.0938 (96.7203)
+Test: [ 192/192]  Time: 0.111 (0.301)  Loss:  1.2588 (1.0417)  Acc@1: 70.1754 (78.1107)  Acc@5: 94.7368 (96.6184)
+Test: [Whole Val]  Time: 58.129  Loss: 1.0417  Acc@1: 78.1107 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-9.pth.tar', 78.11066455412873)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-8.pth.tar', 77.50578492762028)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-7.pth.tar', 75.22023302136398)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-6.pth.tar', 71.09568465376908)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-5.pth.tar', 64.85608735907428)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-4.pth.tar', 53.257824865980844)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-3.pth.tar', 30.755490601418472)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-2.pth.tar', 6.617139609350829)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.49121097710576567)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.1826817683208024)
+
+Train: 10 [   0/186 (  0%)]  Loss: 3.224 (3.22)  Rec_Loss: 0.5767 (0.577)  Rec_Weight: 0.90  Time: 5.648s,   22.66/s  (5.648s,   22.66/s)  LR: 1.995e-04  Data: 4.529 (4.529)
+Train: 10 [ 100/186 ( 54%)]  Loss: 3.192 (3.75)  Rec_Loss: 0.5491 (0.570)  Rec_Weight: 0.90  Time: 1.151s,  111.24/s  (1.304s,   98.15/s)  LR: 1.995e-04  Data: 0.009 (0.069)
+Train: 10 [ 185/186 (100%)]  Loss: 4.096 (3.76)  Rec_Loss: 0.5526 (0.565)  Rec_Weight: 0.90  Time: 1.284s,   99.65/s  (1.278s,  100.13/s)  LR: 1.995e-04  Data: 0.000 (0.042)
+Test: [   0/192]  Time: 4.077 (4.077)  Loss:  0.9678 (0.9678)  Acc@1: 79.6875 (79.6875)  Acc@5: 93.7500 (93.7500)
+Test: [ 100/192]  Time: 0.244 (0.316)  Loss:  1.0205 (0.9400)  Acc@1: 79.6875 (79.8422)  Acc@5: 95.3125 (96.8595)
+Test: [ 192/192]  Time: 0.111 (0.301)  Loss:  1.1729 (0.9437)  Acc@1: 71.9298 (79.6371)  Acc@5: 96.4912 (96.8701)
+Test: [Whole Val]  Time: 58.147  Loss: 0.9437  Acc@1: 79.6371 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-10.pth.tar', 79.63707222081187)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-9.pth.tar', 78.11066455412873)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-8.pth.tar', 77.50578492762028)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-7.pth.tar', 75.22023302136398)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-6.pth.tar', 71.09568465376908)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-5.pth.tar', 64.85608735907428)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-4.pth.tar', 53.257824865980844)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-3.pth.tar', 30.755490601418472)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-2.pth.tar', 6.617139609350829)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.49121097710576567)
+
+Train: 11 [   0/186 (  0%)]  Loss: 2.354 (2.35)  Rec_Loss: 0.4791 (0.479)  Rec_Weight: 0.90  Time: 2.886s,   44.34/s  (2.886s,   44.34/s)  LR: 1.993e-04  Data: 1.810 (1.810)
+Train: 11 [ 100/186 ( 54%)]  Loss: 4.231 (3.58)  Rec_Loss: 0.5904 (0.544)  Rec_Weight: 0.90  Time: 1.299s,   98.53/s  (1.277s,  100.22/s)  LR: 1.993e-04  Data: 0.009 (0.041)
+Train: 11 [ 185/186 (100%)]  Loss: 3.835 (3.61)  Rec_Loss: 0.5619 (0.543)  Rec_Weight: 0.90  Time: 1.290s,   99.22/s  (1.258s,  101.72/s)  LR: 1.993e-04  Data: 0.000 (0.026)
+Test: [   0/192]  Time: 3.812 (3.812)  Loss:  0.8701 (0.8701)  Acc@1: 82.8125 (82.8125)  Acc@5: 97.6562 (97.6562)
+Test: [ 100/192]  Time: 0.203 (0.309)  Loss:  0.9370 (0.8640)  Acc@1: 78.9062 (80.6389)  Acc@5: 95.3125 (97.1844)
+Test: [ 192/192]  Time: 0.111 (0.293)  Loss:  1.0449 (0.8679)  Acc@1: 77.1930 (80.6398)  Acc@5: 96.4912 (97.0446)
+Test: [Whole Val]  Time: 56.602  Loss: 0.8679  Acc@1: 80.6398 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-11.pth.tar', 80.63979215586717)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-10.pth.tar', 79.63707222081187)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-9.pth.tar', 78.11066455412873)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-8.pth.tar', 77.50578492762028)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-7.pth.tar', 75.22023302136398)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-6.pth.tar', 71.09568465376908)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-5.pth.tar', 64.85608735907428)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-4.pth.tar', 53.257824865980844)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-3.pth.tar', 30.755490601418472)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-2.pth.tar', 6.617139609350829)
+
+Train: 12 [   0/186 (  0%)]  Loss: 3.909 (3.91)  Rec_Loss: 0.5904 (0.590)  Rec_Weight: 0.90  Time: 3.434s,   37.27/s  (3.434s,   37.27/s)  LR: 1.992e-04  Data: 2.332 (2.332)
+Train: 12 [ 100/186 ( 54%)]  Loss: 3.243 (3.62)  Rec_Loss: 0.5262 (0.542)  Rec_Weight: 0.90  Time: 1.295s,   98.83/s  (1.275s,  100.41/s)  LR: 1.992e-04  Data: 0.010 (0.044)
+Train: 12 [ 185/186 (100%)]  Loss: 3.990 (3.60)  Rec_Loss: 0.5887 (0.543)  Rec_Weight: 0.90  Time: 1.138s,  112.44/s  (1.257s,  101.86/s)  LR: 1.992e-04  Data: 0.000 (0.028)
+Test: [   0/192]  Time: 5.628 (5.628)  Loss:  0.8569 (0.8569)  Acc@1: 82.0312 (82.0312)  Acc@5: 97.6562 (97.6562)
+Test: [ 100/192]  Time: 0.242 (0.316)  Loss:  0.9282 (0.8514)  Acc@1: 79.6875 (81.3660)  Acc@5: 95.3125 (97.3236)
+Test: [ 192/192]  Time: 0.069 (0.298)  Loss:  1.0918 (0.8574)  Acc@1: 75.4386 (81.2000)  Acc@5: 98.2456 (97.2395)
+Test: [Whole Val]  Time: 57.610  Loss: 0.8574  Acc@1: 81.2000 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-12.pth.tar', 81.20001624333497)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-11.pth.tar', 80.63979215586717)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-10.pth.tar', 79.63707222081187)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-9.pth.tar', 78.11066455412873)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-8.pth.tar', 77.50578492762028)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-7.pth.tar', 75.22023302136398)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-6.pth.tar', 71.09568465376908)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-5.pth.tar', 64.85608735907428)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-4.pth.tar', 53.257824865980844)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-3.pth.tar', 30.755490601418472)
+
+Train: 13 [   0/186 (  0%)]  Loss: 3.195 (3.20)  Rec_Loss: 0.5320 (0.532)  Rec_Weight: 0.90  Time: 5.670s,   22.58/s  (5.670s,   22.58/s)  LR: 1.991e-04  Data: 4.373 (4.373)
+Train: 13 [ 100/186 ( 54%)]  Loss: 3.448 (3.53)  Rec_Loss: 0.5601 (0.542)  Rec_Weight: 0.90  Time: 1.129s,  113.41/s  (1.287s,   99.42/s)  LR: 1.991e-04  Data: 0.009 (0.059)
+Train: 13 [ 185/186 (100%)]  Loss: 4.011 (3.61)  Rec_Loss: 0.5913 (0.548)  Rec_Weight: 0.90  Time: 1.292s,   99.09/s  (1.266s,  101.12/s)  LR: 1.991e-04  Data: 0.000 (0.036)
+Test: [   0/192]  Time: 4.271 (4.271)  Loss:  0.8364 (0.8364)  Acc@1: 80.4688 (80.4688)  Acc@5: 97.6562 (97.6562)
+Test: [ 100/192]  Time: 0.199 (0.300)  Loss:  0.9077 (0.8578)  Acc@1: 78.9062 (81.3583)  Acc@5: 96.0938 (97.2153)
+Test: [ 192/192]  Time: 0.111 (0.290)  Loss:  1.0840 (0.8604)  Acc@1: 77.1930 (81.2487)  Acc@5: 98.2456 (97.1583)
+Test: [Whole Val]  Time: 55.996  Loss: 0.8604  Acc@1: 81.2487 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-13.pth.tar', 81.24873138373223)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-12.pth.tar', 81.20001624333497)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-11.pth.tar', 80.63979215586717)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-10.pth.tar', 79.63707222081187)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-9.pth.tar', 78.11066455412873)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-8.pth.tar', 77.50578492762028)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-7.pth.tar', 75.22023302136398)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-6.pth.tar', 71.09568465376908)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-5.pth.tar', 64.85608735907428)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-4.pth.tar', 53.257824865980844)
+
+Train: 14 [   0/186 (  0%)]  Loss: 3.073 (3.07)  Rec_Loss: 0.5518 (0.552)  Rec_Weight: 0.90  Time: 3.986s,   32.11/s  (3.986s,   32.11/s)  LR: 1.989e-04  Data: 2.695 (2.695)
+Train: 14 [ 100/186 ( 54%)]  Loss: 3.432 (3.60)  Rec_Loss: 0.5605 (0.562)  Rec_Weight: 0.90  Time: 1.284s,   99.65/s  (1.275s,  100.39/s)  LR: 1.989e-04  Data: 0.009 (0.045)
+Train: 14 [ 185/186 (100%)]  Loss: 4.360 (3.55)  Rec_Loss: 0.5637 (0.563)  Rec_Weight: 0.90  Time: 1.286s,   99.54/s  (1.259s,  101.65/s)  LR: 1.989e-04  Data: 0.000 (0.028)
+Test: [   0/192]  Time: 3.808 (3.808)  Loss:  0.8330 (0.8330)  Acc@1: 82.0312 (82.0312)  Acc@5: 97.6562 (97.6562)
+Test: [ 100/192]  Time: 0.246 (0.305)  Loss:  0.9409 (0.8412)  Acc@1: 77.3438 (81.7296)  Acc@5: 95.3125 (97.2772)
+Test: [ 192/192]  Time: 0.111 (0.292)  Loss:  1.0645 (0.8454)  Acc@1: 75.4386 (81.5451)  Acc@5: 96.4912 (97.2029)
+Test: [Whole Val]  Time: 56.407  Loss: 0.8454  Acc@1: 81.5451 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-14.pth.tar', 81.54508180579184)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-13.pth.tar', 81.24873138373223)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-12.pth.tar', 81.20001624333497)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-11.pth.tar', 80.63979215586717)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-10.pth.tar', 79.63707222081187)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-9.pth.tar', 78.11066455412873)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-8.pth.tar', 77.50578492762028)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-7.pth.tar', 75.22023302136398)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-6.pth.tar', 71.09568465376908)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-5.pth.tar', 64.85608735907428)
+
+Train: 15 [   0/186 (  0%)]  Loss: 2.334 (2.33)  Rec_Loss: 0.5159 (0.516)  Rec_Weight: 0.90  Time: 5.922s,   21.62/s  (5.922s,   21.62/s)  LR: 1.988e-04  Data: 4.632 (4.632)
+Train: 15 [ 100/186 ( 54%)]  Loss: 3.365 (3.66)  Rec_Loss: 0.5731 (0.582)  Rec_Weight: 0.90  Time: 1.294s,   98.92/s  (1.285s,   99.59/s)  LR: 1.988e-04  Data: 0.009 (0.060)
+Train: 15 [ 185/186 (100%)]  Loss: 3.484 (3.67)  Rec_Loss: 0.6009 (0.590)  Rec_Weight: 0.90  Time: 1.285s,   99.63/s  (1.267s,  101.06/s)  LR: 1.988e-04  Data: 0.000 (0.037)
+Test: [   0/192]  Time: 2.634 (2.634)  Loss:  0.8691 (0.8691)  Acc@1: 81.2500 (81.2500)  Acc@5: 96.8750 (96.8750)
+Test: [ 100/192]  Time: 0.245 (0.305)  Loss:  0.9497 (0.8671)  Acc@1: 78.1250 (81.4124)  Acc@5: 95.3125 (97.2386)
+Test: [ 192/192]  Time: 0.078 (0.302)  Loss:  1.0762 (0.8725)  Acc@1: 75.4386 (81.3380)  Acc@5: 98.2456 (97.2029)
+Test: [Whole Val]  Time: 58.280  Loss: 0.8725  Acc@1: 81.3380 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-14.pth.tar', 81.54508180579184)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-15.pth.tar', 81.33804246831771)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-13.pth.tar', 81.24873138373223)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-12.pth.tar', 81.20001624333497)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-11.pth.tar', 80.63979215586717)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-10.pth.tar', 79.63707222081187)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-9.pth.tar', 78.11066455412873)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-8.pth.tar', 77.50578492762028)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-7.pth.tar', 75.22023302136398)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-6.pth.tar', 71.09568465376908)
+
+Train: 16 [   0/186 (  0%)]  Loss: 2.857 (2.86)  Rec_Loss: 0.5918 (0.592)  Rec_Weight: 0.90  Time: 3.660s,   34.97/s  (3.660s,   34.97/s)  LR: 1.986e-04  Data: 2.365 (2.365)
+Train: 16 [ 100/186 ( 54%)]  Loss: 3.615 (3.76)  Rec_Loss: 0.5925 (0.609)  Rec_Weight: 0.90  Time: 1.301s,   98.35/s  (1.267s,  101.03/s)  LR: 1.986e-04  Data: 0.008 (0.034)
+Train: 16 [ 185/186 (100%)]  Loss: 3.819 (3.71)  Rec_Loss: 0.6733 (0.615)  Rec_Weight: 0.90  Time: 1.287s,   99.49/s  (1.256s,  101.91/s)  LR: 1.986e-04  Data: 0.000 (0.023)
+Test: [   0/192]  Time: 3.285 (3.285)  Loss:  0.8281 (0.8281)  Acc@1: 82.8125 (82.8125)  Acc@5: 96.0938 (96.0938)
+Test: [ 100/192]  Time: 0.859 (0.381)  Loss:  0.9004 (0.8365)  Acc@1: 81.2500 (81.4356)  Acc@5: 95.3125 (97.3468)
+Test: [ 192/192]  Time: 0.111 (0.356)  Loss:  1.0732 (0.8428)  Acc@1: 75.4386 (81.3665)  Acc@5: 96.4912 (97.2029)
+Test: [Whole Val]  Time: 68.708  Loss: 0.8428  Acc@1: 81.3665 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-14.pth.tar', 81.54508180579184)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-16.pth.tar', 81.36645963228476)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-15.pth.tar', 81.33804246831771)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-13.pth.tar', 81.24873138373223)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-12.pth.tar', 81.20001624333497)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-11.pth.tar', 80.63979215586717)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-10.pth.tar', 79.63707222081187)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-9.pth.tar', 78.11066455412873)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-8.pth.tar', 77.50578492762028)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-7.pth.tar', 75.22023302136398)
+
+Train: 17 [   0/186 (  0%)]  Loss: 3.572 (3.57)  Rec_Loss: 0.6066 (0.607)  Rec_Weight: 0.90  Time: 3.461s,   36.98/s  (3.461s,   36.98/s)  LR: 1.984e-04  Data: 2.330 (2.330)
+Train: 17 [ 100/186 ( 54%)]  Loss: 4.471 (3.83)  Rec_Loss: 0.6691 (0.638)  Rec_Weight: 0.90  Time: 1.283s,   99.73/s  (1.265s,  101.16/s)  LR: 1.984e-04  Data: 0.009 (0.032)
+Train: 17 [ 185/186 (100%)]  Loss: 3.699 (3.80)  Rec_Loss: 0.6297 (0.642)  Rec_Weight: 0.90  Time: 0.564s,  226.88/s  (1.055s,  121.31/s)  LR: 1.984e-04  Data: 0.000 (0.022)
+Test: [   0/192]  Time: 2.513 (2.513)  Loss:  0.8467 (0.8467)  Acc@1: 79.6875 (79.6875)  Acc@5: 96.8750 (96.8750)
+Test: [ 100/192]  Time: 0.108 (0.299)  Loss:  0.9375 (0.8369)  Acc@1: 78.1250 (81.7450)  Acc@5: 95.3125 (97.2153)
+Test: [ 192/192]  Time: 0.048 (0.290)  Loss:  1.0996 (0.8412)  Acc@1: 73.6842 (81.5694)  Acc@5: 96.4912 (97.1542)
+Test: [Whole Val]  Time: 55.887  Loss: 0.8412  Acc@1: 81.5694 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-17.pth.tar', 81.56943937273839)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-14.pth.tar', 81.54508180579184)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-16.pth.tar', 81.36645963228476)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-15.pth.tar', 81.33804246831771)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-13.pth.tar', 81.24873138373223)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-12.pth.tar', 81.20001624333497)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-11.pth.tar', 80.63979215586717)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-10.pth.tar', 79.63707222081187)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-9.pth.tar', 78.11066455412873)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-8.pth.tar', 77.50578492762028)
+
+Train: 18 [   0/186 (  0%)]  Loss: 3.370 (3.37)  Rec_Loss: 0.6720 (0.672)  Rec_Weight: 0.90  Time: 2.959s,   43.25/s  (2.959s,   43.25/s)  LR: 1.982e-04  Data: 2.403 (2.403)
+Train: 18 [ 100/186 ( 54%)]  Loss: 2.573 (3.59)  Rec_Loss: 0.6386 (0.658)  Rec_Weight: 0.90  Time: 0.569s,  224.98/s  (0.594s,  215.58/s)  LR: 1.982e-04  Data: 0.009 (0.035)
+Train: 18 [ 185/186 (100%)]  Loss: 3.921 (3.62)  Rec_Loss: 0.6772 (0.664)  Rec_Weight: 0.90  Time: 0.562s,  227.88/s  (0.583s,  219.52/s)  LR: 1.982e-04  Data: 0.000 (0.024)
+Test: [   0/192]  Time: 2.403 (2.403)  Loss:  0.8438 (0.8438)  Acc@1: 82.0312 (82.0312)  Acc@5: 94.5312 (94.5312)
+Test: [ 100/192]  Time: 0.112 (0.301)  Loss:  0.9326 (0.8572)  Acc@1: 77.3438 (80.9793)  Acc@5: 95.3125 (97.0374)
+Test: [ 192/192]  Time: 0.047 (0.291)  Loss:  1.1123 (0.8627)  Acc@1: 77.1930 (81.0782)  Acc@5: 94.7368 (96.9350)
+Test: [Whole Val]  Time: 56.209  Loss: 0.8627  Acc@1: 81.0782 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-17.pth.tar', 81.56943937273839)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-14.pth.tar', 81.54508180579184)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-16.pth.tar', 81.36645963228476)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-15.pth.tar', 81.33804246831771)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-13.pth.tar', 81.24873138373223)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-12.pth.tar', 81.20001624333497)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-18.pth.tar', 81.07822839993001)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-11.pth.tar', 80.63979215586717)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-10.pth.tar', 79.63707222081187)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-9.pth.tar', 78.11066455412873)
+
+Train: 19 [   0/186 (  0%)]  Loss: 4.335 (4.33)  Rec_Loss: 0.7115 (0.711)  Rec_Weight: 0.90  Time: 3.660s,   34.97/s  (3.660s,   34.97/s)  LR: 1.980e-04  Data: 3.097 (3.097)
+Train: 19 [ 100/186 ( 54%)]  Loss: 4.631 (3.65)  Rec_Loss: 0.7336 (0.690)  Rec_Weight: 0.90  Time: 0.568s,  225.44/s  (0.599s,  213.71/s)  LR: 1.980e-04  Data: 0.009 (0.040)
+Train: 19 [ 185/186 (100%)]  Loss: 3.079 (3.62)  Rec_Loss: 0.6879 (0.697)  Rec_Weight: 0.90  Time: 0.562s,  227.79/s  (0.586s,  218.55/s)  LR: 1.980e-04  Data: 0.000 (0.026)
+Test: [   0/192]  Time: 2.456 (2.456)  Loss:  0.8716 (0.8716)  Acc@1: 81.2500 (81.2500)  Acc@5: 95.3125 (95.3125)
+Test: [ 100/192]  Time: 0.112 (0.301)  Loss:  0.9385 (0.8537)  Acc@1: 78.1250 (80.9793)  Acc@5: 95.3125 (97.0916)
+Test: [ 192/192]  Time: 0.048 (0.291)  Loss:  1.1104 (0.8600)  Acc@1: 73.6842 (80.8874)  Acc@5: 94.7368 (96.9959)
+Test: [Whole Val]  Time: 56.087  Loss: 0.8600  Acc@1: 80.8874 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-17.pth.tar', 81.56943937273839)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-14.pth.tar', 81.54508180579184)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-16.pth.tar', 81.36645963228476)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-15.pth.tar', 81.33804246831771)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-13.pth.tar', 81.24873138373223)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-12.pth.tar', 81.20001624333497)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-18.pth.tar', 81.07822839993001)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-19.pth.tar', 80.88742743752951)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-11.pth.tar', 80.63979215586717)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-10.pth.tar', 79.63707222081187)
+
+Train: 20 [   0/186 (  0%)]  Loss: 4.672 (4.67)  Rec_Loss: 0.7134 (0.713)  Rec_Weight: 0.90  Time: 2.403s,   53.26/s  (2.403s,   53.26/s)  LR: 1.978e-04  Data: 1.846 (1.846)
+Train: 20 [ 100/186 ( 54%)]  Loss: 3.724 (3.76)  Rec_Loss: 0.7555 (0.728)  Rec_Weight: 0.90  Time: 0.569s,  224.81/s  (0.586s,  218.39/s)  LR: 1.978e-04  Data: 0.009 (0.028)
+Train: 20 [ 185/186 (100%)]  Loss: 3.057 (3.76)  Rec_Loss: 0.7461 (0.735)  Rec_Weight: 0.90  Time: 0.562s,  227.72/s  (0.579s,  221.15/s)  LR: 1.978e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.454 (2.454)  Loss:  0.9067 (0.9067)  Acc@1: 78.1250 (78.1250)  Acc@5: 96.8750 (96.8750)
+Test: [ 100/192]  Time: 0.110 (0.298)  Loss:  0.9644 (0.8881)  Acc@1: 76.5625 (80.7317)  Acc@5: 95.3125 (96.9910)
+Test: [ 192/192]  Time: 0.048 (0.295)  Loss:  1.1094 (0.8945)  Acc@1: 77.1930 (80.6276)  Acc@5: 94.7368 (96.8904)
+Test: [Whole Val]  Time: 56.848  Loss: 0.8945  Acc@1: 80.6276 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-17.pth.tar', 81.56943937273839)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-14.pth.tar', 81.54508180579184)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-16.pth.tar', 81.36645963228476)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-15.pth.tar', 81.33804246831771)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-13.pth.tar', 81.24873138373223)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-12.pth.tar', 81.20001624333497)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-18.pth.tar', 81.07822839993001)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-19.pth.tar', 80.88742743752951)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-11.pth.tar', 80.63979215586717)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-20.pth.tar', 80.62761337130988)
+
+Train: 21 [   0/186 (  0%)]  Loss: 4.497 (4.50)  Rec_Loss: 0.7589 (0.759)  Rec_Weight: 0.90  Time: 2.430s,   52.67/s  (2.430s,   52.67/s)  LR: 1.976e-04  Data: 1.874 (1.874)
+Train: 21 [ 100/186 ( 54%)]  Loss: 4.556 (3.73)  Rec_Loss: 0.7987 (0.760)  Rec_Weight: 0.90  Time: 0.567s,  225.60/s  (0.587s,  218.19/s)  LR: 1.976e-04  Data: 0.009 (0.028)
+Train: 21 [ 185/186 (100%)]  Loss: 3.469 (3.74)  Rec_Loss: 0.7995 (0.769)  Rec_Weight: 0.90  Time: 0.561s,  228.12/s  (0.579s,  221.13/s)  LR: 1.976e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.976 (2.976)  Loss:  0.9038 (0.9038)  Acc@1: 80.4688 (80.4688)  Acc@5: 96.8750 (96.8750)
+Test: [ 100/192]  Time: 0.108 (0.331)  Loss:  0.9458 (0.8707)  Acc@1: 80.4688 (81.4047)  Acc@5: 95.3125 (96.7435)
+Test: [ 192/192]  Time: 0.047 (0.306)  Loss:  1.1318 (0.8793)  Acc@1: 73.6842 (81.0458)  Acc@5: 94.7368 (96.7198)
+Test: [Whole Val]  Time: 59.140  Loss: 0.8793  Acc@1: 81.0458 Pruned: 0.00% 
+Current checkpoints:
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-17.pth.tar', 81.56943937273839)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-14.pth.tar', 81.54508180579184)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-16.pth.tar', 81.36645963228476)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-15.pth.tar', 81.33804246831771)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-13.pth.tar', 81.24873138373223)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-12.pth.tar', 81.20001624333497)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-18.pth.tar', 81.07822839993001)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-21.pth.tar', 81.04575163677443)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-19.pth.tar', 80.88742743752951)
+ ('/data/hjy/SSF/vit_base_patch16_224_in21k/fgvc/nabirds/pruning_rec_loss/20230822-094137-vit_base_patch16_224_in21k-224/checkpoint-11.pth.tar', 80.63979215586717)
+
+Train: 22 [   0/186 (  0%)]  Loss: 4.517 (4.52)  Rec_Loss: 0.7908 (0.791)  Rec_Weight: 0.90  Time: 2.445s,   52.36/s  (2.445s,   52.36/s)  LR: 1.974e-04  Data: 1.888 (1.888)
+Train: 22 [ 100/186 ( 54%)]  Loss: 2.953 (3.82)  Rec_Loss: 0.8067 (0.799)  Rec_Weight: 0.90  Time: 0.570s,  224.72/s  (0.588s,  217.82/s)  LR: 1.974e-04  Data: 0.009 (0.029)
+Train: 22 [ 185/186 (100%)]  Loss: 4.194 (3.79)  Rec_Loss: 0.9009 (0.806)  Rec_Weight: 0.90  Time: 0.561s,  228.07/s  (0.580s,  220.83/s)  LR: 1.974e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.742 (2.742)  Loss:  0.9023 (0.9023)  Acc@1: 79.6875 (79.6875)  Acc@5: 97.6562 (97.6562)
+Test: [ 100/192]  Time: 0.108 (0.302)  Loss:  0.9771 (0.8876)  Acc@1: 79.6875 (80.5384)  Acc@5: 95.3125 (96.7822)
+Test: [ 192/192]  Time: 0.047 (0.291)  Loss:  1.0947 (0.8931)  Acc@1: 71.9298 (80.4612)  Acc@5: 96.4912 (96.6711)
+Test: [Whole Val]  Time: 56.251  Loss: 0.8931  Acc@1: 80.4612 Pruned: 0.00% 
+Train: 23 [   0/186 (  0%)]  Loss: 4.191 (4.19)  Rec_Loss: 0.8808 (0.881)  Rec_Weight: 0.90  Time: 2.426s,   52.77/s  (2.426s,   52.77/s)  LR: 1.971e-04  Data: 1.870 (1.870)
+Train: 23 [ 100/186 ( 54%)]  Loss: 4.357 (3.87)  Rec_Loss: 0.8590 (0.838)  Rec_Weight: 0.90  Time: 0.569s,  224.97/s  (0.586s,  218.46/s)  LR: 1.971e-04  Data: 0.010 (0.028)
+Train: 23 [ 185/186 (100%)]  Loss: 4.332 (3.87)  Rec_Loss: 0.8452 (0.842)  Rec_Weight: 0.90  Time: 0.563s,  227.51/s  (0.579s,  221.14/s)  LR: 1.971e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.709 (2.709)  Loss:  0.9097 (0.9097)  Acc@1: 81.2500 (81.2500)  Acc@5: 97.6562 (97.6562)
+Test: [ 100/192]  Time: 0.107 (0.314)  Loss:  0.9834 (0.9172)  Acc@1: 78.9062 (80.3682)  Acc@5: 94.5312 (96.5037)
+Test: [ 192/192]  Time: 0.048 (0.297)  Loss:  1.1777 (0.9226)  Acc@1: 75.4386 (80.3272)  Acc@5: 96.4912 (96.4722)
+Test: [Whole Val]  Time: 57.310  Loss: 0.9226  Acc@1: 80.3272 Pruned: 0.00% 
+Train: 24 [   0/186 (  0%)]  Loss: 3.388 (3.39)  Rec_Loss: 0.8386 (0.839)  Rec_Weight: 0.90  Time: 3.764s,   34.00/s  (3.764s,   34.00/s)  LR: 1.969e-04  Data: 3.201 (3.201)
+Train: 24 [ 100/186 ( 54%)]  Loss: 4.531 (3.87)  Rec_Loss: 0.8806 (0.870)  Rec_Weight: 0.90  Time: 0.569s,  225.10/s  (0.600s,  213.49/s)  LR: 1.969e-04  Data: 0.008 (0.041)
+Train: 24 [ 185/186 (100%)]  Loss: 2.410 (3.89)  Rec_Loss: 0.7747 (0.877)  Rec_Weight: 0.90  Time: 0.561s,  228.18/s  (0.586s,  218.33/s)  LR: 1.969e-04  Data: 0.000 (0.027)
+Test: [   0/192]  Time: 2.554 (2.554)  Loss:  0.8569 (0.8569)  Acc@1: 82.0312 (82.0312)  Acc@5: 96.0938 (96.0938)
+Test: [ 100/192]  Time: 0.110 (0.303)  Loss:  0.9448 (0.8769)  Acc@1: 78.9062 (80.6312)  Acc@5: 95.3125 (96.5733)
+Test: [ 192/192]  Time: 0.048 (0.288)  Loss:  1.1572 (0.8824)  Acc@1: 75.4386 (80.5424)  Acc@5: 94.7368 (96.4803)
+Test: [Whole Val]  Time: 55.660  Loss: 0.8824  Acc@1: 80.5424 Pruned: 0.00% 
+Train: 25 [   0/186 (  0%)]  Loss: 3.629 (3.63)  Rec_Loss: 0.8668 (0.867)  Rec_Weight: 0.90  Time: 2.545s,   50.29/s  (2.545s,   50.29/s)  LR: 1.966e-04  Data: 1.982 (1.982)
+Train: 25 [ 100/186 ( 54%)]  Loss: 4.510 (3.89)  Rec_Loss: 0.9070 (0.903)  Rec_Weight: 0.90  Time: 0.568s,  225.19/s  (0.588s,  217.78/s)  LR: 1.966e-04  Data: 0.008 (0.029)
+Train: 25 [ 185/186 (100%)]  Loss: 4.656 (3.92)  Rec_Loss: 0.9055 (0.908)  Rec_Weight: 0.90  Time: 0.560s,  228.39/s  (0.580s,  220.86/s)  LR: 1.966e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.447 (2.447)  Loss:  0.9458 (0.9458)  Acc@1: 79.6875 (79.6875)  Acc@5: 96.0938 (96.0938)
+Test: [ 100/192]  Time: 0.106 (0.299)  Loss:  1.0127 (0.9538)  Acc@1: 79.6875 (80.0588)  Acc@5: 95.3125 (96.1402)
+Test: [ 192/192]  Time: 0.047 (0.299)  Loss:  1.2861 (0.9597)  Acc@1: 75.4386 (79.8238)  Acc@5: 91.2281 (96.0581)
+Test: [Whole Val]  Time: 57.716  Loss: 0.9597  Acc@1: 79.8238 Pruned: 0.00% 
+Train: 26 [   0/186 (  0%)]  Loss: 3.434 (3.43)  Rec_Loss: 0.8955 (0.896)  Rec_Weight: 0.90  Time: 2.414s,   53.03/s  (2.414s,   53.03/s)  LR: 1.963e-04  Data: 1.858 (1.858)
+Train: 26 [ 100/186 ( 54%)]  Loss: 4.323 (3.80)  Rec_Loss: 0.9126 (0.932)  Rec_Weight: 0.90  Time: 0.569s,  224.79/s  (0.585s,  218.67/s)  LR: 1.963e-04  Data: 0.010 (0.027)
+Train: 26 [ 185/186 (100%)]  Loss: 4.862 (3.87)  Rec_Loss: 0.9509 (0.939)  Rec_Weight: 0.90  Time: 0.563s,  227.40/s  (0.578s,  221.54/s)  LR: 1.963e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.399 (2.399)  Loss:  0.9707 (0.9707)  Acc@1: 81.2500 (81.2500)  Acc@5: 96.0938 (96.0938)
+Test: [ 100/192]  Time: 0.109 (0.335)  Loss:  1.0420 (0.9652)  Acc@1: 80.4688 (79.9118)  Acc@5: 95.3125 (96.1092)
+Test: [ 192/192]  Time: 0.047 (0.304)  Loss:  1.3057 (0.9729)  Acc@1: 73.6842 (79.6005)  Acc@5: 92.9825 (95.9851)
+Test: [Whole Val]  Time: 58.660  Loss: 0.9729  Acc@1: 79.6005 Pruned: 0.00% 
+Train: 27 [   0/186 (  0%)]  Loss: 3.454 (3.45)  Rec_Loss: 0.9278 (0.928)  Rec_Weight: 0.90  Time: 2.419s,   52.92/s  (2.419s,   52.92/s)  LR: 1.960e-04  Data: 1.864 (1.864)
+Train: 27 [ 100/186 ( 54%)]  Loss: 2.612 (3.95)  Rec_Loss: 0.8838 (0.971)  Rec_Weight: 0.90  Time: 0.570s,  224.72/s  (0.588s,  217.63/s)  LR: 1.960e-04  Data: 0.009 (0.028)
+Train: 27 [ 185/186 (100%)]  Loss: 3.098 (4.03)  Rec_Loss: 0.9606 (0.980)  Rec_Weight: 0.90  Time: 0.562s,  227.89/s  (0.580s,  220.68/s)  LR: 1.960e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.517 (2.517)  Loss:  0.9326 (0.9326)  Acc@1: 82.0312 (82.0312)  Acc@5: 96.0938 (96.0938)
+Test: [ 100/192]  Time: 0.108 (0.299)  Loss:  0.9678 (0.9431)  Acc@1: 79.6875 (79.4168)  Acc@5: 94.5312 (95.8385)
+Test: [ 192/192]  Time: 0.047 (0.291)  Loss:  1.2617 (0.9509)  Acc@1: 70.1754 (79.1702)  Acc@5: 94.7368 (95.8186)
+Test: [Whole Val]  Time: 56.165  Loss: 0.9509  Acc@1: 79.1702 Pruned: 0.00% 
+Train: 28 [   0/186 (  0%)]  Loss: 4.846 (4.85)  Rec_Loss: 1.008 (1.01)  Rec_Weight: 0.90  Time: 2.550s,   50.20/s  (2.550s,   50.20/s)  LR: 1.957e-04  Data: 1.991 (1.991)
+Train: 28 [ 100/186 ( 54%)]  Loss: 4.921 (4.19)  Rec_Loss: 1.033 (1.01)  Rec_Weight: 0.90  Time: 0.568s,  225.55/s  (0.587s,  218.03/s)  LR: 1.957e-04  Data: 0.009 (0.029)
+Train: 28 [ 185/186 (100%)]  Loss: 3.047 (4.13)  Rec_Loss: 0.9748 (1.01)  Rec_Weight: 0.90  Time: 0.561s,  227.97/s  (0.579s,  221.02/s)  LR: 1.957e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.462 (2.462)  Loss:  1.0107 (1.0107)  Acc@1: 78.9062 (78.9062)  Acc@5: 95.3125 (95.3125)
+Test: [ 100/192]  Time: 0.109 (0.316)  Loss:  1.0518 (0.9837)  Acc@1: 77.3438 (78.5814)  Acc@5: 95.3125 (95.7379)
+Test: [ 192/192]  Time: 0.047 (0.299)  Loss:  1.2295 (0.9897)  Acc@1: 75.4386 (78.5694)  Acc@5: 94.7368 (95.6968)
+Test: [Whole Val]  Time: 57.764  Loss: 0.9897  Acc@1: 78.5694 Pruned: 0.00% 
+Train: 29 [   0/186 (  0%)]  Loss: 3.663 (3.66)  Rec_Loss: 1.023 (1.02)  Rec_Weight: 0.90  Time: 2.472s,   51.79/s  (2.472s,   51.79/s)  LR: 1.954e-04  Data: 1.914 (1.914)
+Train: 29 [ 100/186 ( 54%)]  Loss: 3.060 (4.02)  Rec_Loss: 0.9964 (1.04)  Rec_Weight: 0.90  Time: 0.569s,  224.87/s  (0.588s,  217.64/s)  LR: 1.954e-04  Data: 0.009 (0.029)
+Train: 29 [ 185/186 (100%)]  Loss: 3.612 (4.05)  Rec_Loss: 1.028 (1.04)  Rec_Weight: 0.90  Time: 0.562s,  227.73/s  (0.580s,  220.73/s)  LR: 1.954e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 3.074 (3.074)  Loss:  0.9712 (0.9712)  Acc@1: 78.1250 (78.1250)  Acc@5: 95.3125 (95.3125)
+Test: [ 100/192]  Time: 0.250 (0.315)  Loss:  1.0273 (0.9628)  Acc@1: 74.2188 (79.0764)  Acc@5: 95.3125 (95.4363)
+Test: [ 192/192]  Time: 0.047 (0.299)  Loss:  1.2246 (0.9684)  Acc@1: 71.9298 (78.9429)  Acc@5: 94.7368 (95.4330)
+Test: [Whole Val]  Time: 57.614  Loss: 0.9684  Acc@1: 78.9429 Pruned: 0.00% 
+Train: 30 [   0/186 (  0%)]  Loss: 3.529 (3.53)  Rec_Loss: 1.061 (1.06)  Rec_Weight: 0.90  Time: 2.435s,   52.57/s  (2.435s,   52.57/s)  LR: 1.951e-04  Data: 1.881 (1.881)
+Train: 30 [ 100/186 ( 54%)]  Loss: 4.756 (4.31)  Rec_Loss: 1.116 (1.07)  Rec_Weight: 0.90  Time: 0.567s,  225.91/s  (0.592s,  216.37/s)  LR: 1.951e-04  Data: 0.009 (0.032)
+Train: 30 [ 185/186 (100%)]  Loss: 4.111 (4.23)  Rec_Loss: 1.084 (1.08)  Rec_Weight: 0.90  Time: 0.562s,  227.87/s  (0.582s,  220.10/s)  LR: 1.951e-04  Data: 0.000 (0.022)
+Test: [   0/192]  Time: 2.744 (2.744)  Loss:  1.0078 (1.0078)  Acc@1: 79.6875 (79.6875)  Acc@5: 94.5312 (94.5312)
+Test: [ 100/192]  Time: 0.108 (0.307)  Loss:  1.0811 (1.0064)  Acc@1: 75.0000 (78.2874)  Acc@5: 92.9688 (95.2119)
+Test: [ 192/192]  Time: 0.047 (0.296)  Loss:  1.3291 (1.0120)  Acc@1: 71.9298 (78.1310)  Acc@5: 91.2281 (95.1366)
+Test: [Whole Val]  Time: 57.109  Loss: 1.0120  Acc@1: 78.1310 Pruned: 0.01% 
+Train: 31 [   0/186 (  0%)]  Loss: 3.242 (3.24)  Rec_Loss: 1.092 (1.09)  Rec_Weight: 0.90  Time: 2.542s,   50.36/s  (2.542s,   50.36/s)  LR: 1.948e-04  Data: 1.986 (1.986)
+Train: 31 [ 100/186 ( 54%)]  Loss: 3.398 (4.09)  Rec_Loss: 1.100 (1.10)  Rec_Weight: 0.90  Time: 0.569s,  224.95/s  (0.587s,  218.20/s)  LR: 1.948e-04  Data: 0.011 (0.029)
+Train: 31 [ 185/186 (100%)]  Loss: 4.286 (4.16)  Rec_Loss: 1.098 (1.11)  Rec_Weight: 0.90  Time: 0.561s,  228.17/s  (0.579s,  221.21/s)  LR: 1.948e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.510 (2.510)  Loss:  1.0732 (1.0732)  Acc@1: 78.9062 (78.9062)  Acc@5: 92.9688 (92.9688)
+Test: [ 100/192]  Time: 0.109 (0.332)  Loss:  1.1172 (1.0489)  Acc@1: 75.0000 (77.9703)  Acc@5: 92.9688 (95.0650)
+Test: [ 192/192]  Time: 0.048 (0.306)  Loss:  1.3662 (1.0571)  Acc@1: 75.4386 (77.7534)  Acc@5: 91.2281 (95.0270)
+Test: [Whole Val]  Time: 59.051  Loss: 1.0571  Acc@1: 77.7534 Pruned: 0.23% 
+Train: 32 [   0/186 (  0%)]  Loss: 4.409 (4.41)  Rec_Loss: 1.179 (1.18)  Rec_Weight: 0.90  Time: 2.523s,   50.72/s  (2.523s,   50.72/s)  LR: 1.944e-04  Data: 1.965 (1.965)
+Train: 32 [ 100/186 ( 54%)]  Loss: 3.940 (4.21)  Rec_Loss: 1.127 (1.13)  Rec_Weight: 0.90  Time: 0.570s,  224.43/s  (0.587s,  217.93/s)  LR: 1.944e-04  Data: 0.010 (0.029)
+Train: 32 [ 185/186 (100%)]  Loss: 4.618 (4.27)  Rec_Loss: 1.142 (1.14)  Rec_Weight: 0.90  Time: 0.562s,  227.78/s  (0.580s,  220.67/s)  LR: 1.944e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.469 (2.469)  Loss:  1.0371 (1.0371)  Acc@1: 78.1250 (78.1250)  Acc@5: 94.5312 (94.5312)
+Test: [ 100/192]  Time: 0.109 (0.298)  Loss:  1.1318 (1.0662)  Acc@1: 75.7812 (77.7924)  Acc@5: 93.7500 (94.8175)
+Test: [ 192/192]  Time: 0.047 (0.293)  Loss:  1.3623 (1.0725)  Acc@1: 68.4211 (77.7534)  Acc@5: 91.2281 (94.7956)
+Test: [Whole Val]  Time: 56.641  Loss: 1.0725  Acc@1: 77.7534 Pruned: 1.05% 
+Train: 33 [   0/186 (  0%)]  Loss: 2.802 (2.80)  Rec_Loss: 1.042 (1.04)  Rec_Weight: 0.90  Time: 2.678s,   47.80/s  (2.678s,   47.80/s)  LR: 1.941e-04  Data: 2.121 (2.121)
+Train: 33 [ 100/186 ( 54%)]  Loss: 4.427 (4.15)  Rec_Loss: 1.144 (1.15)  Rec_Weight: 0.90  Time: 0.568s,  225.25/s  (0.587s,  217.88/s)  LR: 1.941e-04  Data: 0.009 (0.030)
+Train: 33 [ 185/186 (100%)]  Loss: 4.622 (4.26)  Rec_Loss: 1.128 (1.15)  Rec_Weight: 0.90  Time: 0.560s,  228.40/s  (0.580s,  220.88/s)  LR: 1.941e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.603 (2.603)  Loss:  1.0137 (1.0137)  Acc@1: 77.3438 (77.3438)  Acc@5: 95.3125 (95.3125)
+Test: [ 100/192]  Time: 0.107 (0.325)  Loss:  1.0586 (1.0362)  Acc@1: 77.3438 (77.3205)  Acc@5: 92.9688 (94.8097)
+Test: [ 192/192]  Time: 0.047 (0.300)  Loss:  1.2754 (1.0446)  Acc@1: 66.6667 (77.3190)  Acc@5: 94.7368 (94.7631)
+Test: [Whole Val]  Time: 57.911  Loss: 1.0446  Acc@1: 77.3190 Pruned: 2.00% 
+Train: 34 [   0/186 (  0%)]  Loss: 4.337 (4.34)  Rec_Loss: 1.209 (1.21)  Rec_Weight: 0.90  Time: 2.897s,   44.18/s  (2.897s,   44.18/s)  LR: 1.937e-04  Data: 2.334 (2.334)
+Train: 34 [ 100/186 ( 54%)]  Loss: 3.392 (4.26)  Rec_Loss: 1.140 (1.17)  Rec_Weight: 0.90  Time: 0.567s,  225.64/s  (0.592s,  216.26/s)  LR: 1.937e-04  Data: 0.008 (0.033)
+Train: 34 [ 185/186 (100%)]  Loss: 3.029 (4.25)  Rec_Loss: 1.081 (1.18)  Rec_Weight: 0.90  Time: 0.568s,  225.26/s  (0.582s,  219.93/s)  LR: 1.937e-04  Data: 0.000 (0.022)
+Test: [   0/192]  Time: 2.699 (2.699)  Loss:  1.0615 (1.0615)  Acc@1: 75.0000 (75.0000)  Acc@5: 95.3125 (95.3125)
+Test: [ 100/192]  Time: 0.106 (0.310)  Loss:  1.1172 (1.0936)  Acc@1: 77.3438 (77.2200)  Acc@5: 92.9688 (94.5622)
+Test: [ 192/192]  Time: 0.048 (0.295)  Loss:  1.2803 (1.1059)  Acc@1: 68.4211 (76.9415)  Acc@5: 94.7368 (94.5114)
+Test: [Whole Val]  Time: 56.886  Loss: 1.1059  Acc@1: 76.9415 Pruned: 3.24% 
+Train: 35 [   0/186 (  0%)]  Loss: 5.279 (5.28)  Rec_Loss: 1.155 (1.16)  Rec_Weight: 0.90  Time: 2.952s,   43.36/s  (2.952s,   43.36/s)  LR: 1.934e-04  Data: 2.395 (2.395)
+Train: 35 [ 100/186 ( 54%)]  Loss: 4.446 (4.33)  Rec_Loss: 1.246 (1.20)  Rec_Weight: 0.90  Time: 0.571s,  224.19/s  (0.593s,  216.01/s)  LR: 1.934e-04  Data: 0.010 (0.033)
+Train: 35 [ 185/186 (100%)]  Loss: 4.708 (4.35)  Rec_Loss: 1.271 (1.21)  Rec_Weight: 0.90  Time: 0.563s,  227.47/s  (0.584s,  219.05/s)  LR: 1.934e-04  Data: 0.000 (0.024)
+Test: [   0/192]  Time: 2.492 (2.492)  Loss:  1.0527 (1.0527)  Acc@1: 78.9062 (78.9062)  Acc@5: 94.5312 (94.5312)
+Test: [ 100/192]  Time: 0.139 (0.301)  Loss:  1.1074 (1.0878)  Acc@1: 79.6875 (77.0034)  Acc@5: 94.5312 (94.3843)
+Test: [ 192/192]  Time: 0.048 (0.298)  Loss:  1.3193 (1.0964)  Acc@1: 68.4211 (76.7385)  Acc@5: 92.9825 (94.4262)
+Test: [Whole Val]  Time: 57.496  Loss: 1.0964  Acc@1: 76.7385 Pruned: 4.47% 
+Train: 36 [   0/186 (  0%)]  Loss: 3.944 (3.94)  Rec_Loss: 1.252 (1.25)  Rec_Weight: 0.90  Time: 2.472s,   51.77/s  (2.472s,   51.77/s)  LR: 1.930e-04  Data: 1.914 (1.914)
+Train: 36 [ 100/186 ( 54%)]  Loss: 3.707 (4.31)  Rec_Loss: 1.217 (1.22)  Rec_Weight: 0.90  Time: 0.572s,  223.61/s  (0.588s,  217.81/s)  LR: 1.930e-04  Data: 0.012 (0.029)
+Train: 36 [ 185/186 (100%)]  Loss: 5.059 (4.41)  Rec_Loss: 1.293 (1.23)  Rec_Weight: 0.90  Time: 0.560s,  228.46/s  (0.581s,  220.14/s)  LR: 1.930e-04  Data: 0.000 (0.021)
+Test: [   0/192]  Time: 2.600 (2.600)  Loss:  1.0742 (1.0742)  Acc@1: 76.5625 (76.5625)  Acc@5: 93.7500 (93.7500)
+Test: [ 100/192]  Time: 0.108 (0.319)  Loss:  1.1191 (1.1013)  Acc@1: 78.9062 (76.4078)  Acc@5: 92.9688 (94.2450)
+Test: [ 192/192]  Time: 0.048 (0.299)  Loss:  1.4033 (1.1098)  Acc@1: 64.9123 (76.3163)  Acc@5: 91.2281 (94.1501)
+Test: [Whole Val]  Time: 57.803  Loss: 1.1098  Acc@1: 76.3163 Pruned: 5.54% 
+Train: 37 [   0/186 (  0%)]  Loss: 4.304 (4.30)  Rec_Loss: 1.253 (1.25)  Rec_Weight: 0.90  Time: 2.536s,   50.47/s  (2.536s,   50.47/s)  LR: 1.926e-04  Data: 1.979 (1.979)
+Train: 37 [ 100/186 ( 54%)]  Loss: 3.836 (4.36)  Rec_Loss: 1.284 (1.25)  Rec_Weight: 0.90  Time: 0.573s,  223.30/s  (0.596s,  214.80/s)  LR: 1.926e-04  Data: 0.008 (0.035)
+Train: 37 [ 185/186 (100%)]  Loss: 4.637 (4.42)  Rec_Loss: 1.261 (1.25)  Rec_Weight: 0.90  Time: 0.568s,  225.21/s  (0.591s,  216.74/s)  LR: 1.926e-04  Data: 0.000 (0.028)
+Test: [   0/192]  Time: 2.855 (2.855)  Loss:  1.1172 (1.1172)  Acc@1: 73.4375 (73.4375)  Acc@5: 93.7500 (93.7500)
+Test: [ 100/192]  Time: 0.113 (0.442)  Loss:  1.1650 (1.1282)  Acc@1: 73.4375 (75.5492)  Acc@5: 92.9688 (94.0981)
+Test: [ 192/192]  Time: 0.047 (0.381)  Loss:  1.4219 (1.1392)  Acc@1: 68.4211 (75.3136)  Acc@5: 89.4737 (93.9796)
+Test: [Whole Val]  Time: 73.452  Loss: 1.1392  Acc@1: 75.3136 Pruned: 6.40% 
+Train: 38 [   0/186 (  0%)]  Loss: 5.290 (5.29)  Rec_Loss: 1.239 (1.24)  Rec_Weight: 0.90  Time: 2.568s,   49.84/s  (2.568s,   49.84/s)  LR: 1.922e-04  Data: 2.013 (2.013)
+Train: 38 [ 100/186 ( 54%)]  Loss: 4.636 (4.48)  Rec_Loss: 1.254 (1.27)  Rec_Weight: 0.90  Time: 0.723s,  177.09/s  (0.592s,  216.29/s)  LR: 1.922e-04  Data: 0.164 (0.034)
+Train: 38 [ 185/186 (100%)]  Loss: 5.296 (4.51)  Rec_Loss: 1.277 (1.28)  Rec_Weight: 0.90  Time: 0.560s,  228.39/s  (0.583s,  219.39/s)  LR: 1.922e-04  Data: 0.000 (0.024)
+Test: [   0/192]  Time: 2.509 (2.509)  Loss:  1.1279 (1.1279)  Acc@1: 73.4375 (73.4375)  Acc@5: 94.5312 (94.5312)
+Test: [ 100/192]  Time: 0.112 (0.302)  Loss:  1.1992 (1.1704)  Acc@1: 76.5625 (75.3094)  Acc@5: 92.1875 (93.7964)
+Test: [ 192/192]  Time: 0.047 (0.291)  Loss:  1.4434 (1.1769)  Acc@1: 63.1579 (75.2284)  Acc@5: 92.9825 (93.6873)
+Test: [Whole Val]  Time: 56.234  Loss: 1.1769  Acc@1: 75.2284 Pruned: 7.16% 
+Train: 39 [   0/186 (  0%)]  Loss: 4.726 (4.73)  Rec_Loss: 1.259 (1.26)  Rec_Weight: 0.90  Time: 2.572s,   49.77/s  (2.572s,   49.77/s)  LR: 1.918e-04  Data: 2.015 (2.015)
+Train: 39 [ 100/186 ( 54%)]  Loss: 4.471 (4.42)  Rec_Loss: 1.358 (1.28)  Rec_Weight: 0.90  Time: 0.569s,  224.82/s  (0.597s,  214.31/s)  LR: 1.918e-04  Data: 0.009 (0.038)
+Train: 39 [ 185/186 (100%)]  Loss: 3.460 (4.43)  Rec_Loss: 1.321 (1.29)  Rec_Weight: 0.90  Time: 0.563s,  227.52/s  (0.587s,  218.07/s)  LR: 1.918e-04  Data: 0.000 (0.026)
+Test: [   0/192]  Time: 2.466 (2.466)  Loss:  1.1523 (1.1523)  Acc@1: 75.0000 (75.0000)  Acc@5: 93.7500 (93.7500)
+Test: [ 100/192]  Time: 0.108 (0.300)  Loss:  1.2002 (1.1599)  Acc@1: 76.5625 (74.8066)  Acc@5: 92.9688 (93.6262)
+Test: [ 192/192]  Time: 0.048 (0.295)  Loss:  1.4346 (1.1693)  Acc@1: 64.9123 (74.5666)  Acc@5: 92.9825 (93.4844)
+Test: [Whole Val]  Time: 56.934  Loss: 1.1693  Acc@1: 74.5666 Pruned: 7.79% 
+Train: 40 [   0/186 (  0%)]  Loss: 4.400 (4.40)  Rec_Loss: 1.348 (1.35)  Rec_Weight: 0.90  Time: 2.772s,   46.17/s  (2.772s,   46.17/s)  LR: 1.914e-04  Data: 2.209 (2.209)
+Train: 40 [ 100/186 ( 54%)]  Loss: 2.920 (4.47)  Rec_Loss: 1.230 (1.30)  Rec_Weight: 0.90  Time: 0.568s,  225.41/s  (0.595s,  215.04/s)  LR: 1.914e-04  Data: 0.009 (0.037)
+Train: 40 [ 185/186 (100%)]  Loss: 2.866 (4.52)  Rec_Loss: 1.227 (1.31)  Rec_Weight: 0.90  Time: 0.561s,  228.23/s  (0.584s,  219.22/s)  LR: 1.914e-04  Data: 0.000 (0.024)
+Test: [   0/192]  Time: 2.437 (2.437)  Loss:  1.1025 (1.1025)  Acc@1: 75.0000 (75.0000)  Acc@5: 92.9688 (92.9688)
+Test: [ 100/192]  Time: 0.112 (0.304)  Loss:  1.1904 (1.1269)  Acc@1: 72.6562 (74.9459)  Acc@5: 93.7500 (93.7964)
+Test: [ 192/192]  Time: 0.047 (0.298)  Loss:  1.4463 (1.1352)  Acc@1: 68.4211 (74.9117)  Acc@5: 87.7193 (93.5940)
+Test: [Whole Val]  Time: 57.551  Loss: 1.1352  Acc@1: 74.9117 Pruned: 8.30% 
+Train: 41 [   0/186 (  0%)]  Loss: 3.958 (3.96)  Rec_Loss: 1.388 (1.39)  Rec_Weight: 0.90  Time: 2.438s,   52.50/s  (2.438s,   52.50/s)  LR: 1.909e-04  Data: 1.883 (1.883)
+Train: 41 [ 100/186 ( 54%)]  Loss: 3.793 (4.49)  Rec_Loss: 1.353 (1.33)  Rec_Weight: 0.90  Time: 0.567s,  225.65/s  (0.587s,  217.94/s)  LR: 1.909e-04  Data: 0.008 (0.029)
+Train: 41 [ 185/186 (100%)]  Loss: 5.473 (4.46)  Rec_Loss: 1.284 (1.33)  Rec_Weight: 0.90  Time: 0.561s,  228.22/s  (0.580s,  220.51/s)  LR: 1.909e-04  Data: 0.000 (0.021)
+Test: [   0/192]  Time: 2.933 (2.933)  Loss:  1.1924 (1.1924)  Acc@1: 71.8750 (71.8750)  Acc@5: 94.5312 (94.5312)
+Test: [ 100/192]  Time: 0.109 (0.318)  Loss:  1.2246 (1.2174)  Acc@1: 70.3125 (74.4817)  Acc@5: 92.9688 (93.0152)
+Test: [ 192/192]  Time: 0.047 (0.312)  Loss:  1.5156 (1.2259)  Acc@1: 64.9123 (74.4043)  Acc@5: 91.2281 (92.9931)
+Test: [Whole Val]  Time: 60.293  Loss: 1.2259  Acc@1: 74.4043 Pruned: 8.78% 
+Train: 42 [   0/186 (  0%)]  Loss: 5.246 (5.25)  Rec_Loss: 1.313 (1.31)  Rec_Weight: 0.90  Time: 3.192s,   40.10/s  (3.192s,   40.10/s)  LR: 1.905e-04  Data: 2.630 (2.630)
+Train: 42 [ 100/186 ( 54%)]  Loss: 5.396 (4.63)  Rec_Loss: 1.381 (1.34)  Rec_Weight: 0.90  Time: 0.567s,  225.91/s  (0.595s,  215.10/s)  LR: 1.905e-04  Data: 0.008 (0.036)
+Train: 42 [ 185/186 (100%)]  Loss: 3.277 (4.61)  Rec_Loss: 1.365 (1.35)  Rec_Weight: 0.90  Time: 0.562s,  227.76/s  (0.584s,  219.14/s)  LR: 1.905e-04  Data: 0.000 (0.024)
+Test: [   0/192]  Time: 2.601 (2.601)  Loss:  1.2266 (1.2266)  Acc@1: 75.0000 (75.0000)  Acc@5: 92.1875 (92.1875)
+Test: [ 100/192]  Time: 0.238 (0.336)  Loss:  1.2363 (1.2261)  Acc@1: 75.0000 (74.1723)  Acc@5: 92.9688 (92.9533)
+Test: [ 192/192]  Time: 0.047 (0.323)  Loss:  1.5771 (1.2357)  Acc@1: 63.1579 (73.9252)  Acc@5: 84.2105 (92.8105)
+Test: [Whole Val]  Time: 62.308  Loss: 1.2357  Acc@1: 73.9252 Pruned: 9.24% 
+Train: 43 [   0/186 (  0%)]  Loss: 4.285 (4.29)  Rec_Loss: 1.294 (1.29)  Rec_Weight: 0.90  Time: 2.430s,   52.67/s  (2.430s,   52.67/s)  LR: 1.900e-04  Data: 1.876 (1.876)
+Train: 43 [ 100/186 ( 54%)]  Loss: 3.058 (4.62)  Rec_Loss: 1.309 (1.35)  Rec_Weight: 0.90  Time: 0.567s,  225.95/s  (0.595s,  215.24/s)  LR: 1.900e-04  Data: 0.009 (0.037)
+Train: 43 [ 185/186 (100%)]  Loss: 5.119 (4.56)  Rec_Loss: 1.429 (1.36)  Rec_Weight: 0.90  Time: 0.563s,  227.20/s  (0.592s,  216.04/s)  LR: 1.900e-04  Data: 0.000 (0.033)
+Test: [   0/192]  Time: 3.037 (3.037)  Loss:  1.1650 (1.1650)  Acc@1: 71.0938 (71.0938)  Acc@5: 91.4062 (91.4062)
+Test: [ 100/192]  Time: 0.106 (0.345)  Loss:  1.2422 (1.1894)  Acc@1: 72.6562 (73.5845)  Acc@5: 90.6250 (92.8527)
+Test: [ 192/192]  Time: 0.047 (0.328)  Loss:  1.5098 (1.1961)  Acc@1: 63.1579 (73.6208)  Acc@5: 89.4737 (92.7577)
+Test: [Whole Val]  Time: 63.264  Loss: 1.1961  Acc@1: 73.6208 Pruned: 9.62% 
+Train: 44 [   0/186 (  0%)]  Loss: 4.087 (4.09)  Rec_Loss: 1.391 (1.39)  Rec_Weight: 0.90  Time: 3.420s,   37.43/s  (3.420s,   37.43/s)  LR: 1.896e-04  Data: 2.864 (2.864)
+Train: 44 [ 100/186 ( 54%)]  Loss: 4.061 (4.58)  Rec_Loss: 1.391 (1.38)  Rec_Weight: 0.90  Time: 0.569s,  225.07/s  (0.619s,  206.94/s)  LR: 1.896e-04  Data: 0.010 (0.061)
+Train: 44 [ 185/186 (100%)]  Loss: 5.431 (4.57)  Rec_Loss: 1.341 (1.38)  Rec_Weight: 0.90  Time: 0.559s,  228.91/s  (0.597s,  214.32/s)  LR: 1.896e-04  Data: 0.000 (0.038)
+Test: [   0/192]  Time: 2.548 (2.548)  Loss:  1.2227 (1.2227)  Acc@1: 72.6562 (72.6562)  Acc@5: 91.4062 (91.4062)
+Test: [ 100/192]  Time: 0.106 (0.301)  Loss:  1.2744 (1.2240)  Acc@1: 72.6562 (73.2441)  Acc@5: 89.8438 (92.6593)
+Test: [ 192/192]  Time: 0.047 (0.293)  Loss:  1.5713 (1.2334)  Acc@1: 64.9123 (73.0686)  Acc@5: 89.4737 (92.5182)
+Test: [Whole Val]  Time: 56.581  Loss: 1.2334  Acc@1: 73.0686 Pruned: 10.01% 
+Train: 45 [   0/186 (  0%)]  Loss: 5.649 (5.65)  Rec_Loss: 1.435 (1.44)  Rec_Weight: 0.90  Time: 2.684s,   47.70/s  (2.684s,   47.70/s)  LR: 1.891e-04  Data: 2.121 (2.121)
+Train: 45 [ 100/186 ( 54%)]  Loss: 5.710 (4.60)  Rec_Loss: 1.380 (1.38)  Rec_Weight: 0.90  Time: 0.568s,  225.20/s  (0.601s,  212.95/s)  LR: 1.891e-04  Data: 0.010 (0.043)
+Train: 45 [ 185/186 (100%)]  Loss: 5.186 (4.66)  Rec_Loss: 1.407 (1.39)  Rec_Weight: 0.90  Time: 0.562s,  227.57/s  (0.598s,  214.04/s)  LR: 1.891e-04  Data: 0.000 (0.036)
+Test: [   0/192]  Time: 2.638 (2.638)  Loss:  1.2256 (1.2256)  Acc@1: 71.0938 (71.0938)  Acc@5: 91.4062 (91.4062)
+Test: [ 100/192]  Time: 0.108 (0.358)  Loss:  1.2412 (1.2558)  Acc@1: 73.4375 (72.8264)  Acc@5: 92.1875 (92.2649)
+Test: [ 192/192]  Time: 0.047 (0.328)  Loss:  1.5576 (1.2649)  Acc@1: 57.8947 (72.6059)  Acc@5: 92.9825 (92.2259)
+Test: [Whole Val]  Time: 63.351  Loss: 1.2649  Acc@1: 72.6059 Pruned: 10.33% 
+Train: 46 [   0/186 (  0%)]  Loss: 5.605 (5.61)  Rec_Loss: 1.469 (1.47)  Rec_Weight: 0.90  Time: 2.657s,   48.18/s  (2.657s,   48.18/s)  LR: 1.886e-04  Data: 2.101 (2.101)
+Train: 46 [ 100/186 ( 54%)]  Loss: 4.906 (4.70)  Rec_Loss: 1.409 (1.42)  Rec_Weight: 0.90  Time: 0.568s,  225.24/s  (0.594s,  215.43/s)  LR: 1.886e-04  Data: 0.010 (0.036)
+Train: 46 [ 185/186 (100%)]  Loss: 3.907 (4.68)  Rec_Loss: 1.406 (1.42)  Rec_Weight: 0.90  Time: 0.561s,  228.13/s  (0.584s,  219.35/s)  LR: 1.886e-04  Data: 0.000 (0.024)
+Test: [   0/192]  Time: 2.576 (2.576)  Loss:  1.2383 (1.2383)  Acc@1: 73.4375 (73.4375)  Acc@5: 92.1875 (92.1875)
+Test: [ 100/192]  Time: 0.107 (0.303)  Loss:  1.3154 (1.3010)  Acc@1: 73.4375 (72.2463)  Acc@5: 90.6250 (91.9709)
+Test: [ 192/192]  Time: 0.047 (0.294)  Loss:  1.5820 (1.3107)  Acc@1: 61.4035 (72.0578)  Acc@5: 91.2281 (91.9133)
+Test: [Whole Val]  Time: 56.745  Loss: 1.3107  Acc@1: 72.0578 Pruned: 10.64% 
+Train: 47 [   0/186 (  0%)]  Loss: 5.606 (5.61)  Rec_Loss: 1.404 (1.40)  Rec_Weight: 0.90  Time: 2.432s,   52.64/s  (2.432s,   52.64/s)  LR: 1.881e-04  Data: 1.877 (1.877)
+Train: 47 [ 100/186 ( 54%)]  Loss: 5.303 (4.83)  Rec_Loss: 1.345 (1.42)  Rec_Weight: 0.90  Time: 0.568s,  225.52/s  (0.586s,  218.45/s)  LR: 1.881e-04  Data: 0.010 (0.028)
+Train: 47 [ 185/186 (100%)]  Loss: 5.407 (4.79)  Rec_Loss: 1.334 (1.42)  Rec_Weight: 0.90  Time: 0.562s,  227.86/s  (0.578s,  221.28/s)  LR: 1.881e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.684 (2.684)  Loss:  1.2627 (1.2627)  Acc@1: 71.0938 (71.0938)  Acc@5: 90.6250 (90.6250)
+Test: [ 100/192]  Time: 0.107 (0.314)  Loss:  1.3486 (1.2934)  Acc@1: 71.0938 (72.1844)  Acc@5: 92.1875 (91.5919)
+Test: [ 192/192]  Time: 0.047 (0.292)  Loss:  1.6250 (1.3046)  Acc@1: 64.9123 (71.8832)  Acc@5: 87.7193 (91.5723)
+Test: [Whole Val]  Time: 56.434  Loss: 1.3046  Acc@1: 71.8832 Pruned: 10.94% 
+Train: 48 [   0/186 (  0%)]  Loss: 3.547 (3.55)  Rec_Loss: 1.461 (1.46)  Rec_Weight: 0.90  Time: 2.541s,   50.37/s  (2.541s,   50.37/s)  LR: 1.876e-04  Data: 1.976 (1.976)
+Train: 48 [ 100/186 ( 54%)]  Loss: 5.410 (4.72)  Rec_Loss: 1.379 (1.43)  Rec_Weight: 0.90  Time: 0.568s,  225.36/s  (0.588s,  217.79/s)  LR: 1.876e-04  Data: 0.009 (0.029)
+Train: 48 [ 185/186 (100%)]  Loss: 5.621 (4.74)  Rec_Loss: 1.406 (1.44)  Rec_Weight: 0.90  Time: 0.568s,  225.38/s  (0.580s,  220.66/s)  LR: 1.876e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.999 (2.999)  Loss:  1.3018 (1.3018)  Acc@1: 71.0938 (71.0938)  Acc@5: 91.4062 (91.4062)
+Test: [ 100/192]  Time: 0.106 (0.308)  Loss:  1.3613 (1.3142)  Acc@1: 70.3125 (71.9214)  Acc@5: 90.6250 (91.5919)
+Test: [ 192/192]  Time: 0.047 (0.298)  Loss:  1.6035 (1.3195)  Acc@1: 66.6667 (71.6600)  Acc@5: 87.7193 (91.4140)
+Test: [Whole Val]  Time: 57.469  Loss: 1.3195  Acc@1: 71.6600 Pruned: 11.25% 
+Train: 49 [   0/186 (  0%)]  Loss: 5.519 (5.52)  Rec_Loss: 1.514 (1.51)  Rec_Weight: 0.90  Time: 2.883s,   44.40/s  (2.883s,   44.40/s)  LR: 1.871e-04  Data: 2.320 (2.320)
+Train: 49 [ 100/186 ( 54%)]  Loss: 5.473 (4.82)  Rec_Loss: 1.525 (1.44)  Rec_Weight: 0.90  Time: 0.570s,  224.73/s  (0.590s,  217.00/s)  LR: 1.871e-04  Data: 0.009 (0.032)
+Train: 49 [ 185/186 (100%)]  Loss: 5.352 (4.85)  Rec_Loss: 1.490 (1.45)  Rec_Weight: 0.90  Time: 0.560s,  228.74/s  (0.580s,  220.55/s)  LR: 1.871e-04  Data: 0.000 (0.022)
+Test: [   0/192]  Time: 2.433 (2.433)  Loss:  1.3018 (1.3018)  Acc@1: 71.0938 (71.0938)  Acc@5: 89.8438 (89.8438)
+Test: [ 100/192]  Time: 0.106 (0.313)  Loss:  1.3145 (1.3302)  Acc@1: 69.5312 (71.1634)  Acc@5: 90.6250 (91.2980)
+Test: [ 192/192]  Time: 0.047 (0.301)  Loss:  1.6680 (1.3401)  Acc@1: 56.1404 (70.9008)  Acc@5: 87.7193 (91.1663)
+Test: [Whole Val]  Time: 58.013  Loss: 1.3401  Acc@1: 70.9008 Pruned: 11.53% 
+Train: 50 [   0/186 (  0%)]  Loss: 4.263 (4.26)  Rec_Loss: 1.415 (1.42)  Rec_Weight: 0.90  Time: 2.434s,   52.58/s  (2.434s,   52.58/s)  LR: 1.866e-04  Data: 1.880 (1.880)
+Train: 50 [ 100/186 ( 54%)]  Loss: 5.304 (4.82)  Rec_Loss: 1.527 (1.46)  Rec_Weight: 0.90  Time: 0.568s,  225.29/s  (0.587s,  218.21/s)  LR: 1.866e-04  Data: 0.009 (0.028)
+Train: 50 [ 185/186 (100%)]  Loss: 5.612 (4.84)  Rec_Loss: 1.454 (1.46)  Rec_Weight: 0.90  Time: 0.561s,  228.14/s  (0.579s,  221.02/s)  LR: 1.866e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.646 (2.646)  Loss:  1.2822 (1.2822)  Acc@1: 71.8750 (71.8750)  Acc@5: 92.9688 (92.9688)
+Test: [ 100/192]  Time: 0.107 (0.351)  Loss:  1.3887 (1.3592)  Acc@1: 71.0938 (71.0628)  Acc@5: 89.0625 (91.0968)
+Test: [ 192/192]  Time: 0.047 (0.326)  Loss:  1.6670 (1.3712)  Acc@1: 63.1579 (70.7141)  Acc@5: 85.9649 (90.9593)
+Test: [Whole Val]  Time: 62.845  Loss: 1.3712  Acc@1: 70.7141 Pruned: 11.85% 
+Train: 51 [   0/186 (  0%)]  Loss: 4.342 (4.34)  Rec_Loss: 1.420 (1.42)  Rec_Weight: 0.90  Time: 2.417s,   52.96/s  (2.417s,   52.96/s)  LR: 1.861e-04  Data: 1.859 (1.859)
+Train: 51 [ 100/186 ( 54%)]  Loss: 5.800 (4.92)  Rec_Loss: 1.448 (1.48)  Rec_Weight: 0.90  Time: 0.580s,  220.55/s  (0.586s,  218.39/s)  LR: 1.861e-04  Data: 0.009 (0.028)
+Train: 51 [ 185/186 (100%)]  Loss: 5.402 (4.89)  Rec_Loss: 1.565 (1.48)  Rec_Weight: 0.90  Time: 0.559s,  229.06/s  (0.579s,  221.15/s)  LR: 1.861e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.415 (2.415)  Loss:  1.3125 (1.3125)  Acc@1: 70.3125 (70.3125)  Acc@5: 89.8438 (89.8438)
+Test: [ 100/192]  Time: 0.108 (0.298)  Loss:  1.3955 (1.3612)  Acc@1: 72.6562 (70.9932)  Acc@5: 89.0625 (90.8029)
+Test: [ 192/192]  Time: 0.047 (0.301)  Loss:  1.7363 (1.3728)  Acc@1: 54.3860 (70.5679)  Acc@5: 84.2105 (90.6548)
+Test: [Whole Val]  Time: 58.029  Loss: 1.3728  Acc@1: 70.5679 Pruned: 12.16% 
+Train: 52 [   0/186 (  0%)]  Loss: 5.222 (5.22)  Rec_Loss: 1.388 (1.39)  Rec_Weight: 0.90  Time: 2.433s,   52.61/s  (2.433s,   52.61/s)  LR: 1.855e-04  Data: 1.878 (1.878)
+Train: 52 [ 100/186 ( 54%)]  Loss: 4.019 (4.96)  Rec_Loss: 1.536 (1.48)  Rec_Weight: 0.90  Time: 0.568s,  225.41/s  (0.586s,  218.47/s)  LR: 1.855e-04  Data: 0.010 (0.028)
+Train: 52 [ 185/186 (100%)]  Loss: 4.305 (4.97)  Rec_Loss: 1.436 (1.48)  Rec_Weight: 0.90  Time: 0.560s,  228.44/s  (0.579s,  221.14/s)  LR: 1.855e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 3.052 (3.052)  Loss:  1.3545 (1.3545)  Acc@1: 70.3125 (70.3125)  Acc@5: 91.4062 (91.4062)
+Test: [ 100/192]  Time: 0.107 (0.315)  Loss:  1.4121 (1.4088)  Acc@1: 70.3125 (70.0495)  Acc@5: 89.8438 (90.5554)
+Test: [ 192/192]  Time: 0.047 (0.301)  Loss:  1.7070 (1.4190)  Acc@1: 56.1404 (69.9346)  Acc@5: 84.2105 (90.4072)
+Test: [Whole Val]  Time: 58.083  Loss: 1.4190  Acc@1: 69.9346 Pruned: 12.42% 
+Train: 53 [   0/186 (  0%)]  Loss: 4.786 (4.79)  Rec_Loss: 1.446 (1.45)  Rec_Weight: 0.90  Time: 2.563s,   49.93/s  (2.563s,   49.93/s)  LR: 1.850e-04  Data: 2.006 (2.006)
+Train: 53 [ 100/186 ( 54%)]  Loss: 5.715 (5.02)  Rec_Loss: 1.472 (1.50)  Rec_Weight: 0.90  Time: 0.568s,  225.51/s  (0.587s,  218.20/s)  LR: 1.850e-04  Data: 0.009 (0.029)
+Train: 53 [ 185/186 (100%)]  Loss: 5.799 (5.00)  Rec_Loss: 1.478 (1.50)  Rec_Weight: 0.90  Time: 0.560s,  228.57/s  (0.578s,  221.28/s)  LR: 1.850e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.413 (2.413)  Loss:  1.3535 (1.3535)  Acc@1: 69.5312 (69.5312)  Acc@5: 90.6250 (90.6250)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  1.4502 (1.4074)  Acc@1: 68.7500 (69.7710)  Acc@5: 88.2812 (90.3775)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  1.7373 (1.4205)  Acc@1: 64.9123 (69.5409)  Acc@5: 84.2105 (90.3097)
+Test: [Whole Val]  Time: 54.845  Loss: 1.4205  Acc@1: 69.5409 Pruned: 12.65% 
+Train: 54 [   0/186 (  0%)]  Loss: 5.291 (5.29)  Rec_Loss: 1.552 (1.55)  Rec_Weight: 0.90  Time: 2.371s,   53.99/s  (2.371s,   53.99/s)  LR: 1.844e-04  Data: 1.815 (1.815)
+Train: 54 [ 100/186 ( 54%)]  Loss: 5.856 (5.05)  Rec_Loss: 1.474 (1.50)  Rec_Weight: 0.90  Time: 0.570s,  224.56/s  (0.585s,  218.68/s)  LR: 1.844e-04  Data: 0.010 (0.027)
+Train: 54 [ 185/186 (100%)]  Loss: 4.038 (4.96)  Rec_Loss: 1.438 (1.51)  Rec_Weight: 0.90  Time: 0.562s,  227.89/s  (0.578s,  221.46/s)  LR: 1.844e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.727 (2.727)  Loss:  1.3271 (1.3271)  Acc@1: 71.0938 (71.0938)  Acc@5: 91.4062 (91.4062)
+Test: [ 100/192]  Time: 0.108 (0.301)  Loss:  1.4160 (1.4077)  Acc@1: 71.8750 (69.6395)  Acc@5: 89.8438 (90.2769)
+Test: [ 192/192]  Time: 0.047 (0.287)  Loss:  1.7949 (1.4197)  Acc@1: 61.4035 (69.4597)  Acc@5: 85.9649 (90.0499)
+Test: [Whole Val]  Time: 55.421  Loss: 1.4197  Acc@1: 69.4597 Pruned: 12.93% 
+Train: 55 [   0/186 (  0%)]  Loss: 5.703 (5.70)  Rec_Loss: 1.556 (1.56)  Rec_Weight: 0.90  Time: 2.325s,   55.06/s  (2.325s,   55.06/s)  LR: 1.839e-04  Data: 1.770 (1.770)
+Train: 55 [ 100/186 ( 54%)]  Loss: 3.490 (4.86)  Rec_Loss: 1.436 (1.51)  Rec_Weight: 0.90  Time: 0.568s,  225.55/s  (0.585s,  218.82/s)  LR: 1.839e-04  Data: 0.009 (0.027)
+Train: 55 [ 185/186 (100%)]  Loss: 5.345 (4.93)  Rec_Loss: 1.602 (1.51)  Rec_Weight: 0.90  Time: 0.561s,  228.02/s  (0.578s,  221.49/s)  LR: 1.839e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.449 (2.449)  Loss:  1.3721 (1.3721)  Acc@1: 71.8750 (71.8750)  Acc@5: 91.4062 (91.4062)
+Test: [ 100/192]  Time: 0.106 (0.296)  Loss:  1.4609 (1.4702)  Acc@1: 69.5312 (69.1136)  Acc@5: 89.0625 (89.7741)
+Test: [ 192/192]  Time: 0.048 (0.286)  Loss:  1.8613 (1.4864)  Acc@1: 56.1404 (68.5422)  Acc@5: 78.9474 (89.6156)
+Test: [Whole Val]  Time: 55.198  Loss: 1.4864  Acc@1: 68.5422 Pruned: 13.18% 
+Train: 56 [   0/186 (  0%)]  Loss: 5.037 (5.04)  Rec_Loss: 1.606 (1.61)  Rec_Weight: 0.90  Time: 2.511s,   50.98/s  (2.511s,   50.98/s)  LR: 1.833e-04  Data: 1.953 (1.953)
+Train: 56 [ 100/186 ( 54%)]  Loss: 5.106 (4.82)  Rec_Loss: 1.483 (1.53)  Rec_Weight: 0.90  Time: 0.572s,  223.96/s  (0.586s,  218.26/s)  LR: 1.833e-04  Data: 0.009 (0.028)
+Train: 56 [ 185/186 (100%)]  Loss: 5.486 (4.88)  Rec_Loss: 1.554 (1.53)  Rec_Weight: 0.90  Time: 0.561s,  228.32/s  (0.579s,  221.09/s)  LR: 1.833e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.474 (2.474)  Loss:  1.3467 (1.3467)  Acc@1: 71.8750 (71.8750)  Acc@5: 90.6250 (90.6250)
+Test: [ 100/192]  Time: 0.256 (0.296)  Loss:  1.4531 (1.4407)  Acc@1: 69.5312 (69.6241)  Acc@5: 88.2812 (89.7819)
+Test: [ 192/192]  Time: 0.047 (0.289)  Loss:  1.8525 (1.4543)  Acc@1: 54.3860 (69.0496)  Acc@5: 85.9649 (89.7617)
+Test: [Whole Val]  Time: 55.817  Loss: 1.4543  Acc@1: 69.0496 Pruned: 13.46% 
+Train: 57 [   0/186 (  0%)]  Loss: 5.785 (5.78)  Rec_Loss: 1.499 (1.50)  Rec_Weight: 0.90  Time: 2.425s,   52.78/s  (2.425s,   52.78/s)  LR: 1.827e-04  Data: 1.871 (1.871)
+Train: 57 [ 100/186 ( 54%)]  Loss: 5.494 (4.97)  Rec_Loss: 1.576 (1.54)  Rec_Weight: 0.90  Time: 0.569s,  225.03/s  (0.586s,  218.43/s)  LR: 1.827e-04  Data: 0.009 (0.027)
+Train: 57 [ 185/186 (100%)]  Loss: 3.885 (4.93)  Rec_Loss: 1.564 (1.54)  Rec_Weight: 0.90  Time: 0.561s,  227.99/s  (0.578s,  221.27/s)  LR: 1.827e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.510 (2.510)  Loss:  1.3691 (1.3691)  Acc@1: 71.8750 (71.8750)  Acc@5: 90.6250 (90.6250)
+Test: [ 100/192]  Time: 0.108 (0.302)  Loss:  1.4512 (1.4518)  Acc@1: 67.1875 (68.7887)  Acc@5: 89.0625 (89.6968)
+Test: [ 192/192]  Time: 0.047 (0.288)  Loss:  1.8145 (1.4654)  Acc@1: 59.6491 (68.2377)  Acc@5: 84.2105 (89.5059)
+Test: [Whole Val]  Time: 55.528  Loss: 1.4654  Acc@1: 68.2377 Pruned: 13.75% 
+Train: 58 [   0/186 (  0%)]  Loss: 5.480 (5.48)  Rec_Loss: 1.500 (1.50)  Rec_Weight: 0.90  Time: 2.476s,   51.71/s  (2.476s,   51.71/s)  LR: 1.821e-04  Data: 1.920 (1.920)
+Train: 58 [ 100/186 ( 54%)]  Loss: 5.837 (5.07)  Rec_Loss: 1.574 (1.55)  Rec_Weight: 0.90  Time: 0.568s,  225.50/s  (0.586s,  218.46/s)  LR: 1.821e-04  Data: 0.009 (0.028)
+Train: 58 [ 185/186 (100%)]  Loss: 5.273 (5.12)  Rec_Loss: 1.542 (1.55)  Rec_Weight: 0.90  Time: 0.562s,  227.70/s  (0.578s,  221.37/s)  LR: 1.821e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.441 (2.441)  Loss:  1.4404 (1.4404)  Acc@1: 68.7500 (68.7500)  Acc@5: 90.6250 (90.6250)
+Test: [ 100/192]  Time: 0.107 (0.296)  Loss:  1.5352 (1.5082)  Acc@1: 67.9688 (68.3014)  Acc@5: 88.2812 (89.2172)
+Test: [ 192/192]  Time: 0.048 (0.287)  Loss:  1.8711 (1.5233)  Acc@1: 54.3860 (67.9130)  Acc@5: 84.2105 (89.0310)
+Test: [Whole Val]  Time: 55.446  Loss: 1.5233  Acc@1: 67.9130 Pruned: 13.99% 
+Train: 59 [   0/186 (  0%)]  Loss: 4.305 (4.31)  Rec_Loss: 1.586 (1.59)  Rec_Weight: 0.90  Time: 2.418s,   52.94/s  (2.418s,   52.94/s)  LR: 1.815e-04  Data: 1.860 (1.860)
+Train: 59 [ 100/186 ( 54%)]  Loss: 5.837 (5.01)  Rec_Loss: 1.525 (1.56)  Rec_Weight: 0.90  Time: 0.569s,  224.97/s  (0.585s,  218.77/s)  LR: 1.815e-04  Data: 0.009 (0.028)
+Train: 59 [ 185/186 (100%)]  Loss: 6.049 (5.02)  Rec_Loss: 1.593 (1.55)  Rec_Weight: 0.90  Time: 0.567s,  225.85/s  (0.578s,  221.50/s)  LR: 1.815e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.927 (2.927)  Loss:  1.4385 (1.4385)  Acc@1: 67.1875 (67.1875)  Acc@5: 88.2812 (88.2812)
+Test: [ 100/192]  Time: 0.107 (0.305)  Loss:  1.5186 (1.5248)  Acc@1: 68.7500 (67.9920)  Acc@5: 89.0625 (88.9465)
+Test: [ 192/192]  Time: 0.047 (0.289)  Loss:  1.8613 (1.5388)  Acc@1: 54.3860 (67.4583)  Acc@5: 87.7193 (88.8889)
+Test: [Whole Val]  Time: 55.807  Loss: 1.5388  Acc@1: 67.4583 Pruned: 14.26% 
+Train: 60 [   0/186 (  0%)]  Loss: 5.864 (5.86)  Rec_Loss: 1.594 (1.59)  Rec_Weight: 0.90  Time: 2.376s,   53.88/s  (2.376s,   53.88/s)  LR: 1.809e-04  Data: 1.820 (1.820)
+Train: 60 [ 100/186 ( 54%)]  Loss: 5.219 (5.01)  Rec_Loss: 1.542 (1.56)  Rec_Weight: 0.90  Time: 0.569s,  224.88/s  (0.588s,  217.81/s)  LR: 1.809e-04  Data: 0.009 (0.029)
+Train: 60 [ 185/186 (100%)]  Loss: 5.801 (5.04)  Rec_Loss: 1.501 (1.56)  Rec_Weight: 0.90  Time: 0.565s,  226.62/s  (0.580s,  220.72/s)  LR: 1.809e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.600 (2.600)  Loss:  1.4414 (1.4414)  Acc@1: 67.9688 (67.9688)  Acc@5: 90.6250 (90.6250)
+Test: [ 100/192]  Time: 0.345 (0.306)  Loss:  1.4619 (1.5189)  Acc@1: 70.3125 (68.0616)  Acc@5: 89.8438 (88.7763)
+Test: [ 192/192]  Time: 0.048 (0.293)  Loss:  1.9121 (1.5301)  Acc@1: 56.1404 (67.5517)  Acc@5: 84.2105 (88.7549)
+Test: [Whole Val]  Time: 56.544  Loss: 1.5301  Acc@1: 67.5517 Pruned: 14.52% 
+Train: 61 [   0/186 (  0%)]  Loss: 4.639 (4.64)  Rec_Loss: 1.541 (1.54)  Rec_Weight: 0.90  Time: 2.382s,   53.73/s  (2.382s,   53.73/s)  LR: 1.803e-04  Data: 1.827 (1.827)
+Train: 61 [ 100/186 ( 54%)]  Loss: 4.098 (5.04)  Rec_Loss: 1.593 (1.57)  Rec_Weight: 0.90  Time: 0.568s,  225.36/s  (0.585s,  218.75/s)  LR: 1.803e-04  Data: 0.009 (0.027)
+Train: 61 [ 185/186 (100%)]  Loss: 5.725 (5.11)  Rec_Loss: 1.606 (1.57)  Rec_Weight: 0.90  Time: 0.561s,  228.21/s  (0.578s,  221.62/s)  LR: 1.803e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.403 (2.403)  Loss:  1.5537 (1.5537)  Acc@1: 61.7188 (61.7188)  Acc@5: 89.8438 (89.8438)
+Test: [ 100/192]  Time: 0.108 (0.295)  Loss:  1.5469 (1.5783)  Acc@1: 67.1875 (66.1510)  Acc@5: 89.0625 (88.1498)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  1.9170 (1.5912)  Acc@1: 57.8947 (65.8344)  Acc@5: 84.2105 (87.9917)
+Test: [Whole Val]  Time: 54.881  Loss: 1.5912  Acc@1: 65.8344 Pruned: 14.81% 
+Train: 62 [   0/186 (  0%)]  Loss: 5.832 (5.83)  Rec_Loss: 1.704 (1.70)  Rec_Weight: 0.90  Time: 2.412s,   53.08/s  (2.412s,   53.08/s)  LR: 1.797e-04  Data: 1.856 (1.856)
+Train: 62 [ 100/186 ( 54%)]  Loss: 4.341 (5.21)  Rec_Loss: 1.523 (1.59)  Rec_Weight: 0.90  Time: 0.568s,  225.34/s  (0.589s,  217.25/s)  LR: 1.797e-04  Data: 0.009 (0.032)
+Train: 62 [ 185/186 (100%)]  Loss: 5.338 (5.16)  Rec_Loss: 1.659 (1.58)  Rec_Weight: 0.90  Time: 0.562s,  227.86/s  (0.580s,  220.56/s)  LR: 1.797e-04  Data: 0.000 (0.021)
+Test: [   0/192]  Time: 2.464 (2.464)  Loss:  1.5176 (1.5176)  Acc@1: 66.4062 (66.4062)  Acc@5: 90.6250 (90.6250)
+Test: [ 100/192]  Time: 0.109 (0.295)  Loss:  1.5459 (1.5613)  Acc@1: 67.1875 (66.9787)  Acc@5: 85.9375 (88.4514)
+Test: [ 192/192]  Time: 0.047 (0.285)  Loss:  1.9170 (1.5756)  Acc@1: 56.1404 (66.7032)  Acc@5: 80.7018 (88.1947)
+Test: [Whole Val]  Time: 55.036  Loss: 1.5756  Acc@1: 66.7032 Pruned: 15.09% 
+Train: 63 [   0/186 (  0%)]  Loss: 4.883 (4.88)  Rec_Loss: 1.633 (1.63)  Rec_Weight: 0.90  Time: 2.440s,   52.45/s  (2.440s,   52.45/s)  LR: 1.790e-04  Data: 1.884 (1.884)
+Train: 63 [ 100/186 ( 54%)]  Loss: 5.824 (5.19)  Rec_Loss: 1.623 (1.59)  Rec_Weight: 0.90  Time: 0.569s,  224.87/s  (0.586s,  218.54/s)  LR: 1.790e-04  Data: 0.009 (0.028)
+Train: 63 [ 185/186 (100%)]  Loss: 5.339 (5.23)  Rec_Loss: 1.670 (1.59)  Rec_Weight: 0.90  Time: 0.561s,  228.26/s  (0.579s,  221.24/s)  LR: 1.790e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.542 (2.542)  Loss:  1.6240 (1.6240)  Acc@1: 66.4062 (66.4062)  Acc@5: 86.7188 (86.7188)
+Test: [ 100/192]  Time: 0.107 (0.309)  Loss:  1.6826 (1.6624)  Acc@1: 64.0625 (65.6946)  Acc@5: 86.7188 (87.5232)
+Test: [ 192/192]  Time: 0.047 (0.301)  Loss:  2.0762 (1.6799)  Acc@1: 52.6316 (65.2093)  Acc@5: 80.7018 (87.1920)
+Test: [Whole Val]  Time: 58.172  Loss: 1.6799  Acc@1: 65.2093 Pruned: 15.36% 
+Train: 64 [   0/186 (  0%)]  Loss: 5.805 (5.81)  Rec_Loss: 1.650 (1.65)  Rec_Weight: 0.90  Time: 2.465s,   51.92/s  (2.465s,   51.92/s)  LR: 1.784e-04  Data: 1.910 (1.910)
+Train: 64 [ 100/186 ( 54%)]  Loss: 5.354 (5.07)  Rec_Loss: 1.545 (1.59)  Rec_Weight: 0.90  Time: 0.571s,  223.99/s  (0.588s,  217.81/s)  LR: 1.784e-04  Data: 0.009 (0.029)
+Train: 64 [ 185/186 (100%)]  Loss: 5.926 (5.09)  Rec_Loss: 1.688 (1.59)  Rec_Weight: 0.90  Time: 0.559s,  228.85/s  (0.579s,  220.89/s)  LR: 1.784e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.418 (2.418)  Loss:  1.5322 (1.5322)  Acc@1: 67.1875 (67.1875)  Acc@5: 88.2812 (88.2812)
+Test: [ 100/192]  Time: 0.107 (0.299)  Loss:  1.5801 (1.6041)  Acc@1: 66.4062 (66.0582)  Acc@5: 84.3750 (87.6702)
+Test: [ 192/192]  Time: 0.047 (0.286)  Loss:  2.0332 (1.6171)  Acc@1: 54.3860 (65.5422)  Acc@5: 85.9649 (87.5858)
+Test: [Whole Val]  Time: 55.152  Loss: 1.6171  Acc@1: 65.5422 Pruned: 15.66% 
+Train: 65 [   0/186 (  0%)]  Loss: 5.548 (5.55)  Rec_Loss: 1.558 (1.56)  Rec_Weight: 0.90  Time: 2.473s,   51.75/s  (2.473s,   51.75/s)  LR: 1.777e-04  Data: 1.917 (1.917)
+Train: 65 [ 100/186 ( 54%)]  Loss: 5.918 (5.17)  Rec_Loss: 1.575 (1.59)  Rec_Weight: 0.90  Time: 0.569s,  224.83/s  (0.587s,  218.17/s)  LR: 1.777e-04  Data: 0.009 (0.028)
+Train: 65 [ 185/186 (100%)]  Loss: 5.456 (5.17)  Rec_Loss: 1.527 (1.60)  Rec_Weight: 0.90  Time: 0.563s,  227.51/s  (0.579s,  221.16/s)  LR: 1.777e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.541 (2.541)  Loss:  1.5576 (1.5576)  Acc@1: 68.7500 (68.7500)  Acc@5: 87.5000 (87.5000)
+Test: [ 100/192]  Time: 0.107 (0.298)  Loss:  1.5938 (1.6326)  Acc@1: 67.1875 (65.6559)  Acc@5: 86.7188 (87.2989)
+Test: [ 192/192]  Time: 0.048 (0.287)  Loss:  2.0645 (1.6486)  Acc@1: 54.3860 (65.3432)  Acc@5: 80.7018 (87.1189)
+Test: [Whole Val]  Time: 55.461  Loss: 1.6486  Acc@1: 65.3432 Pruned: 15.93% 
+Train: 66 [   0/186 (  0%)]  Loss: 4.872 (4.87)  Rec_Loss: 1.599 (1.60)  Rec_Weight: 0.90  Time: 2.448s,   52.28/s  (2.448s,   52.28/s)  LR: 1.771e-04  Data: 1.892 (1.892)
+Train: 66 [ 100/186 ( 54%)]  Loss: 4.422 (5.19)  Rec_Loss: 1.584 (1.60)  Rec_Weight: 0.90  Time: 0.568s,  225.51/s  (0.586s,  218.45/s)  LR: 1.771e-04  Data: 0.009 (0.028)
+Train: 66 [ 185/186 (100%)]  Loss: 5.434 (5.17)  Rec_Loss: 1.594 (1.61)  Rec_Weight: 0.90  Time: 0.563s,  227.39/s  (0.579s,  221.21/s)  LR: 1.771e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.457 (2.457)  Loss:  1.5918 (1.5918)  Acc@1: 67.1875 (67.1875)  Acc@5: 85.1562 (85.1562)
+Test: [ 100/192]  Time: 0.107 (0.296)  Loss:  1.5889 (1.6236)  Acc@1: 67.1875 (65.7410)  Acc@5: 86.7188 (87.4149)
+Test: [ 192/192]  Time: 0.047 (0.285)  Loss:  2.0059 (1.6395)  Acc@1: 57.8947 (65.3311)  Acc@5: 82.4561 (87.1676)
+Test: [Whole Val]  Time: 54.936  Loss: 1.6395  Acc@1: 65.3311 Pruned: 16.18% 
+Train: 67 [   0/186 (  0%)]  Loss: 6.032 (6.03)  Rec_Loss: 1.549 (1.55)  Rec_Weight: 0.90  Time: 2.336s,   54.80/s  (2.336s,   54.80/s)  LR: 1.764e-04  Data: 1.780 (1.780)
+Train: 67 [ 100/186 ( 54%)]  Loss: 5.796 (5.37)  Rec_Loss: 1.691 (1.63)  Rec_Weight: 0.90  Time: 0.571s,  224.27/s  (0.585s,  218.75/s)  LR: 1.764e-04  Data: 0.009 (0.027)
+Train: 67 [ 185/186 (100%)]  Loss: 5.226 (5.27)  Rec_Loss: 1.541 (1.62)  Rec_Weight: 0.90  Time: 0.562s,  227.58/s  (0.578s,  221.42/s)  LR: 1.764e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.599 (2.599)  Loss:  1.5938 (1.5938)  Acc@1: 66.4062 (66.4062)  Acc@5: 85.9375 (85.9375)
+Test: [ 100/192]  Time: 0.106 (0.295)  Loss:  1.6152 (1.6549)  Acc@1: 67.1875 (65.1532)  Acc@5: 85.9375 (86.8425)
+Test: [ 192/192]  Time: 0.048 (0.284)  Loss:  2.0469 (1.6718)  Acc@1: 59.6491 (64.6490)  Acc@5: 80.7018 (86.5018)
+Test: [Whole Val]  Time: 54.894  Loss: 1.6718  Acc@1: 64.6490 Pruned: 16.43% 
+Train: 68 [   0/186 (  0%)]  Loss: 5.713 (5.71)  Rec_Loss: 1.558 (1.56)  Rec_Weight: 0.90  Time: 2.424s,   52.80/s  (2.424s,   52.80/s)  LR: 1.757e-04  Data: 1.869 (1.869)
+Train: 68 [ 100/186 ( 54%)]  Loss: 6.252 (5.33)  Rec_Loss: 1.622 (1.62)  Rec_Weight: 0.90  Time: 0.568s,  225.18/s  (0.588s,  217.52/s)  LR: 1.757e-04  Data: 0.009 (0.030)
+Train: 68 [ 185/186 (100%)]  Loss: 5.409 (5.30)  Rec_Loss: 1.713 (1.62)  Rec_Weight: 0.90  Time: 0.563s,  227.47/s  (0.580s,  220.86/s)  LR: 1.757e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.582 (2.582)  Loss:  1.6016 (1.6016)  Acc@1: 66.4062 (66.4062)  Acc@5: 86.7188 (86.7188)
+Test: [ 100/192]  Time: 0.106 (0.296)  Loss:  1.6484 (1.6869)  Acc@1: 66.4062 (64.6736)  Acc@5: 85.9375 (86.5408)
+Test: [ 192/192]  Time: 0.048 (0.284)  Loss:  2.0488 (1.7008)  Acc@1: 57.8947 (64.3933)  Acc@5: 82.4561 (86.4166)
+Test: [Whole Val]  Time: 54.842  Loss: 1.7008  Acc@1: 64.3933 Pruned: 16.69% 
+Train: 69 [   0/186 (  0%)]  Loss: 5.257 (5.26)  Rec_Loss: 1.676 (1.68)  Rec_Weight: 0.90  Time: 2.382s,   53.74/s  (2.382s,   53.74/s)  LR: 1.750e-04  Data: 1.824 (1.824)
+Train: 69 [ 100/186 ( 54%)]  Loss: 5.032 (5.19)  Rec_Loss: 1.583 (1.63)  Rec_Weight: 0.90  Time: 0.569s,  224.86/s  (0.585s,  218.73/s)  LR: 1.750e-04  Data: 0.008 (0.027)
+Train: 69 [ 185/186 (100%)]  Loss: 6.115 (5.20)  Rec_Loss: 1.583 (1.63)  Rec_Weight: 0.90  Time: 0.562s,  227.96/s  (0.578s,  221.44/s)  LR: 1.750e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.567 (2.567)  Loss:  1.6855 (1.6855)  Acc@1: 61.7188 (61.7188)  Acc@5: 85.9375 (85.9375)
+Test: [ 100/192]  Time: 0.294 (0.295)  Loss:  1.6924 (1.7126)  Acc@1: 67.1875 (64.1631)  Acc@5: 86.7188 (86.1850)
+Test: [ 192/192]  Time: 0.047 (0.286)  Loss:  2.1270 (1.7295)  Acc@1: 56.1404 (63.8615)  Acc@5: 82.4561 (86.0106)
+Test: [Whole Val]  Time: 55.180  Loss: 1.7295  Acc@1: 63.8615 Pruned: 16.93% 
+Train: 70 [   0/186 (  0%)]  Loss: 4.423 (4.42)  Rec_Loss: 1.662 (1.66)  Rec_Weight: 0.90  Time: 2.448s,   52.28/s  (2.448s,   52.28/s)  LR: 1.743e-04  Data: 1.894 (1.894)
+Train: 70 [ 100/186 ( 54%)]  Loss: 6.124 (5.27)  Rec_Loss: 1.728 (1.64)  Rec_Weight: 0.90  Time: 0.569s,  224.79/s  (0.586s,  218.35/s)  LR: 1.743e-04  Data: 0.009 (0.028)
+Train: 70 [ 185/186 (100%)]  Loss: 4.367 (5.21)  Rec_Loss: 1.686 (1.64)  Rec_Weight: 0.90  Time: 0.562s,  227.69/s  (0.578s,  221.28/s)  LR: 1.743e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.526 (2.526)  Loss:  1.6582 (1.6582)  Acc@1: 65.6250 (65.6250)  Acc@5: 84.3750 (84.3750)
+Test: [ 100/192]  Time: 0.106 (0.296)  Loss:  1.6660 (1.6927)  Acc@1: 66.4062 (64.5189)  Acc@5: 85.1562 (86.2778)
+Test: [ 192/192]  Time: 0.047 (0.285)  Loss:  2.1523 (1.7081)  Acc@1: 54.3860 (64.1010)  Acc@5: 80.7018 (86.0309)
+Test: [Whole Val]  Time: 55.003  Loss: 1.7081  Acc@1: 64.1010 Pruned: 17.19% 
+Train: 71 [   0/186 (  0%)]  Loss: 5.235 (5.24)  Rec_Loss: 1.573 (1.57)  Rec_Weight: 0.90  Time: 2.472s,   51.78/s  (2.472s,   51.78/s)  LR: 1.736e-04  Data: 1.916 (1.916)
+Train: 71 [ 100/186 ( 54%)]  Loss: 4.787 (5.17)  Rec_Loss: 1.574 (1.64)  Rec_Weight: 0.90  Time: 0.567s,  225.61/s  (0.586s,  218.35/s)  LR: 1.736e-04  Data: 0.009 (0.028)
+Train: 71 [ 185/186 (100%)]  Loss: 5.487 (5.26)  Rec_Loss: 1.588 (1.64)  Rec_Weight: 0.90  Time: 0.563s,  227.19/s  (0.579s,  221.16/s)  LR: 1.736e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.441 (2.441)  Loss:  1.6758 (1.6758)  Acc@1: 66.4062 (66.4062)  Acc@5: 87.5000 (87.5000)
+Test: [ 100/192]  Time: 0.106 (0.297)  Loss:  1.7051 (1.7391)  Acc@1: 67.9688 (63.7531)  Acc@5: 86.7188 (85.9143)
+Test: [ 192/192]  Time: 0.048 (0.284)  Loss:  2.2051 (1.7565)  Acc@1: 56.1404 (63.3906)  Acc@5: 77.1930 (85.5966)
+Test: [Whole Val]  Time: 54.781  Loss: 1.7565  Acc@1: 63.3906 Pruned: 17.46% 
+Train: 72 [   0/186 (  0%)]  Loss: 5.830 (5.83)  Rec_Loss: 1.662 (1.66)  Rec_Weight: 0.90  Time: 2.484s,   51.53/s  (2.484s,   51.53/s)  LR: 1.729e-04  Data: 1.927 (1.927)
+Train: 72 [ 100/186 ( 54%)]  Loss: 5.233 (5.28)  Rec_Loss: 1.726 (1.65)  Rec_Weight: 0.90  Time: 0.569s,  225.07/s  (0.587s,  218.05/s)  LR: 1.729e-04  Data: 0.009 (0.028)
+Train: 72 [ 185/186 (100%)]  Loss: 5.911 (5.39)  Rec_Loss: 1.595 (1.64)  Rec_Weight: 0.90  Time: 0.562s,  227.64/s  (0.579s,  221.02/s)  LR: 1.729e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.723 (2.723)  Loss:  1.6992 (1.6992)  Acc@1: 68.7500 (68.7500)  Acc@5: 85.9375 (85.9375)
+Test: [ 100/192]  Time: 0.106 (0.294)  Loss:  1.7656 (1.7695)  Acc@1: 66.4062 (63.5210)  Acc@5: 85.1562 (85.8834)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.1641 (1.7862)  Acc@1: 56.1404 (62.9197)  Acc@5: 78.9474 (85.4139)
+Test: [Whole Val]  Time: 54.716  Loss: 1.7862  Acc@1: 62.9197 Pruned: 17.74% 
+Train: 73 [   0/186 (  0%)]  Loss: 4.404 (4.40)  Rec_Loss: 1.724 (1.72)  Rec_Weight: 0.90  Time: 2.523s,   50.73/s  (2.523s,   50.73/s)  LR: 1.722e-04  Data: 1.967 (1.967)
+Train: 73 [ 100/186 ( 54%)]  Loss: 5.509 (5.12)  Rec_Loss: 1.568 (1.65)  Rec_Weight: 0.90  Time: 0.569s,  224.94/s  (0.586s,  218.33/s)  LR: 1.722e-04  Data: 0.009 (0.028)
+Train: 73 [ 185/186 (100%)]  Loss: 5.117 (5.27)  Rec_Loss: 1.633 (1.66)  Rec_Weight: 0.90  Time: 0.562s,  227.60/s  (0.579s,  221.18/s)  LR: 1.722e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.507 (2.507)  Loss:  1.7168 (1.7168)  Acc@1: 64.0625 (64.0625)  Acc@5: 85.9375 (85.9375)
+Test: [ 100/192]  Time: 0.107 (0.296)  Loss:  1.7324 (1.7843)  Acc@1: 67.1875 (62.3453)  Acc@5: 86.7188 (85.1562)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.2148 (1.7969)  Acc@1: 52.6316 (62.0509)  Acc@5: 78.9474 (84.9551)
+Test: [Whole Val]  Time: 54.669  Loss: 1.7969  Acc@1: 62.0509 Pruned: 18.00% 
+Train: 74 [   0/186 (  0%)]  Loss: 6.386 (6.39)  Rec_Loss: 1.727 (1.73)  Rec_Weight: 0.90  Time: 2.492s,   51.36/s  (2.492s,   51.36/s)  LR: 1.714e-04  Data: 1.936 (1.936)
+Train: 74 [ 100/186 ( 54%)]  Loss: 6.155 (5.24)  Rec_Loss: 1.691 (1.66)  Rec_Weight: 0.90  Time: 0.570s,  224.41/s  (0.587s,  218.06/s)  LR: 1.714e-04  Data: 0.009 (0.028)
+Train: 74 [ 185/186 (100%)]  Loss: 5.841 (5.28)  Rec_Loss: 1.588 (1.66)  Rec_Weight: 0.90  Time: 0.563s,  227.41/s  (0.579s,  220.99/s)  LR: 1.714e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.742 (2.742)  Loss:  1.7012 (1.7012)  Acc@1: 68.7500 (68.7500)  Acc@5: 84.3750 (84.3750)
+Test: [ 100/192]  Time: 0.107 (0.295)  Loss:  1.7725 (1.8079)  Acc@1: 64.0625 (62.4072)  Acc@5: 85.9375 (85.1021)
+Test: [ 192/192]  Time: 0.048 (0.284)  Loss:  2.1582 (1.8243)  Acc@1: 54.3860 (61.8966)  Acc@5: 80.7018 (84.7034)
+Test: [Whole Val]  Time: 54.827  Loss: 1.8243  Acc@1: 61.8966 Pruned: 18.26% 
+Train: 75 [   0/186 (  0%)]  Loss: 5.547 (5.55)  Rec_Loss: 1.638 (1.64)  Rec_Weight: 0.90  Time: 2.398s,   53.37/s  (2.398s,   53.37/s)  LR: 1.707e-04  Data: 1.842 (1.842)
+Train: 75 [ 100/186 ( 54%)]  Loss: 6.125 (5.33)  Rec_Loss: 1.766 (1.67)  Rec_Weight: 0.90  Time: 0.568s,  225.42/s  (0.586s,  218.57/s)  LR: 1.707e-04  Data: 0.009 (0.027)
+Train: 75 [ 185/186 (100%)]  Loss: 6.186 (5.39)  Rec_Loss: 1.695 (1.67)  Rec_Weight: 0.90  Time: 0.562s,  227.88/s  (0.578s,  221.29/s)  LR: 1.707e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.415 (2.415)  Loss:  1.7666 (1.7666)  Acc@1: 64.0625 (64.0625)  Acc@5: 82.8125 (82.8125)
+Test: [ 100/192]  Time: 0.106 (0.294)  Loss:  1.7500 (1.8107)  Acc@1: 63.2812 (62.3298)  Acc@5: 87.5000 (84.6612)
+Test: [ 192/192]  Time: 0.048 (0.283)  Loss:  2.1621 (1.8267)  Acc@1: 47.3684 (61.6246)  Acc@5: 80.7018 (84.4964)
+Test: [Whole Val]  Time: 54.691  Loss: 1.8267  Acc@1: 61.6246 Pruned: 18.51% 
+Train: 76 [   0/186 (  0%)]  Loss: 4.750 (4.75)  Rec_Loss: 1.643 (1.64)  Rec_Weight: 0.90  Time: 2.429s,   52.70/s  (2.429s,   52.70/s)  LR: 1.700e-04  Data: 1.873 (1.873)
+Train: 76 [ 100/186 ( 54%)]  Loss: 5.656 (5.43)  Rec_Loss: 1.692 (1.67)  Rec_Weight: 0.90  Time: 0.568s,  225.31/s  (0.585s,  218.62/s)  LR: 1.700e-04  Data: 0.009 (0.027)
+Train: 76 [ 185/186 (100%)]  Loss: 5.657 (5.45)  Rec_Loss: 1.701 (1.67)  Rec_Weight: 0.90  Time: 0.561s,  228.02/s  (0.578s,  221.30/s)  LR: 1.700e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.409 (2.409)  Loss:  1.8076 (1.8076)  Acc@1: 66.4062 (66.4062)  Acc@5: 85.1562 (85.1562)
+Test: [ 100/192]  Time: 0.108 (0.296)  Loss:  1.8262 (1.8684)  Acc@1: 64.8438 (61.8889)  Acc@5: 85.1562 (84.2899)
+Test: [ 192/192]  Time: 0.048 (0.283)  Loss:  2.3555 (1.8825)  Acc@1: 49.1228 (61.2227)  Acc@5: 77.1930 (84.0093)
+Test: [Whole Val]  Time: 54.631  Loss: 1.8825  Acc@1: 61.2227 Pruned: 18.77% 
+Train: 77 [   0/186 (  0%)]  Loss: 5.007 (5.01)  Rec_Loss: 1.731 (1.73)  Rec_Weight: 0.90  Time: 2.389s,   53.57/s  (2.389s,   53.57/s)  LR: 1.692e-04  Data: 1.832 (1.832)
+Train: 77 [ 100/186 ( 54%)]  Loss: 5.036 (5.34)  Rec_Loss: 1.731 (1.68)  Rec_Weight: 0.90  Time: 0.576s,  222.08/s  (0.586s,  218.45/s)  LR: 1.692e-04  Data: 0.013 (0.027)
+Train: 77 [ 185/186 (100%)]  Loss: 6.140 (5.31)  Rec_Loss: 1.664 (1.68)  Rec_Weight: 0.90  Time: 0.560s,  228.51/s  (0.579s,  221.24/s)  LR: 1.692e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.405 (2.405)  Loss:  1.7451 (1.7451)  Acc@1: 67.1875 (67.1875)  Acc@5: 87.5000 (87.5000)
+Test: [ 100/192]  Time: 0.107 (0.293)  Loss:  1.8125 (1.8324)  Acc@1: 67.1875 (62.0823)  Acc@5: 85.9375 (84.3054)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.3008 (1.8513)  Acc@1: 45.6140 (61.3324)  Acc@5: 77.1930 (83.9890)
+Test: [Whole Val]  Time: 54.636  Loss: 1.8513  Acc@1: 61.3324 Pruned: 19.03% 
+Train: 78 [   0/186 (  0%)]  Loss: 4.751 (4.75)  Rec_Loss: 1.667 (1.67)  Rec_Weight: 0.90  Time: 2.357s,   54.30/s  (2.357s,   54.30/s)  LR: 1.685e-04  Data: 1.801 (1.801)
+Train: 78 [ 100/186 ( 54%)]  Loss: 5.550 (5.31)  Rec_Loss: 1.709 (1.69)  Rec_Weight: 0.90  Time: 0.571s,  223.98/s  (0.586s,  218.28/s)  LR: 1.685e-04  Data: 0.010 (0.027)
+Train: 78 [ 185/186 (100%)]  Loss: 4.152 (5.29)  Rec_Loss: 1.702 (1.69)  Rec_Weight: 0.90  Time: 0.562s,  227.80/s  (0.579s,  221.10/s)  LR: 1.685e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.500 (2.500)  Loss:  1.7969 (1.7969)  Acc@1: 63.2812 (63.2812)  Acc@5: 84.3750 (84.3750)
+Test: [ 100/192]  Time: 0.106 (0.296)  Loss:  1.8369 (1.8503)  Acc@1: 66.4062 (61.9972)  Acc@5: 84.3750 (84.2203)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.2402 (1.8707)  Acc@1: 52.6316 (61.1943)  Acc@5: 73.6842 (83.6885)
+Test: [Whole Val]  Time: 54.864  Loss: 1.8707  Acc@1: 61.1943 Pruned: 19.29% 
+Train: 79 [   0/186 (  0%)]  Loss: 4.141 (4.14)  Rec_Loss: 1.692 (1.69)  Rec_Weight: 0.90  Time: 2.508s,   51.04/s  (2.508s,   51.04/s)  LR: 1.677e-04  Data: 1.953 (1.953)
+Train: 79 [ 100/186 ( 54%)]  Loss: 4.538 (5.36)  Rec_Loss: 1.785 (1.68)  Rec_Weight: 0.90  Time: 0.568s,  225.47/s  (0.587s,  218.21/s)  LR: 1.677e-04  Data: 0.009 (0.028)
+Train: 79 [ 185/186 (100%)]  Loss: 6.406 (5.41)  Rec_Loss: 1.724 (1.68)  Rec_Weight: 0.90  Time: 0.562s,  227.68/s  (0.579s,  221.11/s)  LR: 1.677e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.633 (2.633)  Loss:  1.8047 (1.8047)  Acc@1: 65.6250 (65.6250)  Acc@5: 85.1562 (85.1562)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  1.8574 (1.8677)  Acc@1: 66.4062 (61.6646)  Acc@5: 84.3750 (84.0733)
+Test: [ 192/192]  Time: 0.048 (0.283)  Loss:  2.3145 (1.8834)  Acc@1: 49.1228 (61.0035)  Acc@5: 77.1930 (83.8753)
+Test: [Whole Val]  Time: 54.696  Loss: 1.8834  Acc@1: 61.0035 Pruned: 19.52% 
+Train: 80 [   0/186 (  0%)]  Loss: 5.954 (5.95)  Rec_Loss: 1.635 (1.64)  Rec_Weight: 0.90  Time: 2.457s,   52.10/s  (2.457s,   52.10/s)  LR: 1.669e-04  Data: 1.901 (1.901)
+Train: 80 [ 100/186 ( 54%)]  Loss: 5.922 (5.47)  Rec_Loss: 1.769 (1.69)  Rec_Weight: 0.90  Time: 0.569s,  224.87/s  (0.588s,  217.83/s)  LR: 1.669e-04  Data: 0.009 (0.028)
+Train: 80 [ 185/186 (100%)]  Loss: 6.171 (5.41)  Rec_Loss: 1.573 (1.70)  Rec_Weight: 0.90  Time: 0.563s,  227.19/s  (0.580s,  220.80/s)  LR: 1.669e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.500 (2.500)  Loss:  1.8184 (1.8184)  Acc@1: 63.2812 (63.2812)  Acc@5: 83.5938 (83.5938)
+Test: [ 100/192]  Time: 0.107 (0.295)  Loss:  1.8662 (1.8829)  Acc@1: 62.5000 (60.9607)  Acc@5: 83.5938 (83.5551)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.3047 (1.8999)  Acc@1: 47.3684 (60.4190)  Acc@5: 77.1930 (83.3354)
+Test: [Whole Val]  Time: 54.762  Loss: 1.8999  Acc@1: 60.4190 Pruned: 19.77% 
+Train: 81 [   0/186 (  0%)]  Loss: 6.289 (6.29)  Rec_Loss: 1.717 (1.72)  Rec_Weight: 0.90  Time: 2.345s,   54.59/s  (2.345s,   54.59/s)  LR: 1.661e-04  Data: 1.789 (1.789)
+Train: 81 [ 100/186 ( 54%)]  Loss: 6.087 (5.40)  Rec_Loss: 1.665 (1.70)  Rec_Weight: 0.90  Time: 0.568s,  225.19/s  (0.585s,  218.84/s)  LR: 1.661e-04  Data: 0.009 (0.027)
+Train: 81 [ 185/186 (100%)]  Loss: 6.246 (5.41)  Rec_Loss: 1.660 (1.70)  Rec_Weight: 0.90  Time: 0.563s,  227.50/s  (0.578s,  221.45/s)  LR: 1.661e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.405 (2.405)  Loss:  1.8447 (1.8447)  Acc@1: 64.8438 (64.8438)  Acc@5: 86.7188 (86.7188)
+Test: [ 100/192]  Time: 0.107 (0.293)  Loss:  1.9521 (1.9149)  Acc@1: 59.3750 (60.7209)  Acc@5: 82.8125 (83.9264)
+Test: [ 192/192]  Time: 0.048 (0.283)  Loss:  2.3184 (1.9358)  Acc@1: 50.8772 (60.1429)  Acc@5: 73.6842 (83.4328)
+Test: [Whole Val]  Time: 54.580  Loss: 1.9358  Acc@1: 60.1429 Pruned: 20.01% 
+Train: 82 [   0/186 (  0%)]  Loss: 6.155 (6.15)  Rec_Loss: 1.753 (1.75)  Rec_Weight: 0.90  Time: 2.387s,   53.63/s  (2.387s,   53.63/s)  LR: 1.653e-04  Data: 1.831 (1.831)
+Train: 82 [ 100/186 ( 54%)]  Loss: 4.178 (5.45)  Rec_Loss: 1.754 (1.69)  Rec_Weight: 0.90  Time: 0.567s,  225.55/s  (0.585s,  218.73/s)  LR: 1.653e-04  Data: 0.009 (0.027)
+Train: 82 [ 185/186 (100%)]  Loss: 5.175 (5.48)  Rec_Loss: 1.623 (1.70)  Rec_Weight: 0.90  Time: 0.563s,  227.37/s  (0.578s,  221.38/s)  LR: 1.653e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.424 (2.424)  Loss:  1.8555 (1.8555)  Acc@1: 60.9375 (60.9375)  Acc@5: 84.3750 (84.3750)
+Test: [ 100/192]  Time: 0.106 (0.295)  Loss:  1.9619 (1.9185)  Acc@1: 61.7188 (60.2336)  Acc@5: 81.2500 (83.0523)
+Test: [ 192/192]  Time: 0.047 (0.286)  Loss:  2.3242 (1.9379)  Acc@1: 52.6316 (59.7045)  Acc@5: 75.4386 (82.7264)
+Test: [Whole Val]  Time: 55.132  Loss: 1.9379  Acc@1: 59.7045 Pruned: 20.24% 
+Train: 83 [   0/186 (  0%)]  Loss: 4.465 (4.46)  Rec_Loss: 1.719 (1.72)  Rec_Weight: 0.90  Time: 2.433s,   52.60/s  (2.433s,   52.60/s)  LR: 1.645e-04  Data: 1.877 (1.877)
+Train: 83 [ 100/186 ( 54%)]  Loss: 6.115 (5.50)  Rec_Loss: 1.681 (1.70)  Rec_Weight: 0.90  Time: 0.569s,  224.88/s  (0.585s,  218.64/s)  LR: 1.645e-04  Data: 0.008 (0.028)
+Train: 83 [ 185/186 (100%)]  Loss: 5.978 (5.43)  Rec_Loss: 1.644 (1.70)  Rec_Weight: 0.90  Time: 0.563s,  227.51/s  (0.578s,  221.42/s)  LR: 1.645e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.648 (2.648)  Loss:  1.8701 (1.8701)  Acc@1: 62.5000 (62.5000)  Acc@5: 85.1562 (85.1562)
+Test: [ 100/192]  Time: 0.107 (0.295)  Loss:  1.9463 (1.9146)  Acc@1: 64.8438 (60.7751)  Acc@5: 82.8125 (83.0059)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.3105 (1.9351)  Acc@1: 43.8596 (59.9765)  Acc@5: 75.4386 (82.6087)
+Test: [Whole Val]  Time: 54.730  Loss: 1.9351  Acc@1: 59.9765 Pruned: 20.49% 
+Train: 84 [   0/186 (  0%)]  Loss: 4.013 (4.01)  Rec_Loss: 1.704 (1.70)  Rec_Weight: 0.90  Time: 2.369s,   54.04/s  (2.369s,   54.04/s)  LR: 1.637e-04  Data: 1.812 (1.812)
+Train: 84 [ 100/186 ( 54%)]  Loss: 6.248 (5.46)  Rec_Loss: 1.716 (1.70)  Rec_Weight: 0.90  Time: 0.568s,  225.23/s  (0.586s,  218.42/s)  LR: 1.637e-04  Data: 0.009 (0.027)
+Train: 84 [ 185/186 (100%)]  Loss: 5.264 (5.50)  Rec_Loss: 1.809 (1.70)  Rec_Weight: 0.90  Time: 0.562s,  227.78/s  (0.579s,  221.15/s)  LR: 1.637e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.595 (2.595)  Loss:  1.9395 (1.9395)  Acc@1: 63.2812 (63.2812)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.107 (0.295)  Loss:  1.9766 (1.9610)  Acc@1: 60.1562 (59.7540)  Acc@5: 81.2500 (82.5959)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.4160 (1.9785)  Acc@1: 40.3509 (58.9819)  Acc@5: 73.6842 (82.2312)
+Test: [Whole Val]  Time: 54.725  Loss: 1.9785  Acc@1: 58.9819 Pruned: 20.74% 
+Train: 85 [   0/186 (  0%)]  Loss: 6.379 (6.38)  Rec_Loss: 1.877 (1.88)  Rec_Weight: 0.90  Time: 2.436s,   52.55/s  (2.436s,   52.55/s)  LR: 1.629e-04  Data: 1.879 (1.879)
+Train: 85 [ 100/186 ( 54%)]  Loss: 6.149 (5.56)  Rec_Loss: 1.648 (1.71)  Rec_Weight: 0.90  Time: 0.569s,  224.90/s  (0.586s,  218.35/s)  LR: 1.629e-04  Data: 0.009 (0.027)
+Train: 85 [ 185/186 (100%)]  Loss: 5.963 (5.53)  Rec_Loss: 1.623 (1.71)  Rec_Weight: 0.90  Time: 0.561s,  228.08/s  (0.579s,  221.13/s)  LR: 1.629e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.548 (2.548)  Loss:  1.9180 (1.9180)  Acc@1: 64.0625 (64.0625)  Acc@5: 82.0312 (82.0312)
+Test: [ 100/192]  Time: 0.107 (0.299)  Loss:  1.9795 (1.9648)  Acc@1: 62.5000 (59.7772)  Acc@5: 81.2500 (82.3329)
+Test: [ 192/192]  Time: 0.047 (0.286)  Loss:  2.4297 (1.9812)  Acc@1: 45.6140 (59.2660)  Acc@5: 75.4386 (82.1500)
+Test: [Whole Val]  Time: 55.239  Loss: 1.9812  Acc@1: 59.2660 Pruned: 20.98% 
+Train: 86 [   0/186 (  0%)]  Loss: 3.929 (3.93)  Rec_Loss: 1.692 (1.69)  Rec_Weight: 0.90  Time: 2.416s,   52.99/s  (2.416s,   52.99/s)  LR: 1.621e-04  Data: 1.848 (1.848)
+Train: 86 [ 100/186 ( 54%)]  Loss: 5.615 (5.48)  Rec_Loss: 1.770 (1.71)  Rec_Weight: 0.90  Time: 0.570s,  224.75/s  (0.586s,  218.32/s)  LR: 1.621e-04  Data: 0.009 (0.027)
+Train: 86 [ 185/186 (100%)]  Loss: 5.995 (5.48)  Rec_Loss: 1.702 (1.71)  Rec_Weight: 0.90  Time: 0.562s,  227.56/s  (0.579s,  221.13/s)  LR: 1.621e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.484 (2.484)  Loss:  1.9160 (1.9160)  Acc@1: 65.6250 (65.6250)  Acc@5: 81.2500 (81.2500)
+Test: [ 100/192]  Time: 0.106 (0.293)  Loss:  1.9238 (1.9786)  Acc@1: 66.4062 (59.7153)  Acc@5: 82.0312 (82.1473)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.3691 (1.9980)  Acc@1: 47.3684 (58.9250)  Acc@5: 75.4386 (81.8820)
+Test: [Whole Val]  Time: 54.575  Loss: 1.9980  Acc@1: 58.9250 Pruned: 21.24% 
+Train: 87 [   0/186 (  0%)]  Loss: 4.125 (4.13)  Rec_Loss: 1.720 (1.72)  Rec_Weight: 0.90  Time: 2.489s,   51.44/s  (2.489s,   51.44/s)  LR: 1.613e-04  Data: 1.933 (1.933)
+Train: 87 [ 100/186 ( 54%)]  Loss: 6.024 (5.58)  Rec_Loss: 1.665 (1.72)  Rec_Weight: 0.90  Time: 0.569s,  224.93/s  (0.587s,  217.91/s)  LR: 1.613e-04  Data: 0.009 (0.028)
+Train: 87 [ 185/186 (100%)]  Loss: 4.949 (5.52)  Rec_Loss: 1.763 (1.72)  Rec_Weight: 0.90  Time: 0.562s,  227.59/s  (0.580s,  220.85/s)  LR: 1.613e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.471 (2.471)  Loss:  1.9375 (1.9375)  Acc@1: 62.5000 (62.5000)  Acc@5: 80.4688 (80.4688)
+Test: [ 100/192]  Time: 0.108 (0.295)  Loss:  1.9951 (1.9837)  Acc@1: 57.8125 (59.1043)  Acc@5: 81.2500 (81.7373)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.3984 (2.0019)  Acc@1: 43.8596 (58.3770)  Acc@5: 73.6842 (81.4233)
+Test: [Whole Val]  Time: 54.691  Loss: 2.0019  Acc@1: 58.3770 Pruned: 21.51% 
+Train: 88 [   0/186 (  0%)]  Loss: 4.626 (4.63)  Rec_Loss: 1.833 (1.83)  Rec_Weight: 0.90  Time: 2.425s,   52.78/s  (2.425s,   52.78/s)  LR: 1.605e-04  Data: 1.870 (1.870)
+Train: 88 [ 100/186 ( 54%)]  Loss: 4.494 (5.57)  Rec_Loss: 1.777 (1.73)  Rec_Weight: 0.90  Time: 0.569s,  224.88/s  (0.586s,  218.42/s)  LR: 1.605e-04  Data: 0.009 (0.027)
+Train: 88 [ 185/186 (100%)]  Loss: 5.768 (5.59)  Rec_Loss: 1.725 (1.73)  Rec_Weight: 0.90  Time: 0.562s,  227.79/s  (0.579s,  221.17/s)  LR: 1.605e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.483 (2.483)  Loss:  1.9541 (1.9541)  Acc@1: 63.2812 (63.2812)  Acc@5: 82.8125 (82.8125)
+Test: [ 100/192]  Time: 0.106 (0.297)  Loss:  2.0312 (2.0143)  Acc@1: 57.0312 (58.9264)  Acc@5: 79.6875 (81.4743)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.3828 (2.0315)  Acc@1: 49.1228 (58.2389)  Acc@5: 78.9474 (81.3746)
+Test: [Whole Val]  Time: 54.588  Loss: 2.0315  Acc@1: 58.2389 Pruned: 21.75% 
+Train: 89 [   0/186 (  0%)]  Loss: 5.494 (5.49)  Rec_Loss: 1.633 (1.63)  Rec_Weight: 0.90  Time: 2.404s,   53.25/s  (2.404s,   53.25/s)  LR: 1.596e-04  Data: 1.847 (1.847)
+Train: 89 [ 100/186 ( 54%)]  Loss: 6.116 (5.60)  Rec_Loss: 1.805 (1.72)  Rec_Weight: 0.90  Time: 0.569s,  225.15/s  (0.587s,  217.90/s)  LR: 1.596e-04  Data: 0.009 (0.028)
+Train: 89 [ 185/186 (100%)]  Loss: 6.103 (5.59)  Rec_Loss: 1.661 (1.72)  Rec_Weight: 0.90  Time: 0.562s,  227.60/s  (0.580s,  220.86/s)  LR: 1.596e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.667 (2.667)  Loss:  1.9473 (1.9473)  Acc@1: 64.8438 (64.8438)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.106 (0.299)  Loss:  2.0039 (2.0284)  Acc@1: 60.9375 (59.0424)  Acc@5: 82.8125 (81.4356)
+Test: [ 192/192]  Time: 0.048 (0.286)  Loss:  2.4277 (2.0473)  Acc@1: 45.6140 (58.1537)  Acc@5: 71.9298 (81.2041)
+Test: [Whole Val]  Time: 55.229  Loss: 2.0473  Acc@1: 58.1537 Pruned: 21.97% 
+Train: 90 [   0/186 (  0%)]  Loss: 5.823 (5.82)  Rec_Loss: 1.765 (1.77)  Rec_Weight: 0.90  Time: 2.426s,   52.75/s  (2.426s,   52.75/s)  LR: 1.588e-04  Data: 1.870 (1.870)
+Train: 90 [ 100/186 ( 54%)]  Loss: 5.877 (5.46)  Rec_Loss: 1.689 (1.73)  Rec_Weight: 0.90  Time: 0.569s,  224.98/s  (0.585s,  218.76/s)  LR: 1.588e-04  Data: 0.009 (0.027)
+Train: 90 [ 185/186 (100%)]  Loss: 3.859 (5.48)  Rec_Loss: 1.680 (1.74)  Rec_Weight: 0.90  Time: 0.562s,  227.84/s  (0.578s,  221.33/s)  LR: 1.588e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.459 (2.459)  Loss:  1.9404 (1.9404)  Acc@1: 65.6250 (65.6250)  Acc@5: 82.8125 (82.8125)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.0117 (2.0211)  Acc@1: 57.8125 (58.7794)  Acc@5: 82.8125 (81.6136)
+Test: [ 192/192]  Time: 0.048 (0.283)  Loss:  2.4453 (2.0435)  Acc@1: 49.1228 (57.9670)  Acc@5: 73.6842 (81.2325)
+Test: [Whole Val]  Time: 54.640  Loss: 2.0435  Acc@1: 57.9670 Pruned: 22.21% 
+Train: 91 [   0/186 (  0%)]  Loss: 6.053 (6.05)  Rec_Loss: 1.694 (1.69)  Rec_Weight: 0.90  Time: 2.590s,   49.42/s  (2.590s,   49.42/s)  LR: 1.579e-04  Data: 2.031 (2.031)
+Train: 91 [ 100/186 ( 54%)]  Loss: 4.574 (5.59)  Rec_Loss: 1.714 (1.73)  Rec_Weight: 0.90  Time: 0.571s,  224.35/s  (0.593s,  215.74/s)  LR: 1.579e-04  Data: 0.009 (0.032)
+Train: 91 [ 185/186 (100%)]  Loss: 6.420 (5.54)  Rec_Loss: 1.799 (1.74)  Rec_Weight: 0.90  Time: 0.561s,  228.14/s  (0.584s,  219.35/s)  LR: 1.579e-04  Data: 0.000 (0.022)
+Test: [   0/192]  Time: 2.428 (2.428)  Loss:  2.0410 (2.0410)  Acc@1: 59.3750 (59.3750)  Acc@5: 81.2500 (81.2500)
+Test: [ 100/192]  Time: 0.107 (0.293)  Loss:  2.0449 (2.0373)  Acc@1: 59.3750 (57.9131)  Acc@5: 82.0312 (80.8014)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.4375 (2.0548)  Acc@1: 50.8772 (57.2768)  Acc@5: 71.9298 (80.7941)
+Test: [Whole Val]  Time: 54.582  Loss: 2.0548  Acc@1: 57.2768 Pruned: 22.50% 
+Train: 92 [   0/186 (  0%)]  Loss: 5.273 (5.27)  Rec_Loss: 1.682 (1.68)  Rec_Weight: 0.90  Time: 2.402s,   53.29/s  (2.402s,   53.29/s)  LR: 1.571e-04  Data: 1.845 (1.845)
+Train: 92 [ 100/186 ( 54%)]  Loss: 4.931 (5.62)  Rec_Loss: 1.693 (1.74)  Rec_Weight: 0.90  Time: 0.569s,  225.01/s  (0.585s,  218.69/s)  LR: 1.571e-04  Data: 0.009 (0.027)
+Train: 92 [ 185/186 (100%)]  Loss: 5.357 (5.65)  Rec_Loss: 1.661 (1.74)  Rec_Weight: 0.90  Time: 0.562s,  227.68/s  (0.578s,  221.32/s)  LR: 1.571e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.445 (2.445)  Loss:  2.0469 (2.0469)  Acc@1: 60.9375 (60.9375)  Acc@5: 81.2500 (81.2500)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.0332 (2.0670)  Acc@1: 56.2500 (57.9131)  Acc@5: 80.4688 (81.1030)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.4492 (2.0877)  Acc@1: 45.6140 (57.1997)  Acc@5: 71.9298 (80.6682)
+Test: [Whole Val]  Time: 54.616  Loss: 2.0877  Acc@1: 57.1997 Pruned: 22.73% 
+Train: 93 [   0/186 (  0%)]  Loss: 4.400 (4.40)  Rec_Loss: 1.800 (1.80)  Rec_Weight: 0.90  Time: 2.429s,   52.69/s  (2.429s,   52.69/s)  LR: 1.562e-04  Data: 1.872 (1.872)
+Train: 93 [ 100/186 ( 54%)]  Loss: 5.183 (5.62)  Rec_Loss: 1.760 (1.75)  Rec_Weight: 0.90  Time: 0.569s,  224.79/s  (0.586s,  218.52/s)  LR: 1.562e-04  Data: 0.009 (0.027)
+Train: 93 [ 185/186 (100%)]  Loss: 6.242 (5.53)  Rec_Loss: 1.805 (1.75)  Rec_Weight: 0.90  Time: 0.562s,  227.76/s  (0.579s,  221.17/s)  LR: 1.562e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.433 (2.433)  Loss:  2.0703 (2.0703)  Acc@1: 61.7188 (61.7188)  Acc@5: 78.9062 (78.9062)
+Test: [ 100/192]  Time: 0.107 (0.293)  Loss:  2.0820 (2.0734)  Acc@1: 53.9062 (57.5263)  Acc@5: 81.2500 (80.5461)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.4980 (2.0959)  Acc@1: 49.1228 (56.7897)  Acc@5: 66.6667 (80.1202)
+Test: [Whole Val]  Time: 54.750  Loss: 2.0959  Acc@1: 56.7897 Pruned: 23.02% 
+Train: 94 [   0/186 (  0%)]  Loss: 4.992 (4.99)  Rec_Loss: 1.767 (1.77)  Rec_Weight: 0.90  Time: 2.399s,   53.35/s  (2.399s,   53.35/s)  LR: 1.553e-04  Data: 1.844 (1.844)
+Train: 94 [ 100/186 ( 54%)]  Loss: 6.377 (5.54)  Rec_Loss: 1.740 (1.74)  Rec_Weight: 0.90  Time: 0.570s,  224.64/s  (0.586s,  218.31/s)  LR: 1.553e-04  Data: 0.009 (0.027)
+Train: 94 [ 185/186 (100%)]  Loss: 5.847 (5.49)  Rec_Loss: 1.822 (1.75)  Rec_Weight: 0.90  Time: 0.563s,  227.51/s  (0.580s,  220.87/s)  LR: 1.553e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.964 (2.964)  Loss:  2.0664 (2.0664)  Acc@1: 58.5938 (58.5938)  Acc@5: 80.4688 (80.4688)
+Test: [ 100/192]  Time: 0.107 (0.297)  Loss:  2.0996 (2.0384)  Acc@1: 57.8125 (58.2302)  Acc@5: 78.9062 (81.2113)
+Test: [ 192/192]  Time: 0.047 (0.288)  Loss:  2.3594 (2.0590)  Acc@1: 52.6316 (57.4351)  Acc@5: 71.9298 (80.6926)
+Test: [Whole Val]  Time: 55.536  Loss: 2.0590  Acc@1: 57.4351 Pruned: 23.23% 
+Train: 95 [   0/186 (  0%)]  Loss: 6.080 (6.08)  Rec_Loss: 1.816 (1.82)  Rec_Weight: 0.90  Time: 2.395s,   53.45/s  (2.395s,   53.45/s)  LR: 1.545e-04  Data: 1.837 (1.837)
+Train: 95 [ 100/186 ( 54%)]  Loss: 6.521 (5.57)  Rec_Loss: 1.746 (1.75)  Rec_Weight: 0.90  Time: 0.569s,  225.05/s  (0.587s,  218.04/s)  LR: 1.545e-04  Data: 0.009 (0.028)
+Train: 95 [ 185/186 (100%)]  Loss: 5.054 (5.54)  Rec_Loss: 1.669 (1.76)  Rec_Weight: 0.90  Time: 0.562s,  227.88/s  (0.579s,  221.07/s)  LR: 1.545e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.404 (2.404)  Loss:  2.0625 (2.0625)  Acc@1: 58.5938 (58.5938)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.0957 (2.0919)  Acc@1: 58.5938 (57.2401)  Acc@5: 79.6875 (80.2676)
+Test: [ 192/192]  Time: 0.048 (0.284)  Loss:  2.4355 (2.1145)  Acc@1: 45.6140 (56.4811)  Acc@5: 71.9298 (79.9375)
+Test: [Whole Val]  Time: 54.813  Loss: 2.1145  Acc@1: 56.4811 Pruned: 23.45% 
+Train: 96 [   0/186 (  0%)]  Loss: 6.214 (6.21)  Rec_Loss: 1.700 (1.70)  Rec_Weight: 0.90  Time: 2.464s,   51.95/s  (2.464s,   51.95/s)  LR: 1.536e-04  Data: 1.908 (1.908)
+Train: 96 [ 100/186 ( 54%)]  Loss: 4.308 (5.59)  Rec_Loss: 1.739 (1.75)  Rec_Weight: 0.90  Time: 0.572s,  223.79/s  (0.588s,  217.78/s)  LR: 1.536e-04  Data: 0.011 (0.029)
+Train: 96 [ 185/186 (100%)]  Loss: 5.839 (5.57)  Rec_Loss: 1.676 (1.75)  Rec_Weight: 0.90  Time: 0.562s,  227.88/s  (0.582s,  220.08/s)  LR: 1.536e-04  Data: 0.000 (0.021)
+Test: [   0/192]  Time: 2.416 (2.416)  Loss:  2.1113 (2.1113)  Acc@1: 58.5938 (58.5938)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.1211 (2.0931)  Acc@1: 56.2500 (56.9616)  Acc@5: 80.4688 (80.2135)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.5156 (2.1138)  Acc@1: 49.1228 (56.2294)  Acc@5: 70.1754 (79.8806)
+Test: [Whole Val]  Time: 54.679  Loss: 2.1138  Acc@1: 56.2294 Pruned: 23.69% 
+Train: 97 [   0/186 (  0%)]  Loss: 4.901 (4.90)  Rec_Loss: 1.732 (1.73)  Rec_Weight: 0.90  Time: 2.552s,   50.16/s  (2.552s,   50.16/s)  LR: 1.527e-04  Data: 1.995 (1.995)
+Train: 97 [ 100/186 ( 54%)]  Loss: 5.989 (5.54)  Rec_Loss: 1.785 (1.75)  Rec_Weight: 0.90  Time: 0.570s,  224.59/s  (0.590s,  217.01/s)  LR: 1.527e-04  Data: 0.010 (0.032)
+Train: 97 [ 185/186 (100%)]  Loss: 5.588 (5.68)  Rec_Loss: 1.821 (1.75)  Rec_Weight: 0.90  Time: 0.563s,  227.33/s  (0.581s,  220.21/s)  LR: 1.527e-04  Data: 0.000 (0.022)
+Test: [   0/192]  Time: 2.454 (2.454)  Loss:  2.1328 (2.1328)  Acc@1: 58.5938 (58.5938)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.108 (0.295)  Loss:  2.1348 (2.1394)  Acc@1: 62.5000 (56.4511)  Acc@5: 78.9062 (79.6566)
+Test: [ 192/192]  Time: 0.048 (0.284)  Loss:  2.4355 (2.1636)  Acc@1: 52.6316 (55.5271)  Acc@5: 71.9298 (79.2595)
+Test: [Whole Val]  Time: 54.814  Loss: 2.1636  Acc@1: 55.5271 Pruned: 23.92% 
+Train: 98 [   0/186 (  0%)]  Loss: 6.118 (6.12)  Rec_Loss: 1.680 (1.68)  Rec_Weight: 0.90  Time: 2.418s,   52.93/s  (2.418s,   52.93/s)  LR: 1.518e-04  Data: 1.862 (1.862)
+Train: 98 [ 100/186 ( 54%)]  Loss: 6.251 (5.67)  Rec_Loss: 1.786 (1.75)  Rec_Weight: 0.90  Time: 0.570s,  224.52/s  (0.587s,  217.92/s)  LR: 1.518e-04  Data: 0.009 (0.028)
+Train: 98 [ 185/186 (100%)]  Loss: 4.380 (5.64)  Rec_Loss: 1.764 (1.75)  Rec_Weight: 0.90  Time: 0.562s,  227.66/s  (0.581s,  220.30/s)  LR: 1.518e-04  Data: 0.000 (0.021)
+Test: [   0/192]  Time: 2.404 (2.404)  Loss:  2.1543 (2.1543)  Acc@1: 56.2500 (56.2500)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.108 (0.297)  Loss:  2.1816 (2.1345)  Acc@1: 54.6875 (56.2345)  Acc@5: 78.1250 (79.6720)
+Test: [ 192/192]  Time: 0.047 (0.286)  Loss:  2.4180 (2.1563)  Acc@1: 47.3684 (55.5637)  Acc@5: 75.4386 (79.2961)
+Test: [Whole Val]  Time: 55.276  Loss: 2.1563  Acc@1: 55.5637 Pruned: 24.15% 
+Train: 99 [   0/186 (  0%)]  Loss: 6.328 (6.33)  Rec_Loss: 1.722 (1.72)  Rec_Weight: 0.90  Time: 2.479s,   51.64/s  (2.479s,   51.64/s)  LR: 1.509e-04  Data: 1.922 (1.922)
+Train: 99 [ 100/186 ( 54%)]  Loss: 6.500 (5.62)  Rec_Loss: 1.765 (1.77)  Rec_Weight: 0.90  Time: 0.569s,  225.04/s  (0.590s,  216.99/s)  LR: 1.509e-04  Data: 0.009 (0.031)
+Train: 99 [ 185/186 (100%)]  Loss: 5.420 (5.64)  Rec_Loss: 1.692 (1.76)  Rec_Weight: 0.90  Time: 0.564s,  227.09/s  (0.582s,  219.81/s)  LR: 1.509e-04  Data: 0.000 (0.021)
+Test: [   0/192]  Time: 2.407 (2.407)  Loss:  2.1035 (2.1035)  Acc@1: 58.5938 (58.5938)  Acc@5: 81.2500 (81.2500)
+Test: [ 100/192]  Time: 0.106 (0.296)  Loss:  2.1543 (2.1238)  Acc@1: 57.8125 (56.8301)  Acc@5: 80.4688 (79.6101)
+Test: [ 192/192]  Time: 0.048 (0.285)  Loss:  2.4824 (2.1455)  Acc@1: 47.3684 (55.8966)  Acc@5: 71.9298 (79.2798)
+Test: [Whole Val]  Time: 55.073  Loss: 2.1455  Acc@1: 55.8966 Pruned: 24.36% 
+Train: 100 [   0/186 (  0%)]  Loss: 6.338 (6.34)  Rec_Loss: 1.870 (1.87)  Rec_Weight: 0.90  Time: 2.628s,   48.71/s  (2.628s,   48.71/s)  LR: 1.500e-04  Data: 2.070 (2.070)
+Train: 100 [ 100/186 ( 54%)]  Loss: 5.250 (5.59)  Rec_Loss: 1.705 (1.77)  Rec_Weight: 0.90  Time: 0.570s,  224.55/s  (0.592s,  216.05/s)  LR: 1.500e-04  Data: 0.009 (0.032)
+Train: 100 [ 185/186 (100%)]  Loss: 6.336 (5.61)  Rec_Loss: 1.753 (1.76)  Rec_Weight: 0.90  Time: 0.563s,  227.41/s  (0.583s,  219.64/s)  LR: 1.500e-04  Data: 0.000 (0.022)
+Test: [   0/192]  Time: 2.406 (2.406)  Loss:  2.1152 (2.1152)  Acc@1: 57.8125 (57.8125)  Acc@5: 80.4688 (80.4688)
+Test: [ 100/192]  Time: 0.107 (0.297)  Loss:  2.1777 (2.1452)  Acc@1: 56.2500 (56.4588)  Acc@5: 81.2500 (79.5251)
+Test: [ 192/192]  Time: 0.047 (0.287)  Loss:  2.4961 (2.1675)  Acc@1: 45.6140 (55.4094)  Acc@5: 68.4211 (79.0768)
+Test: [Whole Val]  Time: 55.487  Loss: 2.1675  Acc@1: 55.4094 Pruned: 24.61% 
+Train: 101 [   0/186 (  0%)]  Loss: 5.282 (5.28)  Rec_Loss: 1.664 (1.66)  Rec_Weight: 0.90  Time: 2.713s,   47.19/s  (2.713s,   47.19/s)  LR: 1.491e-04  Data: 2.155 (2.155)
+Train: 101 [ 100/186 ( 54%)]  Loss: 5.911 (5.56)  Rec_Loss: 1.691 (1.77)  Rec_Weight: 0.90  Time: 0.569s,  224.90/s  (0.591s,  216.60/s)  LR: 1.491e-04  Data: 0.009 (0.033)
+Train: 101 [ 185/186 (100%)]  Loss: 6.437 (5.61)  Rec_Loss: 1.815 (1.76)  Rec_Weight: 0.90  Time: 0.561s,  228.27/s  (0.581s,  220.14/s)  LR: 1.491e-04  Data: 0.000 (0.022)
+Test: [   0/192]  Time: 2.427 (2.427)  Loss:  2.1270 (2.1270)  Acc@1: 56.2500 (56.2500)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.2129 (2.1485)  Acc@1: 57.0312 (56.4666)  Acc@5: 79.6875 (79.4477)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.5605 (2.1679)  Acc@1: 43.8596 (55.5962)  Acc@5: 70.1754 (79.1215)
+Test: [Whole Val]  Time: 54.787  Loss: 2.1679  Acc@1: 55.5962 Pruned: 24.83% 
+Train: 102 [   0/186 (  0%)]  Loss: 6.232 (6.23)  Rec_Loss: 1.700 (1.70)  Rec_Weight: 0.90  Time: 2.415s,   53.01/s  (2.415s,   53.01/s)  LR: 1.482e-04  Data: 1.859 (1.859)
+Train: 102 [ 100/186 ( 54%)]  Loss: 6.255 (5.62)  Rec_Loss: 1.717 (1.77)  Rec_Weight: 0.90  Time: 0.569s,  225.04/s  (0.587s,  218.23/s)  LR: 1.482e-04  Data: 0.009 (0.028)
+Train: 102 [ 185/186 (100%)]  Loss: 4.566 (5.64)  Rec_Loss: 1.742 (1.77)  Rec_Weight: 0.90  Time: 0.562s,  227.65/s  (0.579s,  221.04/s)  LR: 1.482e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.422 (2.422)  Loss:  2.1309 (2.1309)  Acc@1: 57.8125 (57.8125)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.106 (0.293)  Loss:  2.2168 (2.1612)  Acc@1: 51.5625 (56.4047)  Acc@5: 78.9062 (79.0996)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.4238 (2.1860)  Acc@1: 49.1228 (55.5799)  Acc@5: 71.9298 (78.6425)
+Test: [Whole Val]  Time: 54.817  Loss: 2.1860  Acc@1: 55.5799 Pruned: 25.07% 
+Train: 103 [   0/186 (  0%)]  Loss: 5.235 (5.24)  Rec_Loss: 1.853 (1.85)  Rec_Weight: 0.90  Time: 2.467s,   51.89/s  (2.467s,   51.89/s)  LR: 1.473e-04  Data: 1.910 (1.910)
+Train: 103 [ 100/186 ( 54%)]  Loss: 4.256 (5.74)  Rec_Loss: 1.793 (1.77)  Rec_Weight: 0.90  Time: 0.568s,  225.42/s  (0.587s,  217.91/s)  LR: 1.473e-04  Data: 0.009 (0.030)
+Train: 103 [ 185/186 (100%)]  Loss: 5.981 (5.70)  Rec_Loss: 1.806 (1.77)  Rec_Weight: 0.90  Time: 0.561s,  228.14/s  (0.579s,  220.90/s)  LR: 1.473e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.419 (2.419)  Loss:  2.1523 (2.1523)  Acc@1: 57.8125 (57.8125)  Acc@5: 81.2500 (81.2500)
+Test: [ 100/192]  Time: 0.106 (0.294)  Loss:  2.1953 (2.1812)  Acc@1: 60.9375 (55.7627)  Acc@5: 78.9062 (78.8676)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.4258 (2.2053)  Acc@1: 49.1228 (55.0440)  Acc@5: 73.6842 (78.3948)
+Test: [Whole Val]  Time: 54.760  Loss: 2.2053  Acc@1: 55.0440 Pruned: 25.29% 
+Train: 104 [   0/186 (  0%)]  Loss: 5.193 (5.19)  Rec_Loss: 1.760 (1.76)  Rec_Weight: 0.90  Time: 2.473s,   51.76/s  (2.473s,   51.76/s)  LR: 1.463e-04  Data: 1.916 (1.916)
+Train: 104 [ 100/186 ( 54%)]  Loss: 4.436 (5.70)  Rec_Loss: 1.759 (1.77)  Rec_Weight: 0.90  Time: 0.569s,  225.03/s  (0.586s,  218.35/s)  LR: 1.463e-04  Data: 0.008 (0.028)
+Train: 104 [ 185/186 (100%)]  Loss: 5.460 (5.65)  Rec_Loss: 1.732 (1.77)  Rec_Weight: 0.90  Time: 0.561s,  228.30/s  (0.579s,  221.18/s)  LR: 1.463e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.444 (2.444)  Loss:  2.1562 (2.1562)  Acc@1: 57.8125 (57.8125)  Acc@5: 78.9062 (78.9062)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.1914 (2.1897)  Acc@1: 55.4688 (55.4378)  Acc@5: 78.9062 (78.6433)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.4785 (2.2100)  Acc@1: 49.1228 (54.9101)  Acc@5: 70.1754 (78.3827)
+Test: [Whole Val]  Time: 54.700  Loss: 2.2100  Acc@1: 54.9101 Pruned: 25.54% 
+Train: 105 [   0/186 (  0%)]  Loss: 6.501 (6.50)  Rec_Loss: 1.818 (1.82)  Rec_Weight: 0.90  Time: 2.372s,   53.96/s  (2.372s,   53.96/s)  LR: 1.454e-04  Data: 1.816 (1.816)
+Train: 105 [ 100/186 ( 54%)]  Loss: 6.115 (5.75)  Rec_Loss: 1.876 (1.77)  Rec_Weight: 0.90  Time: 0.570s,  224.64/s  (0.589s,  217.34/s)  LR: 1.454e-04  Data: 0.009 (0.028)
+Train: 105 [ 185/186 (100%)]  Loss: 4.942 (5.71)  Rec_Loss: 1.877 (1.77)  Rec_Weight: 0.90  Time: 0.561s,  228.10/s  (0.581s,  220.24/s)  LR: 1.454e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.445 (2.445)  Loss:  2.1680 (2.1680)  Acc@1: 57.8125 (57.8125)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.2793 (2.2272)  Acc@1: 55.4688 (54.8267)  Acc@5: 78.1250 (78.4112)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.4727 (2.2476)  Acc@1: 47.3684 (54.2808)  Acc@5: 71.9298 (77.8955)
+Test: [Whole Val]  Time: 54.668  Loss: 2.2476  Acc@1: 54.2808 Pruned: 25.79% 
+Train: 106 [   0/186 (  0%)]  Loss: 6.442 (6.44)  Rec_Loss: 1.716 (1.72)  Rec_Weight: 0.90  Time: 2.434s,   52.59/s  (2.434s,   52.59/s)  LR: 1.445e-04  Data: 1.877 (1.877)
+Train: 106 [ 100/186 ( 54%)]  Loss: 6.124 (5.70)  Rec_Loss: 1.840 (1.77)  Rec_Weight: 0.90  Time: 0.568s,  225.26/s  (0.586s,  218.33/s)  LR: 1.445e-04  Data: 0.009 (0.027)
+Train: 106 [ 185/186 (100%)]  Loss: 6.115 (5.70)  Rec_Loss: 1.719 (1.78)  Rec_Weight: 0.90  Time: 0.563s,  227.23/s  (0.579s,  221.20/s)  LR: 1.445e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.486 (2.486)  Loss:  2.1680 (2.1680)  Acc@1: 54.6875 (54.6875)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.106 (0.294)  Loss:  2.2070 (2.2229)  Acc@1: 55.4688 (54.3626)  Acc@5: 78.1250 (78.1869)
+Test: [ 192/192]  Time: 0.048 (0.283)  Loss:  2.5020 (2.2438)  Acc@1: 49.1228 (53.9114)  Acc@5: 71.9298 (77.7737)
+Test: [Whole Val]  Time: 54.630  Loss: 2.2438  Acc@1: 53.9114 Pruned: 26.02% 
+Train: 107 [   0/186 (  0%)]  Loss: 5.865 (5.87)  Rec_Loss: 1.735 (1.73)  Rec_Weight: 0.90  Time: 2.358s,   54.28/s  (2.358s,   54.28/s)  LR: 1.435e-04  Data: 1.801 (1.801)
+Train: 107 [ 100/186 ( 54%)]  Loss: 6.020 (5.73)  Rec_Loss: 1.808 (1.77)  Rec_Weight: 0.90  Time: 0.568s,  225.31/s  (0.585s,  218.95/s)  LR: 1.435e-04  Data: 0.009 (0.027)
+Train: 107 [ 185/186 (100%)]  Loss: 6.386 (5.73)  Rec_Loss: 1.766 (1.78)  Rec_Weight: 0.90  Time: 0.561s,  228.30/s  (0.578s,  221.55/s)  LR: 1.435e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.415 (2.415)  Loss:  2.1738 (2.1738)  Acc@1: 59.3750 (59.3750)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.106 (0.297)  Loss:  2.2734 (2.2464)  Acc@1: 54.6875 (54.3858)  Acc@5: 77.3438 (77.7847)
+Test: [ 192/192]  Time: 0.047 (0.286)  Loss:  2.5352 (2.2691)  Acc@1: 40.3509 (53.6963)  Acc@5: 71.9298 (77.4327)
+Test: [Whole Val]  Time: 55.225  Loss: 2.2691  Acc@1: 53.6963 Pruned: 26.24% 
+Train: 108 [   0/186 (  0%)]  Loss: 4.947 (4.95)  Rec_Loss: 1.714 (1.71)  Rec_Weight: 0.90  Time: 2.373s,   53.94/s  (2.373s,   53.94/s)  LR: 1.426e-04  Data: 1.817 (1.817)
+Train: 108 [ 100/186 ( 54%)]  Loss: 5.278 (5.88)  Rec_Loss: 1.728 (1.78)  Rec_Weight: 0.90  Time: 0.568s,  225.26/s  (0.585s,  218.98/s)  LR: 1.426e-04  Data: 0.009 (0.027)
+Train: 108 [ 185/186 (100%)]  Loss: 6.067 (5.84)  Rec_Loss: 1.865 (1.78)  Rec_Weight: 0.90  Time: 0.560s,  228.38/s  (0.578s,  221.64/s)  LR: 1.426e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.418 (2.418)  Loss:  2.2070 (2.2070)  Acc@1: 60.1562 (60.1562)  Acc@5: 79.6875 (79.6875)
+Test: [ 100/192]  Time: 0.109 (0.293)  Loss:  2.2676 (2.2794)  Acc@1: 54.6875 (53.9062)  Acc@5: 75.0000 (77.6377)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.5469 (2.2998)  Acc@1: 50.8772 (53.1523)  Acc@5: 68.4211 (77.3475)
+Test: [Whole Val]  Time: 54.591  Loss: 2.2998  Acc@1: 53.1523 Pruned: 26.45% 
+Train: 109 [   0/186 (  0%)]  Loss: 4.411 (4.41)  Rec_Loss: 1.746 (1.75)  Rec_Weight: 0.90  Time: 2.440s,   52.45/s  (2.440s,   52.45/s)  LR: 1.416e-04  Data: 1.884 (1.884)
+Train: 109 [ 100/186 ( 54%)]  Loss: 6.260 (5.65)  Rec_Loss: 1.791 (1.78)  Rec_Weight: 0.90  Time: 0.570s,  224.73/s  (0.586s,  218.48/s)  LR: 1.416e-04  Data: 0.009 (0.027)
+Train: 109 [ 185/186 (100%)]  Loss: 4.711 (5.70)  Rec_Loss: 1.747 (1.78)  Rec_Weight: 0.90  Time: 0.560s,  228.44/s  (0.578s,  221.28/s)  LR: 1.416e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.482 (2.482)  Loss:  2.2793 (2.2793)  Acc@1: 58.5938 (58.5938)  Acc@5: 78.9062 (78.9062)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.2500 (2.2758)  Acc@1: 55.4688 (53.8289)  Acc@5: 78.1250 (77.5449)
+Test: [ 192/192]  Time: 0.048 (0.284)  Loss:  2.5469 (2.2954)  Acc@1: 52.6316 (53.2619)  Acc@5: 68.4211 (77.0308)
+Test: [Whole Val]  Time: 54.762  Loss: 2.2954  Acc@1: 53.2619 Pruned: 26.68% 
+Train: 110 [   0/186 (  0%)]  Loss: 6.340 (6.34)  Rec_Loss: 1.911 (1.91)  Rec_Weight: 0.90  Time: 2.446s,   52.32/s  (2.446s,   52.32/s)  LR: 1.407e-04  Data: 1.889 (1.889)
+Train: 110 [ 100/186 ( 54%)]  Loss: 6.181 (5.60)  Rec_Loss: 1.772 (1.79)  Rec_Weight: 0.90  Time: 0.622s,  205.80/s  (0.595s,  215.24/s)  LR: 1.407e-04  Data: 0.061 (0.033)
+Train: 110 [ 185/186 (100%)]  Loss: 6.140 (5.62)  Rec_Loss: 1.688 (1.79)  Rec_Weight: 0.90  Time: 0.563s,  227.47/s  (0.591s,  216.54/s)  LR: 1.407e-04  Data: 0.000 (0.030)
+Test: [   0/192]  Time: 2.402 (2.402)  Loss:  2.1895 (2.1895)  Acc@1: 58.5938 (58.5938)  Acc@5: 78.1250 (78.1250)
+Test: [ 100/192]  Time: 0.107 (0.296)  Loss:  2.2754 (2.2487)  Acc@1: 53.9062 (54.4400)  Acc@5: 77.3438 (77.6300)
+Test: [ 192/192]  Time: 0.048 (0.283)  Loss:  2.5762 (2.2684)  Acc@1: 45.6140 (53.6191)  Acc@5: 64.9123 (77.3109)
+Test: [Whole Val]  Time: 54.536  Loss: 2.2684  Acc@1: 53.6191 Pruned: 26.88% 
+Train: 111 [   0/186 (  0%)]  Loss: 6.357 (6.36)  Rec_Loss: 1.873 (1.87)  Rec_Weight: 0.90  Time: 2.770s,   46.21/s  (2.770s,   46.21/s)  LR: 1.397e-04  Data: 2.213 (2.213)
+Train: 111 [ 100/186 ( 54%)]  Loss: 4.522 (5.61)  Rec_Loss: 1.830 (1.78)  Rec_Weight: 0.90  Time: 0.570s,  224.68/s  (0.590s,  216.79/s)  LR: 1.397e-04  Data: 0.010 (0.031)
+Train: 111 [ 185/186 (100%)]  Loss: 6.034 (5.69)  Rec_Loss: 1.738 (1.79)  Rec_Weight: 0.90  Time: 0.562s,  227.70/s  (0.583s,  219.55/s)  LR: 1.397e-04  Data: 0.000 (0.023)
+Test: [   0/192]  Time: 2.402 (2.402)  Loss:  2.2129 (2.2129)  Acc@1: 56.2500 (56.2500)  Acc@5: 76.5625 (76.5625)
+Test: [ 100/192]  Time: 0.107 (0.292)  Loss:  2.2773 (2.2513)  Acc@1: 56.2500 (54.3162)  Acc@5: 78.9062 (77.6300)
+Test: [ 192/192]  Time: 0.047 (0.282)  Loss:  2.6172 (2.2692)  Acc@1: 47.3684 (53.8099)  Acc@5: 66.6667 (77.4084)
+Test: [Whole Val]  Time: 54.471  Loss: 2.2692  Acc@1: 53.8099 Pruned: 27.11% 
+Train: 112 [   0/186 (  0%)]  Loss: 4.335 (4.33)  Rec_Loss: 1.807 (1.81)  Rec_Weight: 0.90  Time: 2.321s,   55.15/s  (2.321s,   55.15/s)  LR: 1.388e-04  Data: 1.766 (1.766)
+Train: 112 [ 100/186 ( 54%)]  Loss: 6.011 (5.71)  Rec_Loss: 1.791 (1.79)  Rec_Weight: 0.90  Time: 0.569s,  225.05/s  (0.595s,  215.14/s)  LR: 1.388e-04  Data: 0.009 (0.029)
+Train: 112 [ 185/186 (100%)]  Loss: 6.574 (5.70)  Rec_Loss: 1.820 (1.79)  Rec_Weight: 0.90  Time: 0.562s,  227.81/s  (0.585s,  218.97/s)  LR: 1.388e-04  Data: 0.000 (0.021)
+Test: [   0/192]  Time: 2.469 (2.469)  Loss:  2.2109 (2.2109)  Acc@1: 54.6875 (54.6875)  Acc@5: 78.1250 (78.1250)
+Test: [ 100/192]  Time: 0.108 (0.295)  Loss:  2.2480 (2.2667)  Acc@1: 54.6875 (54.0455)  Acc@5: 77.3438 (77.4675)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.5352 (2.2885)  Acc@1: 49.1228 (53.2862)  Acc@5: 70.1754 (77.2176)
+Test: [Whole Val]  Time: 54.691  Loss: 2.2885  Acc@1: 53.2862 Pruned: 27.31% 
+Train: 113 [   0/186 (  0%)]  Loss: 5.130 (5.13)  Rec_Loss: 1.856 (1.86)  Rec_Weight: 0.90  Time: 2.419s,   52.90/s  (2.419s,   52.90/s)  LR: 1.378e-04  Data: 1.863 (1.863)
+Train: 113 [ 100/186 ( 54%)]  Loss: 6.618 (5.67)  Rec_Loss: 1.834 (1.80)  Rec_Weight: 0.90  Time: 0.570s,  224.45/s  (0.586s,  218.45/s)  LR: 1.378e-04  Data: 0.010 (0.027)
+Train: 113 [ 185/186 (100%)]  Loss: 6.602 (5.69)  Rec_Loss: 1.739 (1.79)  Rec_Weight: 0.90  Time: 0.562s,  227.82/s  (0.578s,  221.28/s)  LR: 1.378e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.613 (2.613)  Loss:  2.2598 (2.2598)  Acc@1: 54.6875 (54.6875)  Acc@5: 78.1250 (78.1250)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.2988 (2.2811)  Acc@1: 52.3438 (53.5968)  Acc@5: 78.9062 (77.1194)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.5684 (2.3005)  Acc@1: 47.3684 (52.8397)  Acc@5: 66.6667 (76.7060)
+Test: [Whole Val]  Time: 54.771  Loss: 2.3005  Acc@1: 52.8397 Pruned: 27.51% 
+Train: 114 [   0/186 (  0%)]  Loss: 6.288 (6.29)  Rec_Loss: 1.833 (1.83)  Rec_Weight: 0.90  Time: 2.411s,   53.09/s  (2.411s,   53.09/s)  LR: 1.368e-04  Data: 1.855 (1.855)
+Train: 114 [ 100/186 ( 54%)]  Loss: 4.442 (5.75)  Rec_Loss: 1.841 (1.79)  Rec_Weight: 0.90  Time: 0.568s,  225.53/s  (0.585s,  218.62/s)  LR: 1.368e-04  Data: 0.009 (0.027)
+Train: 114 [ 185/186 (100%)]  Loss: 5.097 (5.72)  Rec_Loss: 1.907 (1.80)  Rec_Weight: 0.90  Time: 0.563s,  227.36/s  (0.578s,  221.47/s)  LR: 1.368e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.757 (2.757)  Loss:  2.2285 (2.2285)  Acc@1: 54.6875 (54.6875)  Acc@5: 77.3438 (77.3438)
+Test: [ 100/192]  Time: 0.107 (0.297)  Loss:  2.2617 (2.2882)  Acc@1: 53.1250 (53.7825)  Acc@5: 78.1250 (76.7868)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.5469 (2.3050)  Acc@1: 47.3684 (53.1523)  Acc@5: 71.9298 (76.4706)
+Test: [Whole Val]  Time: 54.882  Loss: 2.3050  Acc@1: 53.1523 Pruned: 27.71% 
+Train: 115 [   0/186 (  0%)]  Loss: 5.270 (5.27)  Rec_Loss: 1.763 (1.76)  Rec_Weight: 0.90  Time: 2.509s,   51.01/s  (2.509s,   51.01/s)  LR: 1.358e-04  Data: 1.954 (1.954)
+Train: 115 [ 100/186 ( 54%)]  Loss: 4.443 (5.68)  Rec_Loss: 1.787 (1.79)  Rec_Weight: 0.90  Time: 0.567s,  225.77/s  (0.586s,  218.45/s)  LR: 1.358e-04  Data: 0.009 (0.028)
+Train: 115 [ 185/186 (100%)]  Loss: 6.475 (5.78)  Rec_Loss: 1.862 (1.79)  Rec_Weight: 0.90  Time: 0.563s,  227.27/s  (0.579s,  221.16/s)  LR: 1.358e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.472 (2.472)  Loss:  2.2246 (2.2246)  Acc@1: 56.2500 (56.2500)  Acc@5: 77.3438 (77.3438)
+Test: [ 100/192]  Time: 0.107 (0.293)  Loss:  2.3281 (2.3071)  Acc@1: 55.4688 (53.0941)  Acc@5: 76.5625 (76.6785)
+Test: [ 192/192]  Time: 0.048 (0.283)  Loss:  2.5273 (2.3252)  Acc@1: 49.1228 (52.5149)  Acc@5: 71.9298 (76.3935)
+Test: [Whole Val]  Time: 54.599  Loss: 2.3252  Acc@1: 52.5149 Pruned: 27.94% 
+Train: 116 [   0/186 (  0%)]  Loss: 5.137 (5.14)  Rec_Loss: 1.849 (1.85)  Rec_Weight: 0.90  Time: 2.450s,   52.24/s  (2.450s,   52.24/s)  LR: 1.349e-04  Data: 1.892 (1.892)
+Train: 116 [ 100/186 ( 54%)]  Loss: 6.293 (5.73)  Rec_Loss: 1.699 (1.79)  Rec_Weight: 0.90  Time: 0.569s,  225.00/s  (0.587s,  218.22/s)  LR: 1.349e-04  Data: 0.009 (0.028)
+Train: 116 [ 185/186 (100%)]  Loss: 6.463 (5.75)  Rec_Loss: 1.818 (1.79)  Rec_Weight: 0.90  Time: 0.559s,  229.11/s  (0.579s,  221.11/s)  LR: 1.349e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.466 (2.466)  Loss:  2.2441 (2.2441)  Acc@1: 57.0312 (57.0312)  Acc@5: 78.9062 (78.9062)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.3184 (2.3154)  Acc@1: 52.3438 (52.8929)  Acc@5: 76.5625 (76.5548)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.5312 (2.3316)  Acc@1: 49.1228 (52.4459)  Acc@5: 71.9298 (76.2230)
+Test: [Whole Val]  Time: 54.791  Loss: 2.3316  Acc@1: 52.4459 Pruned: 28.17% 
+Train: 117 [   0/186 (  0%)]  Loss: 4.458 (4.46)  Rec_Loss: 1.775 (1.78)  Rec_Weight: 0.90  Time: 2.430s,   52.68/s  (2.430s,   52.68/s)  LR: 1.339e-04  Data: 1.875 (1.875)
+Train: 117 [ 100/186 ( 54%)]  Loss: 6.471 (5.75)  Rec_Loss: 1.793 (1.79)  Rec_Weight: 0.90  Time: 0.570s,  224.67/s  (0.585s,  218.64/s)  LR: 1.339e-04  Data: 0.009 (0.027)
+Train: 117 [ 185/186 (100%)]  Loss: 5.627 (5.78)  Rec_Loss: 1.882 (1.80)  Rec_Weight: 0.90  Time: 0.561s,  227.99/s  (0.578s,  221.54/s)  LR: 1.339e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.444 (2.444)  Loss:  2.2285 (2.2285)  Acc@1: 56.2500 (56.2500)  Acc@5: 78.9062 (78.9062)
+Test: [ 100/192]  Time: 0.106 (0.294)  Loss:  2.3066 (2.2941)  Acc@1: 55.4688 (53.4731)  Acc@5: 77.3438 (77.0034)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.5098 (2.3155)  Acc@1: 47.3684 (52.7666)  Acc@5: 68.4211 (76.5396)
+Test: [Whole Val]  Time: 54.611  Loss: 2.3155  Acc@1: 52.7666 Pruned: 28.39% 
+Train: 118 [   0/186 (  0%)]  Loss: 6.137 (6.14)  Rec_Loss: 1.854 (1.85)  Rec_Weight: 0.90  Time: 2.337s,   54.76/s  (2.337s,   54.76/s)  LR: 1.329e-04  Data: 1.783 (1.783)
+Train: 118 [ 100/186 ( 54%)]  Loss: 4.657 (5.82)  Rec_Loss: 1.825 (1.79)  Rec_Weight: 0.90  Time: 0.566s,  226.00/s  (0.584s,  219.06/s)  LR: 1.329e-04  Data: 0.009 (0.026)
+Train: 118 [ 185/186 (100%)]  Loss: 5.952 (5.85)  Rec_Loss: 1.834 (1.79)  Rec_Weight: 0.90  Time: 0.562s,  227.65/s  (0.578s,  221.64/s)  LR: 1.329e-04  Data: 0.000 (0.018)
+Test: [   0/192]  Time: 2.498 (2.498)  Loss:  2.2852 (2.2852)  Acc@1: 55.4688 (55.4688)  Acc@5: 77.3438 (77.3438)
+Test: [ 100/192]  Time: 0.106 (0.294)  Loss:  2.3770 (2.3298)  Acc@1: 53.9062 (53.1327)  Acc@5: 75.0000 (76.1603)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.5527 (2.3518)  Acc@1: 45.6140 (52.3769)  Acc@5: 68.4211 (75.8576)
+Test: [Whole Val]  Time: 54.642  Loss: 2.3518  Acc@1: 52.3769 Pruned: 28.59% 
+Train: 119 [   0/186 (  0%)]  Loss: 6.299 (6.30)  Rec_Loss: 1.723 (1.72)  Rec_Weight: 0.90  Time: 2.478s,   51.65/s  (2.478s,   51.65/s)  LR: 1.319e-04  Data: 1.922 (1.922)
+Train: 119 [ 100/186 ( 54%)]  Loss: 6.477 (5.68)  Rec_Loss: 1.741 (1.80)  Rec_Weight: 0.90  Time: 0.570s,  224.76/s  (0.586s,  218.49/s)  LR: 1.319e-04  Data: 0.009 (0.028)
+Train: 119 [ 185/186 (100%)]  Loss: 6.465 (5.69)  Rec_Loss: 1.767 (1.80)  Rec_Weight: 0.90  Time: 0.564s,  226.94/s  (0.578s,  221.37/s)  LR: 1.319e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.518 (2.518)  Loss:  2.3105 (2.3105)  Acc@1: 53.9062 (53.9062)  Acc@5: 78.1250 (78.1250)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.3496 (2.3337)  Acc@1: 58.5938 (52.9007)  Acc@5: 76.5625 (76.2840)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.5742 (2.3542)  Acc@1: 52.6316 (52.1617)  Acc@5: 66.6667 (75.8535)
+Test: [Whole Val]  Time: 54.559  Loss: 2.3542  Acc@1: 52.1617 Pruned: 28.79% 
+Train: 120 [   0/186 (  0%)]  Loss: 6.316 (6.32)  Rec_Loss: 1.753 (1.75)  Rec_Weight: 0.90  Time: 2.398s,   53.37/s  (2.398s,   53.37/s)  LR: 1.309e-04  Data: 1.843 (1.843)
+Train: 120 [ 100/186 ( 54%)]  Loss: 4.892 (5.78)  Rec_Loss: 1.749 (1.81)  Rec_Weight: 0.90  Time: 0.567s,  225.74/s  (0.586s,  218.61/s)  LR: 1.309e-04  Data: 0.008 (0.027)
+Train: 120 [ 185/186 (100%)]  Loss: 5.706 (5.81)  Rec_Loss: 1.880 (1.80)  Rec_Weight: 0.90  Time: 0.563s,  227.39/s  (0.578s,  221.56/s)  LR: 1.309e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.405 (2.405)  Loss:  2.3125 (2.3125)  Acc@1: 50.0000 (50.0000)  Acc@5: 78.1250 (78.1250)
+Test: [ 100/192]  Time: 0.153 (0.293)  Loss:  2.3496 (2.3553)  Acc@1: 57.8125 (52.5139)  Acc@5: 78.9062 (76.3227)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.6465 (2.3764)  Acc@1: 43.8596 (51.7720)  Acc@5: 66.6667 (75.7723)
+Test: [Whole Val]  Time: 54.881  Loss: 2.3764  Acc@1: 51.7720 Pruned: 29.00% 
+Train: 121 [   0/186 (  0%)]  Loss: 5.422 (5.42)  Rec_Loss: 1.817 (1.82)  Rec_Weight: 0.90  Time: 2.488s,   51.44/s  (2.488s,   51.44/s)  LR: 1.299e-04  Data: 1.931 (1.931)
+Train: 121 [ 100/186 ( 54%)]  Loss: 4.963 (5.73)  Rec_Loss: 1.809 (1.82)  Rec_Weight: 0.90  Time: 0.569s,  225.10/s  (0.586s,  218.26/s)  LR: 1.299e-04  Data: 0.008 (0.028)
+Train: 121 [ 185/186 (100%)]  Loss: 5.396 (5.72)  Rec_Loss: 1.824 (1.81)  Rec_Weight: 0.90  Time: 0.562s,  227.89/s  (0.579s,  221.08/s)  LR: 1.299e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.466 (2.466)  Loss:  2.3242 (2.3242)  Acc@1: 54.6875 (54.6875)  Acc@5: 77.3438 (77.3438)
+Test: [ 100/192]  Time: 0.107 (0.294)  Loss:  2.3555 (2.3418)  Acc@1: 54.6875 (52.6300)  Acc@5: 75.0000 (76.0133)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.5371 (2.3599)  Acc@1: 49.1228 (52.0684)  Acc@5: 70.1754 (75.7642)
+Test: [Whole Val]  Time: 54.655  Loss: 2.3599  Acc@1: 52.0684 Pruned: 29.20% 
+Train: 122 [   0/186 (  0%)]  Loss: 6.337 (6.34)  Rec_Loss: 1.768 (1.77)  Rec_Weight: 0.90  Time: 2.388s,   53.61/s  (2.388s,   53.61/s)  LR: 1.289e-04  Data: 1.832 (1.832)
+Train: 122 [ 100/186 ( 54%)]  Loss: 5.212 (5.85)  Rec_Loss: 1.900 (1.80)  Rec_Weight: 0.90  Time: 0.569s,  224.84/s  (0.586s,  218.58/s)  LR: 1.289e-04  Data: 0.009 (0.027)
+Train: 122 [ 185/186 (100%)]  Loss: 4.577 (5.89)  Rec_Loss: 1.839 (1.80)  Rec_Weight: 0.90  Time: 0.561s,  228.22/s  (0.580s,  220.79/s)  LR: 1.289e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.451 (2.451)  Loss:  2.3047 (2.3047)  Acc@1: 54.6875 (54.6875)  Acc@5: 77.3438 (77.3438)
+Test: [ 100/192]  Time: 0.106 (0.294)  Loss:  2.3730 (2.3948)  Acc@1: 54.6875 (51.5625)  Acc@5: 78.1250 (75.5724)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.6348 (2.4162)  Acc@1: 45.6140 (50.8383)  Acc@5: 64.9123 (75.0376)
+Test: [Whole Val]  Time: 54.777  Loss: 2.4162  Acc@1: 50.8383 Pruned: 29.40% 
+Train: 123 [   0/186 (  0%)]  Loss: 5.992 (5.99)  Rec_Loss: 1.693 (1.69)  Rec_Weight: 0.90  Time: 2.359s,   54.25/s  (2.359s,   54.25/s)  LR: 1.279e-04  Data: 1.804 (1.804)
+Train: 123 [ 100/186 ( 54%)]  Loss: 5.931 (5.77)  Rec_Loss: 1.740 (1.81)  Rec_Weight: 0.90  Time: 0.569s,  224.80/s  (0.588s,  217.79/s)  LR: 1.279e-04  Data: 0.009 (0.030)
+Train: 123 [ 185/186 (100%)]  Loss: 6.457 (5.78)  Rec_Loss: 1.814 (1.80)  Rec_Weight: 0.90  Time: 0.562s,  227.82/s  (0.580s,  220.74/s)  LR: 1.279e-04  Data: 0.000 (0.021)
+Test: [   0/192]  Time: 2.464 (2.464)  Loss:  2.3027 (2.3027)  Acc@1: 53.1250 (53.1250)  Acc@5: 77.3438 (77.3438)
+Test: [ 100/192]  Time: 0.107 (0.302)  Loss:  2.3770 (2.3558)  Acc@1: 52.3438 (52.3902)  Acc@5: 78.1250 (75.9205)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.6152 (2.3757)  Acc@1: 40.3509 (51.5528)  Acc@5: 68.4211 (75.5815)
+Test: [Whole Val]  Time: 54.670  Loss: 2.3757  Acc@1: 51.5528 Pruned: 29.60% 
+Train: 124 [   0/186 (  0%)]  Loss: 6.013 (6.01)  Rec_Loss: 1.863 (1.86)  Rec_Weight: 0.90  Time: 2.510s,   51.00/s  (2.510s,   51.00/s)  LR: 1.269e-04  Data: 1.951 (1.951)
+Train: 124 [ 100/186 ( 54%)]  Loss: 4.906 (5.83)  Rec_Loss: 1.898 (1.80)  Rec_Weight: 0.90  Time: 0.570s,  224.48/s  (0.592s,  216.39/s)  LR: 1.269e-04  Data: 0.009 (0.031)
+Train: 124 [ 185/186 (100%)]  Loss: 5.568 (5.80)  Rec_Loss: 1.766 (1.81)  Rec_Weight: 0.90  Time: 0.561s,  228.13/s  (0.582s,  219.88/s)  LR: 1.269e-04  Data: 0.000 (0.021)
+Test: [   0/192]  Time: 2.461 (2.461)  Loss:  2.3555 (2.3555)  Acc@1: 50.7812 (50.7812)  Acc@5: 77.3438 (77.3438)
+Test: [ 100/192]  Time: 0.108 (0.294)  Loss:  2.3711 (2.3789)  Acc@1: 55.4688 (51.7868)  Acc@5: 77.3438 (75.4796)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.6387 (2.3968)  Acc@1: 40.3509 (51.0819)  Acc@5: 71.9298 (75.0376)
+Test: [Whole Val]  Time: 54.807  Loss: 2.3968  Acc@1: 51.0819 Pruned: 29.79% 
+Train: 125 [   0/186 (  0%)]  Loss: 6.458 (6.46)  Rec_Loss: 1.822 (1.82)  Rec_Weight: 0.90  Time: 2.395s,   53.45/s  (2.395s,   53.45/s)  LR: 1.259e-04  Data: 1.838 (1.838)
+Train: 125 [ 100/186 ( 54%)]  Loss: 4.931 (5.84)  Rec_Loss: 1.905 (1.82)  Rec_Weight: 0.90  Time: 0.569s,  224.81/s  (0.598s,  214.17/s)  LR: 1.259e-04  Data: 0.009 (0.035)
+Train: 125 [ 185/186 (100%)]  Loss: 5.431 (5.83)  Rec_Loss: 1.835 (1.81)  Rec_Weight: 0.90  Time: 0.560s,  228.61/s  (0.586s,  218.32/s)  LR: 1.259e-04  Data: 0.000 (0.024)
+Test: [   0/192]  Time: 2.438 (2.438)  Loss:  2.3242 (2.3242)  Acc@1: 56.2500 (56.2500)  Acc@5: 75.7812 (75.7812)
+Test: [ 100/192]  Time: 0.108 (0.294)  Loss:  2.3633 (2.3692)  Acc@1: 53.9062 (52.1658)  Acc@5: 75.0000 (75.9901)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.5527 (2.3862)  Acc@1: 50.8772 (51.6665)  Acc@5: 66.6667 (75.6100)
+Test: [Whole Val]  Time: 54.650  Loss: 2.3862  Acc@1: 51.6665 Pruned: 29.99% 
+Train: 126 [   0/186 (  0%)]  Loss: 4.818 (4.82)  Rec_Loss: 1.886 (1.89)  Rec_Weight: 0.90  Time: 2.419s,   52.92/s  (2.419s,   52.92/s)  LR: 1.249e-04  Data: 1.863 (1.863)
+Train: 126 [ 100/186 ( 54%)]  Loss: 6.040 (5.71)  Rec_Loss: 1.818 (1.81)  Rec_Weight: 0.90  Time: 0.569s,  224.86/s  (0.589s,  217.39/s)  LR: 1.249e-04  Data: 0.009 (0.031)
+Train: 126 [ 185/186 (100%)]  Loss: 5.938 (5.80)  Rec_Loss: 1.867 (1.81)  Rec_Weight: 0.90  Time: 0.560s,  228.47/s  (0.580s,  220.67/s)  LR: 1.249e-04  Data: 0.000 (0.021)
+Test: [   0/192]  Time: 2.413 (2.413)  Loss:  2.3223 (2.3223)  Acc@1: 54.6875 (54.6875)  Acc@5: 75.7812 (75.7812)
+Test: [ 100/192]  Time: 0.106 (0.293)  Loss:  2.4121 (2.3840)  Acc@1: 50.7812 (52.0730)  Acc@5: 75.7812 (75.5105)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.6172 (2.3974)  Acc@1: 50.8772 (51.4757)  Acc@5: 68.4211 (75.2446)
+Test: [Whole Val]  Time: 54.602  Loss: 2.3974  Acc@1: 51.4757 Pruned: 30.17% 
+Train: 127 [   0/186 (  0%)]  Loss: 6.070 (6.07)  Rec_Loss: 1.877 (1.88)  Rec_Weight: 0.90  Time: 2.485s,   51.50/s  (2.485s,   51.50/s)  LR: 1.239e-04  Data: 1.928 (1.928)
+Train: 127 [ 100/186 ( 54%)]  Loss: 4.436 (5.91)  Rec_Loss: 1.843 (1.82)  Rec_Weight: 0.90  Time: 0.567s,  225.58/s  (0.586s,  218.35/s)  LR: 1.239e-04  Data: 0.008 (0.028)
+Train: 127 [ 185/186 (100%)]  Loss: 4.972 (5.86)  Rec_Loss: 1.888 (1.81)  Rec_Weight: 0.90  Time: 0.560s,  228.50/s  (0.579s,  221.20/s)  LR: 1.239e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.407 (2.407)  Loss:  2.2871 (2.2871)  Acc@1: 53.1250 (53.1250)  Acc@5: 75.0000 (75.0000)
+Test: [ 100/192]  Time: 0.108 (0.294)  Loss:  2.3906 (2.3905)  Acc@1: 50.7812 (51.7559)  Acc@5: 75.0000 (75.4022)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.5625 (2.4086)  Acc@1: 47.3684 (51.0169)  Acc@5: 66.6667 (74.9888)
+Test: [Whole Val]  Time: 54.714  Loss: 2.4086  Acc@1: 51.0169 Pruned: 30.36% 
+Train: 128 [   0/186 (  0%)]  Loss: 6.466 (6.47)  Rec_Loss: 1.771 (1.77)  Rec_Weight: 0.90  Time: 2.528s,   50.63/s  (2.528s,   50.63/s)  LR: 1.228e-04  Data: 1.971 (1.971)
+Train: 128 [ 100/186 ( 54%)]  Loss: 6.149 (5.82)  Rec_Loss: 1.773 (1.81)  Rec_Weight: 0.90  Time: 0.569s,  224.86/s  (0.587s,  218.08/s)  LR: 1.228e-04  Data: 0.008 (0.028)
+Train: 128 [ 185/186 (100%)]  Loss: 6.620 (5.85)  Rec_Loss: 1.791 (1.81)  Rec_Weight: 0.90  Time: 0.562s,  227.63/s  (0.579s,  220.94/s)  LR: 1.228e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.431 (2.431)  Loss:  2.3516 (2.3516)  Acc@1: 56.2500 (56.2500)  Acc@5: 75.7812 (75.7812)
+Test: [ 100/192]  Time: 0.107 (0.293)  Loss:  2.4277 (2.4068)  Acc@1: 51.5625 (51.5548)  Acc@5: 75.0000 (75.0774)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.5996 (2.4244)  Acc@1: 47.3684 (50.8830)  Acc@5: 68.4211 (74.8752)
+Test: [Whole Val]  Time: 54.604  Loss: 2.4244  Acc@1: 50.8830 Pruned: 30.55% 
+Train: 129 [   0/186 (  0%)]  Loss: 6.242 (6.24)  Rec_Loss: 1.829 (1.83)  Rec_Weight: 0.90  Time: 2.388s,   53.60/s  (2.388s,   53.60/s)  LR: 1.218e-04  Data: 1.832 (1.832)
+Train: 129 [ 100/186 ( 54%)]  Loss: 5.794 (5.65)  Rec_Loss: 1.758 (1.83)  Rec_Weight: 0.90  Time: 0.569s,  224.98/s  (0.586s,  218.40/s)  LR: 1.218e-04  Data: 0.009 (0.027)
+Train: 129 [ 185/186 (100%)]  Loss: 6.098 (5.70)  Rec_Loss: 1.868 (1.83)  Rec_Weight: 0.90  Time: 0.562s,  227.90/s  (0.578s,  221.57/s)  LR: 1.218e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.416 (2.416)  Loss:  2.3418 (2.3418)  Acc@1: 57.8125 (57.8125)  Acc@5: 74.2188 (74.2188)
+Test: [ 100/192]  Time: 0.107 (0.297)  Loss:  2.3965 (2.3903)  Acc@1: 53.1250 (51.6166)  Acc@5: 75.7812 (75.3249)
+Test: [ 192/192]  Time: 0.047 (0.286)  Loss:  2.6699 (2.4110)  Acc@1: 43.8596 (51.0088)  Acc@5: 68.4211 (74.8873)
+Test: [Whole Val]  Time: 55.116  Loss: 2.4110  Acc@1: 51.0088 Pruned: 30.73% 
+Train: 130 [   0/186 (  0%)]  Loss: 6.685 (6.69)  Rec_Loss: 1.862 (1.86)  Rec_Weight: 0.90  Time: 2.405s,   53.22/s  (2.405s,   53.22/s)  LR: 1.208e-04  Data: 1.850 (1.850)
+Train: 130 [ 100/186 ( 54%)]  Loss: 4.382 (5.83)  Rec_Loss: 1.809 (1.81)  Rec_Weight: 0.90  Time: 0.570s,  224.71/s  (0.585s,  218.78/s)  LR: 1.208e-04  Data: 0.009 (0.027)
+Train: 130 [ 185/186 (100%)]  Loss: 6.588 (5.86)  Rec_Loss: 1.772 (1.81)  Rec_Weight: 0.90  Time: 0.562s,  227.62/s  (0.578s,  221.49/s)  LR: 1.208e-04  Data: 0.000 (0.019)
+Test: [   0/192]  Time: 2.463 (2.463)  Loss:  2.3262 (2.3262)  Acc@1: 53.9062 (53.9062)  Acc@5: 75.7812 (75.7812)
+Test: [ 100/192]  Time: 0.107 (0.295)  Loss:  2.4121 (2.3985)  Acc@1: 52.3438 (51.4233)  Acc@5: 75.7812 (75.1779)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.6074 (2.4199)  Acc@1: 40.3509 (50.6475)  Acc@5: 63.1579 (74.8183)
+Test: [Whole Val]  Time: 54.874  Loss: 2.4199  Acc@1: 50.6475 Pruned: 30.92% 
+Train: 131 [   0/186 (  0%)]  Loss: 5.020 (5.02)  Rec_Loss: 1.860 (1.86)  Rec_Weight: 0.90  Time: 2.402s,   53.28/s  (2.402s,   53.28/s)  LR: 1.198e-04  Data: 1.846 (1.846)
+Train: 131 [ 100/186 ( 54%)]  Loss: 4.813 (5.97)  Rec_Loss: 1.892 (1.82)  Rec_Weight: 0.90  Time: 0.569s,  224.83/s  (0.587s,  217.89/s)  LR: 1.198e-04  Data: 0.009 (0.029)
+Train: 131 [ 185/186 (100%)]  Loss: 5.766 (5.87)  Rec_Loss: 1.749 (1.82)  Rec_Weight: 0.90  Time: 0.562s,  227.86/s  (0.579s,  220.88/s)  LR: 1.198e-04  Data: 0.000 (0.020)
+Test: [   0/192]  Time: 2.439 (2.439)  Loss:  2.3438 (2.3438)  Acc@1: 56.2500 (56.2500)  Acc@5: 76.5625 (76.5625)
+Test: [ 100/192]  Time: 0.106 (0.293)  Loss:  2.3789 (2.4167)  Acc@1: 53.9062 (50.9592)  Acc@5: 75.7812 (74.8376)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.7129 (2.4339)  Acc@1: 38.5965 (50.2781)  Acc@5: 68.4211 (74.5423)
+Test: [Whole Val]  Time: 54.613  Loss: 2.4339  Acc@1: 50.2781 Pruned: 31.09% 
+Train: 132 [   0/186 (  0%)]  Loss: 6.750 (6.75)  Rec_Loss: 1.782 (1.78)  Rec_Weight: 0.90  Time: 2.534s,   50.51/s  (2.534s,   50.51/s)  LR: 1.187e-04  Data: 1.977 (1.977)
+Train: 132 [ 100/186 ( 54%)]  Loss: 5.076 (5.87)  Rec_Loss: 1.837 (1.82)  Rec_Weight: 0.90  Time: 0.571s,  224.08/s  (0.592s,  216.37/s)  LR: 1.187e-04  Data: 0.013 (0.035)
+Train: 132 [ 185/186 (100%)]  Loss: 6.681 (5.83)  Rec_Loss: 1.783 (1.82)  Rec_Weight: 0.90  Time: 0.561s,  228.15/s  (0.585s,  218.65/s)  LR: 1.187e-04  Data: 0.000 (0.027)
+Test: [   0/192]  Time: 2.669 (2.669)  Loss:  2.3613 (2.3613)  Acc@1: 52.3438 (52.3438)  Acc@5: 74.2188 (74.2188)
+Test: [ 100/192]  Time: 0.105 (0.297)  Loss:  2.4141 (2.4374)  Acc@1: 53.9062 (50.7426)  Acc@5: 75.7812 (74.7061)
+Test: [ 192/192]  Time: 0.047 (0.287)  Loss:  2.6641 (2.4536)  Acc@1: 38.5965 (50.2091)  Acc@5: 68.4211 (74.2784)
+Test: [Whole Val]  Time: 55.324  Loss: 2.4536  Acc@1: 50.2091 Pruned: 31.24% 
+Train: 133 [   0/186 (  0%)]  Loss: 6.232 (6.23)  Rec_Loss: 1.863 (1.86)  Rec_Weight: 0.90  Time: 2.339s,   54.72/s  (2.339s,   54.72/s)  LR: 1.177e-04  Data: 1.784 (1.784)
+Train: 133 [ 100/186 ( 54%)]  Loss: 6.410 (5.88)  Rec_Loss: 1.758 (1.82)  Rec_Weight: 0.90  Time: 0.568s,  225.20/s  (0.601s,  212.88/s)  LR: 1.177e-04  Data: 0.009 (0.044)
+Train: 133 [ 185/186 (100%)]  Loss: 5.669 (5.86)  Rec_Loss: 1.883 (1.82)  Rec_Weight: 0.90  Time: 0.562s,  227.73/s  (0.588s,  217.62/s)  LR: 1.177e-04  Data: 0.000 (0.030)
+Test: [   0/192]  Time: 2.654 (2.654)  Loss:  2.3398 (2.3398)  Acc@1: 54.6875 (54.6875)  Acc@5: 72.6562 (72.6562)
+Test: [ 100/192]  Time: 0.108 (0.297)  Loss:  2.3945 (2.4379)  Acc@1: 54.6875 (50.8199)  Acc@5: 76.5625 (74.7061)
+Test: [ 192/192]  Time: 0.047 (0.284)  Loss:  2.6797 (2.4533)  Acc@1: 43.8596 (50.1888)  Acc@5: 68.4211 (74.3758)
+Test: [Whole Val]  Time: 54.802  Loss: 2.4533  Acc@1: 50.1888 Pruned: 31.42% 
+Train: 134 [   0/186 (  0%)]  Loss: 6.320 (6.32)  Rec_Loss: 1.737 (1.74)  Rec_Weight: 0.90  Time: 2.456s,   52.11/s  (2.456s,   52.11/s)  LR: 1.167e-04  Data: 1.902 (1.902)
+Train: 134 [ 100/186 ( 54%)]  Loss: 5.963 (5.80)  Rec_Loss: 1.764 (1.82)  Rec_Weight: 0.90  Time: 0.566s,  226.14/s  (0.617s,  207.37/s)  LR: 1.167e-04  Data: 0.009 (0.060)
+Train: 134 [ 185/186 (100%)]  Loss: 6.369 (5.84)  Rec_Loss: 1.755 (1.82)  Rec_Weight: 0.90  Time: 0.558s,  229.25/s  (0.600s,  213.50/s)  LR: 1.167e-04  Data: 0.000 (0.041)
+Test: [   0/192]  Time: 2.469 (2.469)  Loss:  2.3594 (2.3594)  Acc@1: 57.8125 (57.8125)  Acc@5: 76.5625 (76.5625)
+Test: [ 100/192]  Time: 0.106 (0.292)  Loss:  2.4785 (2.4579)  Acc@1: 53.9062 (50.7580)  Acc@5: 75.7812 (74.2188)
+Test: [ 192/192]  Time: 0.047 (0.280)  Loss:  2.5703 (2.4732)  Acc@1: 45.6140 (49.9858)  Acc@5: 73.6842 (73.8197)
+Test: [Whole Val]  Time: 54.126  Loss: 2.4732  Acc@1: 49.9858 Pruned: 31.60% 
+Train: 135 [   0/186 (  0%)]  Loss: 6.345 (6.34)  Rec_Loss: 1.767 (1.77)  Rec_Weight: 0.90  Time: 2.879s,   44.46/s  (2.879s,   44.46/s)  LR: 1.156e-04  Data: 2.323 (2.323)
+Train: 135 [ 100/186 ( 54%)]  Loss: 5.786 (5.82)  Rec_Loss: 1.716 (1.82)  Rec_Weight: 0.90  Time: 0.566s,  226.14/s  (0.601s,  212.87/s)  LR: 1.156e-04  Data: 0.009 (0.043)
+Train: 135 [ 185/186 (100%)]  Loss: 4.607 (5.83)  Rec_Loss: 1.885 (1.82)  Rec_Weight: 0.90  Time: 0.559s,  228.92/s  (0.589s,  217.43/s)  LR: 1.156e-04  Data: 0.000 (0.030)
+Test: [   0/192]  Time: 2.548 (2.548)  Loss:  2.3184 (2.3184)  Acc@1: 56.2500 (56.2500)  Acc@5: 76.5625 (76.5625)
+Test: [ 100/192]  Time: 0.107 (0.303)  Loss:  2.4492 (2.4396)  Acc@1: 56.2500 (50.4409)  Acc@5: 74.2188 (74.4740)
+Test: [ 192/192]  Time: 0.047 (0.286)  Loss:  2.6094 (2.4558)  Acc@1: 45.6140 (49.8924)  Acc@5: 68.4211 (74.1404)
+Test: [Whole Val]  Time: 55.200  Loss: 2.4558  Acc@1: 49.8924 Pruned: 31.78% 
+Train: 136 [   0/186 (  0%)]  Loss: 6.749 (6.75)  Rec_Loss: 1.927 (1.93)  Rec_Weight: 0.90  Time: 2.550s,   50.20/s  (2.550s,   50.20/s)  LR: 1.146e-04  Data: 1.995 (1.995)
+Train: 136 [ 100/186 ( 54%)]  Loss: 6.284 (5.91)  Rec_Loss: 1.727 (1.81)  Rec_Weight: 0.90  Time: 0.568s,  225.48/s  (0.594s,  215.64/s)  LR: 1.146e-04  Data: 0.008 (0.036)
+Train: 136 [ 185/186 (100%)]  Loss: 5.974 (5.86)  Rec_Loss: 1.766 (1.82)  Rec_Weight: 0.90  Time: 0.561s,  228.10/s  (0.586s,  218.48/s)  LR: 1.146e-04  Data: 0.000 (0.028)
+Test: [   0/192]  Time: 2.476 (2.476)  Loss:  2.3086 (2.3086)  Acc@1: 54.6875 (54.6875)  Acc@5: 75.7812 (75.7812)
+Test: [ 100/192]  Time: 0.108 (0.290)  Loss:  2.4316 (2.4401)  Acc@1: 50.0000 (50.5647)  Acc@5: 73.4375 (74.4044)
+Test: [ 192/192]  Time: 0.047 (0.279)  Loss:  2.6230 (2.4571)  Acc@1: 43.8596 (49.8112)  Acc@5: 71.9298 (74.0795)
+Test: [Whole Val]  Time: 53.921  Loss: 2.4571  Acc@1: 49.8112 Pruned: 31.95% 
+Train: 137 [   0/186 (  0%)]  Loss: 6.571 (6.57)  Rec_Loss: 1.840 (1.84)  Rec_Weight: 0.90  Time: 2.453s,   52.18/s  (2.453s,   52.18/s)  LR: 1.136e-04  Data: 1.899 (1.899)
+Train: 137 [ 100/186 ( 54%)]  Loss: 6.655 (5.78)  Rec_Loss: 1.868 (1.83)  Rec_Weight: 0.90  Time: 0.565s,  226.60/s  (0.599s,  213.75/s)  LR: 1.136e-04  Data: 0.009 (0.041)
+Train: 137 [ 185/186 (100%)]  Loss: 6.710 (5.85)  Rec_Loss: 1.809 (1.82)  Rec_Weight: 0.90  Time: 0.561s,  228.11/s  (0.590s,  217.11/s)  LR: 1.136e-04  Data: 0.000 (0.031)
+Test: [   0/192]  Time: 2.429 (2.429)  Loss:  2.2812 (2.2812)  Acc@1: 57.8125 (57.8125)  Acc@5: 78.9062 (78.9062)
+Test: [ 100/192]  Time: 0.108 (0.290)  Loss:  2.4512 (2.4532)  Acc@1: 55.4688 (50.5260)  Acc@5: 74.2188 (74.4121)
+Test: [ 192/192]  Time: 0.047 (0.280)  Loss:  2.7422 (2.4715)  Acc@1: 42.1053 (49.8315)  Acc@5: 68.4211 (73.9577)
+Test: [Whole Val]  Time: 54.004  Loss: 2.4715  Acc@1: 49.8315 Pruned: 32.12% 
+Train: 138 [   0/186 (  0%)]  Loss: 5.739 (5.74)  Rec_Loss: 1.787 (1.79)  Rec_Weight: 0.90  Time: 2.577s,   49.66/s  (2.577s,   49.66/s)  LR: 1.125e-04  Data: 2.021 (2.021)
+Train: 138 [ 100/186 ( 54%)]  Loss: 4.740 (5.79)  Rec_Loss: 1.799 (1.82)  Rec_Weight: 0.90  Time: 0.568s,  225.19/s  (0.595s,  215.21/s)  LR: 1.125e-04  Data: 0.009 (0.036)
+Train: 138 [ 185/186 (100%)]  Loss: 6.177 (5.84)  Rec_Loss: 1.875 (1.82)  Rec_Weight: 0.90  Time: 0.560s,  228.42/s  (0.586s,  218.29/s)  LR: 1.125e-04  Data: 0.000 (0.027)
+Test: [   0/192]  Time: 2.788 (2.788)  Loss:  2.3145 (2.3145)  Acc@1: 52.3438 (52.3438)  Acc@5: 75.7812 (75.7812)
+Test: [ 100/192]  Time: 0.108 (0.289)  Loss:  2.4668 (2.4491)  Acc@1: 51.5625 (50.5105)  Acc@5: 75.7812 (74.4663)
+Test: [ 192/192]  Time: 0.047 (0.279)  Loss:  2.6465 (2.4699)  Acc@1: 43.8596 (49.8315)  Acc@5: 70.1754 (73.7588)
+Test: [Whole Val]  Time: 53.829  Loss: 2.4699  Acc@1: 49.8315 Pruned: 32.30% 
+Train: 139 [   0/186 (  0%)]  Loss: 4.599 (4.60)  Rec_Loss: 1.881 (1.88)  Rec_Weight: 0.90  Time: 2.428s,   52.71/s  (2.428s,   52.71/s)  LR: 1.115e-04  Data: 1.873 (1.873)
+Train: 139 [ 100/186 ( 54%)]  Loss: 6.520 (5.87)  Rec_Loss: 1.761 (1.82)  Rec_Weight: 0.90  Time: 0.568s,  225.31/s  (0.589s,  217.36/s)  LR: 1.115e-04  Data: 0.009 (0.031)
+Train: 139 [ 185/186 (100%)]  Loss: 5.773 (5.89)  Rec_Loss: 1.744 (1.82)  Rec_Weight: 0.90  Time: 0.561s,  228.15/s  (0.580s,  220.52/s)  LR: 1.115e-04  Data: 0.000 (0.021)
+Test: [   0/192]  Time: 2.454 (2.454)  Loss:  2.3535 (2.3535)  Acc@1: 53.1250 (53.1250)  Acc@5: 75.0000 (75.0000)
+Test: [ 100/192]  Time: 0.108 (0.290)  Loss:  2.4648 (2.4812)  Acc@1: 52.3438 (50.2321)  Acc@5: 73.4375 (73.9171)
+Test: [ 192/192]  Time: 0.047 (0.280)  Loss:  2.6797 (2.4979)  Acc@1: 43.8596 (49.8234)  Acc@5: 66.6667 (73.3894)
+Test: [Whole Val]  Time: 53.978  Loss: 2.4979  Acc@1: 49.8234 Pruned: 32.48% 
+Train: 140 [   0/186 (  0%)]  Loss: 5.206 (5.21)  Rec_Loss: 1.931 (1.93)  Rec_Weight: 0.90  Time: 2.470s,   51.83/s  (2.470s,   51.83/s)  LR: 1.105e-04  Data: 1.914 (1.914)
+Train: 140 [ 100/186 ( 54%)]  Loss: 6.470 (5.96)  Rec_Loss: 1.892 (1.82)  Rec_Weight: 0.90  Time: 0.570s,  224.62/s  (0.597s,  214.51/s)  LR: 1.105e-04  Data: 0.010 (0.039)
+Train: 140 [ 185/186 (100%)]  Loss: 4.890 (5.94)  Rec_Loss: 1.856 (1.82)  Rec_Weight: 0.90  Time: 0.559s,  228.84/s  (0.588s,  217.54/s)  LR: 1.105e-04  Data: 0.000 (0.030)
+Test: [   0/192]  Time: 2.575 (2.575)  Loss:  2.3301 (2.3301)  Acc@1: 57.0312 (57.0312)  Acc@5: 76.5625 (76.5625)
+Test: [ 100/192]  Time: 0.108 (0.290)  Loss:  2.4844 (2.4758)  Acc@1: 53.9062 (50.3481)  Acc@5: 73.4375 (74.1955)
+Test: [ 192/192]  Time: 0.047 (0.279)  Loss:  2.6914 (2.4947)  Acc@1: 42.1053 (49.6773)  Acc@5: 71.9298 (73.7994)
+Test: [Whole Val]  Time: 53.918  Loss: 2.4947  Acc@1: 49.6773 Pruned: 32.64% 
+Train: 141 [   0/186 (  0%)]  Loss: 5.863 (5.86)  Rec_Loss: 1.855 (1.85)  Rec_Weight: 0.90  Time: 2.396s,   53.42/s  (2.396s,   53.42/s)  LR: 1.094e-04  Data: 1.840 (1.840)
+Train: 141 [ 100/186 ( 54%)]  Loss: 4.548 (5.92)  Rec_Loss: 1.825 (1.82)  Rec_Weight: 0.90  Time: 0.569s,  225.07/s  (0.590s,  216.93/s)  LR: 1.094e-04  Data: 0.009 (0.032)
+Train: 141 [ 185/186 (100%)]  Loss: 5.886 (5.87)  Rec_Loss: 1.867 (1.82)  Rec_Weight: 0.90  Time: 0.560s,  228.51/s  (0.587s,  218.10/s)  LR: 1.094e-04  Data: 0.000 (0.027)
+Test: [   0/192]  Time: 2.630 (2.630)  Loss:  2.3262 (2.3262)  Acc@1: 54.6875 (54.6875)  Acc@5: 78.1250 (78.1250)
+Test: [ 100/192]  Time: 0.108 (0.293)  Loss:  2.4590 (2.4652)  Acc@1: 52.3438 (50.5337)  Acc@5: 74.2188 (74.0873)
+Test: [ 192/192]  Time: 0.048 (0.280)  Loss:  2.7031 (2.4829)  Acc@1: 47.3684 (49.8193)  Acc@5: 70.1754 (73.7588)
+Test: [Whole Val]  Time: 54.018  Loss: 2.4829  Acc@1: 49.8193 Pruned: 32.80% 
+Train: 142 [   0/186 (  0%)]  Loss: 6.674 (6.67)  Rec_Loss: 1.770 (1.77)  Rec_Weight: 0.90  Time: 2.422s,   52.86/s  (2.422s,   52.86/s)  LR: 1.084e-04  Data: 1.866 (1.866)
+Train: 142 [ 100/186 ( 54%)]  Loss: 5.820 (5.91)  Rec_Loss: 1.763 (1.83)  Rec_Weight: 0.90  Time: 0.570s,  224.49/s  (0.590s,  216.90/s)  LR: 1.084e-04  Data: 0.010 (0.032)
+Train: 142 [ 185/186 (100%)]  Loss: 5.569 (5.89)  Rec_Loss: 1.793 (1.82)  Rec_Weight: 0.90  Time: 0.561s,  228.18/s  (0.583s,  219.73/s)  LR: 1.084e-04  Data: 0.000 (0.023)
+Test: [   0/192]  Time: 2.485 (2.485)  Loss:  2.3750 (2.3750)  Acc@1: 51.5625 (51.5625)  Acc@5: 75.7812 (75.7812)
+Test: [ 100/192]  Time: 0.121 (0.331)  Loss:  2.4746 (2.4873)  Acc@1: 54.6875 (50.0464)  Acc@5: 71.8750 (73.8629)
+Test: [ 192/192]  Time: 0.047 (0.315)  Loss:  2.7246 (2.5010)  Acc@1: 42.1053 (49.4296)  Acc@5: 64.9123 (73.4624)
+Test: [Whole Val]  Time: 60.773  Loss: 2.5010  Acc@1: 49.4296 Pruned: 32.94% 
+Train: 143 [   0/186 (  0%)]  Loss: 4.810 (4.81)  Rec_Loss: 1.886 (1.89)  Rec_Weight: 0.90  Time: 2.454s,   52.16/s  (2.454s,   52.16/s)  LR: 1.073e-04  Data: 1.899 (1.899)
+Train: 143 [ 100/186 ( 54%)]  Loss: 5.194 (5.86)  Rec_Loss: 1.813 (1.83)  Rec_Weight: 0.90  Time: 0.566s,  226.22/s  (0.600s,  213.26/s)  LR: 1.073e-04  Data: 0.009 (0.040)
+Train: 143 [ 185/186 (100%)]  Loss: 6.715 (5.87)  Rec_Loss: 1.795 (1.83)  Rec_Weight: 0.90  Time: 0.561s,  228.19/s  (0.593s,  215.95/s)  LR: 1.073e-04  Data: 0.000 (0.033)
+Test: [   0/192]  Time: 2.446 (2.446)  Loss:  2.3379 (2.3379)  Acc@1: 54.6875 (54.6875)  Acc@5: 75.7812 (75.7812)
+Test: [ 100/192]  Time: 0.108 (0.292)  Loss:  2.5137 (2.4915)  Acc@1: 49.2188 (50.1779)  Acc@5: 72.6562 (73.8243)
+Test: [ 192/192]  Time: 0.047 (0.281)  Loss:  2.6758 (2.5104)  Acc@1: 47.3684 (49.2632)  Acc@5: 71.9298 (73.3691)
+Test: [Whole Val]  Time: 54.262  Loss: 2.5104  Acc@1: 49.2632 Pruned: 33.12% 
+Train: 144 [   0/186 (  0%)]  Loss: 5.493 (5.49)  Rec_Loss: 1.795 (1.80)  Rec_Weight: 0.90  Time: 2.548s,   50.24/s  (2.548s,   50.24/s)  LR: 1.063e-04  Data: 1.990 (1.990)
+Train: 144 [ 100/186 ( 54%)]  Loss: 5.829 (5.70)  Rec_Loss: 1.823 (1.83)  Rec_Weight: 0.90  Time: 0.569s,  224.93/s  (0.595s,  215.03/s)  LR: 1.063e-04  Data: 0.009 (0.037)
+Train: 144 [ 185/186 (100%)]  Loss: 5.982 (5.77)  Rec_Loss: 1.885 (1.83)  Rec_Weight: 0.90  Time: 0.561s,  228.35/s  (0.587s,  218.23/s)  LR: 1.063e-04  Data: 0.000 (0.026)
+Test: [   0/192]  Time: 2.447 (2.447)  Loss:  2.3828 (2.3828)  Acc@1: 50.7812 (50.7812)  Acc@5: 75.0000 (75.0000)
+Test: [ 100/192]  Time: 0.111 (0.291)  Loss:  2.4961 (2.4889)  Acc@1: 52.3438 (49.6829)  Acc@5: 73.4375 (73.5071)
+Test: [ 192/192]  Time: 0.047 (0.281)  Loss:  2.6133 (2.5048)  Acc@1: 47.3684 (49.1089)  Acc@5: 71.9298 (73.2107)
+Test: [Whole Val]  Time: 54.154  Loss: 2.5048  Acc@1: 49.1089 Pruned: 33.28% 
+Train: 145 [   0/186 (  0%)]  Loss: 5.959 (5.96)  Rec_Loss: 1.837 (1.84)  Rec_Weight: 0.90  Time: 2.406s,   53.19/s  (2.406s,   53.19/s)  LR: 1.052e-04  Data: 1.850 (1.850)
+Train: 145 [ 100/186 ( 54%)]  Loss: 6.415 (5.85)  Rec_Loss: 1.801 (1.83)  Rec_Weight: 0.90  Time: 0.569s,  224.98/s  (0.599s,  213.81/s)  LR: 1.052e-04  Data: 0.011 (0.041)
+Train: 145 [ 185/186 (100%)]  Loss: 5.157 (5.81)  Rec_Loss: 1.871 (1.83)  Rec_Weight: 0.90  Time: 0.561s,  228.24/s  (0.591s,  216.60/s)  LR: 1.052e-04  Data: 0.000 (0.032)
+Test: [   0/192]  Time: 2.402 (2.402)  Loss:  2.3848 (2.3848)  Acc@1: 55.4688 (55.4688)  Acc@5: 74.2188 (74.2188)
+Test: [ 100/192]  Time: 0.107 (0.291)  Loss:  2.4375 (2.4816)  Acc@1: 50.0000 (49.6983)  Acc@5: 74.2188 (73.9171)
+Test: [ 192/192]  Time: 0.047 (0.281)  Loss:  2.6484 (2.4985)  Acc@1: 45.6140 (49.1861)  Acc@5: 73.6842 (73.2797)
+Test: [Whole Val]  Time: 54.137  Loss: 2.4985  Acc@1: 49.1861 Pruned: 33.43% 
+Train: 146 [   0/186 (  0%)]  Loss: 6.489 (6.49)  Rec_Loss: 1.769 (1.77)  Rec_Weight: 0.90  Time: 2.550s,   50.20/s  (2.550s,   50.20/s)  LR: 1.042e-04  Data: 1.993 (1.993)
+Train: 146 [ 100/186 ( 54%)]  Loss: 4.461 (5.86)  Rec_Loss: 1.815 (1.83)  Rec_Weight: 0.90  Time: 0.569s,  225.02/s  (0.597s,  214.58/s)  LR: 1.042e-04  Data: 0.010 (0.037)
+Train: 146 [ 185/186 (100%)]  Loss: 6.135 (5.92)  Rec_Loss: 1.893 (1.83)  Rec_Weight: 0.90  Time: 0.561s,  228.23/s  (0.595s,  215.27/s)  LR: 1.042e-04  Data: 0.000 (0.033)
+Test: [   0/192]  Time: 2.421 (2.421)  Loss:  2.4004 (2.4004)  Acc@1: 54.6875 (54.6875)  Acc@5: 75.0000 (75.0000)
+Test: [ 100/192]  Time: 0.108 (0.291)  Loss:  2.4922 (2.5033)  Acc@1: 53.1250 (49.6983)  Acc@5: 72.6562 (73.3060)
+Test: [ 192/192]  Time: 0.047 (0.280)  Loss:  2.7617 (2.5193)  Acc@1: 40.3509 (49.1130)  Acc@5: 71.9298 (72.9753)
+Test: [Whole Val]  Time: 54.039  Loss: 2.5193  Acc@1: 49.1130 Pruned: 33.61% 
+Train: 147 [   0/186 (  0%)]  Loss: 5.210 (5.21)  Rec_Loss: 1.971 (1.97)  Rec_Weight: 0.90  Time: 2.589s,   49.44/s  (2.589s,   49.44/s)  LR: 1.031e-04  Data: 2.034 (2.034)
+Train: 147 [ 100/186 ( 54%)]  Loss: 6.442 (5.96)  Rec_Loss: 1.830 (1.82)  Rec_Weight: 0.90  Time: 0.569s,  225.00/s  (0.595s,  214.98/s)  LR: 1.031e-04  Data: 0.010 (0.034)
+Train: 147 [ 185/186 (100%)]  Loss: 6.412 (5.93)  Rec_Loss: 1.819 (1.83)  Rec_Weight: 0.90  Time: 0.560s,  228.57/s  (0.590s,  217.03/s)  LR: 1.031e-04  Data: 0.000 (0.029)
+Test: [   0/192]  Time: 2.425 (2.425)  Loss:  2.3906 (2.3906)  Acc@1: 50.7812 (50.7812)  Acc@5: 74.2188 (74.2188)
+Test: [ 100/192]  Time: 0.107 (0.291)  Loss:  2.4648 (2.4962)  Acc@1: 56.2500 (49.8530)  Acc@5: 75.0000 (73.7624)
+Test: [ 192/192]  Time: 0.047 (0.280)  Loss:  2.7246 (2.5133)  Acc@1: 45.6140 (49.1779)  Acc@5: 64.9123 (73.2392)
+Test: [Whole Val]  Time: 54.098  Loss: 2.5133  Acc@1: 49.1779 Pruned: 33.77% 
+Train: 148 [   0/186 (  0%)]  Loss: 6.076 (6.08)  Rec_Loss: 1.844 (1.84)  Rec_Weight: 0.90  Time: 2.779s,   46.07/s  (2.779s,   46.07/s)  LR: 1.021e-04  Data: 2.223 (2.223)
+Train: 148 [ 100/186 ( 54%)]  Loss: 5.951 (5.98)  Rec_Loss: 1.832 (1.84)  Rec_Weight: 0.90  Time: 0.569s,  225.11/s  (0.595s,  215.06/s)  LR: 1.021e-04  Data: 0.010 (0.038)
+Train: 148 [ 185/186 (100%)]  Loss: 6.417 (5.96)  Rec_Loss: 1.784 (1.83)  Rec_Weight: 0.90  Time: 0.561s,  228.24/s  (0.584s,  219.18/s)  LR: 1.021e-04  Data: 0.000 (0.025)
+Test: [   0/192]  Time: 2.678 (2.678)  Loss:  2.3750 (2.3750)  Acc@1: 50.0000 (50.0000)  Acc@5: 75.7812 (75.7812)
+Test: [ 100/192]  Time: 0.108 (0.291)  Loss:  2.5000 (2.5013)  Acc@1: 50.7812 (49.6210)  Acc@5: 72.6562 (73.6541)
+Test: [ 192/192]  Time: 0.047 (0.281)  Loss:  2.7305 (2.5188)  Acc@1: 43.8596 (48.9993)  Acc@5: 68.4211 (73.2351)
+Test: [Whole Val]  Time: 54.148  Loss: 2.5188  Acc@1: 48.9993 Pruned: 33.92% 
+Train: 149 [   0/186 (  0%)]  Loss: 6.300 (6.30)  Rec_Loss: 1.789 (1.79)  Rec_Weight: 0.90  Time: 2.676s,   47.84/s  (2.676s,   47.84/s)  LR: 1.011e-04  Data: 2.120 (2.120)
+Train: 149 [ 100/186 ( 54%)]  Loss: 5.780 (5.94)  Rec_Loss: 1.811 (1.84)  Rec_Weight: 0.90  Time: 0.568s,  225.51/s  (0.594s,  215.35/s)  LR: 1.011e-04  Data: 0.009 (0.037)
+Train: 149 [ 185/186 (100%)]  Loss: 6.662 (5.91)  Rec_Loss: 1.905 (1.84)  Rec_Weight: 0.90  Time: 0.562s,  227.92/s  (0.589s,  217.14/s)  LR: 1.011e-04  Data: 0.000 (0.029)
+Test: [   0/192]  Time: 2.420 (2.420)  Loss:  2.4258 (2.4258)  Acc@1: 50.0000 (50.0000)  Acc@5: 74.2188 (74.2188)
+Test: [ 100/192]  Time: 0.106 (0.291)  Loss:  2.4473 (2.5084)  Acc@1: 54.6875 (49.4663)  Acc@5: 75.0000 (73.3447)
+Test: [ 192/192]  Time: 0.047 (0.280)  Loss:  2.7266 (2.5253)  Acc@1: 38.5965 (48.7314)  Acc@5: 71.9298 (73.0565)
+Test: [Whole Val]  Time: 54.093  Loss: 2.5253  Acc@1: 48.7314 Pruned: 34.08% 
+Train: 150 [   0/186 (  0%)]  Loss: 6.505 (6.51)  Rec_Loss: 1.782 (1.78)  Rec_Weight: 0.90  Time: 2.509s,   51.01/s  (2.509s,   51.01/s)  LR: 1.000e-04  Data: 1.954 (1.954)
+Train: 150 [ 100/186 ( 54%)]  Loss: 6.012 (5.93)  Rec_Loss: 1.755 (1.83)  Rec_Weight: 0.90  Time: 0.839s,  152.58/s  (0.606s,  211.06/s)  LR: 1.000e-04  Data: 0.278 (0.048)
+Train: 150 [ 185/186 (100%)]  Loss: 5.219 (5.91)  Rec_Loss: 1.863 (1.83)  Rec_Weight: 0.90  Time: 0.560s,  228.73/s  (0.593s,  215.78/s)  LR: 1.000e-04  Data: 0.000 (0.034)
+Test: [   0/192]  Time: 2.528 (2.528)  Loss:  2.4082 (2.4082)  Acc@1: 50.7812 (50.7812)  Acc@5: 72.6562 (72.6562)
+Test: [ 100/192]  Time: 0.108 (0.292)  Loss:  2.4902 (2.5198)  Acc@1: 53.1250 (49.1955)  Acc@5: 72.6562 (73.1977)
+Test: [ 192/192]  Time: 0.047 (0.281)  Loss:  2.7656 (2.5394)  Acc@1: 42.1053 (48.5974)  Acc@5: 66.6667 (72.6180)
+Test: [Whole Val]  Time: 54.271  Loss: 2.5394  Acc@1: 48.5974 Pruned: 34.21% 
+Train: 151 [   0/186 (  0%)]  Loss: 4.430 (4.43)  Rec_Loss: 1.823 (1.82)  Rec_Weight: 0.90  Time: 2.548s,   50.23/s  (2.548s,   50.23/s)  LR: 9.896e-05  Data: 1.992 (1.992)
+Train: 151 [ 100/186 ( 54%)]  Loss: 5.999 (5.81)  Rec_Loss: 1.733 (1.84)  Rec_Weight: 0.90  Time: 0.679s,  188.61/s  (0.599s,  213.59/s)  LR: 9.896e-05  Data: 0.121 (0.040)
+Train: 151 [ 185/186 (100%)]  Loss: 6.579 (5.85)  Rec_Loss: 1.785 (1.83)  Rec_Weight: 0.90  Time: 0.562s,  227.81/s  (0.589s,  217.14/s)  LR: 9.896e-05  Data: 0.000 (0.029)
+Test: [   0/192]  Time: 2.781 (2.781)  Loss:  2.4102 (2.4102)  Acc@1: 53.9062 (53.9062)  Acc@5: 75.7812 (75.7812)
+Test: [ 100/192]  Time: 0.108 (0.291)  Loss:  2.4941 (2.5240)  Acc@1: 52.3438 (49.6597)  Acc@5: 73.4375 (72.8960)
+Test: [ 192/192]  Time: 0.048 (0.281)  Loss:  2.7539 (2.5431)  Acc@1: 42.1053 (48.8532)  Acc@5: 68.4211 (72.6424)
+Test: [Whole Val]  Time: 54.149  Loss: 2.5431  Acc@1: 48.8532 Pruned: 34.35% 
+Train: 152 [   0/186 (  0%)]  Loss: 5.782 (5.78)  Rec_Loss: 1.744 (1.74)  Rec_Weight: 0.90  Time: 2.432s,   52.63/s  (2.432s,   52.63/s)  LR: 9.791e-05  Data: 1.876 (1.876)
+Train: 152 [ 100/186 ( 54%)]  Loss: 5.993 (5.89)  Rec_Loss: 1.803 (1.83)  Rec_Weight: 0.90  Time: 0.838s,  152.76/s  (0.592s,  216.19/s)  LR: 9.791e-05  Data: 0.277 (0.034)
+Train: 152 [ 185/186 (100%)]  Loss: 6.164 (5.88)  Rec_Loss: 1.883 (1.84)  Rec_Weight: 0.90  Time: 0.560s,  228.77/s  (0.584s,  219.33/s)  LR: 9.791e-05  Data: 0.000 (0.024)
+Test: [   0/192]  Time: 2.412 (2.412)  Loss:  2.4609 (2.4609)  Acc@1: 51.5625 (51.5625)  Acc@5: 72.6562 (72.6562)
+Test: [ 100/192]  Time: 0.108 (0.292)  Loss:  2.4805 (2.5236)  Acc@1: 50.0000 (49.2497)  Acc@5: 74.2188 (72.9966)
+Test: [ 192/192]  Time: 0.047 (0.281)  Loss:  2.6855 (2.5450)  Acc@1: 40.3509 (48.3295)  Acc@5: 75.4386 (72.5206)
+Test: [Whole Val]  Time: 54.239  Loss: 2.5450  Acc@1: 48.3295 Pruned: 34.50% 
+Train: 153 [   0/186 (  0%)]  Loss: 4.487 (4.49)  Rec_Loss: 1.864 (1.86)  Rec_Weight: 0.90  Time: 2.615s,   48.95/s  (2.615s,   48.95/s)  LR: 9.686e-05  Data: 2.060 (2.060)
+Train: 153 [ 100/186 ( 54%)]  Loss: 6.257 (5.87)  Rec_Loss: 1.792 (1.84)  Rec_Weight: 0.90  Time: 0.572s,  223.94/s  (0.599s,  213.69/s)  LR: 9.686e-05  Data: 0.011 (0.041)
+Train: 153 [ 185/186 (100%)]  Loss: 6.158 (5.88)  Rec_Loss: 1.798 (1.84)  Rec_Weight: 0.90  Time: 0.562s,  227.59/s  (0.587s,  218.02/s)  LR: 9.686e-05  Data: 0.000 (0.028)
+Test: [   0/192]  Time: 2.386 (2.386)  Loss:  2.4434 (2.4434)  Acc@1: 51.5625 (51.5625)  Acc@5: 74.2188 (74.2188)
+Test: [ 100/192]  Time: 0.108 (0.290)  Loss:  2.5254 (2.5315)  Acc@1: 52.3438 (49.2652)  Acc@5: 74.2188 (73.0198)
+Test: [ 192/192]  Time: 0.047 (0.280)  Loss:  2.7090 (2.5496)  Acc@1: 45.6140 (48.5649)  Acc@5: 68.4211 (72.5247)
+Test: [Whole Val]  Time: 54.031  Loss: 2.5496  Acc@1: 48.5649 Pruned: 34.64% 
+Train: 154 [   0/186 (  0%)]  Loss: 5.572 (5.57)  Rec_Loss: 1.868 (1.87)  Rec_Weight: 0.90  Time: 2.383s,   53.71/s  (2.383s,   53.71/s)  LR: 9.582e-05  Data: 1.828 (1.828)
+Train: 154 [ 100/186 ( 54%)]  Loss: 6.307 (5.76)  Rec_Loss: 1.798 (1.84)  Rec_Weight: 0.90  Time: 0.842s,  152.08/s  (0.599s,  213.80/s)  LR: 9.582e-05  Data: 0.283 (0.041)
+Train: 154 [ 185/186 (100%)]  Loss: 4.972 (5.79)  Rec_Loss: 1.903 (1.84)  Rec_Weight: 0.90  Time: 0.561s,  228.28/s  (0.588s,  217.64/s)  LR: 9.582e-05  Data: 0.000 (0.028)
+Test: [   0/192]  Time: 2.365 (2.365)  Loss:  2.4121 (2.4121)  Acc@1: 52.3438 (52.3438)  Acc@5: 73.4375 (73.4375)
+Test: [ 100/192]  Time: 0.106 (0.292)  Loss:  2.4648 (2.5067)  Acc@1: 50.7812 (49.6055)  Acc@5: 75.0000 (73.3756)
+Test: [ 192/192]  Time: 0.047 (0.281)  Loss:  2.7266 (2.5256)  Acc@1: 40.3509 (49.0805)  Acc@5: 71.9298 (72.8900)
+Test: [Whole Val]  Time: 54.171  Loss: 2.5256  Acc@1: 49.0805 Pruned: 34.77% 
+Train: 155 [   0/186 (  0%)]  Loss: 4.370 (4.37)  Rec_Loss: 1.857 (1.86)  Rec_Weight: 0.90  Time: 2.412s,   53.06/s  (2.412s,   53.06/s)  LR: 9.477e-05  Data: 1.856 (1.856)
+Train: 155 [ 100/186 ( 54%)]  Loss: 6.533 (5.90)  Rec_Loss: 1.860 (1.83)  Rec_Weight: 0.90  Time: 0.712s,  179.73/s  (0.591s,  216.62/s)  LR: 9.477e-05  Data: 0.009 (0.031)
+Train: 155 [ 185/186 (100%)]  Loss: 4.688 (5.85)  Rec_Loss: 1.878 (1.84)  Rec_Weight: 0.90  Time: 0.560s,  228.70/s  (0.584s,  219.10/s)  LR: 9.477e-05  Data: 0.000 (0.024)
+Test: [   0/192]  Time: 2.452 (2.452)  Loss:  2.3945 (2.3945)  Acc@1: 53.1250 (53.1250)  Acc@5: 75.7812 (75.7812)
+Test: [ 100/192]  Time: 0.108 (0.292)  Loss:  2.4961 (2.5267)  Acc@1: 50.0000 (48.8397)  Acc@5: 72.6562 (72.8728)
+Test: [ 192/192]  Time: 0.047 (0.281)  Loss:  2.6836 (2.5420)  Acc@1: 43.8596 (48.3417)  Acc@5: 71.9298 (72.5896)
+Test: [Whole Val]  Time: 54.141  Loss: 2.5420  Acc@1: 48.3417 Pruned: 34.90% 
+Train: 156 [   0/186 (  0%)]  Loss: 6.820 (6.82)  Rec_Loss: 1.843 (1.84)  Rec_Weight: 0.90  Time: 2.481s,   51.58/s  (2.481s,   51.58/s)  LR: 9.373e-05  Data: 1.927 (1.927)
+Train: 156 [ 100/186 ( 54%)]  Loss: 6.663 (5.82)  Rec_Loss: 1.810 (1.85)  Rec_Weight: 0.90  Time: 0.801s,  159.89/s  (0.599s,  213.87/s)  LR: 9.373e-05  Data: 0.155 (0.040)
+Train: 156 [ 185/186 (100%)]  Loss: 5.834 (5.82)  Rec_Loss: 1.816 (1.84)  Rec_Weight: 0.90  Time: 0.560s,  228.67/s  (0.588s,  217.56/s)  LR: 9.373e-05  Data: 0.000 (0.029)
+Test: [   0/192]  Time: 2.733 (2.733)  Loss:  2.4336 (2.4336)  Acc@1: 51.5625 (51.5625)  Acc@5: 73.4375 (73.4375)
+Test: [ 100/192]  Time: 0.107 (0.292)  Loss:  2.5234 (2.5143)  Acc@1: 51.5625 (49.5127)  Acc@5: 73.4375 (73.1977)
+Test: [ 192/192]  Time: 0.047 (0.283)  Loss:  2.7090 (2.5330)  Acc@1: 40.3509 (48.5934)  Acc@5: 70.1754 (72.6383)
+Test: [Whole Val]  Time: 54.579  Loss: 2.5330  Acc@1: 48.5934 Pruned: 35.03% 

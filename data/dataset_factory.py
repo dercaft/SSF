@@ -165,8 +165,13 @@ def create_dataset(
             if os.path.isdir(os.path.join(root, split)):
                 root = os.path.join(root, split)
             else:
+                # print(1)
                 if search_split and os.path.isdir(root):
                     root = _search_split(root, split)
+            # print(root)
+            # exit()
             ds = ImageDataset(root, parser=name, class_map=class_map, load_bytes=load_bytes, **kwargs)
+            print(len(ds))
+            # exit()
     return ds
 

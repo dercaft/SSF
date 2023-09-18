@@ -353,195 +353,187 @@ def _parse_args():
 
 
 def main():
-    setup_default_logging()
+    # setup_default_logging()
     args, args_text = _parse_args()
     
-    if args.log_wandb:
-        if has_wandb:
-            wandb.init(project=args.experiment, config=args)
-        else: 
-            _logger.warning("You've requested to log metrics to wandb but package not found. "
-                            "Metrics not being logged to wandb, try `pip install wandb`")
+    # if args.log_wandb:
+    #     if has_wandb:
+    #         wandb.init(project=args.experiment, config=args)
+    #     else: 
+    #         _logger.warning("You've requested to log metrics to wandb but package not found. "
+    #                         "Metrics not being logged to wandb, try `pip install wandb`")
              
-    args.prefetcher = not args.no_prefetcher
-    args.distributed = False
-    if 'WORLD_SIZE' in os.environ:
-        args.distributed = int(os.environ['WORLD_SIZE']) > 1
-    args.device = 'cuda:0'
-    args.world_size = 1
-    args.rank = 0  # global rank
-    if args.distributed:
-        args.device = 'cuda:%d' % args.local_rank
-        torch.cuda.set_device(args.local_rank)
-        torch.distributed.init_process_group(backend='nccl', init_method='env://')
-        args.world_size = torch.distributed.get_world_size()
-        args.rank = torch.distributed.get_rank()
-        _logger.info('Training in distributed mode with multiple processes, 1 GPU per process. Process %d, total %d.'
-                     % (args.rank, args.world_size))
-    else:
-        _logger.info('Training with a single process on 1 GPUs.')
-    assert args.rank >= 0
+    # args.prefetcher = not args.no_prefetcher
+    # args.distributed = False
+    # if 'WORLD_SIZE' in os.environ:
+    #     args.distributed = int(os.environ['WORLD_SIZE']) > 1
+    # args.device = 'cuda:0'
+    # args.world_size = 1
+    # args.rank = 0  # global rank
+    # if args.distributed:
+    #     args.device = 'cuda:%d' % args.local_rank
+    #     torch.cuda.set_device(args.local_rank)
+    #     torch.distributed.init_process_group(backend='nccl', init_method='env://')
+    #     args.world_size = torch.distributed.get_world_size()
+    #     args.rank = torch.distributed.get_rank()
+    #     _logger.info('Training in distributed mode with multiple processes, 1 GPU per process. Process %d, total %d.'
+    #                  % (args.rank, args.world_size))
+    # else:
+    #     _logger.info('Training with a single process on 1 GPUs.')
+    # assert args.rank >= 0
 
-    # resolve AMP arguments based on PyTorch / Apex availability
-    use_amp = None
-    if args.amp:
-        # `--amp` chooses native amp before apex (APEX ver not actively maintained)
-        if has_native_amp:
-            args.native_amp = True
-        elif has_apex:
-            args.apex_amp = True
-    if args.apex_amp and has_apex:
-        use_amp = 'apex'
-    elif args.native_amp and has_native_amp:
-        use_amp = 'native'
-    elif args.apex_amp or args.native_amp:
-        _logger.warning("Neither APEX or native Torch AMP is available, using float32. "
-                        "Install NVIDA apex or upgrade to PyTorch 1.6")
-    if args.seed >= 0:
-        random_seed(args.seed, args.rank)
+    # # resolve AMP arguments based on PyTorch / Apex availability
+    # use_amp = None
+    # if args.amp:
+    #     # `--amp` chooses native amp before apex (APEX ver not actively maintained)
+    #     if has_native_amp:
+    #         args.native_amp = True
+    #     elif has_apex:
+    #         args.apex_amp = True
+    # if args.apex_amp and has_apex:
+    #     use_amp = 'apex'
+    # elif args.native_amp and has_native_amp:
+    #     use_amp = 'native'
+    # elif args.apex_amp or args.native_amp:
+    #     _logger.warning("Neither APEX or native Torch AMP is available, using float32. "
+    #                     "Install NVIDA apex or upgrade to PyTorch 1.6")
+    # if args.seed >= 0:
+    #     random_seed(args.seed, args.rank)
 
-    if args.fuser:
-        set_jit_fuser(args.fuser)
-    print('flag0')
-    model = create_model(
-        args.model,
-        pretrained=args.pretrained,
-        num_classes=args.num_classes,
-        drop_rate=args.drop,
-        drop_connect_rate=args.drop_connect,  # DEPRECATED, use drop_path
-        drop_path_rate=args.drop_path,
-        drop_block_rate=args.drop_block,
-        global_pool=args.gp,
-        bn_momentum=args.bn_momentum,
-        bn_eps=args.bn_eps,
-        scriptable=args.torchscript,
-        checkpoint_path=args.initial_checkpoint,
-        tuning_mode=args.tuning_mode)
+    # if args.fuser:
+    #     set_jit_fuser(args.fuser)
 
-    # torch.save(model,'./analysis_ipynb/origin.pt')
-    if 1:
-        optimizer = create_optimizer_v2(model, **optimizer_kwargs(cfg=args))
-        saver = CheckpointSaver(
-                model=model, optimizer=optimizer,
-                checkpoint_dir='/home/zxy/SSF/analysis_ipynb')
-        _,_ = saver.save_checkpoint(0)
-        exit()
+    # model = create_model(
+    #     args.model,
+    #     pretrained=args.pretrained,
+    #     num_classes=args.num_classes,
+    #     drop_rate=args.drop,
+    #     drop_connect_rate=args.drop_connect,  # DEPRECATED, use drop_path
+    #     drop_path_rate=args.drop_path,
+    #     drop_block_rate=args.drop_block,
+    #     global_pool=args.gp,
+    #     bn_momentum=args.bn_momentum,
+    #     bn_eps=args.bn_eps,
+    #     scriptable=args.torchscript,
+    #     checkpoint_path=args.initial_checkpoint,
+    #     tuning_mode=args.tuning_mode)
+
     
-    if args.num_classes is None:
-        assert hasattr(model, 'num_classes'), 'Model must have `num_classes` attr if not set on cmd line/config.'
-        args.num_classes = model.num_classes  # FIXME handle model default vs config num_classes more elegantly
+    # if args.num_classes is None:
+    #     assert hasattr(model, 'num_classes'), 'Model must have `num_classes` attr if not set on cmd line/config.'
+    #     args.num_classes = model.num_classes  # FIXME handle model default vs config num_classes more elegantly
 
-    if args.grad_checkpointing:
-        model.set_grad_checkpointing(enable=True)
+    # if args.grad_checkpointing:
+    #     model.set_grad_checkpointing(enable=True)
 
-    print('flag1')
-    data_config = resolve_data_config(vars(args), model=model, verbose=args.local_rank == 0)
-    print("flag2")
-    # setup augmentation batch splits for contrastive loss or split bn
+
+    # data_config = resolve_data_config(vars(args), model=model, verbose=args.local_rank == 0)
+
+    # # setup augmentation batch splits for contrastive loss or split bn
     num_aug_splits = 0
     if args.aug_splits > 0:
         assert args.aug_splits > 1, 'A split of 1 makes no sense'
         num_aug_splits = args.aug_splits
 
-    # enable split bn (separate bn stats per batch-portion)
-    if args.split_bn:
-        assert num_aug_splits > 1 or args.resplit
-        model = convert_splitbn_model(model, max(num_aug_splits, 2))
+    # # enable split bn (separate bn stats per batch-portion)
+    # if args.split_bn:
+    #     assert num_aug_splits > 1 or args.resplit
+    #     model = convert_splitbn_model(model, max(num_aug_splits, 2))
 
-    # move model to GPU, enable channels last layout if set
-    model.cuda()
-    if args.channels_last:
-        model = model.to(memory_format=torch.channels_last)
+    # # move model to GPU, enable channels last layout if set
+    # model.cuda()
+    # if args.channels_last:
+    #     model = model.to(memory_format=torch.channels_last)
 
-    # setup synchronized BatchNorm for distributed training
-    if args.distributed and args.sync_bn:
-        assert not args.split_bn
-        if has_apex and use_amp == 'apex':
-            # Apex SyncBN preferred unless native amp is activated
-            model = convert_syncbn_model(model)
-        else:
-            model = torch.nn.SyncBatchNorm.convert_sync_batchnorm(model)
-        if args.local_rank == 0:
-            _logger.info(
-                'Converted model to use Synchronized BatchNorm. WARNING: You may have issues if using '
-                'zero initialized BN layers (enabled by default for ResNets) while sync-bn enabled.')
+    # # setup synchronized BatchNorm for distributed training
+    # if args.distributed and args.sync_bn:
+    #     assert not args.split_bn
+    #     if has_apex and use_amp == 'apex':
+    #         # Apex SyncBN preferred unless native amp is activated
+    #         model = convert_syncbn_model(model)
+    #     else:
+    #         model = torch.nn.SyncBatchNorm.convert_sync_batchnorm(model)
+    #     if args.local_rank == 0:
+    #         _logger.info(
+    #             'Converted model to use Synchronized BatchNorm. WARNING: You may have issues if using '
+    #             'zero initialized BN layers (enabled by default for ResNets) while sync-bn enabled.')
 
-    if args.torchscript:
-        assert not use_amp == 'apex', 'Cannot use APEX AMP with torchscripted model'
-        assert not args.sync_bn, 'Cannot use SyncBatchNorm with torchscripted model'
-        model = torch.jit.script(model)
-    print('flag3')
-    optimizer = create_optimizer_v2(model, **optimizer_kwargs(cfg=args))
-    print('flag4')
-    if args.local_rank == 0:
-        _logger.info(
-            f'Model {safe_model_name(args.model)} created, param count:{sum([m.numel() for m in model.parameters()])}')
-        _logger.info(f"number of params for requires grad: {sum(p.numel() for p in model.parameters() if p.requires_grad)}")
+    # if args.torchscript:
+    #     assert not use_amp == 'apex', 'Cannot use APEX AMP with torchscripted model'
+    #     assert not args.sync_bn, 'Cannot use SyncBatchNorm with torchscripted model'
+    #     model = torch.jit.script(model)
 
+    # optimizer = create_optimizer_v2(model, **optimizer_kwargs(cfg=args))
 
-    # setup automatic mixed-precision (AMP) loss scaling and op casting
-    amp_autocast = suppress  # do nothing
-    loss_scaler = None
-    if use_amp == 'apex':
-        model, optimizer = amp.initialize(model, optimizer, opt_level='O1')
-        loss_scaler = ApexScaler()
-        if args.local_rank == 0:
-            _logger.info('Using NVIDIA APEX AMP. Training in mixed precision.')
-    elif use_amp == 'native':
-        amp_autocast = torch.cuda.amp.autocast
-        loss_scaler = NativeScaler()
-        if args.local_rank == 0:
-            _logger.info('Using native Torch AMP. Training in mixed precision.')
-    else:
-        if args.local_rank == 0:
-            _logger.info('AMP not enabled. Training in float32.')
+    # if args.local_rank == 0:
+    #     _logger.info(
+    #         f'Model {safe_model_name(args.model)} created, param count:{sum([m.numel() for m in model.parameters()])}')
+    #     _logger.info(f"number of params for requires grad: {sum(p.numel() for p in model.parameters() if p.requires_grad)}")
 
 
-    # optionally resume from a checkpoint
-    resume_epoch = None
-    if args.resume:
-        resume_epoch = resume_checkpoint(
-            model, args.resume,
-            optimizer=None if args.no_resume_opt else optimizer,
-            loss_scaler=None if args.no_resume_opt else loss_scaler,
-            log_info=args.local_rank == 0)
+    # # setup automatic mixed-precision (AMP) loss scaling and op casting
+    # amp_autocast = suppress  # do nothing
+    # loss_scaler = None
+    # if use_amp == 'apex':
+    #     model, optimizer = amp.initialize(model, optimizer, opt_level='O1')
+    #     loss_scaler = ApexScaler()
+    #     if args.local_rank == 0:
+    #         _logger.info('Using NVIDIA APEX AMP. Training in mixed precision.')
+    # elif use_amp == 'native':
+    #     amp_autocast = torch.cuda.amp.autocast
+    #     loss_scaler = NativeScaler()
+    #     if args.local_rank == 0:
+    #         _logger.info('Using native Torch AMP. Training in mixed precision.')
+    # else:
+    #     if args.local_rank == 0:
+    #         _logger.info('AMP not enabled. Training in float32.')
 
 
-    # setup exponential moving average of model weights, SWA could be used here too
-    model_ema = None
-    if args.model_ema:
-        # Important to create EMA model after cuda(), DP wrapper, and AMP but before DDP wrapper
-        model_ema = ModelEmaV2(
-            model, decay=args.model_ema_decay, device='cpu' if args.model_ema_force_cpu else None)
-        if args.resume:
-            load_checkpoint(model_ema.module, args.resume, use_ema=True)
+    # # optionally resume from a checkpoint
+    # resume_epoch = None
+    # if args.resume:
+    #     resume_epoch = resume_checkpoint(
+    #         model, args.resume,
+    #         optimizer=None if args.no_resume_opt else optimizer,
+    #         loss_scaler=None if args.no_resume_opt else loss_scaler,
+    #         log_info=args.local_rank == 0)
 
-    # setup distributed training
-    if args.distributed:
-        if has_apex and use_amp == 'apex':
-            # Apex DDP preferred unless native amp is activated
-            if args.local_rank == 0:
-                _logger.info("Using NVIDIA APEX DistributedDataParallel.")
-            model = ApexDDP(model, delay_allreduce=True)
-        else:
-            if args.local_rank == 0:
-                _logger.info("Using native Torch DistributedDataParallel.")
-            model = NativeDDP(model, device_ids=[args.local_rank], broadcast_buffers=not args.no_ddp_bb)
-        # NOTE: EMA model does not need to be wrapped by DDP
 
-    # setup learning rate schedule and starting epoch
-    lr_scheduler, num_epochs = create_scheduler(args, optimizer)
-    start_epoch = 0
-    if args.start_epoch is not None:
-        # a specified start_epoch will always override the resume epoch
-        start_epoch = args.start_epoch
-    elif resume_epoch is not None:
-        start_epoch = resume_epoch
-    if lr_scheduler is not None and start_epoch > 0:
-        lr_scheduler.step(start_epoch)
+    # # setup exponential moving average of model weights, SWA could be used here too
+    # model_ema = None
+    # if args.model_ema:
+    #     # Important to create EMA model after cuda(), DP wrapper, and AMP but before DDP wrapper
+    #     model_ema = ModelEmaV2(
+    #         model, decay=args.model_ema_decay, device='cpu' if args.model_ema_force_cpu else None)
+    #     if args.resume:
+    #         load_checkpoint(model_ema.module, args.resume, use_ema=True)
 
-    if args.local_rank == 0:
-        _logger.info('Scheduled epochs: {}'.format(num_epochs))
+    # # setup distributed training
+    # if args.distributed:
+    #     if has_apex and use_amp == 'apex':
+    #         # Apex DDP preferred unless native amp is activated
+    #         if args.local_rank == 0:
+    #             _logger.info("Using NVIDIA APEX DistributedDataParallel.")
+    #         model = ApexDDP(model, delay_allreduce=True)
+    #     else:
+    #         if args.local_rank == 0:
+    #             _logger.info("Using native Torch DistributedDataParallel.")
+    #         model = NativeDDP(model, device_ids=[args.local_rank], broadcast_buffers=not args.no_ddp_bb)
+    #     # NOTE: EMA model does not need to be wrapped by DDP
+
+    # # setup learning rate schedule and starting epoch
+    # lr_scheduler, num_epochs = create_scheduler(args, optimizer)
+    # start_epoch = 0
+    # if args.start_epoch is not None:
+    #     # a specified start_epoch will always override the resume epoch
+    #     start_epoch = args.start_epoch
+    # elif resume_epoch is not None:
+    #     start_epoch = resume_epoch
+    # if lr_scheduler is not None and start_epoch > 0:
+    #     lr_scheduler.step(start_epoch)
+
+    # if args.local_rank == 0:
+    #     _logger.info('Scheduled epochs: {}'.format(num_epochs))
 
     # create the train and eval datasets
     dataset_train = create_dataset(
@@ -558,6 +550,7 @@ def main():
 
     print('Data_train:',len(dataset_train))
     print('Data_eval:',len(dataset_eval))
+    exit()
     # setup mixup / cutmix
     collate_fn = None
     mixup_fn = None
@@ -574,8 +567,8 @@ def main():
             mixup_fn = Mixup(**mixup_args)
 
     # wrap dataset in AugMix helper
-    if num_aug_splits > 1:
-        dataset_train = AugMixDataset(dataset_train, num_splits=num_aug_splits)
+    # if num_aug_splits > 1:
+    #     dataset_train = AugMixDataset(dataset_train, num_splits=num_aug_splits)
 
     # create data loaders w/ augmentation pipeiine
     train_interpolation = args.train_interpolation
