@@ -1,4 +1,3 @@
-
 source DATA_PATH.sh
 CUDA_VISIBLE_DEVICES=5  python -m torch.distributed.launch --nproc_per_node=1  --master_port=10455 \
     train.py /data/datasets/FGVC/flowers102  --dataset oxford_flowers --num-classes 102 --val-split val --simple-aug --model vit_base_patch16_224_in21k  \

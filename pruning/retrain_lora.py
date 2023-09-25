@@ -876,9 +876,19 @@ def train_one_epoch(
                 input, target = mixup_fn(input, target)
         if args.channels_last:
             input = input.contiguous(memory_format=torch.channels_last)
+        
+        
+        # print(input.shape)
+        # print(target.shape)
+        # print('================================')
 
         with amp_autocast():
+            # print(input.shape)
             output = model(input)
+            # print(output)
+            # print(output.shape)
+            # print(target)
+            # print(target.shape)
             loss = loss_fn(output, target)
 
         if not args.distributed:

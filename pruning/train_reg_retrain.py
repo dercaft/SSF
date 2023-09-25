@@ -341,11 +341,13 @@ parser.add_argument('--log-wandb', action='store_true', default=False,
                     help='log training and validation metrics to wandb')
 
 # ADD
-
 parser.add_argument('--no-save', action='store_true', default=False,)
 parser.add_argument('--zero_threshold', type=float, default=0.01,
                     help='Threshold below which ssf weight will be zeroed out')
 parser.add_argument('--reg', type=float, default=1e-4,)
+
+# Standard Model
+parser.add_argument('--model-path', type=str, default='')
 
 def _parse_args():
     # Do we have a config file to parse?
@@ -429,7 +431,28 @@ def main():
         scriptable=args.torchscript,
         checkpoint_path=args.initial_checkpoint,
         tuning_mode=args.tuning_mode)
+    
+    standard_model = create_model(
+        args.model,
+        pretrained=args.pretrained,
+        num_classes=args.num_classes,
+        drop_rate=args.drop,
+        drop_connect_rate=args.drop_connect,  # DEPRECATED, use drop_path
+        drop_path_rate=args.drop_path,
+        drop_block_rate=args.drop_block,
+        global_pool=args.gp,
+        bn_momentum=args.bn_momentum,
+        bn_eps=args.bn_eps,
+        scriptable=args.torchscript,
+        checkpoint_path=args.initial_checkpoint,
+        tuning_mode=args.tuning_mode)
 
+    
+    standard_model.cuda()
+    model_path = args.model_path
+    checkpoint = torch.load(model_path)
+    model_state_dict = checkpoint['state_dict']
+    standard_model.load_state_dict(model_state_dict, strict=False)
     
     if args.num_classes is None:
         assert hasattr(model, 'num_classes'), 'Model must have `num_classes` attr if not set on cmd line/config.'
@@ -469,27 +492,42 @@ def main():
     if 'vit' in args.model:
         # round_to = model.encoder.layers[0].num_heads
         round_to = 12 # ADDED
-    SPARISTY=0.5
-    pruner = SSFScalePruner(
-        model,
-        example_inputs,
-        importance=None, # 内部已定义
-        iterative_steps=args.epochs,
-        ch_sparsity=1.0,
-        ch_sparsity_dict=ch_sparsity_dict,
-        max_ch_sparsity=SPARISTY,
-        ignored_layers=ignored_layers,
-        round_to=round_to,
-        unwrapped_parameters=unwrapped_parameters,
-        reg=args.reg,
-        global_pruning=True
-    )
+
+    # SPARISTY=0.5
+
+    # pruner = SSFScalePruner(
+    #     model,
+    #     example_inputs,
+    #     importance=None, # 内部已定义
+    #     iterative_steps=args.epochs,
+    #     ch_sparsity=1.0,
+    #     ch_sparsity_dict=ch_sparsity_dict,
+    #     max_ch_sparsity=SPARISTY,
+    #     ignored_layers=ignored_layers,
+    #     round_to=round_to,
+    #     unwrapped_parameters=unwrapped_parameters,
+    #     reg=args.reg,
+    #     global_pruning=True
+    # )
+
     # print("CHECK IF ALL GROUPED")
     # for group in pruner.DG.get_all_groups(ignored_layers=pruner.ignored_layers, root_module_types=pruner.root_module_types):
     #     ch_groups = pruner.get_channel_groups(group)
     #     imp = pruner.estimate_importance(group, ch_groups=ch_groups)
     # exit()
-    regularizer=pruner.regularize
+    # regularizer=pruner.regularize
+
+    def regularize(model):
+        # for m in model.modules():
+        #     if isinstance(m, (nn.BatchNorm1d, nn.BatchNorm2d, nn.BatchNorm3d)) and m.affine==True:
+        #         m.weight.grad.data.add_(self.reg*torch.sign(m.weight.data))
+        for j, (name,parameters) in enumerate(model.named_parameters()):
+            key=["ssf_scale","ssf_shift"]
+            if any([k in name for k in key]):
+                parameters.grad.data.add_(args.reg*torch.sign(parameters.data))
+                # QUESTION: 这种正则化的叠加是否和模型结构、回传梯度有关系, 直接从 torch-pruning 中拿过来的
+    regularizer = regularize
+
     print("Params: {:.4f} M".format(base_params / 1e6))
     print("ops: {:.4f} G".format(base_ops / 1e9))
 
@@ -625,6 +663,7 @@ def main():
     train_interpolation = args.train_interpolation
     if args.no_aug or not train_interpolation:
         train_interpolation = data_config['interpolation']
+
     loader_train = create_loader(
         dataset_train,
         input_size=data_config['input_size'],
@@ -655,7 +694,6 @@ def main():
         use_multi_epochs_loader=args.use_multi_epochs_loader,
         worker_seeding=args.worker_seeding,
     )
-
 
     loader_eval = create_loader(
         dataset_eval,
@@ -744,6 +782,7 @@ def main():
             save_metric = eval_metrics[eval_metric]
             best_metric, best_epoch = saver.save_checkpoint(start_epoch, metric=save_metric)
         return
+    
     try:
         for epoch in range(start_epoch, num_epochs):
             if args.distributed and hasattr(loader_train.sampler, 'set_epoch'):
@@ -846,15 +885,19 @@ def main():
         #         parameters.grad.data.add_(self.reg*torch.sign(parameters.data))
         #         # QUESTION: 这种正则化的叠加是否和模型结构、回传梯度有关系, 直接从 torch-pruning 中拿过来的
 
+        # retrain
         def mask_para_grad(model,mask_dict):
             for name, param in model.named_parameters():
                 if name in mask_dict:
                     param.grad.data[mask_dict[name]]=0
                     param.data[mask_dict[name]]=0
         mask_func=partial(mask_para_grad,mask_dict=mask_dict)
+
+
         lr_scheduler, num_epochs = create_scheduler(args, optimizer)
         start_epoch = 0
-        for epoch in range(start_epoch, num_epochs):
+
+        for epoch in range(start_epoch, 0):
             if args.distributed and hasattr(loader_train.sampler, 'set_epoch'):
                 loader_train.sampler.set_epoch(epoch)
 
@@ -944,9 +987,26 @@ def train_one_epoch(
         if args.channels_last:
             input = input.contiguous(memory_format=torch.channels_last)
 
+        features_in_hook, features_out_hook = [], []
+        def hook(module, input, output):
+            features_in_hook.append(input)
+            features_out_hook.append(output)
+            return None
+
+        hooks = []
+        for (name, module) in model.named_modules():
+            if 'drop_path2' in name:
+                hook_pt = module.register_forward_hook(hook=hook)
+                hooks.append(hook_pt)
+
         with amp_autocast():
             output = model(input)
             loss = loss_fn(output, target)
+            
+            
+
+        for hook_pt in hooks:
+            hook_pt.remove()
 
         if not args.distributed:
             losses_m.update(loss.item(), input.size(0))

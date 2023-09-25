@@ -1,4 +1,3 @@
-
 source DATA_PATH.sh
 CUDA_VISIBLE_DEVICES=0  python  -m torch.distributed.launch --nproc_per_node=1  --master_port=10450  \
 	train.py ${FGVC_PATH} --dataset nabirds --num-classes 555  --simple-aug --model vit_base_patch16_224_in21k  \
