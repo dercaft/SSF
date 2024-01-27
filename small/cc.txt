@@ -1,0 +1,1314 @@
+/home/zxy/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/launch.py:180: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+Training with a single process on 1 GPUs.
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.5, 0.5, 0.5)
+	std: (0.5, 0.5, 0.5)
+	crop_pct: 0.9
+ssf_scale_1
+ssf_shift_1
+patch_embed.ssf_scale_1
+patch_embed.ssf_shift_1
+blocks.0.ssf_scale_1
+blocks.0.ssf_shift_1
+blocks.0.ssf_scale_2
+blocks.0.ssf_shift_2
+blocks.0.attn.ssf_scale_1
+blocks.0.attn.ssf_shift_1
+blocks.0.attn.ssf_scale_2
+blocks.0.attn.ssf_shift_2
+blocks.0.mlp.ssf_scale_1
+blocks.0.mlp.ssf_shift_1
+blocks.0.mlp.ssf_scale_2
+blocks.0.mlp.ssf_shift_2
+blocks.1.ssf_scale_1
+blocks.1.ssf_shift_1
+blocks.1.ssf_scale_2
+blocks.1.ssf_shift_2
+blocks.1.attn.ssf_scale_1
+blocks.1.attn.ssf_shift_1
+blocks.1.attn.ssf_scale_2
+blocks.1.attn.ssf_shift_2
+blocks.1.mlp.ssf_scale_1
+blocks.1.mlp.ssf_shift_1
+blocks.1.mlp.ssf_scale_2
+blocks.1.mlp.ssf_shift_2
+blocks.2.ssf_scale_1
+blocks.2.ssf_shift_1
+blocks.2.ssf_scale_2
+blocks.2.ssf_shift_2
+blocks.2.attn.ssf_scale_1
+blocks.2.attn.ssf_shift_1
+blocks.2.attn.ssf_scale_2
+blocks.2.attn.ssf_shift_2
+blocks.2.mlp.ssf_scale_1
+blocks.2.mlp.ssf_shift_1
+blocks.2.mlp.ssf_scale_2
+blocks.2.mlp.ssf_shift_2
+blocks.3.ssf_scale_1
+blocks.3.ssf_shift_1
+blocks.3.ssf_scale_2
+blocks.3.ssf_shift_2
+blocks.3.attn.ssf_scale_1
+blocks.3.attn.ssf_shift_1
+blocks.3.attn.ssf_scale_2
+blocks.3.attn.ssf_shift_2
+blocks.3.mlp.ssf_scale_1
+blocks.3.mlp.ssf_shift_1
+blocks.3.mlp.ssf_scale_2
+blocks.3.mlp.ssf_shift_2
+blocks.4.ssf_scale_1
+blocks.4.ssf_shift_1
+blocks.4.ssf_scale_2
+blocks.4.ssf_shift_2
+blocks.4.attn.ssf_scale_1
+blocks.4.attn.ssf_shift_1
+blocks.4.attn.ssf_scale_2
+blocks.4.attn.ssf_shift_2
+blocks.4.mlp.ssf_scale_1
+blocks.4.mlp.ssf_shift_1
+blocks.4.mlp.ssf_scale_2
+blocks.4.mlp.ssf_shift_2
+blocks.5.ssf_scale_1
+blocks.5.ssf_shift_1
+blocks.5.ssf_scale_2
+blocks.5.ssf_shift_2
+blocks.5.attn.ssf_scale_1
+blocks.5.attn.ssf_shift_1
+blocks.5.attn.ssf_scale_2
+blocks.5.attn.ssf_shift_2
+blocks.5.mlp.ssf_scale_1
+blocks.5.mlp.ssf_shift_1
+blocks.5.mlp.ssf_scale_2
+blocks.5.mlp.ssf_shift_2
+blocks.6.ssf_scale_1
+blocks.6.ssf_shift_1
+blocks.6.ssf_scale_2
+blocks.6.ssf_shift_2
+blocks.6.attn.ssf_scale_1
+blocks.6.attn.ssf_shift_1
+blocks.6.attn.ssf_scale_2
+blocks.6.attn.ssf_shift_2
+blocks.6.mlp.ssf_scale_1
+blocks.6.mlp.ssf_shift_1
+blocks.6.mlp.ssf_scale_2
+blocks.6.mlp.ssf_shift_2
+blocks.7.ssf_scale_1
+blocks.7.ssf_shift_1
+blocks.7.ssf_scale_2
+blocks.7.ssf_shift_2
+blocks.7.attn.ssf_scale_1
+blocks.7.attn.ssf_shift_1
+blocks.7.attn.ssf_scale_2
+blocks.7.attn.ssf_shift_2
+blocks.7.mlp.ssf_scale_1
+blocks.7.mlp.ssf_shift_1
+blocks.7.mlp.ssf_scale_2
+blocks.7.mlp.ssf_shift_2
+blocks.8.ssf_scale_1
+blocks.8.ssf_shift_1
+blocks.8.ssf_scale_2
+blocks.8.ssf_shift_2
+blocks.8.attn.ssf_scale_1
+blocks.8.attn.ssf_shift_1
+blocks.8.attn.ssf_scale_2
+blocks.8.attn.ssf_shift_2
+blocks.8.mlp.ssf_scale_1
+blocks.8.mlp.ssf_shift_1
+blocks.8.mlp.ssf_scale_2
+blocks.8.mlp.ssf_shift_2
+blocks.9.ssf_scale_1
+blocks.9.ssf_shift_1
+blocks.9.ssf_scale_2
+blocks.9.ssf_shift_2
+blocks.9.attn.ssf_scale_1
+blocks.9.attn.ssf_shift_1
+blocks.9.attn.ssf_scale_2
+blocks.9.attn.ssf_shift_2
+blocks.9.mlp.ssf_scale_1
+blocks.9.mlp.ssf_shift_1
+blocks.9.mlp.ssf_scale_2
+blocks.9.mlp.ssf_shift_2
+blocks.10.ssf_scale_1
+blocks.10.ssf_shift_1
+blocks.10.ssf_scale_2
+blocks.10.ssf_shift_2
+blocks.10.attn.ssf_scale_1
+blocks.10.attn.ssf_shift_1
+blocks.10.attn.ssf_scale_2
+blocks.10.attn.ssf_shift_2
+blocks.10.mlp.ssf_scale_1
+blocks.10.mlp.ssf_shift_1
+blocks.10.mlp.ssf_scale_2
+blocks.10.mlp.ssf_shift_2
+blocks.11.ssf_scale_1
+blocks.11.ssf_shift_1
+blocks.11.ssf_scale_2
+blocks.11.ssf_shift_2
+blocks.11.attn.ssf_scale_1
+blocks.11.attn.ssf_shift_1
+blocks.11.attn.ssf_scale_2
+blocks.11.attn.ssf_shift_2
+blocks.11.mlp.ssf_scale_1
+blocks.11.mlp.ssf_shift_1
+blocks.11.mlp.ssf_scale_2
+blocks.11.mlp.ssf_shift_2
+head.weight
+head.bias
+freezing parameters finished!
+Model vit_small_patch16_224_in21k created, param count:21771656
+number of params for requires grad: 105992
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 260
+Train: 0 [   0/7 (  0%)]  Loss: 2.327 (2.33)  Time: 3.371s,   37.97/s  (3.371s,   37.97/s)  LR: 1.000e-07  Data: 0.900 (0.900)
+Train: 0 [   6/7 (100%)]  Loss: 2.240 (2.31)  Time: 0.209s,  611.09/s  (0.663s,  193.14/s)  LR: 1.000e-07  Data: 0.000 (0.129)
+Test: [   0/117]  Time: 1.152 (1.152)  Loss:  2.3398 (2.3398)  Acc@1: 12.5000 (12.5000)  Acc@5: 68.7500 (68.7500)
+Test: [  50/117]  Time: 0.077 (0.102)  Loss:  2.4258 (2.3335)  Acc@1: 10.1562 (13.2200)  Acc@5: 64.0625 (64.7825)
+Test: [ 100/117]  Time: 0.079 (0.090)  Loss:  2.3594 (2.3284)  Acc@1: 10.9375 (13.2271)  Acc@5: 62.5000 (65.0139)
+Test: [ 117/117]  Time: 0.134 (0.089)  Loss:  2.2344 (2.3301)  Acc@1: 12.5000 (13.1133)  Acc@5: 75.0000 (65.0533)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 13.113333333333333)
+
+Train: 1 [   0/7 (  0%)]  Loss: 2.410 (2.41)  Time: 0.840s,  152.31/s  (0.840s,  152.31/s)  LR: 2.001e-04  Data: 0.628 (0.628)
+Train: 1 [   6/7 (100%)]  Loss: 2.143 (2.24)  Time: 0.211s,  605.35/s  (0.302s,  423.93/s)  LR: 2.001e-04  Data: 0.000 (0.090)
+Test: [   0/117]  Time: 0.681 (0.681)  Loss:  2.1406 (2.1406)  Acc@1: 11.7188 (11.7188)  Acc@5: 66.4062 (66.4062)
+Test: [  50/117]  Time: 0.078 (0.092)  Loss:  2.1094 (2.1207)  Acc@1: 19.5312 (16.8199)  Acc@5: 65.6250 (66.6054)
+Test: [ 100/117]  Time: 0.078 (0.085)  Loss:  2.0859 (2.1138)  Acc@1: 17.1875 (16.9013)  Acc@5: 71.0938 (67.5124)
+Test: [ 117/117]  Time: 0.017 (0.084)  Loss:  2.2363 (2.1162)  Acc@1:  8.3333 (16.8067)  Acc@5: 62.5000 (67.3200)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 16.80666666768392)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 13.113333333333333)
+
+Train: 2 [   0/7 (  0%)]  Loss: 2.113 (2.11)  Time: 0.822s,  155.74/s  (0.822s,  155.74/s)  LR: 4.001e-04  Data: 0.607 (0.607)
+Train: 2 [   6/7 (100%)]  Loss: 2.126 (2.15)  Time: 0.215s,  595.16/s  (0.301s,  425.40/s)  LR: 4.001e-04  Data: 0.000 (0.087)
+Test: [   0/117]  Time: 0.726 (0.726)  Loss:  2.0703 (2.0703)  Acc@1: 16.4062 (16.4062)  Acc@5: 78.9062 (78.9062)
+Test: [  50/117]  Time: 0.078 (0.095)  Loss:  2.0391 (2.0858)  Acc@1: 18.7500 (17.2181)  Acc@5: 75.7812 (72.4724)
+Test: [ 100/117]  Time: 0.078 (0.086)  Loss:  2.0371 (2.0834)  Acc@1: 19.5312 (17.1179)  Acc@5: 76.5625 (73.0043)
+Test: [ 117/117]  Time: 0.017 (0.084)  Loss:  2.3574 (2.0851)  Acc@1:  0.0000 (17.1667)  Acc@5: 50.0000 (72.8400)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 17.166666666666668)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 16.80666666768392)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 13.113333333333333)
+
+Train: 3 [   0/7 (  0%)]  Loss: 2.083 (2.08)  Time: 0.854s,  149.91/s  (0.854s,  149.91/s)  LR: 6.001e-04  Data: 0.639 (0.639)
+Train: 3 [   6/7 (100%)]  Loss: 1.983 (2.01)  Time: 0.214s,  599.47/s  (0.306s,  418.76/s)  LR: 6.001e-04  Data: 0.000 (0.092)
+Test: [   0/117]  Time: 0.698 (0.698)  Loss:  1.9814 (1.9814)  Acc@1: 17.1875 (17.1875)  Acc@5: 77.3438 (77.3438)
+Test: [  50/117]  Time: 0.078 (0.091)  Loss:  1.9746 (1.9267)  Acc@1: 17.1875 (22.9933)  Acc@5: 77.3438 (80.3309)
+Test: [ 100/117]  Time: 0.078 (0.085)  Loss:  1.9307 (1.9203)  Acc@1: 17.1875 (23.3756)  Acc@5: 81.2500 (81.0798)
+Test: [ 117/117]  Time: 0.017 (0.083)  Loss:  2.0352 (1.9220)  Acc@1: 16.6667 (23.1000)  Acc@5: 79.1667 (81.0200)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 23.100000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 17.166666666666668)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 16.80666666768392)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 13.113333333333333)
+
+Train: 4 [   0/7 (  0%)]  Loss: 1.979 (1.98)  Time: 0.853s,  150.14/s  (0.853s,  150.14/s)  LR: 8.001e-04  Data: 0.638 (0.638)
+Train: 4 [   6/7 (100%)]  Loss: 1.848 (1.92)  Time: 0.214s,  597.86/s  (0.306s,  418.20/s)  LR: 8.001e-04  Data: 0.000 (0.092)
+Test: [   0/117]  Time: 0.717 (0.717)  Loss:  1.8740 (1.8740)  Acc@1: 22.6562 (22.6562)  Acc@5: 87.5000 (87.5000)
+Test: [  50/117]  Time: 0.078 (0.094)  Loss:  1.8252 (1.8027)  Acc@1: 22.6562 (25.3676)  Acc@5: 85.9375 (87.4540)
+Test: [ 100/117]  Time: 0.078 (0.086)  Loss:  1.7832 (1.7921)  Acc@1: 25.0000 (26.0210)  Acc@5: 90.6250 (87.8945)
+Test: [ 117/117]  Time: 0.017 (0.084)  Loss:  1.7783 (1.7931)  Acc@1: 20.8333 (26.1200)  Acc@5: 83.3333 (87.8667)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 26.120000001017253)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 23.100000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 17.166666666666668)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 16.80666666768392)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 13.113333333333333)
+
+Train: 5 [   0/7 (  0%)]  Loss: 1.903 (1.90)  Time: 0.852s,  150.29/s  (0.852s,  150.29/s)  LR: 1.000e-03  Data: 0.637 (0.637)
+Train: 5 [   6/7 (100%)]  Loss: 1.738 (1.82)  Time: 0.215s,  594.00/s  (0.306s,  418.66/s)  LR: 1.000e-03  Data: 0.000 (0.091)
+Test: [   0/117]  Time: 0.691 (0.691)  Loss:  1.7275 (1.7275)  Acc@1: 25.0000 (25.0000)  Acc@5: 92.9688 (92.9688)
+Test: [  50/117]  Time: 0.078 (0.092)  Loss:  1.7012 (1.6376)  Acc@1: 25.7812 (29.7488)  Acc@5: 90.6250 (93.1526)
+Test: [ 100/117]  Time: 0.079 (0.085)  Loss:  1.6270 (1.6311)  Acc@1: 32.0312 (29.8190)  Acc@5: 92.9688 (92.9842)
+Test: [ 117/117]  Time: 0.017 (0.084)  Loss:  1.7529 (1.6329)  Acc@1: 16.6667 (29.7400)  Acc@5: 87.5000 (92.9800)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 29.740000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 26.120000001017253)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 23.100000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 17.166666666666668)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 16.80666666768392)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 13.113333333333333)
+
+Train: 6 [   0/7 (  0%)]  Loss: 1.678 (1.68)  Time: 0.931s,  137.52/s  (0.931s,  137.52/s)  LR: 1.200e-03  Data: 0.716 (0.716)
+Train: 6 [   6/7 (100%)]  Loss: 1.703 (1.70)  Time: 0.214s,  597.71/s  (0.317s,  403.77/s)  LR: 1.200e-03  Data: 0.000 (0.103)
+Test: [   0/117]  Time: 0.656 (0.656)  Loss:  1.6006 (1.6006)  Acc@1: 31.2500 (31.2500)  Acc@5: 96.8750 (96.8750)
+Test: [  50/117]  Time: 0.078 (0.091)  Loss:  1.5879 (1.5356)  Acc@1: 31.2500 (33.9920)  Acc@5: 95.3125 (96.6912)
+Test: [ 100/117]  Time: 0.078 (0.085)  Loss:  1.5254 (1.5275)  Acc@1: 33.5938 (34.0888)  Acc@5: 97.6562 (96.8982)
+Test: [ 117/117]  Time: 0.017 (0.083)  Loss:  1.4844 (1.5278)  Acc@1: 41.6667 (34.1467)  Acc@5: 95.8333 (96.8067)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 34.14666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 29.740000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 26.120000001017253)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 23.100000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 17.166666666666668)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 16.80666666768392)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 13.113333333333333)
+
+Train: 7 [   0/7 (  0%)]  Loss: 1.551 (1.55)  Time: 0.768s,  166.67/s  (0.768s,  166.67/s)  LR: 1.400e-03  Data: 0.553 (0.553)
+Train: 7 [   6/7 (100%)]  Loss: 1.576 (1.61)  Time: 0.215s,  595.17/s  (0.295s,  433.78/s)  LR: 1.400e-03  Data: 0.000 (0.079)
+Test: [   0/117]  Time: 0.697 (0.697)  Loss:  1.5322 (1.5322)  Acc@1: 32.0312 (32.0312)  Acc@5: 97.6562 (97.6562)
+Test: [  50/117]  Time: 0.078 (0.093)  Loss:  1.5225 (1.4634)  Acc@1: 30.4688 (35.6924)  Acc@5: 97.6562 (97.9473)
+Test: [ 100/117]  Time: 0.078 (0.086)  Loss:  1.4766 (1.4563)  Acc@1: 32.8125 (35.6049)  Acc@5: 100.0000 (98.1049)
+Test: [ 117/117]  Time: 0.017 (0.084)  Loss:  1.5488 (1.4569)  Acc@1: 20.8333 (35.5133)  Acc@5: 100.0000 (98.1533)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 35.513333334350584)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 34.14666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 29.740000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 26.120000001017253)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 23.100000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 17.166666666666668)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 16.80666666768392)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 13.113333333333333)
+
+Train: 8 [   0/7 (  0%)]  Loss: 1.417 (1.42)  Time: 0.892s,  143.52/s  (0.892s,  143.52/s)  LR: 1.600e-03  Data: 0.677 (0.677)
+Train: 8 [   6/7 (100%)]  Loss: 1.543 (1.53)  Time: 0.217s,  590.95/s  (0.310s,  413.17/s)  LR: 1.600e-03  Data: 0.000 (0.097)
+Test: [   0/117]  Time: 0.642 (0.642)  Loss:  1.7754 (1.7754)  Acc@1: 21.8750 (21.8750)  Acc@5: 96.0938 (96.0938)
+Test: [  50/117]  Time: 0.078 (0.091)  Loss:  1.6689 (1.5985)  Acc@1: 23.4375 (31.7402)  Acc@5: 96.8750 (96.0172)
+Test: [ 100/117]  Time: 0.080 (0.086)  Loss:  1.5977 (1.5856)  Acc@1: 32.0312 (31.8843)  Acc@5: 97.6562 (96.3645)
+Test: [ 117/117]  Time: 0.017 (0.084)  Loss:  1.7715 (1.5869)  Acc@1: 37.5000 (31.6933)  Acc@5: 91.6667 (96.3067)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 35.513333334350584)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 34.14666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 31.69333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 29.740000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 26.120000001017253)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 23.100000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 17.166666666666668)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 16.80666666768392)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 13.113333333333333)
+
+Train: 9 [   0/7 (  0%)]  Loss: 1.665 (1.67)  Time: 0.812s,  157.55/s  (0.812s,  157.55/s)  LR: 1.800e-03  Data: 0.598 (0.598)
+Train: 9 [   6/7 (100%)]  Loss: 1.387 (1.46)  Time: 0.216s,  592.07/s  (0.301s,  425.55/s)  LR: 1.800e-03  Data: 0.000 (0.086)
+Test: [   0/117]  Time: 0.631 (0.631)  Loss:  1.4287 (1.4287)  Acc@1: 38.2812 (38.2812)  Acc@5: 98.4375 (98.4375)
+Test: [  50/117]  Time: 0.078 (0.092)  Loss:  1.4297 (1.3826)  Acc@1: 35.1562 (38.7255)  Acc@5: 97.6562 (98.2230)
+Test: [ 100/117]  Time: 0.079 (0.085)  Loss:  1.4170 (1.3737)  Acc@1: 38.2812 (39.0780)  Acc@5: 100.0000 (98.4684)
+Test: [ 117/117]  Time: 0.018 (0.084)  Loss:  1.4307 (1.3737)  Acc@1: 29.1667 (38.9000)  Acc@5: 95.8333 (98.4533)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 38.9000000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 35.513333334350584)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 34.14666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 31.69333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 29.740000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 26.120000001017253)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 23.100000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 17.166666666666668)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 16.80666666768392)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 13.113333333333333)
+
+Train: 10 [   0/7 (  0%)]  Loss: 1.344 (1.34)  Time: 0.811s,  157.75/s  (0.811s,  157.75/s)  LR: 1.992e-03  Data: 0.597 (0.597)
+Train: 10 [   6/7 (100%)]  Loss: 1.357 (1.37)  Time: 0.216s,  592.24/s  (0.301s,  425.34/s)  LR: 1.992e-03  Data: 0.000 (0.086)
+Test: [   0/117]  Time: 0.658 (0.658)  Loss:  1.3496 (1.3496)  Acc@1: 43.7500 (43.7500)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.092)  Loss:  1.3584 (1.2646)  Acc@1: 39.8438 (44.5925)  Acc@5: 97.6562 (99.4332)
+Test: [ 100/117]  Time: 0.079 (0.085)  Loss:  1.2617 (1.2603)  Acc@1: 39.0625 (44.9025)  Acc@5: 100.0000 (99.4044)
+Test: [ 117/117]  Time: 0.017 (0.084)  Loss:  1.3994 (1.2633)  Acc@1: 41.6667 (44.9067)  Acc@5: 100.0000 (99.3933)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 44.90666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 38.9000000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 35.513333334350584)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 34.14666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 31.69333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 29.740000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 26.120000001017253)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 23.100000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 17.166666666666668)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 16.80666666768392)
+
+Train: 11 [   0/7 (  0%)]  Loss: 1.262 (1.26)  Time: 0.816s,  156.96/s  (0.816s,  156.96/s)  LR: 1.990e-03  Data: 0.600 (0.600)
+Train: 11 [   6/7 (100%)]  Loss: 1.265 (1.28)  Time: 0.216s,  591.85/s  (0.302s,  423.72/s)  LR: 1.990e-03  Data: 0.000 (0.086)
+Test: [   0/117]  Time: 0.692 (0.692)  Loss:  1.2451 (1.2451)  Acc@1: 43.7500 (43.7500)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.092)  Loss:  1.2354 (1.1998)  Acc@1: 44.5312 (45.5116)  Acc@5: 100.0000 (99.9387)
+Test: [ 100/117]  Time: 0.079 (0.085)  Loss:  1.1631 (1.1912)  Acc@1: 41.4062 (46.1711)  Acc@5: 100.0000 (99.9536)
+Test: [ 117/117]  Time: 0.017 (0.084)  Loss:  1.2168 (1.1903)  Acc@1: 50.0000 (46.2200)  Acc@5: 100.0000 (99.9333)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 46.22)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 44.90666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 38.9000000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 35.513333334350584)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 34.14666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 31.69333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 29.740000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 26.120000001017253)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 23.100000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 17.166666666666668)
+
+Train: 12 [   0/7 (  0%)]  Loss: 1.212 (1.21)  Time: 0.855s,  149.74/s  (0.855s,  149.74/s)  LR: 1.989e-03  Data: 0.639 (0.639)
+Train: 12 [   6/7 (100%)]  Loss: 1.227 (1.23)  Time: 0.221s,  580.49/s  (0.308s,  415.93/s)  LR: 1.989e-03  Data: 0.000 (0.092)
+Test: [   0/117]  Time: 0.690 (0.690)  Loss:  1.2969 (1.2969)  Acc@1: 39.8438 (39.8438)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.093)  Loss:  1.3906 (1.2919)  Acc@1: 41.4062 (42.1569)  Acc@5: 99.2188 (99.7549)
+Test: [ 100/117]  Time: 0.080 (0.086)  Loss:  1.2939 (1.2798)  Acc@1: 38.2812 (42.4582)  Acc@5: 100.0000 (99.7679)
+Test: [ 117/117]  Time: 0.017 (0.085)  Loss:  1.1982 (1.2794)  Acc@1: 50.0000 (42.5533)  Acc@5: 100.0000 (99.7533)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 46.22)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 44.90666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 42.553333333333335)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 38.9000000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 35.513333334350584)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 34.14666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 31.69333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 29.740000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 26.120000001017253)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 23.100000002034506)
+
+Train: 13 [   0/7 (  0%)]  Loss: 1.173 (1.17)  Time: 0.937s,  136.61/s  (0.937s,  136.61/s)  LR: 1.987e-03  Data: 0.721 (0.721)
+Train: 13 [   6/7 (100%)]  Loss: 1.219 (1.16)  Time: 0.216s,  593.94/s  (0.319s,  401.75/s)  LR: 1.987e-03  Data: 0.000 (0.103)
+Test: [   0/117]  Time: 0.722 (0.722)  Loss:  1.1055 (1.1055)  Acc@1: 47.6562 (47.6562)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.093)  Loss:  1.1318 (1.0562)  Acc@1: 48.4375 (50.9498)  Acc@5: 100.0000 (99.9540)
+Test: [ 100/117]  Time: 0.079 (0.086)  Loss:  1.0225 (1.0500)  Acc@1: 56.2500 (51.0675)  Acc@5: 100.0000 (99.9613)
+Test: [ 117/117]  Time: 0.017 (0.084)  Loss:  1.1611 (1.0525)  Acc@1: 50.0000 (50.6867)  Acc@5: 100.0000 (99.9600)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 50.68666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 46.22)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 44.90666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 42.553333333333335)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 38.9000000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 35.513333334350584)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 34.14666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 31.69333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 29.740000002034506)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 26.120000001017253)
+
+Train: 14 [   0/7 (  0%)]  Loss: 1.094 (1.09)  Time: 0.779s,  164.39/s  (0.779s,  164.39/s)  LR: 1.985e-03  Data: 0.563 (0.563)
+Train: 14 [   6/7 (100%)]  Loss: 1.193 (1.13)  Time: 0.215s,  594.81/s  (0.296s,  431.80/s)  LR: 1.985e-03  Data: 0.000 (0.081)
+Test: [   0/117]  Time: 0.700 (0.700)  Loss:  1.1289 (1.1289)  Acc@1: 46.8750 (46.8750)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.093)  Loss:  1.0742 (1.0918)  Acc@1: 53.1250 (48.1924)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.086)  Loss:  0.9980 (1.0797)  Acc@1: 51.5625 (48.5458)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.085)  Loss:  1.2002 (1.0806)  Acc@1: 33.3333 (48.5467)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 50.68666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 48.546666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 46.22)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 44.90666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 42.553333333333335)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 38.9000000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 35.513333334350584)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 34.14666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 31.69333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 29.740000002034506)
+
+Train: 15 [   0/7 (  0%)]  Loss: 1.032 (1.03)  Time: 0.773s,  165.56/s  (0.773s,  165.56/s)  LR: 1.982e-03  Data: 0.558 (0.558)
+Train: 15 [   6/7 (100%)]  Loss: 1.004 (1.04)  Time: 0.216s,  592.76/s  (0.295s,  433.46/s)  LR: 1.982e-03  Data: 0.000 (0.080)
+Test: [   0/117]  Time: 0.894 (0.894)  Loss:  1.0664 (1.0664)  Acc@1: 49.2188 (49.2188)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.096)  Loss:  1.0908 (1.0180)  Acc@1: 45.3125 (53.2782)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.087)  Loss:  1.0010 (1.0051)  Acc@1: 54.6875 (53.7361)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.086)  Loss:  0.9331 (1.0068)  Acc@1: 58.3333 (53.5867)  Acc@5: 100.0000 (99.9867)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 53.586666670735674)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 50.68666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 48.546666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 46.22)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 44.90666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 42.553333333333335)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 38.9000000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 35.513333334350584)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 34.14666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 31.69333333333333)
+
+Train: 16 [   0/7 (  0%)]  Loss: 0.9878 (0.988)  Time: 0.834s,  153.43/s  (0.834s,  153.43/s)  LR: 1.980e-03  Data: 0.618 (0.618)
+Train: 16 [   6/7 (100%)]  Loss: 1.010 (1.01)  Time: 0.217s,  591.22/s  (0.305s,  419.73/s)  LR: 1.980e-03  Data: 0.000 (0.089)
+Test: [   0/117]  Time: 0.664 (0.664)  Loss:  1.0586 (1.0586)  Acc@1: 49.2188 (49.2188)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.093)  Loss:  1.0381 (0.9774)  Acc@1: 49.2188 (54.5343)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.086)  Loss:  0.9932 (0.9674)  Acc@1: 56.2500 (55.1439)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.084)  Loss:  0.8955 (0.9683)  Acc@1: 58.3333 (55.1333)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 53.586666670735674)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 50.68666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 48.546666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 46.22)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 44.90666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 42.553333333333335)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 38.9000000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 35.513333334350584)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 34.14666666870117)
+
+Train: 17 [   0/7 (  0%)]  Loss: 0.8751 (0.875)  Time: 0.839s,  152.57/s  (0.839s,  152.57/s)  LR: 1.977e-03  Data: 0.623 (0.623)
+Train: 17 [   6/7 (100%)]  Loss: 0.8823 (0.897)  Time: 0.216s,  592.91/s  (0.306s,  418.33/s)  LR: 1.977e-03  Data: 0.000 (0.089)
+Test: [   0/117]  Time: 0.679 (0.679)  Loss:  0.9331 (0.9331)  Acc@1: 58.5938 (58.5938)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.092)  Loss:  0.9448 (0.9024)  Acc@1: 56.2500 (56.9700)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.086)  Loss:  0.8506 (0.8909)  Acc@1: 58.5938 (57.5727)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.084)  Loss:  0.8916 (0.8927)  Acc@1: 62.5000 (57.3200)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 53.586666670735674)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 50.68666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 48.546666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 46.22)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 44.90666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 42.553333333333335)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 38.9000000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 35.513333334350584)
+
+Train: 18 [   0/7 (  0%)]  Loss: 0.8959 (0.896)  Time: 0.901s,  142.14/s  (0.901s,  142.14/s)  LR: 1.975e-03  Data: 0.685 (0.685)
+Train: 18 [   6/7 (100%)]  Loss: 0.8908 (0.830)  Time: 0.215s,  594.42/s  (0.314s,  407.84/s)  LR: 1.975e-03  Data: 0.000 (0.098)
+Test: [   0/117]  Time: 0.718 (0.718)  Loss:  1.0029 (1.0029)  Acc@1: 49.2188 (49.2188)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.093)  Loss:  1.0566 (0.9978)  Acc@1: 46.8750 (53.2016)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.086)  Loss:  0.9243 (0.9878)  Acc@1: 56.2500 (53.5736)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.085)  Loss:  0.8472 (0.9882)  Acc@1: 58.3333 (53.6400)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 53.64000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 53.586666670735674)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 50.68666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 48.546666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 46.22)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 44.90666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 42.553333333333335)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 38.9000000020345)
+
+Train: 19 [   0/7 (  0%)]  Loss: 0.9797 (0.980)  Time: 0.865s,  147.95/s  (0.865s,  147.95/s)  LR: 1.972e-03  Data: 0.650 (0.650)
+Train: 19 [   6/7 (100%)]  Loss: 1.017 (0.911)  Time: 0.218s,  588.32/s  (0.310s,  413.24/s)  LR: 1.972e-03  Data: 0.000 (0.093)
+Test: [   0/117]  Time: 0.719 (0.719)  Loss:  0.9453 (0.9453)  Acc@1: 50.7812 (50.7812)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.094)  Loss:  0.8599 (0.8694)  Acc@1: 60.9375 (60.7996)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.087)  Loss:  0.8267 (0.8604)  Acc@1: 58.5938 (61.3629)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.085)  Loss:  1.0039 (0.8629)  Acc@1: 62.5000 (61.2400)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 53.64000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 53.586666670735674)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 50.68666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 48.546666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 46.22)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 44.90666666870117)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 42.553333333333335)
+
+Train: 20 [   0/7 (  0%)]  Loss: 0.7261 (0.726)  Time: 0.852s,  150.29/s  (0.852s,  150.29/s)  LR: 1.969e-03  Data: 0.636 (0.636)
+Train: 20 [   6/7 (100%)]  Loss: 0.8060 (0.824)  Time: 0.216s,  593.06/s  (0.307s,  416.78/s)  LR: 1.969e-03  Data: 0.000 (0.091)
+Test: [   0/117]  Time: 0.660 (0.660)  Loss:  0.9082 (0.9082)  Acc@1: 62.5000 (62.5000)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.092)  Loss:  0.9351 (0.8961)  Acc@1: 52.3438 (57.2917)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.086)  Loss:  0.7798 (0.8848)  Acc@1: 62.5000 (57.7042)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.084)  Loss:  0.9155 (0.8860)  Acc@1: 62.5000 (57.5600)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 57.56)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 53.64000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 53.586666670735674)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 50.68666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 48.546666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 46.22)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 44.90666666870117)
+
+Train: 21 [   0/7 (  0%)]  Loss: 0.7832 (0.783)  Time: 0.949s,  134.91/s  (0.949s,  134.91/s)  LR: 1.965e-03  Data: 0.733 (0.733)
+Train: 21 [   6/7 (100%)]  Loss: 0.6858 (0.749)  Time: 0.218s,  586.55/s  (0.322s,  397.99/s)  LR: 1.965e-03  Data: 0.000 (0.105)
+Test: [   0/117]  Time: 0.703 (0.703)  Loss:  0.8735 (0.8735)  Acc@1: 58.5938 (58.5938)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.094)  Loss:  0.8306 (0.8151)  Acc@1: 60.9375 (62.1477)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.080 (0.086)  Loss:  0.7861 (0.8095)  Acc@1: 62.5000 (62.3221)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.085)  Loss:  0.7627 (0.8110)  Acc@1: 70.8333 (62.0800)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 57.56)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 53.64000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 53.586666670735674)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 50.68666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 48.546666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 46.22)
+
+Train: 22 [   0/7 (  0%)]  Loss: 0.6613 (0.661)  Time: 0.920s,  139.06/s  (0.920s,  139.06/s)  LR: 1.962e-03  Data: 0.704 (0.704)
+Train: 22 [   6/7 (100%)]  Loss: 0.6630 (0.658)  Time: 0.216s,  592.97/s  (0.317s,  403.91/s)  LR: 1.962e-03  Data: 0.000 (0.101)
+Test: [   0/117]  Time: 0.736 (0.736)  Loss:  0.8320 (0.8320)  Acc@1: 58.5938 (58.5938)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.094)  Loss:  0.7783 (0.7538)  Acc@1: 64.8438 (65.6250)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.088)  Loss:  0.6982 (0.7452)  Acc@1: 67.1875 (66.3830)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.086)  Loss:  0.8477 (0.7466)  Acc@1: 58.3333 (66.1600)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 57.56)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 53.64000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 53.586666670735674)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 50.68666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 48.546666670735675)
+
+Train: 23 [   0/7 (  0%)]  Loss: 0.6366 (0.637)  Time: 0.869s,  147.33/s  (0.869s,  147.33/s)  LR: 1.959e-03  Data: 0.652 (0.652)
+Train: 23 [   6/7 (100%)]  Loss: 0.6853 (0.693)  Time: 0.217s,  591.20/s  (0.310s,  413.29/s)  LR: 1.959e-03  Data: 0.000 (0.093)
+Test: [   0/117]  Time: 0.911 (0.911)  Loss:  0.9624 (0.9624)  Acc@1: 64.0625 (64.0625)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.097)  Loss:  0.9775 (0.8946)  Acc@1: 57.8125 (60.9222)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.088)  Loss:  0.7451 (0.8773)  Acc@1: 68.7500 (61.1928)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.086)  Loss:  1.0508 (0.8761)  Acc@1: 58.3333 (61.0467)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 61.046666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 57.56)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 53.64000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 53.586666670735674)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 50.68666666666667)
+
+Train: 24 [   0/7 (  0%)]  Loss: 0.7659 (0.766)  Time: 0.981s,  130.41/s  (0.981s,  130.41/s)  LR: 1.955e-03  Data: 0.764 (0.764)
+Train: 24 [   6/7 (100%)]  Loss: 1.310 (0.949)  Time: 0.218s,  586.72/s  (0.327s,  391.77/s)  LR: 1.955e-03  Data: 0.000 (0.109)
+Test: [   0/117]  Time: 0.746 (0.746)  Loss:  1.3242 (1.3242)  Acc@1: 50.7812 (50.7812)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.094)  Loss:  1.1533 (1.2872)  Acc@1: 52.3438 (53.7837)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.089)  Loss:  1.0762 (1.2672)  Acc@1: 60.9375 (54.5405)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.087)  Loss:  2.0293 (1.2714)  Acc@1: 33.3333 (54.1867)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 61.046666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 57.56)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 54.186666670735676)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 53.64000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 53.586666670735674)
+
+Train: 25 [   0/7 (  0%)]  Loss: 0.9169 (0.917)  Time: 1.077s,  118.85/s  (1.077s,  118.85/s)  LR: 1.951e-03  Data: 0.860 (0.860)
+Train: 25 [   6/7 (100%)]  Loss: 0.6379 (0.866)  Time: 0.217s,  590.36/s  (0.340s,  376.96/s)  LR: 1.951e-03  Data: 0.000 (0.123)
+Test: [   0/117]  Time: 0.786 (0.786)  Loss:  1.1768 (1.1768)  Acc@1: 49.2188 (49.2188)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.095)  Loss:  1.1582 (1.1213)  Acc@1: 48.4375 (49.6324)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.090)  Loss:  1.1201 (1.1263)  Acc@1: 50.0000 (49.1105)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.088)  Loss:  0.9980 (1.1284)  Acc@1: 54.1667 (49.1867)  Acc@5: 100.0000 (100.0000)
+Train: 26 [   0/7 (  0%)]  Loss: 0.7828 (0.783)  Time: 0.926s,  138.17/s  (0.926s,  138.17/s)  LR: 1.947e-03  Data: 0.709 (0.709)
+Train: 26 [   6/7 (100%)]  Loss: 0.6492 (0.738)  Time: 0.216s,  592.12/s  (0.318s,  402.40/s)  LR: 1.947e-03  Data: 0.000 (0.101)
+Test: [   0/117]  Time: 0.859 (0.859)  Loss:  0.9131 (0.9131)  Acc@1: 61.7188 (61.7188)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.080 (0.097)  Loss:  0.9580 (0.8812)  Acc@1: 55.4688 (60.4320)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.089 (0.089)  Loss:  0.8242 (0.8681)  Acc@1: 65.6250 (60.8911)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.088)  Loss:  1.0811 (0.8670)  Acc@1: 54.1667 (60.7533)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 61.046666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 60.75333333536784)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 57.56)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 54.186666670735676)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 53.64000000406901)
+
+Train: 27 [   0/7 (  0%)]  Loss: 0.8353 (0.835)  Time: 0.916s,  139.81/s  (0.916s,  139.81/s)  LR: 1.943e-03  Data: 0.699 (0.699)
+Train: 27 [   6/7 (100%)]  Loss: 0.5924 (0.704)  Time: 0.216s,  591.97/s  (0.316s,  404.43/s)  LR: 1.943e-03  Data: 0.000 (0.100)
+Test: [   0/117]  Time: 0.687 (0.687)  Loss:  0.8623 (0.8623)  Acc@1: 57.0312 (57.0312)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.095)  Loss:  0.8477 (0.8388)  Acc@1: 61.7188 (61.7188)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.088)  Loss:  0.8081 (0.8378)  Acc@1: 60.9375 (61.7652)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.086)  Loss:  0.9434 (0.8392)  Acc@1: 54.1667 (61.5400)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 61.5400000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 61.046666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 60.75333333536784)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 57.56)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 54.186666670735676)
+
+Train: 28 [   0/7 (  0%)]  Loss: 0.5808 (0.581)  Time: 0.840s,  152.33/s  (0.840s,  152.33/s)  LR: 1.939e-03  Data: 0.622 (0.622)
+Train: 28 [   6/7 (100%)]  Loss: 0.6504 (0.637)  Time: 0.217s,  590.21/s  (0.306s,  418.37/s)  LR: 1.939e-03  Data: 0.000 (0.089)
+Test: [   0/117]  Time: 0.858 (0.858)  Loss:  0.7900 (0.7900)  Acc@1: 60.9375 (60.9375)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.096)  Loss:  0.7808 (0.7485)  Acc@1: 65.6250 (67.3560)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.080 (0.088)  Loss:  0.6934 (0.7447)  Acc@1: 72.6562 (67.9146)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.088)  Loss:  0.8706 (0.7449)  Acc@1: 62.5000 (67.7933)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 61.5400000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 61.046666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 60.75333333536784)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 57.56)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 55.13333333740234)
+
+Train: 29 [   0/7 (  0%)]  Loss: 0.5315 (0.532)  Time: 0.932s,  137.38/s  (0.932s,  137.38/s)  LR: 1.934e-03  Data: 0.715 (0.715)
+Train: 29 [   6/7 (100%)]  Loss: 0.6482 (0.587)  Time: 0.217s,  588.53/s  (0.321s,  399.30/s)  LR: 1.934e-03  Data: 0.000 (0.102)
+Test: [   0/117]  Time: 0.734 (0.734)  Loss:  0.8247 (0.8247)  Acc@1: 63.2812 (63.2812)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.104)  Loss:  0.7173 (0.7300)  Acc@1: 69.5312 (67.1722)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.095)  Loss:  0.6597 (0.7175)  Acc@1: 70.3125 (67.5820)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.094)  Loss:  0.7031 (0.7181)  Acc@1: 70.8333 (67.4400)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 67.440000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 61.5400000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 61.046666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 60.75333333536784)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 57.56)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 57.32)
+
+Train: 30 [   0/7 (  0%)]  Loss: 0.5850 (0.585)  Time: 1.129s,  113.40/s  (1.129s,  113.40/s)  LR: 1.930e-03  Data: 0.909 (0.909)
+Train: 30 [   6/7 (100%)]  Loss: 0.5269 (0.538)  Time: 0.219s,  585.38/s  (0.348s,  367.50/s)  LR: 1.930e-03  Data: 0.000 (0.130)
+Test: [   0/117]  Time: 1.097 (1.097)  Loss:  0.7661 (0.7661)  Acc@1: 67.1875 (67.1875)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.111)  Loss:  0.7603 (0.7205)  Acc@1: 65.6250 (67.2641)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.105)  Loss:  0.6304 (0.7093)  Acc@1: 75.7812 (67.8682)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.103)  Loss:  0.6509 (0.7100)  Acc@1: 66.6667 (67.8067)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 67.440000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 61.5400000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 61.046666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 60.75333333536784)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 57.56)
+
+Train: 31 [   0/7 (  0%)]  Loss: 0.5089 (0.509)  Time: 1.103s,  116.02/s  (1.103s,  116.02/s)  LR: 1.925e-03  Data: 0.887 (0.887)
+Train: 31 [   6/7 (100%)]  Loss: 0.4726 (0.492)  Time: 0.217s,  589.57/s  (0.344s,  372.00/s)  LR: 1.925e-03  Data: 0.000 (0.127)
+Test: [   0/117]  Time: 0.810 (0.810)  Loss:  0.7588 (0.7588)  Acc@1: 67.1875 (67.1875)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.146 (0.102)  Loss:  0.7075 (0.6859)  Acc@1: 67.9688 (69.6844)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.100)  Loss:  0.6226 (0.6771)  Acc@1: 73.4375 (70.3048)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.101)  Loss:  0.7319 (0.6781)  Acc@1: 70.8333 (70.1400)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 67.440000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 61.5400000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 61.046666670735675)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 60.75333333536784)
+
+Train: 32 [   0/7 (  0%)]  Loss: 0.5738 (0.574)  Time: 1.018s,  125.76/s  (1.018s,  125.76/s)  LR: 1.920e-03  Data: 0.798 (0.798)
+Train: 32 [   6/7 (100%)]  Loss: 0.5273 (0.504)  Time: 0.216s,  591.25/s  (0.332s,  385.19/s)  LR: 1.920e-03  Data: 0.000 (0.114)
+Test: [   0/117]  Time: 1.021 (1.021)  Loss:  0.7964 (0.7964)  Acc@1: 60.9375 (60.9375)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.109)  Loss:  0.7046 (0.6914)  Acc@1: 69.5312 (68.9338)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.108)  Loss:  0.6406 (0.6834)  Acc@1: 75.0000 (69.6163)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.104)  Loss:  0.6396 (0.6849)  Acc@1: 62.5000 (69.4800)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 67.440000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 61.5400000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 61.046666670735675)
+
+Train: 33 [   0/7 (  0%)]  Loss: 0.5208 (0.521)  Time: 0.957s,  133.72/s  (0.957s,  133.72/s)  LR: 1.915e-03  Data: 0.734 (0.734)
+Train: 33 [   6/7 (100%)]  Loss: 0.4016 (0.453)  Time: 0.216s,  591.57/s  (0.325s,  393.79/s)  LR: 1.915e-03  Data: 0.000 (0.105)
+Test: [   0/117]  Time: 0.848 (0.848)  Loss:  0.8120 (0.8120)  Acc@1: 67.9688 (67.9688)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.104)  Loss:  0.7783 (0.7565)  Acc@1: 71.8750 (68.8725)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.101)  Loss:  0.6724 (0.7477)  Acc@1: 68.7500 (69.1368)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.100)  Loss:  0.9126 (0.7464)  Acc@1: 58.3333 (68.8067)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 67.440000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 61.5400000020345)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 61.24)
+
+Train: 34 [   0/7 (  0%)]  Loss: 0.4052 (0.405)  Time: 1.192s,  107.36/s  (1.192s,  107.36/s)  LR: 1.910e-03  Data: 0.975 (0.975)
+Train: 34 [   6/7 (100%)]  Loss: 0.5630 (0.508)  Time: 0.220s,  580.54/s  (0.358s,  357.83/s)  LR: 1.910e-03  Data: 0.000 (0.140)
+Test: [   0/117]  Time: 0.879 (0.879)  Loss:  0.9258 (0.9258)  Acc@1: 65.6250 (65.6250)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.102)  Loss:  0.7417 (0.7975)  Acc@1: 67.9688 (66.9424)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.101)  Loss:  0.6704 (0.7773)  Acc@1: 71.8750 (67.5124)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.098)  Loss:  0.8462 (0.7747)  Acc@1: 70.8333 (67.7000)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 67.70000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 67.440000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 61.5400000020345)
+
+Train: 35 [   0/7 (  0%)]  Loss: 0.5189 (0.519)  Time: 1.047s,  122.27/s  (1.047s,  122.27/s)  LR: 1.905e-03  Data: 0.830 (0.830)
+Train: 35 [   6/7 (100%)]  Loss: 0.5354 (0.479)  Time: 0.217s,  590.77/s  (0.339s,  377.70/s)  LR: 1.905e-03  Data: 0.000 (0.119)
+Test: [   0/117]  Time: 0.755 (0.755)  Loss:  0.8364 (0.8364)  Acc@1: 64.8438 (64.8438)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.110)  Loss:  0.7354 (0.7745)  Acc@1: 67.9688 (67.5092)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.093 (0.107)  Loss:  0.6182 (0.7560)  Acc@1: 74.2188 (67.7290)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.102)  Loss:  0.8838 (0.7542)  Acc@1: 62.5000 (67.7533)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 67.75333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 67.70000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 67.440000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 62.080000004069014)
+
+Train: 36 [   0/7 (  0%)]  Loss: 0.4200 (0.420)  Time: 0.923s,  138.69/s  (0.923s,  138.69/s)  LR: 1.899e-03  Data: 0.705 (0.705)
+Train: 36 [   6/7 (100%)]  Loss: 0.5402 (0.490)  Time: 0.216s,  591.91/s  (0.319s,  401.34/s)  LR: 1.899e-03  Data: 0.000 (0.101)
+Test: [   0/117]  Time: 0.987 (0.987)  Loss:  0.9741 (0.9741)  Acc@1: 58.5938 (58.5938)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.258 (0.112)  Loss:  0.8682 (0.8449)  Acc@1: 61.7188 (62.7604)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.106)  Loss:  0.7900 (0.8409)  Acc@1: 64.0625 (62.6160)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.103)  Loss:  0.8013 (0.8449)  Acc@1: 62.5000 (62.5000)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 67.75333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 67.70000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 67.440000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-36.pth.tar', 62.5)
+
+Train: 37 [   0/7 (  0%)]  Loss: 0.4811 (0.481)  Time: 1.146s,  111.68/s  (1.146s,  111.68/s)  LR: 1.894e-03  Data: 0.927 (0.927)
+Train: 37 [   6/7 (100%)]  Loss: 0.4662 (0.511)  Time: 0.217s,  590.45/s  (0.350s,  365.58/s)  LR: 1.894e-03  Data: 0.000 (0.133)
+Test: [   0/117]  Time: 0.884 (0.884)  Loss:  0.8691 (0.8691)  Acc@1: 60.9375 (60.9375)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.108)  Loss:  0.8120 (0.7904)  Acc@1: 64.0625 (66.5748)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.092 (0.096)  Loss:  0.6919 (0.7858)  Acc@1: 76.5625 (67.3267)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.093)  Loss:  0.8560 (0.7893)  Acc@1: 75.0000 (67.1267)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 67.75333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 67.70000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 67.440000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 67.12666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 66.160000004069)
+
+Train: 38 [   0/7 (  0%)]  Loss: 0.4704 (0.470)  Time: 1.142s,  112.09/s  (1.142s,  112.09/s)  LR: 1.888e-03  Data: 0.924 (0.924)
+Train: 38 [   6/7 (100%)]  Loss: 0.4595 (0.464)  Time: 0.218s,  587.31/s  (0.350s,  365.52/s)  LR: 1.888e-03  Data: 0.000 (0.132)
+Test: [   0/117]  Time: 1.120 (1.120)  Loss:  0.7925 (0.7925)  Acc@1: 64.0625 (64.0625)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.084 (0.107)  Loss:  0.6899 (0.6880)  Acc@1: 75.0000 (71.5380)  Acc@5: 100.0000 (99.9847)
+Test: [ 100/117]  Time: 0.079 (0.105)  Loss:  0.6123 (0.6734)  Acc@1: 71.8750 (71.8750)  Acc@5: 100.0000 (99.9923)
+Test: [ 117/117]  Time: 0.021 (0.103)  Loss:  0.7720 (0.6749)  Acc@1: 66.6667 (71.7267)  Acc@5: 100.0000 (99.9933)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 67.75333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 67.70000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 67.440000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 67.12666666666667)
+
+Train: 39 [   0/7 (  0%)]  Loss: 0.3428 (0.343)  Time: 0.969s,  132.15/s  (0.969s,  132.15/s)  LR: 1.882e-03  Data: 0.752 (0.752)
+Train: 39 [   6/7 (100%)]  Loss: 0.3990 (0.441)  Time: 0.216s,  593.10/s  (0.324s,  395.45/s)  LR: 1.882e-03  Data: 0.000 (0.108)
+Test: [   0/117]  Time: 0.730 (0.730)  Loss:  0.9219 (0.9219)  Acc@1: 59.3750 (59.3750)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.089 (0.105)  Loss:  0.7422 (0.8488)  Acc@1: 67.9688 (65.6403)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.106)  Loss:  0.6162 (0.8287)  Acc@1: 75.0000 (66.2438)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.019 (0.104)  Loss:  0.8105 (0.8296)  Acc@1: 66.6667 (66.2467)  Acc@5: 100.0000 (100.0000)
+Train: 40 [   0/7 (  0%)]  Loss: 0.4193 (0.419)  Time: 1.105s,  115.83/s  (1.105s,  115.83/s)  LR: 1.876e-03  Data: 0.882 (0.882)
+Train: 40 [   6/7 (100%)]  Loss: 0.3273 (0.391)  Time: 0.214s,  597.12/s  (0.343s,  372.97/s)  LR: 1.876e-03  Data: 0.000 (0.126)
+Test: [   0/117]  Time: 1.064 (1.064)  Loss:  0.8569 (0.8569)  Acc@1: 57.8125 (57.8125)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.078 (0.114)  Loss:  0.8008 (0.7947)  Acc@1: 66.4062 (66.5901)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.103)  Loss:  0.7031 (0.7895)  Acc@1: 68.7500 (66.8549)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.101)  Loss:  0.9468 (0.7931)  Acc@1: 58.3333 (66.7400)  Acc@5: 100.0000 (100.0000)
+Train: 41 [   0/7 (  0%)]  Loss: 0.3822 (0.382)  Time: 1.130s,  113.28/s  (1.130s,  113.28/s)  LR: 1.870e-03  Data: 0.906 (0.906)
+Train: 41 [   6/7 (100%)]  Loss: 0.3624 (0.400)  Time: 0.217s,  589.48/s  (0.348s,  368.28/s)  LR: 1.870e-03  Data: 0.000 (0.130)
+Test: [   0/117]  Time: 0.971 (0.971)  Loss:  0.9355 (0.9355)  Acc@1: 61.7188 (61.7188)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.106)  Loss:  0.7285 (0.8268)  Acc@1: 61.7188 (64.8284)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.101)  Loss:  0.6553 (0.8096)  Acc@1: 68.7500 (65.8880)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.100)  Loss:  0.5322 (0.8128)  Acc@1: 66.6667 (65.7467)  Acc@5: 100.0000 (100.0000)
+Train: 42 [   0/7 (  0%)]  Loss: 0.4990 (0.499)  Time: 1.042s,  122.81/s  (1.042s,  122.81/s)  LR: 1.864e-03  Data: 0.827 (0.827)
+Train: 42 [   6/7 (100%)]  Loss: 0.4437 (0.414)  Time: 0.214s,  598.47/s  (0.333s,  384.58/s)  LR: 1.864e-03  Data: 0.000 (0.118)
+Test: [   0/117]  Time: 0.722 (0.722)  Loss:  0.7471 (0.7471)  Acc@1: 67.1875 (67.1875)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.092 (0.103)  Loss:  0.5649 (0.6651)  Acc@1: 76.5625 (71.6759)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.102)  Loss:  0.5493 (0.6511)  Acc@1: 75.7812 (72.4165)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.101)  Loss:  0.6279 (0.6527)  Acc@1: 70.8333 (72.2600)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 67.75333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 67.70000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 67.440000004069)
+
+Train: 43 [   0/7 (  0%)]  Loss: 0.3181 (0.318)  Time: 1.198s,  106.88/s  (1.198s,  106.88/s)  LR: 1.858e-03  Data: 0.982 (0.982)
+Train: 43 [   6/7 (100%)]  Loss: 0.5179 (0.400)  Time: 0.215s,  596.13/s  (0.356s,  359.29/s)  LR: 1.858e-03  Data: 0.000 (0.140)
+Test: [   0/117]  Time: 0.768 (0.768)  Loss:  0.7705 (0.7705)  Acc@1: 67.9688 (67.9688)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.112)  Loss:  0.6733 (0.7777)  Acc@1: 69.5312 (69.7304)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.092 (0.103)  Loss:  0.6030 (0.7667)  Acc@1: 74.2188 (70.2429)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.101)  Loss:  1.1191 (0.7650)  Acc@1: 58.3333 (70.0867)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 70.08666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 67.75333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 67.70000000406901)
+
+Train: 44 [   0/7 (  0%)]  Loss: 0.4749 (0.475)  Time: 0.933s,  137.24/s  (0.933s,  137.24/s)  LR: 1.851e-03  Data: 0.717 (0.717)
+Train: 44 [   6/7 (100%)]  Loss: 0.4602 (0.399)  Time: 0.214s,  597.63/s  (0.320s,  400.58/s)  LR: 1.851e-03  Data: 0.000 (0.103)
+Test: [   0/117]  Time: 0.772 (0.772)  Loss:  0.9395 (0.9395)  Acc@1: 61.7188 (61.7188)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.078 (0.115)  Loss:  0.8296 (0.8329)  Acc@1: 66.4062 (65.0123)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.108)  Loss:  0.7109 (0.8268)  Acc@1: 70.3125 (64.9134)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.107)  Loss:  0.6387 (0.8281)  Acc@1: 62.5000 (64.9267)  Acc@5: 100.0000 (100.0000)
+Train: 45 [   0/7 (  0%)]  Loss: 0.3827 (0.383)  Time: 1.059s,  120.87/s  (1.059s,  120.87/s)  LR: 1.844e-03  Data: 0.842 (0.842)
+Train: 45 [   6/7 (100%)]  Loss: 0.3426 (0.368)  Time: 0.214s,  597.76/s  (0.336s,  381.13/s)  LR: 1.844e-03  Data: 0.000 (0.120)
+Test: [   0/117]  Time: 0.763 (0.763)  Loss:  0.7910 (0.7910)  Acc@1: 65.6250 (65.6250)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.102)  Loss:  0.6714 (0.6978)  Acc@1: 74.2188 (71.3082)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.101)  Loss:  0.5820 (0.6843)  Acc@1: 78.1250 (71.7280)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.101)  Loss:  0.7319 (0.6860)  Acc@1: 70.8333 (71.6600)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 70.08666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 67.75333333333333)
+
+Train: 46 [   0/7 (  0%)]  Loss: 0.3632 (0.363)  Time: 1.113s,  114.98/s  (1.113s,  114.98/s)  LR: 1.838e-03  Data: 0.897 (0.897)
+Train: 46 [   6/7 (100%)]  Loss: 0.2877 (0.347)  Time: 0.217s,  590.26/s  (0.344s,  371.88/s)  LR: 1.838e-03  Data: 0.000 (0.128)
+Test: [   0/117]  Time: 0.930 (0.930)  Loss:  0.8633 (0.8633)  Acc@1: 67.9688 (67.9688)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.115)  Loss:  0.8223 (0.8289)  Acc@1: 69.5312 (68.9032)  Acc@5: 100.0000 (99.9847)
+Test: [ 100/117]  Time: 0.079 (0.106)  Loss:  0.6323 (0.8070)  Acc@1: 75.7812 (69.2992)  Acc@5: 100.0000 (99.9923)
+Test: [ 117/117]  Time: 0.018 (0.105)  Loss:  1.0088 (0.8054)  Acc@1: 66.6667 (69.2600)  Acc@5: 100.0000 (99.9933)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 70.08666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 69.26000000813802)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 67.79333333333334)
+
+Train: 47 [   0/7 (  0%)]  Loss: 0.3752 (0.375)  Time: 0.952s,  134.44/s  (0.952s,  134.44/s)  LR: 1.831e-03  Data: 0.735 (0.735)
+Train: 47 [   6/7 (100%)]  Loss: 0.3871 (0.363)  Time: 0.216s,  593.59/s  (0.323s,  396.66/s)  LR: 1.831e-03  Data: 0.000 (0.105)
+Test: [   0/117]  Time: 1.092 (1.092)  Loss:  0.7725 (0.7725)  Acc@1: 62.5000 (62.5000)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.114)  Loss:  0.6650 (0.6827)  Acc@1: 72.6562 (71.9975)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.249 (0.111)  Loss:  0.6187 (0.6730)  Acc@1: 78.9062 (72.4242)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.106)  Loss:  0.6899 (0.6764)  Acc@1: 70.8333 (72.2533)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 70.08666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 69.26000000813802)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 67.80666667480469)
+
+Train: 48 [   0/7 (  0%)]  Loss: 0.4151 (0.415)  Time: 1.071s,  119.46/s  (1.071s,  119.46/s)  LR: 1.824e-03  Data: 0.849 (0.849)
+Train: 48 [   6/7 (100%)]  Loss: 0.4046 (0.342)  Time: 0.217s,  588.70/s  (0.340s,  376.94/s)  LR: 1.824e-03  Data: 0.000 (0.122)
+Test: [   0/117]  Time: 1.046 (1.046)  Loss:  0.7891 (0.7891)  Acc@1: 65.6250 (65.6250)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.241 (0.109)  Loss:  0.7139 (0.7483)  Acc@1: 64.8438 (68.5662)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.104)  Loss:  0.6465 (0.7372)  Acc@1: 73.4375 (69.4926)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.101)  Loss:  0.8931 (0.7398)  Acc@1: 58.3333 (69.3867)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 70.08666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 69.38666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 69.26000000813802)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 68.80666667073568)
+
+Train: 49 [   0/7 (  0%)]  Loss: 0.3149 (0.315)  Time: 1.149s,  111.42/s  (1.149s,  111.42/s)  LR: 1.816e-03  Data: 0.932 (0.932)
+Train: 49 [   6/7 (100%)]  Loss: 0.3520 (0.345)  Time: 0.216s,  593.55/s  (0.350s,  365.57/s)  LR: 1.816e-03  Data: 0.000 (0.133)
+Test: [   0/117]  Time: 0.809 (0.809)  Loss:  1.0361 (1.0361)  Acc@1: 64.8438 (64.8438)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.080 (0.100)  Loss:  0.8579 (0.9756)  Acc@1: 65.6250 (65.2574)  Acc@5: 100.0000 (99.9847)
+Test: [ 100/117]  Time: 0.079 (0.103)  Loss:  0.7583 (0.9451)  Acc@1: 75.0000 (65.8725)  Acc@5: 100.0000 (99.9923)
+Test: [ 117/117]  Time: 0.017 (0.100)  Loss:  1.2725 (0.9429)  Acc@1: 50.0000 (65.9067)  Acc@5: 100.0000 (99.9933)
+Train: 50 [   0/7 (  0%)]  Loss: 0.3908 (0.391)  Time: 1.076s,  118.98/s  (1.076s,  118.98/s)  LR: 1.809e-03  Data: 0.854 (0.854)
+Train: 50 [   6/7 (100%)]  Loss: 0.3228 (0.374)  Time: 0.216s,  593.80/s  (0.339s,  377.23/s)  LR: 1.809e-03  Data: 0.000 (0.122)
+Test: [   0/117]  Time: 0.943 (0.943)  Loss:  0.7949 (0.7949)  Acc@1: 64.0625 (64.0625)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.080 (0.107)  Loss:  0.6777 (0.7169)  Acc@1: 67.9688 (70.6801)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.201 (0.105)  Loss:  0.6421 (0.7093)  Acc@1: 75.7812 (71.4650)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.101)  Loss:  0.9062 (0.7131)  Acc@1: 62.5000 (71.2933)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 71.29333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 70.08666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 69.38666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 69.26000000813802)
+
+Train: 51 [   0/7 (  0%)]  Loss: 0.2228 (0.223)  Time: 1.125s,  113.82/s  (1.125s,  113.82/s)  LR: 1.802e-03  Data: 0.907 (0.907)
+Train: 51 [   6/7 (100%)]  Loss: 0.2919 (0.282)  Time: 0.216s,  593.53/s  (0.346s,  369.56/s)  LR: 1.802e-03  Data: 0.000 (0.130)
+Test: [   0/117]  Time: 0.773 (0.773)  Loss:  0.7881 (0.7881)  Acc@1: 71.0938 (71.0938)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.078 (0.109)  Loss:  0.6587 (0.7338)  Acc@1: 71.0938 (70.8487)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.078 (0.098)  Loss:  0.5171 (0.7169)  Acc@1: 78.9062 (71.6120)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.096)  Loss:  0.8989 (0.7166)  Acc@1: 75.0000 (71.5067)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 71.50666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 71.29333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 70.08666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 69.38666667073568)
+
+Train: 52 [   0/7 (  0%)]  Loss: 0.3171 (0.317)  Time: 1.017s,  125.92/s  (1.017s,  125.92/s)  LR: 1.794e-03  Data: 0.797 (0.797)
+Train: 52 [   6/7 (100%)]  Loss: 0.2562 (0.331)  Time: 0.216s,  592.53/s  (0.334s,  383.44/s)  LR: 1.794e-03  Data: 0.000 (0.114)
+Test: [   0/117]  Time: 0.858 (0.858)  Loss:  1.0518 (1.0518)  Acc@1: 62.5000 (62.5000)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.108)  Loss:  0.7607 (0.8706)  Acc@1: 64.0625 (65.9314)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.186 (0.105)  Loss:  0.7012 (0.8572)  Acc@1: 65.6250 (66.1974)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.102)  Loss:  0.6646 (0.8586)  Acc@1: 70.8333 (66.0400)  Acc@5: 100.0000 (100.0000)
+Train: 53 [   0/7 (  0%)]  Loss: 0.3872 (0.387)  Time: 1.165s,  109.84/s  (1.165s,  109.84/s)  LR: 1.786e-03  Data: 0.949 (0.949)
+Train: 53 [   6/7 (100%)]  Loss: 0.2904 (0.334)  Time: 0.217s,  590.58/s  (0.351s,  364.61/s)  LR: 1.786e-03  Data: 0.000 (0.136)
+Test: [   0/117]  Time: 0.937 (0.937)  Loss:  0.8203 (0.8203)  Acc@1: 69.5312 (69.5312)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.098)  Loss:  0.7451 (0.8044)  Acc@1: 75.7812 (71.0478)  Acc@5: 100.0000 (99.9847)
+Test: [ 100/117]  Time: 0.079 (0.097)  Loss:  0.6577 (0.7924)  Acc@1: 75.0000 (71.3722)  Acc@5: 100.0000 (99.9923)
+Test: [ 117/117]  Time: 0.018 (0.097)  Loss:  1.2109 (0.7921)  Acc@1: 50.0000 (71.1267)  Acc@5: 100.0000 (99.9933)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 71.50666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 71.29333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 71.12666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 70.08666667073568)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 69.48)
+
+Train: 54 [   0/7 (  0%)]  Loss: 0.4273 (0.427)  Time: 1.137s,  112.58/s  (1.137s,  112.58/s)  LR: 1.778e-03  Data: 0.914 (0.914)
+Train: 54 [   6/7 (100%)]  Loss: 0.3999 (0.353)  Time: 0.215s,  594.33/s  (0.349s,  366.28/s)  LR: 1.778e-03  Data: 0.000 (0.131)
+Test: [   0/117]  Time: 0.881 (0.881)  Loss:  0.8027 (0.8027)  Acc@1: 67.9688 (67.9688)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.088 (0.110)  Loss:  0.6611 (0.7076)  Acc@1: 71.8750 (71.4308)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.101)  Loss:  0.5518 (0.6958)  Acc@1: 77.3438 (71.7048)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.099)  Loss:  0.7207 (0.6979)  Acc@1: 70.8333 (71.5933)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 71.59333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 71.50666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 71.29333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 71.12666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 70.08666667073568)
+
+Train: 55 [   0/7 (  0%)]  Loss: 0.1983 (0.198)  Time: 1.077s,  118.89/s  (1.077s,  118.89/s)  LR: 1.771e-03  Data: 0.857 (0.857)
+Train: 55 [   6/7 (100%)]  Loss: 0.3115 (0.290)  Time: 0.215s,  596.66/s  (0.339s,  377.51/s)  LR: 1.771e-03  Data: 0.000 (0.123)
+Test: [   0/117]  Time: 0.964 (0.964)  Loss:  0.7744 (0.7744)  Acc@1: 67.9688 (67.9688)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.107)  Loss:  0.6641 (0.7493)  Acc@1: 73.4375 (71.2010)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.080 (0.103)  Loss:  0.5298 (0.7360)  Acc@1: 79.6875 (71.6507)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.101)  Loss:  0.9150 (0.7367)  Acc@1: 75.0000 (71.5133)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 71.59333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 71.51333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 71.50666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 71.29333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 71.12666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 70.14000000406901)
+
+Train: 56 [   0/7 (  0%)]  Loss: 0.2076 (0.208)  Time: 0.998s,  128.26/s  (0.998s,  128.26/s)  LR: 1.762e-03  Data: 0.780 (0.780)
+Train: 56 [   6/7 (100%)]  Loss: 0.2478 (0.247)  Time: 0.222s,  577.66/s  (0.330s,  388.25/s)  LR: 1.762e-03  Data: 0.000 (0.112)
+Test: [   0/117]  Time: 0.802 (0.802)  Loss:  0.8838 (0.8838)  Acc@1: 64.0625 (64.0625)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.101)  Loss:  0.7280 (0.7601)  Acc@1: 71.0938 (69.8070)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.101)  Loss:  0.6626 (0.7594)  Acc@1: 78.1250 (70.4595)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.101)  Loss:  0.6826 (0.7644)  Acc@1: 75.0000 (70.3533)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 71.59333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 71.51333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 71.50666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 71.29333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 71.12666666666667)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-56.pth.tar', 70.35333333333334)
+
+Train: 57 [   0/7 (  0%)]  Loss: 0.2660 (0.266)  Time: 1.123s,  113.95/s  (1.123s,  113.95/s)  LR: 1.754e-03  Data: 0.907 (0.907)
+Train: 57 [   6/7 (100%)]  Loss: 0.3272 (0.309)  Time: 0.217s,  588.75/s  (0.347s,  368.60/s)  LR: 1.754e-03  Data: 0.000 (0.130)
+Test: [   0/117]  Time: 0.962 (0.962)  Loss:  0.8823 (0.8823)  Acc@1: 65.6250 (65.6250)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.104)  Loss:  0.7153 (0.8416)  Acc@1: 68.7500 (68.9951)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.094)  Loss:  0.5820 (0.8252)  Acc@1: 79.6875 (69.3688)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.092)  Loss:  1.0332 (0.8266)  Acc@1: 66.6667 (69.2067)  Acc@5: 100.0000 (100.0000)
+Train: 58 [   0/7 (  0%)]  Loss: 0.2612 (0.261)  Time: 0.794s,  161.18/s  (0.794s,  161.18/s)  LR: 1.746e-03  Data: 0.578 (0.578)
+Train: 58 [   6/7 (100%)]  Loss: 0.3020 (0.266)  Time: 0.216s,  591.78/s  (0.299s,  428.19/s)  LR: 1.746e-03  Data: 0.000 (0.083)
+Test: [   0/117]  Time: 0.892 (0.892)  Loss:  0.7563 (0.7563)  Acc@1: 65.6250 (65.6250)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.107)  Loss:  0.6006 (0.6793)  Acc@1: 75.7812 (73.4681)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.094)  Loss:  0.5493 (0.6692)  Acc@1: 77.3438 (73.8939)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.092)  Loss:  0.6792 (0.6714)  Acc@1: 66.6667 (73.7667)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 71.59333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 71.51333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 71.50666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 71.29333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 71.12666666666667)
+
+Train: 59 [   0/7 (  0%)]  Loss: 0.2507 (0.251)  Time: 0.914s,  140.03/s  (0.914s,  140.03/s)  LR: 1.738e-03  Data: 0.692 (0.692)
+Train: 59 [   6/7 (100%)]  Loss: 0.2654 (0.224)  Time: 0.215s,  595.07/s  (0.317s,  404.23/s)  LR: 1.738e-03  Data: 0.000 (0.099)
+Test: [   0/117]  Time: 0.916 (0.916)  Loss:  0.8384 (0.8384)  Acc@1: 65.6250 (65.6250)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.110)  Loss:  0.6714 (0.7354)  Acc@1: 72.6562 (71.5227)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.103)  Loss:  0.6343 (0.7267)  Acc@1: 78.1250 (72.0761)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.101)  Loss:  0.6992 (0.7303)  Acc@1: 70.8333 (71.9333)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-59.pth.tar', 71.93333333740235)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 71.59333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 71.51333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 71.50666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 71.29333333333334)
+
+Train: 60 [   0/7 (  0%)]  Loss: 0.1859 (0.186)  Time: 0.976s,  131.12/s  (0.976s,  131.12/s)  LR: 1.729e-03  Data: 0.760 (0.760)
+Train: 60 [   6/7 (100%)]  Loss: 0.2127 (0.259)  Time: 0.221s,  579.40/s  (0.325s,  393.48/s)  LR: 1.729e-03  Data: 0.000 (0.109)
+Test: [   0/117]  Time: 0.976 (0.976)  Loss:  0.8560 (0.8560)  Acc@1: 67.1875 (67.1875)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.110)  Loss:  0.6426 (0.7954)  Acc@1: 72.6562 (71.3235)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.107)  Loss:  0.5957 (0.7761)  Acc@1: 81.2500 (71.8827)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.105)  Loss:  0.9844 (0.7776)  Acc@1: 75.0000 (71.8933)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-59.pth.tar', 71.93333333740235)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-60.pth.tar', 71.89333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 71.59333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 71.51333333333334)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 71.50666666666666)
+
+Train: 61 [   0/7 (  0%)]  Loss: 0.2190 (0.219)  Time: 0.929s,  137.80/s  (0.929s,  137.80/s)  LR: 1.720e-03  Data: 0.713 (0.713)
+Train: 61 [   6/7 (100%)]  Loss: 0.2996 (0.234)  Time: 0.215s,  594.05/s  (0.319s,  400.64/s)  LR: 1.720e-03  Data: 0.000 (0.102)
+Test: [   0/117]  Time: 0.804 (0.804)  Loss:  0.8037 (0.8037)  Acc@1: 68.7500 (68.7500)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.231 (0.103)  Loss:  0.6973 (0.7958)  Acc@1: 77.3438 (71.9975)  Acc@5: 100.0000 (99.9847)
+Test: [ 100/117]  Time: 0.079 (0.100)  Loss:  0.6235 (0.7832)  Acc@1: 76.5625 (72.6098)  Acc@5: 100.0000 (99.9923)
+Test: [ 117/117]  Time: 0.017 (0.101)  Loss:  1.2734 (0.7846)  Acc@1: 58.3333 (72.4533)  Acc@5: 100.0000 (99.9933)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-61.pth.tar', 72.45333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-59.pth.tar', 71.93333333740235)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-60.pth.tar', 71.89333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 71.59333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 71.51333333333334)
+
+Train: 62 [   0/7 (  0%)]  Loss: 0.3126 (0.313)  Time: 1.027s,  124.64/s  (1.027s,  124.64/s)  LR: 1.712e-03  Data: 0.810 (0.810)
+Train: 62 [   6/7 (100%)]  Loss: 0.2459 (0.264)  Time: 0.216s,  592.68/s  (0.332s,  385.07/s)  LR: 1.712e-03  Data: 0.000 (0.116)
+Test: [   0/117]  Time: 0.859 (0.859)  Loss:  0.8252 (0.8252)  Acc@1: 69.5312 (69.5312)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.096 (0.115)  Loss:  0.6226 (0.7295)  Acc@1: 72.6562 (72.8401)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.101)  Loss:  0.4985 (0.7111)  Acc@1: 81.2500 (73.4916)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.098)  Loss:  0.8716 (0.7127)  Acc@1: 75.0000 (73.3467)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-62.pth.tar', 73.34666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-61.pth.tar', 72.45333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-59.pth.tar', 71.93333333740235)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-60.pth.tar', 71.89333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 71.59333333740234)
+
+Train: 63 [   0/7 (  0%)]  Loss: 0.2789 (0.279)  Time: 0.831s,  154.10/s  (0.831s,  154.10/s)  LR: 1.703e-03  Data: 0.613 (0.613)
+Train: 63 [   6/7 (100%)]  Loss: 0.2642 (0.241)  Time: 0.217s,  590.83/s  (0.305s,  419.58/s)  LR: 1.703e-03  Data: 0.000 (0.088)
+Test: [   0/117]  Time: 0.817 (0.817)  Loss:  0.8149 (0.8149)  Acc@1: 68.7500 (68.7500)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.078 (0.111)  Loss:  0.5923 (0.7256)  Acc@1: 74.2188 (73.4988)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.104)  Loss:  0.5356 (0.7090)  Acc@1: 80.4688 (74.0331)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.102)  Loss:  0.8896 (0.7118)  Acc@1: 75.0000 (73.8800)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-63.pth.tar', 73.88)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-62.pth.tar', 73.34666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-61.pth.tar', 72.45333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-59.pth.tar', 71.93333333740235)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-60.pth.tar', 71.89333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 71.660000004069)
+
+Train: 64 [   0/7 (  0%)]  Loss: 0.3014 (0.301)  Time: 0.917s,  139.59/s  (0.917s,  139.59/s)  LR: 1.694e-03  Data: 0.698 (0.698)
+Train: 64 [   6/7 (100%)]  Loss: 0.2285 (0.242)  Time: 0.216s,  592.75/s  (0.317s,  403.38/s)  LR: 1.694e-03  Data: 0.000 (0.100)
+Test: [   0/117]  Time: 0.782 (0.782)  Loss:  0.9839 (0.9839)  Acc@1: 63.2812 (63.2812)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.091 (0.106)  Loss:  0.7036 (0.8238)  Acc@1: 72.6562 (69.1636)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.104)  Loss:  0.6895 (0.8186)  Acc@1: 71.0938 (69.7478)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.102)  Loss:  0.5425 (0.8238)  Acc@1: 75.0000 (69.7400)  Acc@5: 100.0000 (100.0000)
+Train: 65 [   0/7 (  0%)]  Loss: 0.1650 (0.165)  Time: 1.176s,  108.89/s  (1.176s,  108.89/s)  LR: 1.685e-03  Data: 0.952 (0.952)
+Train: 65 [   6/7 (100%)]  Loss: 0.2100 (0.227)  Time: 0.217s,  589.41/s  (0.354s,  361.80/s)  LR: 1.685e-03  Data: 0.000 (0.136)
+Test: [   0/117]  Time: 1.001 (1.001)  Loss:  0.8335 (0.8335)  Acc@1: 70.3125 (70.3125)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.112)  Loss:  0.6714 (0.7787)  Acc@1: 75.0000 (72.0741)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.106)  Loss:  0.5117 (0.7606)  Acc@1: 80.4688 (72.4242)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.105)  Loss:  0.9009 (0.7618)  Acc@1: 79.1667 (72.3467)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-63.pth.tar', 73.88)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-62.pth.tar', 73.34666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-61.pth.tar', 72.45333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-65.pth.tar', 72.34666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-59.pth.tar', 71.93333333740235)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-60.pth.tar', 71.89333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 71.72666667480469)
+
+Train: 66 [   0/7 (  0%)]  Loss: 0.2607 (0.261)  Time: 1.144s,  111.84/s  (1.144s,  111.84/s)  LR: 1.675e-03  Data: 0.927 (0.927)
+Train: 66 [   6/7 (100%)]  Loss: 0.2898 (0.259)  Time: 0.216s,  593.91/s  (0.353s,  363.01/s)  LR: 1.675e-03  Data: 0.000 (0.133)
+Test: [   0/117]  Time: 1.111 (1.111)  Loss:  0.9790 (0.9790)  Acc@1: 63.2812 (63.2812)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.115)  Loss:  0.7148 (0.7971)  Acc@1: 69.5312 (69.6844)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.108)  Loss:  0.6045 (0.7875)  Acc@1: 75.7812 (70.1423)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.106)  Loss:  0.6050 (0.7923)  Acc@1: 75.0000 (70.0200)  Acc@5: 100.0000 (100.0000)
+Train: 67 [   0/7 (  0%)]  Loss: 0.1952 (0.195)  Time: 1.118s,  114.53/s  (1.118s,  114.53/s)  LR: 1.666e-03  Data: 0.901 (0.901)
+Train: 67 [   6/7 (100%)]  Loss: 0.1936 (0.254)  Time: 0.224s,  571.69/s  (0.349s,  366.48/s)  LR: 1.666e-03  Data: 0.000 (0.129)
+Test: [   0/117]  Time: 0.901 (0.901)  Loss:  0.8892 (0.8892)  Acc@1: 70.3125 (70.3125)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.208 (0.110)  Loss:  0.6104 (0.7809)  Acc@1: 74.2188 (72.2273)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.115)  Loss:  0.5220 (0.7610)  Acc@1: 81.2500 (72.7181)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.112)  Loss:  1.0957 (0.7614)  Acc@1: 66.6667 (72.7000)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-63.pth.tar', 73.88)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-62.pth.tar', 73.34666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-67.pth.tar', 72.70000000813802)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-61.pth.tar', 72.45333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-65.pth.tar', 72.34666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-59.pth.tar', 71.93333333740235)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-60.pth.tar', 71.89333333333333)
+
+Train: 68 [   0/7 (  0%)]  Loss: 0.2413 (0.241)  Time: 1.212s,  105.58/s  (1.212s,  105.58/s)  LR: 1.657e-03  Data: 0.992 (0.992)
+Train: 68 [   6/7 (100%)]  Loss: 0.1970 (0.191)  Time: 0.222s,  575.58/s  (0.364s,  351.89/s)  LR: 1.657e-03  Data: 0.000 (0.142)
+Test: [   0/117]  Time: 1.010 (1.010)  Loss:  0.8130 (0.8130)  Acc@1: 67.1875 (67.1875)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.091 (0.114)  Loss:  0.5742 (0.6908)  Acc@1: 78.1250 (73.7898)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.078 (0.113)  Loss:  0.4961 (0.6763)  Acc@1: 79.6875 (74.3425)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.110)  Loss:  0.6274 (0.6794)  Acc@1: 75.0000 (74.1800)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-68.pth.tar', 74.18)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-63.pth.tar', 73.88)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-62.pth.tar', 73.34666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-67.pth.tar', 72.70000000813802)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-61.pth.tar', 72.45333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-65.pth.tar', 72.34666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-59.pth.tar', 71.93333333740235)
+
+Train: 69 [   0/7 (  0%)]  Loss: 0.2190 (0.219)  Time: 1.129s,  113.34/s  (1.129s,  113.34/s)  LR: 1.647e-03  Data: 0.913 (0.913)
+Train: 69 [   6/7 (100%)]  Loss: 0.2024 (0.201)  Time: 0.222s,  575.41/s  (0.351s,  365.13/s)  LR: 1.647e-03  Data: 0.000 (0.131)
+Test: [   0/117]  Time: 1.058 (1.058)  Loss:  0.8398 (0.8398)  Acc@1: 68.7500 (68.7500)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.174 (0.116)  Loss:  0.6396 (0.7964)  Acc@1: 73.4375 (71.9056)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.110)  Loss:  0.5869 (0.7763)  Acc@1: 82.0312 (72.6872)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.110)  Loss:  1.0361 (0.7787)  Acc@1: 75.0000 (72.6933)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-68.pth.tar', 74.18)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-63.pth.tar', 73.88)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-62.pth.tar', 73.34666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-67.pth.tar', 72.70000000813802)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-69.pth.tar', 72.69333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-61.pth.tar', 72.45333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-65.pth.tar', 72.34666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 72.25333333740234)
+
+Train: 70 [   0/7 (  0%)]  Loss: 0.2369 (0.237)  Time: 1.182s,  108.34/s  (1.182s,  108.34/s)  LR: 1.637e-03  Data: 0.965 (0.965)
+Train: 70 [   6/7 (100%)]  Loss: 0.4074 (0.259)  Time: 0.217s,  590.93/s  (0.355s,  360.72/s)  LR: 1.637e-03  Data: 0.000 (0.138)
+Test: [   0/117]  Time: 0.951 (0.951)  Loss:  0.8193 (0.8193)  Acc@1: 70.3125 (70.3125)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.115)  Loss:  0.6943 (0.8044)  Acc@1: 75.0000 (72.9013)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.105)  Loss:  0.5771 (0.7848)  Acc@1: 78.9062 (73.1281)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.104)  Loss:  1.0459 (0.7852)  Acc@1: 70.8333 (73.0733)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-68.pth.tar', 74.18)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-63.pth.tar', 73.88)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-62.pth.tar', 73.34666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-70.pth.tar', 73.07333333740235)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-67.pth.tar', 72.70000000813802)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-69.pth.tar', 72.69333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-61.pth.tar', 72.45333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-65.pth.tar', 72.34666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 72.26000000406901)
+
+Train: 71 [   0/7 (  0%)]  Loss: 0.2239 (0.224)  Time: 1.262s,  101.44/s  (1.262s,  101.44/s)  LR: 1.628e-03  Data: 1.045 (1.045)
+Train: 71 [   6/7 (100%)]  Loss: 0.2068 (0.273)  Time: 0.222s,  577.19/s  (0.368s,  347.61/s)  LR: 1.628e-03  Data: 0.000 (0.149)
+Test: [   0/117]  Time: 1.021 (1.021)  Loss:  1.0635 (1.0635)  Acc@1: 67.1875 (67.1875)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.116)  Loss:  0.8208 (0.8998)  Acc@1: 68.7500 (67.4326)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.119)  Loss:  0.6904 (0.8862)  Acc@1: 73.4375 (67.6284)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.017 (0.119)  Loss:  0.6978 (0.8923)  Acc@1: 75.0000 (67.4867)  Acc@5: 100.0000 (100.0000)
+Train: 72 [   0/7 (  0%)]  Loss: 0.2290 (0.229)  Time: 1.263s,  101.33/s  (1.263s,  101.33/s)  LR: 1.618e-03  Data: 1.028 (1.028)
+Train: 72 [   6/7 (100%)]  Loss: 0.2771 (0.213)  Time: 0.215s,  595.05/s  (0.366s,  349.96/s)  LR: 1.618e-03  Data: 0.000 (0.147)
+Test: [   0/117]  Time: 0.947 (0.947)  Loss:  0.7949 (0.7949)  Acc@1: 69.5312 (69.5312)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.078 (0.127)  Loss:  0.6294 (0.7010)  Acc@1: 77.3438 (74.4026)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.124)  Loss:  0.5034 (0.6842)  Acc@1: 82.0312 (75.0155)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.121)  Loss:  0.9146 (0.6857)  Acc@1: 75.0000 (75.0333)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-72.pth.tar', 75.03333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-68.pth.tar', 74.18)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-63.pth.tar', 73.88)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 73.76666667480468)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-62.pth.tar', 73.34666666666666)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-70.pth.tar', 73.07333333740235)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-67.pth.tar', 72.70000000813802)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-69.pth.tar', 72.69333333333333)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-61.pth.tar', 72.45333333740234)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/clevr_count/ssf/20240127-022435-vit_small_patch16_224_in21k-224/checkpoint-65.pth.tar', 72.34666667480468)
+
+Train: 73 [   0/7 (  0%)]  Loss: 0.1346 (0.135)  Time: 1.137s,  112.54/s  (1.137s,  112.54/s)  LR: 1.608e-03  Data: 0.914 (0.914)
+Train: 73 [   6/7 (100%)]  Loss: 0.2274 (0.180)  Time: 0.223s,  573.50/s  (0.354s,  361.50/s)  LR: 1.608e-03  Data: 0.000 (0.131)
+Test: [   0/117]  Time: 1.195 (1.195)  Loss:  0.8608 (0.8608)  Acc@1: 70.3125 (70.3125)  Acc@5: 100.0000 (100.0000)
+Test: [  50/117]  Time: 0.079 (0.134)  Loss:  0.6924 (0.7579)  Acc@1: 72.6562 (72.7482)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/117]  Time: 0.079 (0.124)  Loss:  0.5024 (0.7357)  Acc@1: 82.0312 (73.5226)  Acc@5: 100.0000 (100.0000)
+Test: [ 117/117]  Time: 0.018 (0.120)  Loss:  0.7812 (0.7373)  Acc@1: 70.8333 (73.3800)  Acc@5: 100.0000 (100.0000)

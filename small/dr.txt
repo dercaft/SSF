@@ -1,0 +1,221 @@
+/home/zxy/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/launch.py:180: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+Training with a single process on 1 GPUs.
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.5, 0.5, 0.5)
+	std: (0.5, 0.5, 0.5)
+	crop_pct: 0.9
+ssf_scale_1
+ssf_shift_1
+patch_embed.ssf_scale_1
+patch_embed.ssf_shift_1
+blocks.0.ssf_scale_1
+blocks.0.ssf_shift_1
+blocks.0.ssf_scale_2
+blocks.0.ssf_shift_2
+blocks.0.attn.ssf_scale_1
+blocks.0.attn.ssf_shift_1
+blocks.0.attn.ssf_scale_2
+blocks.0.attn.ssf_shift_2
+blocks.0.mlp.ssf_scale_1
+blocks.0.mlp.ssf_shift_1
+blocks.0.mlp.ssf_scale_2
+blocks.0.mlp.ssf_shift_2
+blocks.1.ssf_scale_1
+blocks.1.ssf_shift_1
+blocks.1.ssf_scale_2
+blocks.1.ssf_shift_2
+blocks.1.attn.ssf_scale_1
+blocks.1.attn.ssf_shift_1
+blocks.1.attn.ssf_scale_2
+blocks.1.attn.ssf_shift_2
+blocks.1.mlp.ssf_scale_1
+blocks.1.mlp.ssf_shift_1
+blocks.1.mlp.ssf_scale_2
+blocks.1.mlp.ssf_shift_2
+blocks.2.ssf_scale_1
+blocks.2.ssf_shift_1
+blocks.2.ssf_scale_2
+blocks.2.ssf_shift_2
+blocks.2.attn.ssf_scale_1
+blocks.2.attn.ssf_shift_1
+blocks.2.attn.ssf_scale_2
+blocks.2.attn.ssf_shift_2
+blocks.2.mlp.ssf_scale_1
+blocks.2.mlp.ssf_shift_1
+blocks.2.mlp.ssf_scale_2
+blocks.2.mlp.ssf_shift_2
+blocks.3.ssf_scale_1
+blocks.3.ssf_shift_1
+blocks.3.ssf_scale_2
+blocks.3.ssf_shift_2
+blocks.3.attn.ssf_scale_1
+blocks.3.attn.ssf_shift_1
+blocks.3.attn.ssf_scale_2
+blocks.3.attn.ssf_shift_2
+blocks.3.mlp.ssf_scale_1
+blocks.3.mlp.ssf_shift_1
+blocks.3.mlp.ssf_scale_2
+blocks.3.mlp.ssf_shift_2
+blocks.4.ssf_scale_1
+blocks.4.ssf_shift_1
+blocks.4.ssf_scale_2
+blocks.4.ssf_shift_2
+blocks.4.attn.ssf_scale_1
+blocks.4.attn.ssf_shift_1
+blocks.4.attn.ssf_scale_2
+blocks.4.attn.ssf_shift_2
+blocks.4.mlp.ssf_scale_1
+blocks.4.mlp.ssf_shift_1
+blocks.4.mlp.ssf_scale_2
+blocks.4.mlp.ssf_shift_2
+blocks.5.ssf_scale_1
+blocks.5.ssf_shift_1
+blocks.5.ssf_scale_2
+blocks.5.ssf_shift_2
+blocks.5.attn.ssf_scale_1
+blocks.5.attn.ssf_shift_1
+blocks.5.attn.ssf_scale_2
+blocks.5.attn.ssf_shift_2
+blocks.5.mlp.ssf_scale_1
+blocks.5.mlp.ssf_shift_1
+blocks.5.mlp.ssf_scale_2
+blocks.5.mlp.ssf_shift_2
+blocks.6.ssf_scale_1
+blocks.6.ssf_shift_1
+blocks.6.ssf_scale_2
+blocks.6.ssf_shift_2
+blocks.6.attn.ssf_scale_1
+blocks.6.attn.ssf_shift_1
+blocks.6.attn.ssf_scale_2
+blocks.6.attn.ssf_shift_2
+blocks.6.mlp.ssf_scale_1
+blocks.6.mlp.ssf_shift_1
+blocks.6.mlp.ssf_scale_2
+blocks.6.mlp.ssf_shift_2
+blocks.7.ssf_scale_1
+blocks.7.ssf_shift_1
+blocks.7.ssf_scale_2
+blocks.7.ssf_shift_2
+blocks.7.attn.ssf_scale_1
+blocks.7.attn.ssf_shift_1
+blocks.7.attn.ssf_scale_2
+blocks.7.attn.ssf_shift_2
+blocks.7.mlp.ssf_scale_1
+blocks.7.mlp.ssf_shift_1
+blocks.7.mlp.ssf_scale_2
+blocks.7.mlp.ssf_shift_2
+blocks.8.ssf_scale_1
+blocks.8.ssf_shift_1
+blocks.8.ssf_scale_2
+blocks.8.ssf_shift_2
+blocks.8.attn.ssf_scale_1
+blocks.8.attn.ssf_shift_1
+blocks.8.attn.ssf_scale_2
+blocks.8.attn.ssf_shift_2
+blocks.8.mlp.ssf_scale_1
+blocks.8.mlp.ssf_shift_1
+blocks.8.mlp.ssf_scale_2
+blocks.8.mlp.ssf_shift_2
+blocks.9.ssf_scale_1
+blocks.9.ssf_shift_1
+blocks.9.ssf_scale_2
+blocks.9.ssf_shift_2
+blocks.9.attn.ssf_scale_1
+blocks.9.attn.ssf_shift_1
+blocks.9.attn.ssf_scale_2
+blocks.9.attn.ssf_shift_2
+blocks.9.mlp.ssf_scale_1
+blocks.9.mlp.ssf_shift_1
+blocks.9.mlp.ssf_scale_2
+blocks.9.mlp.ssf_shift_2
+blocks.10.ssf_scale_1
+blocks.10.ssf_shift_1
+blocks.10.ssf_scale_2
+blocks.10.ssf_shift_2
+blocks.10.attn.ssf_scale_1
+blocks.10.attn.ssf_shift_1
+blocks.10.attn.ssf_scale_2
+blocks.10.attn.ssf_shift_2
+blocks.10.mlp.ssf_scale_1
+blocks.10.mlp.ssf_shift_1
+blocks.10.mlp.ssf_scale_2
+blocks.10.mlp.ssf_shift_2
+blocks.11.ssf_scale_1
+blocks.11.ssf_shift_1
+blocks.11.ssf_scale_2
+blocks.11.ssf_shift_2
+blocks.11.attn.ssf_scale_1
+blocks.11.attn.ssf_shift_1
+blocks.11.attn.ssf_scale_2
+blocks.11.attn.ssf_shift_2
+blocks.11.mlp.ssf_scale_1
+blocks.11.mlp.ssf_shift_1
+blocks.11.mlp.ssf_scale_2
+blocks.11.mlp.ssf_shift_2
+head.weight
+head.bias
+freezing parameters finished!
+Model vit_small_patch16_224_in21k created, param count:21770501
+number of params for requires grad: 104837
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 260
+Train: 0 [   0/7 (  0%)]  Loss: 2.423 (2.42)  Time: 4.638s,   27.60/s  (4.638s,   27.60/s)  LR: 1.000e-07  Data: 1.777 (1.777)
+Train: 0 [   6/7 (100%)]  Loss: 2.550 (2.51)  Time: 0.214s,  599.22/s  (0.844s,  151.73/s)  LR: 1.000e-07  Data: 0.000 (0.254)
+Test: [   0/333]  Time: 1.585 (1.585)  Loss:  2.7891 (2.7891)  Acc@1: 13.2812 (13.2812)  Acc@5: 100.0000 (100.0000)
+Test: [  50/333]  Time: 0.079 (0.194)  Loss:  2.8984 (2.9570)  Acc@1: 10.1562 (11.0141)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/333]  Time: 0.079 (0.173)  Loss:  2.9922 (2.9495)  Acc@1:  8.5938 (11.0071)  Acc@5: 100.0000 (100.0000)
+Test: [ 150/333]  Time: 0.078 (0.167)  Loss:  2.8848 (2.9563)  Acc@1: 10.9375 (10.8651)  Acc@5: 100.0000 (100.0000)
+Test: [ 200/333]  Time: 0.079 (0.164)  Loss:  2.9316 (2.9574)  Acc@1: 13.2812 (10.9803)  Acc@5: 100.0000 (100.0000)
+Test: [ 250/333]  Time: 0.079 (0.165)  Loss:  2.9297 (2.9553)  Acc@1: 11.7188 (11.1025)  Acc@5: 100.0000 (100.0000)
+Test: [ 300/333]  Time: 0.078 (0.162)  Loss:  2.8105 (2.9533)  Acc@1: 18.7500 (11.1607)  Acc@5: 100.0000 (100.0000)
+Test: [ 333/333]  Time: 0.148 (0.161)  Loss:  2.7695 (2.9549)  Acc@1: 13.0435 (11.1109)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/diabetic_retinopathy/ssf/20240127-023752-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 11.110850715547807)
+
+Train: 1 [   0/7 (  0%)]  Loss: 2.560 (2.56)  Time: 1.605s,   79.76/s  (1.605s,   79.76/s)  LR: 5.001e-04  Data: 1.390 (1.390)
+Train: 1 [   6/7 (100%)]  Loss: 1.033 (1.57)  Time: 0.221s,  579.61/s  (0.415s,  308.63/s)  LR: 5.001e-04  Data: 0.000 (0.199)
+Test: [   0/333]  Time: 1.428 (1.428)  Loss:  1.4209 (1.4209)  Acc@1: 69.5312 (69.5312)  Acc@5: 100.0000 (100.0000)
+Test: [  50/333]  Time: 0.079 (0.174)  Loss:  1.2607 (1.2819)  Acc@1: 74.2188 (73.6366)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/333]  Time: 0.079 (0.176)  Loss:  1.1855 (1.2898)  Acc@1: 75.7812 (73.4452)  Acc@5: 100.0000 (100.0000)
+Test: [ 150/333]  Time: 0.079 (0.169)  Loss:  1.5586 (1.2866)  Acc@1: 68.7500 (73.5824)  Acc@5: 100.0000 (100.0000)
+Test: [ 200/333]  Time: 0.079 (0.164)  Loss:  1.2510 (1.2848)  Acc@1: 74.2188 (73.6513)  Acc@5: 100.0000 (100.0000)
+Test: [ 250/333]  Time: 0.078 (0.163)  Loss:  1.2559 (1.2878)  Acc@1: 73.4375 (73.5309)  Acc@5: 100.0000 (100.0000)
+Test: [ 300/333]  Time: 0.078 (0.163)  Loss:  1.3320 (1.2879)  Acc@1: 70.3125 (73.5206)  Acc@5: 100.0000 (100.0000)
+Test: [ 333/333]  Time: 0.030 (0.163)  Loss:  1.5420 (1.2848)  Acc@1: 69.5652 (73.5950)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/diabetic_retinopathy/ssf/20240127-023752-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 73.59503163672287)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/diabetic_retinopathy/ssf/20240127-023752-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 11.110850715547807)
+
+Train: 2 [   0/7 (  0%)]  Loss: 0.8861 (0.886)  Time: 2.024s,   63.25/s  (2.024s,   63.25/s)  LR: 1.000e-03  Data: 1.798 (1.798)
+Train: 2 [   6/7 (100%)]  Loss: 1.159 (1.23)  Time: 0.221s,  578.65/s  (0.477s,  268.08/s)  LR: 1.000e-03  Data: 0.000 (0.257)
+Test: [   0/333]  Time: 1.597 (1.597)  Loss:  1.1592 (1.1592)  Acc@1: 69.5312 (69.5312)  Acc@5: 100.0000 (100.0000)
+Test: [  50/333]  Time: 0.079 (0.191)  Loss:  1.0537 (1.0593)  Acc@1: 74.2188 (73.6366)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/333]  Time: 0.079 (0.186)  Loss:  0.9727 (1.0667)  Acc@1: 75.7812 (73.4452)  Acc@5: 100.0000 (100.0000)
+Test: [ 150/333]  Time: 0.120 (0.181)  Loss:  1.2998 (1.0661)  Acc@1: 68.7500 (73.5824)  Acc@5: 100.0000 (100.0000)
+Test: [ 200/333]  Time: 0.749 (0.182)  Loss:  1.0059 (1.0632)  Acc@1: 74.2188 (73.6513)  Acc@5: 100.0000 (100.0000)
+Test: [ 250/333]  Time: 0.079 (0.179)  Loss:  1.0527 (1.0655)  Acc@1: 73.4375 (73.5309)  Acc@5: 100.0000 (100.0000)
+Test: [ 300/333]  Time: 0.079 (0.180)  Loss:  1.0781 (1.0652)  Acc@1: 70.3125 (73.5206)  Acc@5: 100.0000 (100.0000)
+Test: [ 333/333]  Time: 0.030 (0.177)  Loss:  1.2188 (1.0635)  Acc@1: 69.5652 (73.5950)  Acc@5: 100.0000 (100.0000)
+Current checkpoints:
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/diabetic_retinopathy/ssf/20240127-023752-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 73.59503163672287)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/diabetic_retinopathy/ssf/20240127-023752-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 73.59503163672287)
+ ('/mnt/SFT_store/zxy/vit_small_patch16_224_in21k/vtab/diabetic_retinopathy/ssf/20240127-023752-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 11.110850715547807)
+
+Train: 3 [   0/7 (  0%)]  Loss: 1.024 (1.02)  Time: 1.641s,   78.00/s  (1.641s,   78.00/s)  LR: 1.500e-03  Data: 1.417 (1.417)
+Train: 3 [   6/7 (100%)]  Loss: 1.102 (1.02)  Time: 0.218s,  586.93/s  (0.423s,  302.78/s)  LR: 1.500e-03  Data: 0.000 (0.203)
+Test: [   0/333]  Time: 1.697 (1.697)  Loss:  0.9375 (0.9375)  Acc@1: 69.5312 (69.5312)  Acc@5: 100.0000 (100.0000)
+Test: [  50/333]  Time: 0.079 (0.214)  Loss:  0.9141 (0.9025)  Acc@1: 74.2188 (73.6366)  Acc@5: 100.0000 (100.0000)
+Test: [ 100/333]  Time: 0.079 (0.202)  Loss:  0.8892 (0.9037)  Acc@1: 75.7812 (73.4452)  Acc@5: 100.0000 (100.0000)
+Test: [ 150/333]  Time: 0.471 (0.192)  Loss:  1.0078 (0.9065)  Acc@1: 68.7500 (73.5824)  Acc@5: 100.0000 (100.0000)
+Test: [ 200/333]  Time: 0.588 (0.195)  Loss:  0.8511 (0.9045)  Acc@1: 74.2188 (73.6513)  Acc@5: 100.0000 (100.0000)
+Test: [ 250/333]  Time: 0.079 (0.196)  Loss:  0.8999 (0.9056)  Acc@1: 73.4375 (73.5309)  Acc@5: 100.0000 (100.0000)
