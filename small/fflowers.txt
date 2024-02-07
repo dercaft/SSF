@@ -1,0 +1,1369 @@
+/home/zxy/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/launch.py:180: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+Training with a single process on 1 GPUs.
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.5, 0.5, 0.5)
+	std: (0.5, 0.5, 0.5)
+	crop_pct: 0.9
+ssf_scale_1
+ssf_shift_1
+patch_embed.ssf_scale_1
+patch_embed.ssf_shift_1
+blocks.0.ssf_scale_1
+blocks.0.ssf_shift_1
+blocks.0.ssf_scale_2
+blocks.0.ssf_shift_2
+blocks.0.attn.ssf_scale_1
+blocks.0.attn.ssf_shift_1
+blocks.0.attn.ssf_scale_2
+blocks.0.attn.ssf_shift_2
+blocks.0.mlp.ssf_scale_1
+blocks.0.mlp.ssf_shift_1
+blocks.0.mlp.ssf_scale_2
+blocks.0.mlp.ssf_shift_2
+blocks.1.ssf_scale_1
+blocks.1.ssf_shift_1
+blocks.1.ssf_scale_2
+blocks.1.ssf_shift_2
+blocks.1.attn.ssf_scale_1
+blocks.1.attn.ssf_shift_1
+blocks.1.attn.ssf_scale_2
+blocks.1.attn.ssf_shift_2
+blocks.1.mlp.ssf_scale_1
+blocks.1.mlp.ssf_shift_1
+blocks.1.mlp.ssf_scale_2
+blocks.1.mlp.ssf_shift_2
+blocks.2.ssf_scale_1
+blocks.2.ssf_shift_1
+blocks.2.ssf_scale_2
+blocks.2.ssf_shift_2
+blocks.2.attn.ssf_scale_1
+blocks.2.attn.ssf_shift_1
+blocks.2.attn.ssf_scale_2
+blocks.2.attn.ssf_shift_2
+blocks.2.mlp.ssf_scale_1
+blocks.2.mlp.ssf_shift_1
+blocks.2.mlp.ssf_scale_2
+blocks.2.mlp.ssf_shift_2
+blocks.3.ssf_scale_1
+blocks.3.ssf_shift_1
+blocks.3.ssf_scale_2
+blocks.3.ssf_shift_2
+blocks.3.attn.ssf_scale_1
+blocks.3.attn.ssf_shift_1
+blocks.3.attn.ssf_scale_2
+blocks.3.attn.ssf_shift_2
+blocks.3.mlp.ssf_scale_1
+blocks.3.mlp.ssf_shift_1
+blocks.3.mlp.ssf_scale_2
+blocks.3.mlp.ssf_shift_2
+blocks.4.ssf_scale_1
+blocks.4.ssf_shift_1
+blocks.4.ssf_scale_2
+blocks.4.ssf_shift_2
+blocks.4.attn.ssf_scale_1
+blocks.4.attn.ssf_shift_1
+blocks.4.attn.ssf_scale_2
+blocks.4.attn.ssf_shift_2
+blocks.4.mlp.ssf_scale_1
+blocks.4.mlp.ssf_shift_1
+blocks.4.mlp.ssf_scale_2
+blocks.4.mlp.ssf_shift_2
+blocks.5.ssf_scale_1
+blocks.5.ssf_shift_1
+blocks.5.ssf_scale_2
+blocks.5.ssf_shift_2
+blocks.5.attn.ssf_scale_1
+blocks.5.attn.ssf_shift_1
+blocks.5.attn.ssf_scale_2
+blocks.5.attn.ssf_shift_2
+blocks.5.mlp.ssf_scale_1
+blocks.5.mlp.ssf_shift_1
+blocks.5.mlp.ssf_scale_2
+blocks.5.mlp.ssf_shift_2
+blocks.6.ssf_scale_1
+blocks.6.ssf_shift_1
+blocks.6.ssf_scale_2
+blocks.6.ssf_shift_2
+blocks.6.attn.ssf_scale_1
+blocks.6.attn.ssf_shift_1
+blocks.6.attn.ssf_scale_2
+blocks.6.attn.ssf_shift_2
+blocks.6.mlp.ssf_scale_1
+blocks.6.mlp.ssf_shift_1
+blocks.6.mlp.ssf_scale_2
+blocks.6.mlp.ssf_shift_2
+blocks.7.ssf_scale_1
+blocks.7.ssf_shift_1
+blocks.7.ssf_scale_2
+blocks.7.ssf_shift_2
+blocks.7.attn.ssf_scale_1
+blocks.7.attn.ssf_shift_1
+blocks.7.attn.ssf_scale_2
+blocks.7.attn.ssf_shift_2
+blocks.7.mlp.ssf_scale_1
+blocks.7.mlp.ssf_shift_1
+blocks.7.mlp.ssf_scale_2
+blocks.7.mlp.ssf_shift_2
+blocks.8.ssf_scale_1
+blocks.8.ssf_shift_1
+blocks.8.ssf_scale_2
+blocks.8.ssf_shift_2
+blocks.8.attn.ssf_scale_1
+blocks.8.attn.ssf_shift_1
+blocks.8.attn.ssf_scale_2
+blocks.8.attn.ssf_shift_2
+blocks.8.mlp.ssf_scale_1
+blocks.8.mlp.ssf_shift_1
+blocks.8.mlp.ssf_scale_2
+blocks.8.mlp.ssf_shift_2
+blocks.9.ssf_scale_1
+blocks.9.ssf_shift_1
+blocks.9.ssf_scale_2
+blocks.9.ssf_shift_2
+blocks.9.attn.ssf_scale_1
+blocks.9.attn.ssf_shift_1
+blocks.9.attn.ssf_scale_2
+blocks.9.attn.ssf_shift_2
+blocks.9.mlp.ssf_scale_1
+blocks.9.mlp.ssf_shift_1
+blocks.9.mlp.ssf_scale_2
+blocks.9.mlp.ssf_shift_2
+blocks.10.ssf_scale_1
+blocks.10.ssf_shift_1
+blocks.10.ssf_scale_2
+blocks.10.ssf_shift_2
+blocks.10.attn.ssf_scale_1
+blocks.10.attn.ssf_shift_1
+blocks.10.attn.ssf_scale_2
+blocks.10.attn.ssf_shift_2
+blocks.10.mlp.ssf_scale_1
+blocks.10.mlp.ssf_shift_1
+blocks.10.mlp.ssf_scale_2
+blocks.10.mlp.ssf_shift_2
+blocks.11.ssf_scale_1
+blocks.11.ssf_shift_1
+blocks.11.ssf_scale_2
+blocks.11.ssf_shift_2
+blocks.11.attn.ssf_scale_1
+blocks.11.attn.ssf_shift_1
+blocks.11.attn.ssf_scale_2
+blocks.11.attn.ssf_shift_2
+blocks.11.mlp.ssf_scale_1
+blocks.11.mlp.ssf_shift_1
+blocks.11.mlp.ssf_scale_2
+blocks.11.mlp.ssf_shift_2
+head.weight
+head.bias
+freezing parameters finished!
+Model vit_small_patch16_224_in21k created, param count:21807846
+number of params for requires grad: 142182
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 210
+2040
+8189
+Train: 0 [   0/15 (  0%)]  Loss: 5.058 (5.06)  Time: 5.202s,   24.61/s  (5.202s,   24.61/s)  LR: 1.000e-07  Data: 2.325 (2.325)
+Train: 0 [  14/15 (100%)]  Loss: 5.093 (5.01)  Time: 0.146s,  879.01/s  (0.483s,  264.83/s)  LR: 1.000e-07  Data: 0.000 (0.156)
+Test: [   0/63]  Time: 2.323 (2.323)  Loss:  5.1562 (5.1562)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  1.5625 ( 1.5625)
+Test: [  50/63]  Time: 0.048 (0.267)  Loss:  5.4219 (5.0029)  Acc@1:  0.7812 ( 1.7310)  Acc@5:  4.6875 ( 4.4118)
+Test: [  63/63]  Time: 0.086 (0.242)  Loss:  5.3203 (5.0050)  Acc@1:  0.0000 ( 1.5997)  Acc@5:  3.2000 ( 4.3839)
+Test (EMA): [   0/63]  Time: 1.994 (1.994)  Loss:  5.1602 (5.1602)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  1.5625 ( 1.5625)
+Test (EMA): [  50/63]  Time: 0.048 (0.253)  Loss:  5.4219 (5.0034)  Acc@1:  0.7812 ( 1.7310)  Acc@5:  4.6875 ( 4.4118)
+Test (EMA): [  63/63]  Time: 0.047 (0.226)  Loss:  5.3203 (5.0054)  Acc@1:  0.0000 ( 1.5997)  Acc@5:  3.2000 ( 4.4084)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 1.599706923922335)
+
+Train: 1 [   0/15 (  0%)]  Loss: 5.058 (5.06)  Time: 1.588s,   80.58/s  (1.588s,   80.58/s)  LR: 1.000e-03  Data: 1.433 (1.433)
+Train: 1 [  14/15 (100%)]  Loss: 4.310 (4.50)  Time: 0.147s,  870.97/s  (0.264s,  484.76/s)  LR: 1.000e-03  Data: 0.000 (0.115)
+Test: [   0/63]  Time: 1.773 (1.773)  Loss:  3.4570 (3.4570)  Acc@1: 57.0312 (57.0312)  Acc@5: 76.5625 (76.5625)
+Test: [  50/63]  Time: 0.048 (0.229)  Loss:  3.2832 (3.3057)  Acc@1: 73.4375 (66.5748)  Acc@5: 96.0938 (89.3382)
+Test: [  63/63]  Time: 0.047 (0.208)  Loss:  3.5312 (3.3096)  Acc@1: 51.2000 (66.2474)  Acc@5: 78.4000 (88.7166)
+Test (EMA): [   0/63]  Time: 1.965 (1.965)  Loss:  5.1289 (5.1289)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  1.5625 ( 1.5625)
+Test (EMA): [  50/63]  Time: 0.048 (0.235)  Loss:  5.3828 (4.9734)  Acc@1:  0.7812 ( 1.7463)  Acc@5:  5.4688 ( 4.5343)
+Test (EMA): [  63/63]  Time: 0.047 (0.221)  Loss:  5.2891 (4.9758)  Acc@1:  0.0000 ( 1.6241)  Acc@5:  3.2000 ( 4.5305)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 1.6241299303944317)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 1.599706923922335)
+
+Train: 2 [   0/15 (  0%)]  Loss: 3.882 (3.88)  Time: 1.579s,   81.07/s  (1.579s,   81.07/s)  LR: 2.000e-03  Data: 1.417 (1.417)
+Train: 2 [  14/15 (100%)]  Loss: 2.067 (3.38)  Time: 0.149s,  857.63/s  (0.250s,  511.23/s)  LR: 2.000e-03  Data: 0.000 (0.096)
+Test: [   0/63]  Time: 1.939 (1.939)  Loss:  0.9014 (0.9014)  Acc@1: 84.3750 (84.3750)  Acc@5: 96.0938 (96.0938)
+Test: [  50/63]  Time: 0.048 (0.229)  Loss:  0.4277 (0.4240)  Acc@1: 92.1875 (95.6955)  Acc@5: 100.0000 (99.5251)
+Test: [  63/63]  Time: 0.047 (0.207)  Loss:  0.4441 (0.4153)  Acc@1: 98.4000 (96.0068)  Acc@5: 99.2000 (99.5360)
+Test (EMA): [   0/63]  Time: 2.091 (2.091)  Loss:  5.0586 (5.0586)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  1.5625 ( 1.5625)
+Test (EMA): [  50/63]  Time: 0.048 (0.265)  Loss:  5.2930 (4.8989)  Acc@1:  0.7812 ( 1.8536)  Acc@5:  7.0312 ( 5.1011)
+Test (EMA): [  63/63]  Time: 0.047 (0.242)  Loss:  5.2148 (4.9014)  Acc@1:  0.0000 ( 1.7218)  Acc@5:  3.2000 ( 5.1288)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 1.7218219562828183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 1.6241299303944317)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 1.599706923922335)
+
+Train: 3 [   0/15 (  0%)]  Loss: 1.935 (1.93)  Time: 1.695s,   75.52/s  (1.695s,   75.52/s)  LR: 3.000e-03  Data: 1.537 (1.537)
+Train: 3 [  14/15 (100%)]  Loss: 2.314 (2.55)  Time: 0.175s,  730.49/s  (0.297s,  430.93/s)  LR: 3.000e-03  Data: 0.000 (0.126)
+Test: [   0/63]  Time: 2.091 (2.091)  Loss:  0.3921 (0.3921)  Acc@1: 91.4062 (91.4062)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.048 (0.255)  Loss:  0.1625 (0.1889)  Acc@1: 99.2188 (97.8707)  Acc@5: 100.0000 (99.8162)
+Test: [  63/63]  Time: 0.047 (0.236)  Loss:  0.1414 (0.1808)  Acc@1: 98.4000 (97.9607)  Acc@5: 100.0000 (99.8290)
+Test (EMA): [   0/63]  Time: 2.057 (2.057)  Loss:  4.9492 (4.9492)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  1.5625 ( 1.5625)
+Test (EMA): [  50/63]  Time: 0.049 (0.261)  Loss:  5.1719 (4.7880)  Acc@1:  2.3438 ( 2.2365)  Acc@5:  9.3750 ( 6.3113)
+Test (EMA): [  63/63]  Time: 0.047 (0.245)  Loss:  5.1094 (4.7903)  Acc@1:  0.8000 ( 2.1004)  Acc@5:  4.0000 ( 6.3256)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 2.100378556782283)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 1.7218219562828183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 1.6241299303944317)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 1.599706923922335)
+
+Train: 4 [   0/15 (  0%)]  Loss: 1.860 (1.86)  Time: 1.870s,   68.46/s  (1.870s,   68.46/s)  LR: 4.000e-03  Data: 1.709 (1.709)
+Train: 4 [  14/15 (100%)]  Loss: 1.493 (2.37)  Time: 0.182s,  702.34/s  (0.315s,  406.01/s)  LR: 4.000e-03  Data: 0.000 (0.142)
+Test: [   0/63]  Time: 2.187 (2.187)  Loss:  0.1492 (0.1492)  Acc@1: 100.0000 (100.0000)  Acc@5: 100.0000 (100.0000)
+Test: [  50/63]  Time: 0.048 (0.265)  Loss:  0.1211 (0.1868)  Acc@1: 100.0000 (98.8205)  Acc@5: 100.0000 (99.7855)
+Test: [  63/63]  Time: 0.047 (0.247)  Loss:  0.2524 (0.1800)  Acc@1: 97.6000 (98.8888)  Acc@5: 100.0000 (99.8168)
+Test (EMA): [   0/63]  Time: 1.858 (1.858)  Loss:  4.8242 (4.8242)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  2.3438 ( 2.3438)
+Test (EMA): [  50/63]  Time: 0.965 (0.265)  Loss:  5.0391 (4.6687)  Acc@1:  3.1250 ( 2.6808)  Acc@5: 10.9375 ( 8.1648)
+Test (EMA): [  63/63]  Time: 0.047 (0.238)  Loss:  4.9883 (4.6704)  Acc@1:  1.6000 ( 2.5156)  Acc@5:  5.6000 ( 8.3038)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 2.515569666989893)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 2.100378556782283)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 1.7218219562828183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 1.6241299303944317)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 1.599706923922335)
+
+Train: 5 [   0/15 (  0%)]  Loss: 1.936 (1.94)  Time: 1.751s,   73.09/s  (1.751s,   73.09/s)  LR: 5.000e-03  Data: 1.606 (1.606)
+Train: 5 [  14/15 (100%)]  Loss: 2.619 (2.23)  Time: 0.148s,  862.41/s  (0.276s,  464.40/s)  LR: 5.000e-03  Data: 0.000 (0.122)
+Test: [   0/63]  Time: 1.872 (1.872)  Loss:  0.2461 (0.2461)  Acc@1: 96.8750 (96.8750)  Acc@5: 100.0000 (100.0000)
+Test: [  50/63]  Time: 0.049 (0.262)  Loss:  0.1683 (0.2294)  Acc@1: 98.4375 (98.4988)  Acc@5: 100.0000 (99.8468)
+Test: [  63/63]  Time: 0.047 (0.241)  Loss:  0.1389 (0.2192)  Acc@1: 98.4000 (98.6201)  Acc@5: 100.0000 (99.8779)
+Test (EMA): [   0/63]  Time: 1.714 (1.714)  Loss:  4.6914 (4.6914)  Acc@1:  0.7812 ( 0.7812)  Acc@5:  3.9062 ( 3.9062)
+Test (EMA): [  50/63]  Time: 0.049 (0.250)  Loss:  4.8984 (4.5436)  Acc@1:  3.9062 ( 3.3241)  Acc@5: 11.7188 (10.7843)
+Test (EMA): [  63/63]  Time: 0.047 (0.228)  Loss:  4.8633 (4.5445)  Acc@1:  1.6000 ( 3.1139)  Acc@5:  6.4000 (10.7950)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 3.1139333255562622)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 2.515569666989893)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 2.100378556782283)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 1.7218219562828183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 1.6241299303944317)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 1.599706923922335)
+
+Train: 6 [   0/15 (  0%)]  Loss: 2.806 (2.81)  Time: 1.695s,   75.51/s  (1.695s,   75.51/s)  LR: 6.000e-03  Data: 1.538 (1.538)
+Train: 6 [  14/15 (100%)]  Loss: 1.906 (2.31)  Time: 0.145s,  881.83/s  (0.264s,  484.72/s)  LR: 6.000e-03  Data: 0.000 (0.115)
+Test: [   0/63]  Time: 1.957 (1.957)  Loss:  0.2103 (0.2103)  Acc@1: 98.4375 (98.4375)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.260)  Loss:  0.1719 (0.1783)  Acc@1: 99.2188 (98.8051)  Acc@5: 100.0000 (99.8315)
+Test: [  63/63]  Time: 0.047 (0.243)  Loss:  0.1461 (0.1653)  Acc@1: 99.2000 (98.9742)  Acc@5: 100.0000 (99.8657)
+Test (EMA): [   0/63]  Time: 2.216 (2.216)  Loss:  4.5469 (4.5469)  Acc@1:  1.5625 ( 1.5625)  Acc@5:  4.6875 ( 4.6875)
+Test (EMA): [  50/63]  Time: 0.048 (0.266)  Loss:  4.7461 (4.4145)  Acc@1:  4.6875 ( 4.2126)  Acc@5: 14.8438 (14.0931)
+Test (EMA): [  63/63]  Time: 0.047 (0.245)  Loss:  4.7227 (4.4146)  Acc@1:  3.2000 ( 4.0664)  Acc@5:  8.8000 (14.1898)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 4.066430578331965)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 3.1139333255562622)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 2.515569666989893)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 2.100378556782283)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 1.7218219562828183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 1.6241299303944317)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 1.599706923922335)
+
+Train: 7 [   0/15 (  0%)]  Loss: 2.291 (2.29)  Time: 1.676s,   76.37/s  (1.676s,   76.37/s)  LR: 7.000e-03  Data: 1.521 (1.521)
+Train: 7 [  14/15 (100%)]  Loss: 2.245 (2.17)  Time: 0.159s,  807.19/s  (0.270s,  473.98/s)  LR: 7.000e-03  Data: 0.000 (0.113)
+Test: [   0/63]  Time: 2.156 (2.156)  Loss:  0.2233 (0.2233)  Acc@1: 98.4375 (98.4375)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.265)  Loss:  0.1310 (0.2065)  Acc@1: 100.0000 (98.9583)  Acc@5: 100.0000 (99.8468)
+Test: [  63/63]  Time: 0.047 (0.244)  Loss:  0.1376 (0.1922)  Acc@1: 100.0000 (99.1208)  Acc@5: 100.0000 (99.8657)
+Test (EMA): [   0/63]  Time: 1.968 (1.968)  Loss:  4.3945 (4.3945)  Acc@1:  3.9062 ( 3.9062)  Acc@5:  8.5938 ( 8.5938)
+Test (EMA): [  50/63]  Time: 0.049 (0.263)  Loss:  4.5859 (4.2786)  Acc@1:  6.2500 ( 5.2696)  Acc@5: 17.9688 (18.0300)
+Test (EMA): [  63/63]  Time: 0.047 (0.239)  Loss:  4.5820 (4.2777)  Acc@1:  4.8000 ( 5.2387)  Acc@5: 12.0000 (18.2440)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 5.238734891176195)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 4.066430578331965)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 3.1139333255562622)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 2.515569666989893)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 2.100378556782283)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 1.7218219562828183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 1.6241299303944317)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 1.599706923922335)
+
+Train: 8 [   0/15 (  0%)]  Loss: 2.449 (2.45)  Time: 1.836s,   69.71/s  (1.836s,   69.71/s)  LR: 8.000e-03  Data: 1.683 (1.683)
+Train: 8 [  14/15 (100%)]  Loss: 2.564 (2.15)  Time: 0.179s,  716.04/s  (0.299s,  427.65/s)  LR: 8.000e-03  Data: 0.000 (0.121)
+Test: [   0/63]  Time: 1.945 (1.945)  Loss:  0.5786 (0.5786)  Acc@1: 88.2812 (88.2812)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.261)  Loss:  0.0975 (0.2211)  Acc@1: 100.0000 (98.1158)  Acc@5: 100.0000 (99.8009)
+Test: [  63/63]  Time: 0.047 (0.240)  Loss:  0.1219 (0.2016)  Acc@1: 99.2000 (98.4003)  Acc@5: 100.0000 (99.8290)
+Test (EMA): [   0/63]  Time: 2.068 (2.068)  Loss:  4.2383 (4.2383)  Acc@1:  3.9062 ( 3.9062)  Acc@5: 14.8438 (14.8438)
+Test (EMA): [  50/63]  Time: 0.049 (0.249)  Loss:  4.4219 (4.1353)  Acc@1:  9.3750 ( 7.0466)  Acc@5: 18.7500 (23.9583)
+Test (EMA): [  63/63]  Time: 0.047 (0.240)  Loss:  4.4219 (4.1331)  Acc@1:  6.4000 ( 6.9850)  Acc@5: 16.0000 (24.2643)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 6.984979852475385)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 5.238734891176195)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 4.066430578331965)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 3.1139333255562622)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 2.515569666989893)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 2.100378556782283)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 1.7218219562828183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 1.6241299303944317)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 1.599706923922335)
+
+Train: 9 [   0/15 (  0%)]  Loss: 1.580 (1.58)  Time: 1.705s,   75.09/s  (1.705s,   75.09/s)  LR: 9.000e-03  Data: 1.553 (1.553)
+Train: 9 [  14/15 (100%)]  Loss: 2.256 (2.08)  Time: 0.152s,  843.73/s  (0.283s,  452.91/s)  LR: 9.000e-03  Data: 0.000 (0.122)
+Test: [   0/63]  Time: 1.992 (1.992)  Loss:  0.2549 (0.2549)  Acc@1: 96.8750 (96.8750)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.253)  Loss:  0.2057 (0.3150)  Acc@1: 99.2188 (98.0392)  Acc@5: 100.0000 (99.8009)
+Test: [  63/63]  Time: 0.047 (0.235)  Loss:  0.1237 (0.2930)  Acc@1: 99.2000 (98.3148)  Acc@5: 100.0000 (99.8413)
+Test (EMA): [   0/63]  Time: 1.455 (1.455)  Loss:  4.0703 (4.0703)  Acc@1:  6.2500 ( 6.2500)  Acc@5: 21.8750 (21.8750)
+Test (EMA): [  50/63]  Time: 0.049 (0.249)  Loss:  4.2500 (3.9844)  Acc@1: 12.5000 ( 9.8805)  Acc@5: 19.5312 (31.4798)
+Test (EMA): [  63/63]  Time: 0.047 (0.234)  Loss:  4.2461 (3.9808)  Acc@1:  8.0000 ( 9.8547)  Acc@5: 20.8000 (31.8720)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 9.854683111491024)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 6.984979852475385)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 5.238734891176195)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 4.066430578331965)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 3.1139333255562622)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 2.515569666989893)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 2.100378556782283)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 1.7218219562828183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 1.6241299303944317)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 1.599706923922335)
+
+Train: 10 [   0/15 (  0%)]  Loss: 2.835 (2.84)  Time: 1.836s,   69.72/s  (1.836s,   69.72/s)  LR: 9.938e-03  Data: 1.671 (1.671)
+Train: 10 [  14/15 (100%)]  Loss: 2.472 (2.21)  Time: 0.163s,  786.48/s  (0.288s,  444.82/s)  LR: 9.938e-03  Data: 0.000 (0.127)
+Test: [   0/63]  Time: 1.817 (1.817)  Loss:  0.1593 (0.1593)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.078 (0.242)  Loss:  0.1644 (0.2357)  Acc@1: 99.2188 (98.3456)  Acc@5: 100.0000 (99.8009)
+Test: [  63/63]  Time: 0.047 (0.227)  Loss:  0.1653 (0.2200)  Acc@1: 99.2000 (98.5346)  Acc@5: 100.0000 (99.8413)
+Test (EMA): [   0/63]  Time: 1.958 (1.958)  Loss:  3.8867 (3.8867)  Acc@1:  8.5938 ( 8.5938)  Acc@5: 29.6875 (29.6875)
+Test (EMA): [  50/63]  Time: 0.049 (0.257)  Loss:  4.0703 (3.8301)  Acc@1: 14.8438 (13.5263)  Acc@5: 23.4375 (39.9816)
+Test (EMA): [  63/63]  Time: 0.047 (0.237)  Loss:  4.0664 (3.8254)  Acc@1:  9.6000 (13.7013)  Acc@5: 24.8000 (40.4811)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 13.701306636669155)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 9.854683111491024)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 6.984979852475385)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 5.238734891176195)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 4.066430578331965)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 3.1139333255562622)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 2.515569666989893)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 2.100378556782283)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 1.7218219562828183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 1.6241299303944317)
+
+Train: 11 [   0/15 (  0%)]  Loss: 2.544 (2.54)  Time: 1.719s,   74.48/s  (1.719s,   74.48/s)  LR: 9.926e-03  Data: 1.564 (1.564)
+Train: 11 [  14/15 (100%)]  Loss: 2.453 (2.43)  Time: 0.160s,  799.76/s  (0.282s,  454.15/s)  LR: 9.926e-03  Data: 0.000 (0.124)
+Test: [   0/63]  Time: 2.125 (2.125)  Loss:  0.3696 (0.3696)  Acc@1: 96.0938 (96.0938)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.273)  Loss:  0.1221 (0.2483)  Acc@1: 100.0000 (98.1924)  Acc@5: 100.0000 (99.7855)
+Test: [  63/63]  Time: 0.047 (0.247)  Loss:  0.1948 (0.2285)  Acc@1: 99.2000 (98.4614)  Acc@5: 100.0000 (99.8290)
+Test (EMA): [   0/63]  Time: 2.058 (2.058)  Loss:  3.6895 (3.6895)  Acc@1: 12.5000 (12.5000)  Acc@5: 40.6250 (40.6250)
+Test (EMA): [  50/63]  Time: 0.049 (0.258)  Loss:  3.8906 (3.6715)  Acc@1: 17.9688 (19.2402)  Acc@5: 28.9062 (49.7243)
+Test (EMA): [  63/63]  Time: 0.047 (0.238)  Loss:  3.8887 (3.6655)  Acc@1: 16.0000 (19.6605)  Acc@5: 36.8000 (50.3725)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 19.660520210037856)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 13.701306636669155)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 9.854683111491024)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 6.984979852475385)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 5.238734891176195)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 4.066430578331965)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 3.1139333255562622)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 2.515569666989893)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 2.100378556782283)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 1.7218219562828183)
+
+Train: 12 [   0/15 (  0%)]  Loss: 2.033 (2.03)  Time: 1.831s,   69.89/s  (1.831s,   69.89/s)  LR: 9.911e-03  Data: 1.652 (1.652)
+Train: 12 [  14/15 (100%)]  Loss: 2.048 (2.21)  Time: 0.205s,  625.25/s  (0.301s,  425.67/s)  LR: 9.911e-03  Data: 0.000 (0.125)
+Test: [   0/63]  Time: 2.219 (2.219)  Loss:  0.4189 (0.4189)  Acc@1: 94.5312 (94.5312)  Acc@5: 97.6562 (97.6562)
+Test: [  50/63]  Time: 0.049 (0.261)  Loss:  0.0925 (0.1975)  Acc@1: 100.0000 (98.0699)  Acc@5: 100.0000 (99.7702)
+Test: [  63/63]  Time: 0.047 (0.235)  Loss:  0.0839 (0.1771)  Acc@1: 99.2000 (98.3881)  Acc@5: 100.0000 (99.8168)
+Test (EMA): [   0/63]  Time: 1.835 (1.835)  Loss:  3.5020 (3.5020)  Acc@1: 22.6562 (22.6562)  Acc@5: 59.3750 (59.3750)
+Test (EMA): [  50/63]  Time: 0.049 (0.261)  Loss:  3.7109 (3.5126)  Acc@1: 21.0938 (27.2059)  Acc@5: 39.8438 (60.0797)
+Test (EMA): [  63/63]  Time: 0.047 (0.250)  Loss:  3.7012 (3.5052)  Acc@1: 19.2000 (27.6224)  Acc@5: 45.6000 (60.7644)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 27.622420331587183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 19.660520210037856)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 13.701306636669155)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 9.854683111491024)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 6.984979852475385)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 5.238734891176195)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 4.066430578331965)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 3.1139333255562622)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 2.515569666989893)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 2.100378556782283)
+
+Train: 13 [   0/15 (  0%)]  Loss: 2.582 (2.58)  Time: 1.835s,   69.75/s  (1.835s,   69.75/s)  LR: 9.896e-03  Data: 1.672 (1.672)
+Train: 13 [  14/15 (100%)]  Loss: 1.304 (2.00)  Time: 0.151s,  845.99/s  (0.279s,  458.18/s)  LR: 9.896e-03  Data: 0.000 (0.121)
+Test: [   0/63]  Time: 2.150 (2.150)  Loss:  0.3911 (0.3911)  Acc@1: 96.0938 (96.0938)  Acc@5: 97.6562 (97.6562)
+Test: [  50/63]  Time: 0.049 (0.261)  Loss:  0.1195 (0.2237)  Acc@1: 100.0000 (98.6366)  Acc@5: 100.0000 (99.8315)
+Test: [  63/63]  Time: 0.047 (0.234)  Loss:  0.0917 (0.2034)  Acc@1: 100.0000 (98.8765)  Acc@5: 100.0000 (99.8657)
+Test (EMA): [   0/63]  Time: 1.899 (1.899)  Loss:  3.3125 (3.3125)  Acc@1: 33.5938 (33.5938)  Acc@5: 75.0000 (75.0000)
+Test (EMA): [  50/63]  Time: 0.048 (0.273)  Loss:  3.5293 (3.3529)  Acc@1: 25.0000 (36.2745)  Acc@5: 53.1250 (70.4810)
+Test (EMA): [  63/63]  Time: 0.047 (0.253)  Loss:  3.5137 (3.3443)  Acc@1: 20.8000 (37.0131)  Acc@5: 54.4000 (71.0221)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 37.01306632593127)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 27.622420331587183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 19.660520210037856)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 13.701306636669155)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 9.854683111491024)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 6.984979852475385)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 5.238734891176195)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 4.066430578331965)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 3.1139333255562622)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 2.515569666989893)
+
+Train: 14 [   0/15 (  0%)]  Loss: 2.517 (2.52)  Time: 1.711s,   74.80/s  (1.711s,   74.80/s)  LR: 9.880e-03  Data: 1.534 (1.534)
+Train: 14 [  14/15 (100%)]  Loss: 2.473 (2.16)  Time: 0.151s,  844.99/s  (0.268s,  476.89/s)  LR: 9.880e-03  Data: 0.000 (0.105)
+Test: [   0/63]  Time: 2.189 (2.189)  Loss:  0.2118 (0.2118)  Acc@1: 96.8750 (96.8750)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.048 (0.254)  Loss:  0.1290 (0.1818)  Acc@1: 100.0000 (98.9737)  Acc@5: 100.0000 (99.9081)
+Test: [  63/63]  Time: 0.047 (0.244)  Loss:  0.1605 (0.1684)  Acc@1: 99.2000 (99.1208)  Acc@5: 100.0000 (99.9267)
+Test (EMA): [   0/63]  Time: 1.810 (1.810)  Loss:  3.1289 (3.1289)  Acc@1: 48.4375 (48.4375)  Acc@5: 86.7188 (86.7188)
+Test (EMA): [  50/63]  Time: 0.048 (0.241)  Loss:  3.3438 (3.1930)  Acc@1: 32.0312 (47.0129)  Acc@5: 67.1875 (78.9675)
+Test (EMA): [  63/63]  Time: 0.047 (0.228)  Loss:  3.3301 (3.1828)  Acc@1: 31.2000 (47.9546)  Acc@5: 63.2000 (79.5579)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 47.954573219607695)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 37.01306632593127)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 27.622420331587183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 19.660520210037856)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 13.701306636669155)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 9.854683111491024)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 6.984979852475385)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 5.238734891176195)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 4.066430578331965)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 3.1139333255562622)
+
+Train: 15 [   0/15 (  0%)]  Loss: 2.453 (2.45)  Time: 1.672s,   76.55/s  (1.672s,   76.55/s)  LR: 9.862e-03  Data: 1.507 (1.507)
+Train: 15 [  14/15 (100%)]  Loss: 1.372 (1.98)  Time: 0.169s,  755.83/s  (0.273s,  469.27/s)  LR: 9.862e-03  Data: 0.000 (0.106)
+Test: [   0/63]  Time: 2.104 (2.104)  Loss:  0.2485 (0.2485)  Acc@1: 98.4375 (98.4375)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.253)  Loss:  0.1360 (0.2159)  Acc@1: 100.0000 (98.4528)  Acc@5: 100.0000 (99.8315)
+Test: [  63/63]  Time: 0.047 (0.236)  Loss:  0.0973 (0.1946)  Acc@1: 100.0000 (98.7056)  Acc@5: 100.0000 (99.8657)
+Test (EMA): [   0/63]  Time: 1.922 (1.922)  Loss:  2.9609 (2.9609)  Acc@1: 60.9375 (60.9375)  Acc@5: 94.5312 (94.5312)
+Test (EMA): [  50/63]  Time: 0.049 (0.278)  Loss:  3.1680 (3.0398)  Acc@1: 49.2188 (57.1385)  Acc@5: 79.6875 (85.7230)
+Test (EMA): [  63/63]  Time: 0.047 (0.251)  Loss:  3.1562 (3.0279)  Acc@1: 41.6000 (58.0413)  Acc@5: 77.6000 (86.2498)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 58.041274915875235)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 47.954573219607695)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 37.01306632593127)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 27.622420331587183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 19.660520210037856)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 13.701306636669155)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 9.854683111491024)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 6.984979852475385)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 5.238734891176195)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 4.066430578331965)
+
+Train: 16 [   0/15 (  0%)]  Loss: 1.860 (1.86)  Time: 1.767s,   72.45/s  (1.767s,   72.45/s)  LR: 9.843e-03  Data: 1.610 (1.610)
+Train: 16 [  14/15 (100%)]  Loss: 2.479 (2.10)  Time: 0.156s,  820.68/s  (0.282s,  453.63/s)  LR: 9.843e-03  Data: 0.000 (0.128)
+Test: [   0/63]  Time: 1.943 (1.943)  Loss:  0.2151 (0.2151)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test: [  50/63]  Time: 0.049 (0.252)  Loss:  0.0839 (0.1757)  Acc@1: 100.0000 (99.0196)  Acc@5: 100.0000 (99.8928)
+Test: [  63/63]  Time: 0.047 (0.231)  Loss:  0.0767 (0.1574)  Acc@1: 100.0000 (99.1940)  Acc@5: 100.0000 (99.9145)
+Test (EMA): [   0/63]  Time: 1.978 (1.978)  Loss:  2.7891 (2.7891)  Acc@1: 71.8750 (71.8750)  Acc@5: 96.0938 (96.0938)
+Test (EMA): [  50/63]  Time: 0.052 (0.258)  Loss:  2.9961 (2.8899)  Acc@1: 60.1562 (65.3493)  Acc@5: 88.2812 (90.9773)
+Test (EMA): [  63/63]  Time: 0.047 (0.242)  Loss:  2.9727 (2.8764)  Acc@1: 55.2000 (66.6015)  Acc@5: 86.4000 (91.5496)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 66.60153866105354)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 58.041274915875235)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 47.954573219607695)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 37.01306632593127)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 27.622420331587183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 19.660520210037856)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 13.701306636669155)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 9.854683111491024)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 6.984979852475385)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 5.238734891176195)
+
+Train: 17 [   0/15 (  0%)]  Loss: 1.268 (1.27)  Time: 1.660s,   77.10/s  (1.660s,   77.10/s)  LR: 9.823e-03  Data: 1.508 (1.508)
+Train: 17 [  14/15 (100%)]  Loss: 2.250 (2.17)  Time: 0.160s,  797.83/s  (0.279s,  458.15/s)  LR: 9.823e-03  Data: 0.000 (0.115)
+Test: [   0/63]  Time: 1.759 (1.759)  Loss:  0.4453 (0.4453)  Acc@1: 95.3125 (95.3125)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.138 (0.251)  Loss:  0.1309 (0.2475)  Acc@1: 100.0000 (98.6979)  Acc@5: 100.0000 (99.8315)
+Test: [  63/63]  Time: 0.047 (0.233)  Loss:  0.1378 (0.2243)  Acc@1: 100.0000 (98.9498)  Acc@5: 100.0000 (99.8657)
+Test (EMA): [   0/63]  Time: 2.161 (2.161)  Loss:  2.6289 (2.6289)  Acc@1: 82.0312 (82.0312)  Acc@5: 97.6562 (97.6562)
+Test (EMA): [  50/63]  Time: 0.049 (0.260)  Loss:  2.8262 (2.7464)  Acc@1: 70.3125 (72.7788)  Acc@5: 94.5312 (94.6691)
+Test (EMA): [  63/63]  Time: 0.047 (0.242)  Loss:  2.8027 (2.7313)  Acc@1: 64.0000 (73.9040)  Acc@5: 92.8000 (95.0177)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 73.90401758456466)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 66.60153866105354)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 58.041274915875235)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 47.954573219607695)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 37.01306632593127)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 27.622420331587183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 19.660520210037856)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 13.701306636669155)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 9.854683111491024)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 6.984979852475385)
+
+Train: 18 [   0/15 (  0%)]  Loss: 1.701 (1.70)  Time: 1.472s,   86.99/s  (1.472s,   86.99/s)  LR: 9.801e-03  Data: 1.319 (1.319)
+Train: 18 [  14/15 (100%)]  Loss: 2.712 (2.01)  Time: 0.160s,  797.55/s  (0.272s,  469.76/s)  LR: 9.801e-03  Data: 0.000 (0.116)
+Test: [   0/63]  Time: 2.045 (2.045)  Loss:  0.2942 (0.2942)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.255)  Loss:  0.0810 (0.2250)  Acc@1: 100.0000 (99.1115)  Acc@5: 100.0000 (99.8162)
+Test: [  63/63]  Time: 0.047 (0.233)  Loss:  0.0971 (0.2039)  Acc@1: 100.0000 (99.2673)  Acc@5: 100.0000 (99.8535)
+Test (EMA): [   0/63]  Time: 1.946 (1.946)  Loss:  2.4727 (2.4727)  Acc@1: 87.5000 (87.5000)  Acc@5: 97.6562 (97.6562)
+Test (EMA): [  50/63]  Time: 0.049 (0.248)  Loss:  2.6660 (2.6087)  Acc@1: 79.6875 (79.1360)  Acc@5: 97.6562 (96.9516)
+Test (EMA): [  63/63]  Time: 0.047 (0.234)  Loss:  2.6445 (2.5921)  Acc@1: 76.8000 (80.4005)  Acc@5: 98.4000 (97.2402)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 80.40053735272558)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 73.90401758456466)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 66.60153866105354)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 58.041274915875235)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 47.954573219607695)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 37.01306632593127)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 27.622420331587183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 19.660520210037856)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 13.701306636669155)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 9.854683111491024)
+
+Train: 19 [   0/15 (  0%)]  Loss: 2.088 (2.09)  Time: 1.706s,   75.02/s  (1.706s,   75.02/s)  LR: 9.779e-03  Data: 1.539 (1.539)
+Train: 19 [  14/15 (100%)]  Loss: 1.797 (2.09)  Time: 0.160s,  798.76/s  (0.273s,  468.31/s)  LR: 9.779e-03  Data: 0.000 (0.117)
+Test: [   0/63]  Time: 1.938 (1.938)  Loss:  0.3025 (0.3025)  Acc@1: 96.0938 (96.0938)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.110 (0.247)  Loss:  0.1163 (0.2427)  Acc@1: 99.2188 (98.8051)  Acc@5: 100.0000 (99.7855)
+Test: [  63/63]  Time: 0.047 (0.228)  Loss:  0.1029 (0.2234)  Acc@1: 98.4000 (99.0109)  Acc@5: 100.0000 (99.8290)
+Test (EMA): [   0/63]  Time: 1.893 (1.893)  Loss:  2.3223 (2.3223)  Acc@1: 92.1875 (92.1875)  Acc@5: 97.6562 (97.6562)
+Test (EMA): [  50/63]  Time: 0.049 (0.250)  Loss:  2.5195 (2.4754)  Acc@1: 86.7188 (84.6507)  Acc@5: 100.0000 (98.4375)
+Test (EMA): [  63/63]  Time: 0.047 (0.235)  Loss:  2.4883 (2.4575)  Acc@1: 83.2000 (85.7492)  Acc@5: 98.4000 (98.5713)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 85.74917579340635)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 80.40053735272558)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 73.90401758456466)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 66.60153866105354)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 58.041274915875235)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 47.954573219607695)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 37.01306632593127)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 27.622420331587183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 19.660520210037856)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 13.701306636669155)
+
+Train: 20 [   0/15 (  0%)]  Loss: 1.951 (1.95)  Time: 1.787s,   71.63/s  (1.787s,   71.63/s)  LR: 9.755e-03  Data: 1.607 (1.607)
+Train: 20 [  14/15 (100%)]  Loss: 2.520 (2.02)  Time: 0.161s,  796.49/s  (0.294s,  435.26/s)  LR: 9.755e-03  Data: 0.000 (0.123)
+Test: [   0/63]  Time: 1.782 (1.782)  Loss:  0.2974 (0.2974)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.258)  Loss:  0.1328 (0.2245)  Acc@1: 100.0000 (98.9583)  Acc@5: 100.0000 (99.8162)
+Test: [  63/63]  Time: 0.047 (0.240)  Loss:  0.1450 (0.2050)  Acc@1: 99.2000 (99.1330)  Acc@5: 100.0000 (99.8535)
+Test (EMA): [   0/63]  Time: 1.993 (1.993)  Loss:  2.1797 (2.1797)  Acc@1: 94.5312 (94.5312)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.252)  Loss:  2.3711 (2.3473)  Acc@1: 93.7500 (89.1850)  Acc@5: 100.0000 (99.0349)
+Test (EMA): [  63/63]  Time: 0.048 (0.234)  Loss:  2.3379 (2.3280)  Acc@1: 90.4000 (90.0965)  Acc@5: 98.4000 (99.0841)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 90.09647089885638)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 85.74917579340635)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 80.40053735272558)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 73.90401758456466)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 66.60153866105354)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 58.041274915875235)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 47.954573219607695)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 37.01306632593127)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 27.622420331587183)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 19.660520210037856)
+
+Train: 21 [   0/15 (  0%)]  Loss: 2.370 (2.37)  Time: 1.746s,   73.31/s  (1.746s,   73.31/s)  LR: 9.730e-03  Data: 1.595 (1.595)
+Train: 21 [  14/15 (100%)]  Loss: 2.396 (2.02)  Time: 0.163s,  787.25/s  (0.286s,  447.59/s)  LR: 9.730e-03  Data: 0.000 (0.129)
+Test: [   0/63]  Time: 2.185 (2.185)  Loss:  0.2866 (0.2866)  Acc@1: 96.8750 (96.8750)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.261)  Loss:  0.1172 (0.2221)  Acc@1: 100.0000 (99.0656)  Acc@5: 100.0000 (99.8315)
+Test: [  63/63]  Time: 0.047 (0.240)  Loss:  0.1333 (0.2024)  Acc@1: 100.0000 (99.2307)  Acc@5: 100.0000 (99.8657)
+Test (EMA): [   0/63]  Time: 1.767 (1.767)  Loss:  2.0352 (2.0352)  Acc@1: 95.3125 (95.3125)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.048 (0.266)  Loss:  2.2285 (2.2233)  Acc@1: 96.0938 (92.2947)  Acc@5: 100.0000 (99.3873)
+Test (EMA): [  63/63]  Time: 0.048 (0.241)  Loss:  2.1934 (2.2029)  Acc@1: 95.2000 (93.0517)  Acc@5: 100.0000 (99.4627)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 93.05165472856326)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 90.09647089885638)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 85.74917579340635)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 80.40053735272558)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 73.90401758456466)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 66.60153866105354)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 58.041274915875235)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 47.954573219607695)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 37.01306632593127)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 27.622420331587183)
+
+Train: 22 [   0/15 (  0%)]  Loss: 2.455 (2.46)  Time: 1.624s,   78.83/s  (1.624s,   78.83/s)  LR: 9.704e-03  Data: 1.473 (1.473)
+Train: 22 [  14/15 (100%)]  Loss: 2.380 (2.10)  Time: 0.156s,  820.39/s  (0.272s,  471.41/s)  LR: 9.704e-03  Data: 0.004 (0.112)
+Test: [   0/63]  Time: 1.964 (1.964)  Loss:  0.4875 (0.4875)  Acc@1: 94.5312 (94.5312)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.259)  Loss:  0.2406 (0.2884)  Acc@1: 96.8750 (98.8511)  Acc@5: 100.0000 (99.8775)
+Test: [  63/63]  Time: 0.047 (0.234)  Loss:  0.1652 (0.2658)  Acc@1: 100.0000 (99.0719)  Acc@5: 100.0000 (99.9023)
+Test (EMA): [   0/63]  Time: 2.241 (2.241)  Loss:  1.9004 (1.9004)  Acc@1: 96.0938 (96.0938)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.241)  Loss:  2.0918 (2.1040)  Acc@1: 96.8750 (94.6844)  Acc@5: 100.0000 (99.6170)
+Test (EMA): [  63/63]  Time: 0.047 (0.228)  Loss:  2.0566 (2.0823)  Acc@1: 97.6000 (95.2741)  Acc@5: 100.0000 (99.6581)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 95.27414834081566)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 93.05165472856326)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 90.09647089885638)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 85.74917579340635)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 80.40053735272558)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 73.90401758456466)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 66.60153866105354)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 58.041274915875235)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 47.954573219607695)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 37.01306632593127)
+
+Train: 23 [   0/15 (  0%)]  Loss: 1.815 (1.81)  Time: 1.854s,   69.04/s  (1.854s,   69.04/s)  LR: 9.677e-03  Data: 1.690 (1.690)
+Train: 23 [  14/15 (100%)]  Loss: 2.150 (2.25)  Time: 0.149s,  858.49/s  (0.267s,  479.42/s)  LR: 9.677e-03  Data: 0.000 (0.114)
+Test: [   0/63]  Time: 1.822 (1.822)  Loss:  0.5381 (0.5381)  Acc@1: 96.0938 (96.0938)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.246)  Loss:  0.2395 (0.3338)  Acc@1: 100.0000 (98.6520)  Acc@5: 100.0000 (99.8009)
+Test: [  63/63]  Time: 0.047 (0.234)  Loss:  0.2032 (0.3064)  Acc@1: 100.0000 (98.8765)  Acc@5: 100.0000 (99.8413)
+Test (EMA): [   0/63]  Time: 2.081 (2.081)  Loss:  1.7803 (1.7803)  Acc@1: 96.0938 (96.0938)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.048 (0.239)  Loss:  1.9668 (1.9932)  Acc@1: 99.2188 (96.5533)  Acc@5: 100.0000 (99.6783)
+Test (EMA): [  63/63]  Time: 0.048 (0.218)  Loss:  1.9414 (1.9705)  Acc@1: 99.2000 (96.9471)  Acc@5: 100.0000 (99.7191)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 96.9471242608627)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 95.27414834081566)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 93.05165472856326)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 90.09647089885638)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 85.74917579340635)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 80.40053735272558)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 73.90401758456466)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 66.60153866105354)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 58.041274915875235)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 47.954573219607695)
+
+Train: 24 [   0/15 (  0%)]  Loss: 1.912 (1.91)  Time: 1.778s,   72.01/s  (1.778s,   72.01/s)  LR: 9.649e-03  Data: 1.615 (1.615)
+Train: 24 [  14/15 (100%)]  Loss: 2.155 (2.04)  Time: 0.156s,  822.46/s  (0.273s,  469.30/s)  LR: 9.649e-03  Data: 0.000 (0.112)
+Test: [   0/63]  Time: 1.836 (1.836)  Loss:  0.2788 (0.2788)  Acc@1: 96.8750 (96.8750)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.240)  Loss:  0.1119 (0.2250)  Acc@1: 100.0000 (98.9583)  Acc@5: 100.0000 (99.8468)
+Test: [  63/63]  Time: 0.048 (0.226)  Loss:  0.1118 (0.2033)  Acc@1: 99.2000 (99.1452)  Acc@5: 100.0000 (99.8779)
+Test (EMA): [   0/63]  Time: 2.121 (2.121)  Loss:  1.6719 (1.6719)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.048 (0.264)  Loss:  1.8496 (1.8884)  Acc@1: 100.0000 (97.6409)  Acc@5: 100.0000 (99.7396)
+Test (EMA): [  63/63]  Time: 0.047 (0.243)  Loss:  1.8193 (1.8647)  Acc@1: 99.2000 (97.9607)  Acc@5: 100.0000 (99.7802)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 97.96067902945471)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 96.9471242608627)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 95.27414834081566)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 93.05165472856326)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 90.09647089885638)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 85.74917579340635)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 80.40053735272558)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 73.90401758456466)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 66.60153866105354)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 58.041274915875235)
+
+Train: 25 [   0/15 (  0%)]  Loss: 2.552 (2.55)  Time: 1.537s,   83.27/s  (1.537s,   83.27/s)  LR: 9.619e-03  Data: 1.376 (1.376)
+Train: 25 [  14/15 (100%)]  Loss: 1.677 (2.20)  Time: 0.200s,  638.78/s  (0.261s,  490.20/s)  LR: 9.619e-03  Data: 0.000 (0.100)
+Test: [   0/63]  Time: 2.018 (2.018)  Loss:  0.4084 (0.4084)  Acc@1: 94.5312 (94.5312)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.278)  Loss:  0.1726 (0.2979)  Acc@1: 100.0000 (98.7898)  Acc@5: 100.0000 (99.8162)
+Test: [  63/63]  Time: 0.047 (0.245)  Loss:  0.1271 (0.2724)  Acc@1: 100.0000 (99.0109)  Acc@5: 100.0000 (99.8535)
+Test (EMA): [   0/63]  Time: 1.793 (1.793)  Loss:  1.5664 (1.5664)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.255)  Loss:  1.7275 (1.7847)  Acc@1: 100.0000 (98.1464)  Acc@5: 100.0000 (99.7855)
+Test (EMA): [  63/63]  Time: 0.047 (0.237)  Loss:  1.7002 (1.7600)  Acc@1: 99.2000 (98.3759)  Acc@5: 100.0000 (99.8168)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-25.pth.tar', 98.37587013948036)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 97.96067902945471)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 96.9471242608627)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 95.27414834081566)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 93.05165472856326)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 90.09647089885638)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 85.74917579340635)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 80.40053735272558)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 73.90401758456466)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 66.60153866105354)
+
+Train: 26 [   0/15 (  0%)]  Loss: 2.493 (2.49)  Time: 1.692s,   75.65/s  (1.692s,   75.65/s)  LR: 9.589e-03  Data: 1.531 (1.531)
+Train: 26 [  14/15 (100%)]  Loss: 1.405 (2.00)  Time: 0.162s,  789.22/s  (0.272s,  470.10/s)  LR: 9.589e-03  Data: 0.000 (0.109)
+Test: [   0/63]  Time: 1.856 (1.856)  Loss:  0.2384 (0.2384)  Acc@1: 97.6562 (97.6562)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.050 (0.274)  Loss:  0.0816 (0.2085)  Acc@1: 100.0000 (98.9737)  Acc@5: 100.0000 (99.8621)
+Test: [  63/63]  Time: 0.047 (0.248)  Loss:  0.1753 (0.1891)  Acc@1: 100.0000 (99.1696)  Acc@5: 100.0000 (99.8901)
+Test (EMA): [   0/63]  Time: 2.028 (2.028)  Loss:  1.4688 (1.4688)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.264)  Loss:  1.6152 (1.6840)  Acc@1: 100.0000 (98.4528)  Acc@5: 100.0000 (99.8162)
+Test (EMA): [  63/63]  Time: 0.047 (0.238)  Loss:  1.5889 (1.6581)  Acc@1: 99.2000 (98.6689)  Acc@5: 100.0000 (99.8413)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 98.66894621714552)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-25.pth.tar', 98.37587013948036)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 97.96067902945471)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 96.9471242608627)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 95.27414834081566)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 93.05165472856326)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 90.09647089885638)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 85.74917579340635)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 80.40053735272558)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 73.90401758456466)
+
+Train: 27 [   0/15 (  0%)]  Loss: 1.029 (1.03)  Time: 1.681s,   76.14/s  (1.681s,   76.14/s)  LR: 9.557e-03  Data: 1.523 (1.523)
+Train: 27 [  14/15 (100%)]  Loss: 2.424 (1.83)  Time: 0.151s,  848.36/s  (0.274s,  467.64/s)  LR: 9.557e-03  Data: 0.000 (0.112)
+Test: [   0/63]  Time: 1.890 (1.890)  Loss:  0.2983 (0.2983)  Acc@1: 96.8750 (96.8750)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.249)  Loss:  0.1273 (0.2204)  Acc@1: 99.2188 (98.7132)  Acc@5: 100.0000 (99.8162)
+Test: [  63/63]  Time: 0.047 (0.235)  Loss:  0.1460 (0.1996)  Acc@1: 99.2000 (98.9254)  Acc@5: 100.0000 (99.8535)
+Test (EMA): [   0/63]  Time: 1.939 (1.939)  Loss:  1.3691 (1.3691)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.250)  Loss:  1.5068 (1.5863)  Acc@1: 100.0000 (98.7745)  Acc@5: 100.0000 (99.8468)
+Test (EMA): [  63/63]  Time: 0.047 (0.234)  Loss:  1.4854 (1.5598)  Acc@1: 99.2000 (98.9376)  Acc@5: 100.0000 (99.8657)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 98.93759928833857)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 98.66894621714552)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-25.pth.tar', 98.37587013948036)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 97.96067902945471)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 96.9471242608627)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 95.27414834081566)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 93.05165472856326)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 90.09647089885638)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 85.74917579340635)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 80.40053735272558)
+
+Train: 28 [   0/15 (  0%)]  Loss: 1.780 (1.78)  Time: 1.731s,   73.95/s  (1.731s,   73.95/s)  LR: 9.524e-03  Data: 1.569 (1.569)
+Train: 28 [  14/15 (100%)]  Loss: 1.652 (1.85)  Time: 0.150s,  852.41/s  (0.276s,  463.39/s)  LR: 9.524e-03  Data: 0.000 (0.118)
+Test: [   0/63]  Time: 1.940 (1.940)  Loss:  0.3530 (0.3530)  Acc@1: 96.0938 (96.0938)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.246)  Loss:  0.1616 (0.2806)  Acc@1: 100.0000 (98.9124)  Acc@5: 100.0000 (99.8315)
+Test: [  63/63]  Time: 0.047 (0.228)  Loss:  0.1279 (0.2541)  Acc@1: 99.2000 (99.0963)  Acc@5: 100.0000 (99.8657)
+Test (EMA): [   0/63]  Time: 1.876 (1.876)  Loss:  1.2773 (1.2773)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 1.124 (0.262)  Loss:  1.4004 (1.4946)  Acc@1: 100.0000 (98.9124)  Acc@5: 100.0000 (99.8468)
+Test (EMA): [  63/63]  Time: 0.047 (0.238)  Loss:  1.3799 (1.4672)  Acc@1: 99.2000 (99.0475)  Acc@5: 100.0000 (99.8657)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 99.04750281746301)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 98.93759928833857)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 98.66894621714552)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-25.pth.tar', 98.37587013948036)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 97.96067902945471)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 96.9471242608627)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 95.27414834081566)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 93.05165472856326)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 90.09647089885638)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-19.pth.tar', 85.74917579340635)
+
+Train: 29 [   0/15 (  0%)]  Loss: 1.392 (1.39)  Time: 1.707s,   74.99/s  (1.707s,   74.99/s)  LR: 9.490e-03  Data: 1.557 (1.557)
+Train: 29 [  14/15 (100%)]  Loss: 2.352 (1.99)  Time: 0.159s,  804.32/s  (0.278s,  460.77/s)  LR: 9.490e-03  Data: 0.000 (0.122)
+Test: [   0/63]  Time: 1.970 (1.970)  Loss:  0.3191 (0.3191)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.063 (0.257)  Loss:  0.0997 (0.2400)  Acc@1: 100.0000 (99.0809)  Acc@5: 100.0000 (99.8162)
+Test: [  63/63]  Time: 0.047 (0.241)  Loss:  0.1256 (0.2174)  Acc@1: 99.2000 (99.2185)  Acc@5: 100.0000 (99.8535)
+Test (EMA): [   0/63]  Time: 1.930 (1.930)  Loss:  1.1934 (1.1934)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.084 (0.229)  Loss:  1.3018 (1.4100)  Acc@1: 100.0000 (99.0349)  Acc@5: 100.0000 (99.8621)
+Test (EMA): [  63/63]  Time: 0.048 (0.223)  Loss:  1.2871 (1.3820)  Acc@1: 99.2000 (99.1574)  Acc@5: 100.0000 (99.8779)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 99.15740634658745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 99.04750281746301)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 98.93759928833857)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 98.66894621714552)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-25.pth.tar', 98.37587013948036)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 97.96067902945471)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 96.9471242608627)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 95.27414834081566)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 93.05165472856326)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-20.pth.tar', 90.09647089885638)
+
+Train: 30 [   0/15 (  0%)]  Loss: 2.136 (2.14)  Time: 1.802s,   71.04/s  (1.802s,   71.04/s)  LR: 9.455e-03  Data: 1.638 (1.638)
+Train: 30 [  14/15 (100%)]  Loss: 2.186 (1.98)  Time: 0.164s,  782.07/s  (0.299s,  427.85/s)  LR: 9.455e-03  Data: 0.000 (0.135)
+Test: [   0/63]  Time: 2.092 (2.092)  Loss:  0.4092 (0.4092)  Acc@1: 96.0938 (96.0938)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.253)  Loss:  0.1316 (0.2870)  Acc@1: 100.0000 (98.8205)  Acc@5: 100.0000 (99.9081)
+Test: [  63/63]  Time: 0.048 (0.236)  Loss:  0.1110 (0.2631)  Acc@1: 100.0000 (99.0231)  Acc@5: 100.0000 (99.9267)
+Test (EMA): [   0/63]  Time: 2.073 (2.073)  Loss:  1.1211 (1.1211)  Acc@1: 97.6562 (97.6562)  Acc@5: 100.0000 (100.0000)
+Test (EMA): [  50/63]  Time: 0.049 (0.270)  Loss:  1.2119 (1.3294)  Acc@1: 100.0000 (99.0962)  Acc@5: 100.0000 (99.8775)
+Test (EMA): [  63/63]  Time: 0.047 (0.252)  Loss:  1.1982 (1.3010)  Acc@1: 99.2000 (99.2063)  Acc@5: 100.0000 (99.8901)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 99.20625235953163)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 99.15740634658745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 99.04750281746301)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 98.93759928833857)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 98.66894621714552)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-25.pth.tar', 98.37587013948036)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 97.96067902945471)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 96.9471242608627)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 95.27414834081566)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-21.pth.tar', 93.05165472856326)
+
+Train: 31 [   0/15 (  0%)]  Loss: 1.967 (1.97)  Time: 1.725s,   74.21/s  (1.725s,   74.21/s)  LR: 9.419e-03  Data: 1.563 (1.563)
+Train: 31 [  14/15 (100%)]  Loss: 2.337 (2.01)  Time: 0.151s,  847.21/s  (0.284s,  450.35/s)  LR: 9.419e-03  Data: 0.000 (0.123)
+Test: [   0/63]  Time: 1.965 (1.965)  Loss:  0.3232 (0.3232)  Acc@1: 98.4375 (98.4375)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.263)  Loss:  0.1920 (0.2847)  Acc@1: 99.2188 (98.9277)  Acc@5: 100.0000 (99.8775)
+Test: [  63/63]  Time: 0.047 (0.233)  Loss:  0.1761 (0.2585)  Acc@1: 99.2000 (99.0963)  Acc@5: 100.0000 (99.9023)
+Test (EMA): [   0/63]  Time: 1.578 (1.578)  Loss:  1.0469 (1.0469)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.242)  Loss:  1.1279 (1.2530)  Acc@1: 100.0000 (99.1881)  Acc@5: 100.0000 (99.8775)
+Test (EMA): [  63/63]  Time: 0.047 (0.224)  Loss:  1.1162 (1.2243)  Acc@1: 99.2000 (99.2795)  Acc@5: 100.0000 (99.8901)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 99.27952137894793)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 99.20625235953163)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 99.15740634658745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 99.04750281746301)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 98.93759928833857)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 98.66894621714552)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-25.pth.tar', 98.37587013948036)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 97.96067902945471)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 96.9471242608627)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-22.pth.tar', 95.27414834081566)
+
+Train: 32 [   0/15 (  0%)]  Loss: 2.264 (2.26)  Time: 1.508s,   84.90/s  (1.508s,   84.90/s)  LR: 9.382e-03  Data: 1.329 (1.329)
+Train: 32 [  14/15 (100%)]  Loss: 1.528 (2.04)  Time: 0.160s,  801.12/s  (0.254s,  504.36/s)  LR: 9.382e-03  Data: 0.000 (0.091)
+Test: [   0/63]  Time: 2.125 (2.125)  Loss:  0.2163 (0.2163)  Acc@1: 98.4375 (98.4375)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.251)  Loss:  0.0885 (0.2194)  Acc@1: 100.0000 (98.9430)  Acc@5: 100.0000 (99.8928)
+Test: [  63/63]  Time: 0.047 (0.234)  Loss:  0.1127 (0.1976)  Acc@1: 99.2000 (99.1452)  Acc@5: 100.0000 (99.9145)
+Test (EMA): [   0/63]  Time: 1.886 (1.886)  Loss:  0.9824 (0.9824)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.245)  Loss:  1.0527 (1.1829)  Acc@1: 100.0000 (99.2953)  Acc@5: 100.0000 (99.8775)
+Test (EMA): [  63/63]  Time: 0.047 (0.228)  Loss:  1.0400 (1.1538)  Acc@1: 99.2000 (99.3772)  Acc@5: 100.0000 (99.9023)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 99.37721340483631)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 99.27952137894793)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 99.20625235953163)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 99.15740634658745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 99.04750281746301)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 98.93759928833857)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 98.66894621714552)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-25.pth.tar', 98.37587013948036)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 97.96067902945471)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-23.pth.tar', 96.9471242608627)
+
+Train: 33 [   0/15 (  0%)]  Loss: 2.352 (2.35)  Time: 1.688s,   75.83/s  (1.688s,   75.83/s)  LR: 9.343e-03  Data: 1.535 (1.535)
+Train: 33 [  14/15 (100%)]  Loss: 1.043 (2.04)  Time: 0.163s,  786.22/s  (0.270s,  474.56/s)  LR: 9.343e-03  Data: 0.000 (0.109)
+Test: [   0/63]  Time: 1.911 (1.911)  Loss:  0.3918 (0.3918)  Acc@1: 93.7500 (93.7500)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.247)  Loss:  0.1235 (0.2214)  Acc@1: 100.0000 (98.5754)  Acc@5: 100.0000 (99.8775)
+Test: [  63/63]  Time: 0.047 (0.232)  Loss:  0.0853 (0.1982)  Acc@1: 99.2000 (98.8155)  Acc@5: 100.0000 (99.9023)
+Test (EMA): [   0/63]  Time: 1.997 (1.997)  Loss:  0.9253 (0.9253)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.255)  Loss:  0.9824 (1.1181)  Acc@1: 100.0000 (99.3873)  Acc@5: 100.0000 (99.8775)
+Test (EMA): [  63/63]  Time: 0.048 (0.234)  Loss:  0.9688 (1.0888)  Acc@1: 99.2000 (99.4505)  Acc@5: 100.0000 (99.9023)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 99.37721340483631)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 99.27952137894793)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 99.20625235953163)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 99.15740634658745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 99.04750281746301)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 98.93759928833857)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 98.66894621714552)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-25.pth.tar', 98.37587013948036)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-24.pth.tar', 97.96067902945471)
+
+Train: 34 [   0/15 (  0%)]  Loss: 1.631 (1.63)  Time: 1.725s,   74.22/s  (1.725s,   74.22/s)  LR: 9.304e-03  Data: 1.565 (1.565)
+Train: 34 [  14/15 (100%)]  Loss: 2.224 (1.92)  Time: 0.162s,  791.88/s  (0.287s,  445.49/s)  LR: 9.304e-03  Data: 0.000 (0.128)
+Test: [   0/63]  Time: 2.013 (2.013)  Loss:  0.4504 (0.4504)  Acc@1: 93.7500 (93.7500)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 1.058 (0.269)  Loss:  0.1166 (0.2581)  Acc@1: 100.0000 (98.8205)  Acc@5: 100.0000 (99.8621)
+Test: [  63/63]  Time: 0.047 (0.238)  Loss:  0.1282 (0.2328)  Acc@1: 100.0000 (99.0475)  Acc@5: 100.0000 (99.8901)
+Test (EMA): [   0/63]  Time: 1.731 (1.731)  Loss:  0.8770 (0.8770)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.246)  Loss:  0.9204 (1.0579)  Acc@1: 100.0000 (99.3873)  Acc@5: 100.0000 (99.8775)
+Test (EMA): [  63/63]  Time: 0.047 (0.233)  Loss:  0.9028 (1.0285)  Acc@1: 99.2000 (99.4505)  Acc@5: 100.0000 (99.9023)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 99.37721340483631)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 99.27952137894793)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 99.20625235953163)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 99.15740634658745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 99.04750281746301)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 98.93759928833857)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 98.66894621714552)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-25.pth.tar', 98.37587013948036)
+
+Train: 35 [   0/15 (  0%)]  Loss: 1.827 (1.83)  Time: 1.481s,   86.41/s  (1.481s,   86.41/s)  LR: 9.263e-03  Data: 1.321 (1.321)
+Train: 35 [  14/15 (100%)]  Loss: 1.744 (1.96)  Time: 0.149s,  858.36/s  (0.251s,  509.56/s)  LR: 9.263e-03  Data: 0.000 (0.098)
+Test: [   0/63]  Time: 2.045 (2.045)  Loss:  0.3640 (0.3640)  Acc@1: 96.0938 (96.0938)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.051 (0.248)  Loss:  0.1335 (0.2696)  Acc@1: 100.0000 (99.0349)  Acc@5: 100.0000 (99.8775)
+Test: [  63/63]  Time: 0.047 (0.242)  Loss:  0.1299 (0.2456)  Acc@1: 100.0000 (99.2185)  Acc@5: 100.0000 (99.9023)
+Test (EMA): [   0/63]  Time: 1.962 (1.962)  Loss:  0.8306 (0.8306)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.070 (0.235)  Loss:  0.8579 (1.0010)  Acc@1: 100.0000 (99.3566)  Acc@5: 100.0000 (99.8775)
+Test (EMA): [  63/63]  Time: 0.047 (0.222)  Loss:  0.8452 (0.9717)  Acc@1: 99.2000 (99.4261)  Acc@5: 100.0000 (99.9023)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 99.42605941778051)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 99.37721340483631)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 99.27952137894793)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 99.20625235953163)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 99.15740634658745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 99.04750281746301)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 98.93759928833857)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-26.pth.tar', 98.66894621714552)
+
+Train: 36 [   0/15 (  0%)]  Loss: 2.252 (2.25)  Time: 1.578s,   81.13/s  (1.578s,   81.13/s)  LR: 9.222e-03  Data: 1.427 (1.427)
+Train: 36 [  14/15 (100%)]  Loss: 1.249 (1.83)  Time: 0.148s,  863.10/s  (0.268s,  477.19/s)  LR: 9.222e-03  Data: 0.000 (0.112)
+Test: [   0/63]  Time: 1.785 (1.785)  Loss:  0.3069 (0.3069)  Acc@1: 95.3125 (95.3125)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.237)  Loss:  0.1381 (0.2378)  Acc@1: 100.0000 (98.8051)  Acc@5: 100.0000 (99.9081)
+Test: [  63/63]  Time: 0.047 (0.222)  Loss:  0.1387 (0.2165)  Acc@1: 99.2000 (99.0231)  Acc@5: 100.0000 (99.9267)
+Test (EMA): [   0/63]  Time: 1.932 (1.932)  Loss:  0.7861 (0.7861)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.262)  Loss:  0.8037 (0.9480)  Acc@1: 100.0000 (99.3873)  Acc@5: 100.0000 (99.8775)
+Test (EMA): [  63/63]  Time: 0.048 (0.242)  Loss:  0.7915 (0.9190)  Acc@1: 99.2000 (99.4627)  Acc@5: 100.0000 (99.9023)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-36.pth.tar', 99.46269392748866)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 99.42605941778051)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 99.37721340483631)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 99.27952137894793)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 99.20625235953163)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 99.15740634658745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 99.04750281746301)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-27.pth.tar', 98.93759928833857)
+
+Train: 37 [   0/15 (  0%)]  Loss: 2.116 (2.12)  Time: 1.708s,   74.94/s  (1.708s,   74.94/s)  LR: 9.179e-03  Data: 1.547 (1.547)
+Train: 37 [  14/15 (100%)]  Loss: 2.070 (2.00)  Time: 0.149s,  858.60/s  (0.268s,  477.58/s)  LR: 9.179e-03  Data: 0.000 (0.115)
+Test: [   0/63]  Time: 2.038 (2.038)  Loss:  0.2930 (0.2930)  Acc@1: 98.4375 (98.4375)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.249)  Loss:  0.1477 (0.2187)  Acc@1: 100.0000 (98.9583)  Acc@5: 100.0000 (99.8928)
+Test: [  63/63]  Time: 0.047 (0.233)  Loss:  0.1223 (0.1964)  Acc@1: 99.2000 (99.1452)  Acc@5: 100.0000 (99.9145)
+Test (EMA): [   0/63]  Time: 2.063 (2.063)  Loss:  0.7466 (0.7466)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.048 (0.253)  Loss:  0.7539 (0.8989)  Acc@1: 100.0000 (99.4638)  Acc@5: 100.0000 (99.8928)
+Test (EMA): [  63/63]  Time: 0.047 (0.241)  Loss:  0.7397 (0.8700)  Acc@1: 99.2000 (99.5238)  Acc@5: 100.0000 (99.9145)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 99.5237514436689)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-36.pth.tar', 99.46269392748866)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 99.42605941778051)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 99.37721340483631)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 99.27952137894793)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 99.20625235953163)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 99.15740634658745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-28.pth.tar', 99.04750281746301)
+
+Train: 38 [   0/15 (  0%)]  Loss: 1.036 (1.04)  Time: 1.580s,   81.01/s  (1.580s,   81.01/s)  LR: 9.135e-03  Data: 1.421 (1.421)
+Train: 38 [  14/15 (100%)]  Loss: 2.029 (1.96)  Time: 0.159s,  804.84/s  (0.251s,  509.25/s)  LR: 9.135e-03  Data: 0.000 (0.096)
+Test: [   0/63]  Time: 2.015 (2.015)  Loss:  0.3875 (0.3875)  Acc@1: 96.0938 (96.0938)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.052 (0.259)  Loss:  0.0945 (0.2343)  Acc@1: 100.0000 (98.8358)  Acc@5: 100.0000 (99.8775)
+Test: [  63/63]  Time: 0.047 (0.238)  Loss:  0.1232 (0.2128)  Acc@1: 99.2000 (99.0353)  Acc@5: 100.0000 (99.9023)
+Test (EMA): [   0/63]  Time: 2.108 (2.108)  Loss:  0.7109 (0.7109)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.240)  Loss:  0.7046 (0.8511)  Acc@1: 100.0000 (99.4792)  Acc@5: 100.0000 (99.8928)
+Test (EMA): [  63/63]  Time: 0.047 (0.225)  Loss:  0.6895 (0.8224)  Acc@1: 99.2000 (99.5360)  Acc@5: 100.0000 (99.9145)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 99.53596294690495)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 99.5237514436689)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-36.pth.tar', 99.46269392748866)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 99.42605941778051)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 99.37721340483631)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 99.27952137894793)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 99.20625235953163)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-29.pth.tar', 99.15740634658745)
+
+Train: 39 [   0/15 (  0%)]  Loss: 1.575 (1.58)  Time: 1.646s,   77.78/s  (1.646s,   77.78/s)  LR: 9.091e-03  Data: 1.486 (1.486)
+Train: 39 [  14/15 (100%)]  Loss: 2.189 (1.92)  Time: 0.160s,  800.84/s  (0.274s,  467.43/s)  LR: 9.091e-03  Data: 0.000 (0.115)
+Test: [   0/63]  Time: 1.843 (1.843)  Loss:  0.5278 (0.5278)  Acc@1: 92.9688 (92.9688)  Acc@5: 97.6562 (97.6562)
+Test: [  50/63]  Time: 0.049 (0.249)  Loss:  0.1205 (0.2646)  Acc@1: 100.0000 (98.7745)  Acc@5: 100.0000 (99.8315)
+Test: [  63/63]  Time: 0.047 (0.233)  Loss:  0.1389 (0.2391)  Acc@1: 100.0000 (98.9742)  Acc@5: 100.0000 (99.8657)
+Test (EMA): [   0/63]  Time: 2.000 (2.000)  Loss:  0.6797 (0.6797)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.268)  Loss:  0.6641 (0.8084)  Acc@1: 100.0000 (99.4945)  Acc@5: 100.0000 (99.8928)
+Test (EMA): [  63/63]  Time: 0.047 (0.240)  Loss:  0.6445 (0.7799)  Acc@1: 99.2000 (99.5482)  Acc@5: 100.0000 (99.9145)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-39.pth.tar', 99.54817445014099)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 99.53596294690495)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 99.5237514436689)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-36.pth.tar', 99.46269392748866)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 99.42605941778051)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 99.37721340483631)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 99.27952137894793)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-30.pth.tar', 99.20625235953163)
+
+Train: 40 [   0/15 (  0%)]  Loss: 2.114 (2.11)  Time: 1.751s,   73.11/s  (1.751s,   73.11/s)  LR: 9.045e-03  Data: 1.601 (1.601)
+Train: 40 [  14/15 (100%)]  Loss: 1.677 (1.98)  Time: 0.149s,  859.45/s  (0.281s,  456.28/s)  LR: 9.045e-03  Data: 0.000 (0.116)
+Test: [   0/63]  Time: 2.258 (2.258)  Loss:  0.4868 (0.4868)  Acc@1: 96.8750 (96.8750)  Acc@5: 97.6562 (97.6562)
+Test: [  50/63]  Time: 0.049 (0.257)  Loss:  0.1649 (0.3302)  Acc@1: 100.0000 (98.8817)  Acc@5: 100.0000 (99.8162)
+Test: [  63/63]  Time: 0.047 (0.235)  Loss:  0.2169 (0.3062)  Acc@1: 100.0000 (99.0597)  Acc@5: 100.0000 (99.8535)
+Test (EMA): [   0/63]  Time: 1.905 (1.905)  Loss:  0.6504 (0.6504)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.260)  Loss:  0.6240 (0.7699)  Acc@1: 100.0000 (99.5251)  Acc@5: 100.0000 (99.9081)
+Test (EMA): [  63/63]  Time: 0.047 (0.245)  Loss:  0.6040 (0.7416)  Acc@1: 99.2000 (99.5726)  Acc@5: 100.0000 (99.9267)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-39.pth.tar', 99.54817445014099)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 99.53596294690495)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 99.5237514436689)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-36.pth.tar', 99.46269392748866)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 99.42605941778051)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 99.37721340483631)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-31.pth.tar', 99.27952137894793)
+
+Train: 41 [   0/15 (  0%)]  Loss: 1.800 (1.80)  Time: 1.670s,   76.63/s  (1.670s,   76.63/s)  LR: 8.998e-03  Data: 1.520 (1.520)
+Train: 41 [  14/15 (100%)]  Loss: 1.284 (1.74)  Time: 0.161s,  796.62/s  (0.281s,  455.09/s)  LR: 8.998e-03  Data: 0.000 (0.126)
+Test: [   0/63]  Time: 1.803 (1.803)  Loss:  0.3374 (0.3374)  Acc@1: 96.8750 (96.8750)  Acc@5: 97.6562 (97.6562)
+Test: [  50/63]  Time: 0.064 (0.253)  Loss:  0.1039 (0.2288)  Acc@1: 100.0000 (98.8664)  Acc@5: 100.0000 (99.8621)
+Test: [  63/63]  Time: 0.047 (0.235)  Loss:  0.0950 (0.2045)  Acc@1: 99.2000 (99.0597)  Acc@5: 100.0000 (99.8901)
+Test (EMA): [   0/63]  Time: 1.964 (1.964)  Loss:  0.6216 (0.6216)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.244)  Loss:  0.5859 (0.7328)  Acc@1: 100.0000 (99.5098)  Acc@5: 100.0000 (99.9081)
+Test (EMA): [  63/63]  Time: 0.047 (0.228)  Loss:  0.5659 (0.7047)  Acc@1: 99.2000 (99.5726)  Acc@5: 100.0000 (99.9267)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-41.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-39.pth.tar', 99.54817445014099)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 99.53596294690495)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 99.5237514436689)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-36.pth.tar', 99.46269392748866)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 99.42605941778051)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-32.pth.tar', 99.37721340483631)
+
+Train: 42 [   0/15 (  0%)]  Loss: 2.251 (2.25)  Time: 1.663s,   76.97/s  (1.663s,   76.97/s)  LR: 8.951e-03  Data: 1.511 (1.511)
+Train: 42 [  14/15 (100%)]  Loss: 2.192 (1.96)  Time: 0.148s,  865.84/s  (0.258s,  496.99/s)  LR: 8.951e-03  Data: 0.000 (0.105)
+Test: [   0/63]  Time: 1.839 (1.839)  Loss:  0.2676 (0.2676)  Acc@1: 96.8750 (96.8750)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.243)  Loss:  0.0791 (0.1873)  Acc@1: 100.0000 (99.1268)  Acc@5: 100.0000 (99.8775)
+Test: [  63/63]  Time: 0.047 (0.240)  Loss:  0.0798 (0.1681)  Acc@1: 100.0000 (99.2795)  Acc@5: 100.0000 (99.9023)
+Test (EMA): [   0/63]  Time: 2.009 (2.009)  Loss:  0.5942 (0.5942)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.257)  Loss:  0.5503 (0.6973)  Acc@1: 100.0000 (99.5098)  Acc@5: 100.0000 (99.9081)
+Test (EMA): [  63/63]  Time: 0.047 (0.236)  Loss:  0.5303 (0.6694)  Acc@1: 99.2000 (99.5726)  Acc@5: 100.0000 (99.9267)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-41.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-39.pth.tar', 99.54817445014099)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 99.53596294690495)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 99.5237514436689)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-36.pth.tar', 99.46269392748866)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-35.pth.tar', 99.42605941778051)
+
+Train: 43 [   0/15 (  0%)]  Loss: 2.325 (2.32)  Time: 1.666s,   76.83/s  (1.666s,   76.83/s)  LR: 8.902e-03  Data: 1.506 (1.506)
+Train: 43 [  14/15 (100%)]  Loss: 1.480 (2.01)  Time: 0.162s,  789.04/s  (0.278s,  460.07/s)  LR: 8.902e-03  Data: 0.000 (0.123)
+Test: [   0/63]  Time: 1.820 (1.820)  Loss:  0.3723 (0.3723)  Acc@1: 96.0938 (96.0938)  Acc@5: 97.6562 (97.6562)
+Test: [  50/63]  Time: 0.414 (0.245)  Loss:  0.1094 (0.2164)  Acc@1: 100.0000 (99.0043)  Acc@5: 100.0000 (99.8468)
+Test: [  63/63]  Time: 0.047 (0.233)  Loss:  0.0928 (0.1938)  Acc@1: 100.0000 (99.1940)  Acc@5: 100.0000 (99.8779)
+Test (EMA): [   0/63]  Time: 1.952 (1.952)  Loss:  0.5654 (0.5654)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.256)  Loss:  0.5186 (0.6640)  Acc@1: 100.0000 (99.5251)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.244)  Loss:  0.4963 (0.6364)  Acc@1: 99.2000 (99.5848)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 99.58480895984914)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-41.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-39.pth.tar', 99.54817445014099)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 99.53596294690495)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 99.5237514436689)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-36.pth.tar', 99.46269392748866)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-34.pth.tar', 99.45048242425261)
+
+Train: 44 [   0/15 (  0%)]  Loss: 2.310 (2.31)  Time: 1.758s,   72.81/s  (1.758s,   72.81/s)  LR: 8.853e-03  Data: 1.596 (1.596)
+Train: 44 [  14/15 (100%)]  Loss: 2.470 (1.95)  Time: 0.150s,  853.99/s  (0.281s,  455.28/s)  LR: 8.853e-03  Data: 0.000 (0.123)
+Test: [   0/63]  Time: 1.919 (1.919)  Loss:  0.2629 (0.2629)  Acc@1: 96.8750 (96.8750)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.048 (0.254)  Loss:  0.0967 (0.2249)  Acc@1: 100.0000 (98.9277)  Acc@5: 100.0000 (99.8928)
+Test: [  63/63]  Time: 0.047 (0.231)  Loss:  0.1224 (0.2034)  Acc@1: 100.0000 (99.1330)  Acc@5: 100.0000 (99.9145)
+Test (EMA): [   0/63]  Time: 1.872 (1.872)  Loss:  0.5396 (0.5396)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.232)  Loss:  0.4875 (0.6331)  Acc@1: 100.0000 (99.5404)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.218)  Loss:  0.4666 (0.6059)  Acc@1: 99.2000 (99.5970)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-44.pth.tar', 99.59702046308519)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 99.58480895984914)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-41.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-39.pth.tar', 99.54817445014099)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 99.53596294690495)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 99.5237514436689)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-36.pth.tar', 99.46269392748866)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-33.pth.tar', 99.45048242425261)
+
+Train: 45 [   0/15 (  0%)]  Loss: 2.036 (2.04)  Time: 1.410s,   90.75/s  (1.410s,   90.75/s)  LR: 8.802e-03  Data: 1.252 (1.252)
+Train: 45 [  14/15 (100%)]  Loss: 2.135 (1.93)  Time: 0.158s,  808.37/s  (0.254s,  503.27/s)  LR: 8.802e-03  Data: 0.000 (0.098)
+Test: [   0/63]  Time: 2.174 (2.174)  Loss:  0.3752 (0.3752)  Acc@1: 96.8750 (96.8750)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.260)  Loss:  0.1545 (0.2349)  Acc@1: 100.0000 (99.0196)  Acc@5: 100.0000 (99.8928)
+Test: [  63/63]  Time: 0.047 (0.237)  Loss:  0.0875 (0.2108)  Acc@1: 99.2000 (99.1818)  Acc@5: 100.0000 (99.9145)
+Test (EMA): [   0/63]  Time: 2.056 (2.056)  Loss:  0.5161 (0.5161)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.256)  Loss:  0.4595 (0.6034)  Acc@1: 100.0000 (99.5711)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.236)  Loss:  0.4365 (0.5766)  Acc@1: 99.2000 (99.6214)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 99.62144346955728)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-44.pth.tar', 99.59702046308519)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 99.58480895984914)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-41.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-39.pth.tar', 99.54817445014099)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 99.53596294690495)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 99.5237514436689)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-36.pth.tar', 99.46269392748866)
+
+Train: 46 [   0/15 (  0%)]  Loss: 1.669 (1.67)  Time: 1.663s,   76.97/s  (1.663s,   76.97/s)  LR: 8.751e-03  Data: 1.503 (1.503)
+Train: 46 [  14/15 (100%)]  Loss: 1.292 (1.96)  Time: 0.148s,  867.11/s  (0.275s,  464.90/s)  LR: 8.751e-03  Data: 0.000 (0.121)
+Test: [   0/63]  Time: 1.932 (1.932)  Loss:  0.3413 (0.3413)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test: [  50/63]  Time: 0.049 (0.256)  Loss:  0.1114 (0.2437)  Acc@1: 100.0000 (99.0043)  Acc@5: 100.0000 (99.8621)
+Test: [  63/63]  Time: 0.047 (0.237)  Loss:  0.1702 (0.2232)  Acc@1: 100.0000 (99.1940)  Acc@5: 100.0000 (99.8901)
+Test (EMA): [   0/63]  Time: 2.026 (2.026)  Loss:  0.4968 (0.4968)  Acc@1: 98.4375 (98.4375)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.048 (0.259)  Loss:  0.4336 (0.5773)  Acc@1: 100.0000 (99.5864)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.241)  Loss:  0.4119 (0.5508)  Acc@1: 99.2000 (99.6337)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 99.63365497279334)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 99.62144346955728)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-44.pth.tar', 99.59702046308519)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 99.58480895984914)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-41.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-39.pth.tar', 99.54817445014099)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 99.53596294690495)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-37.pth.tar', 99.5237514436689)
+
+Train: 47 [   0/15 (  0%)]  Loss: 1.794 (1.79)  Time: 1.761s,   72.70/s  (1.761s,   72.70/s)  LR: 8.698e-03  Data: 1.601 (1.601)
+Train: 47 [  14/15 (100%)]  Loss: 1.026 (1.98)  Time: 0.157s,  812.81/s  (0.279s,  458.56/s)  LR: 8.698e-03  Data: 0.000 (0.123)
+Test: [   0/63]  Time: 1.976 (1.976)  Loss:  0.2166 (0.2166)  Acc@1: 99.2188 (99.2188)  Acc@5: 100.0000 (100.0000)
+Test: [  50/63]  Time: 0.049 (0.251)  Loss:  0.0867 (0.2160)  Acc@1: 100.0000 (99.0809)  Acc@5: 100.0000 (99.8009)
+Test: [  63/63]  Time: 0.047 (0.234)  Loss:  0.1069 (0.1950)  Acc@1: 99.2000 (99.2307)  Acc@5: 100.0000 (99.8413)
+Test (EMA): [   0/63]  Time: 2.178 (2.178)  Loss:  0.4795 (0.4795)  Acc@1: 98.4375 (98.4375)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.266)  Loss:  0.4099 (0.5532)  Acc@1: 100.0000 (99.6017)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.249)  Loss:  0.3899 (0.5272)  Acc@1: 99.2000 (99.6459)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 99.63365497279334)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 99.62144346955728)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-44.pth.tar', 99.59702046308519)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 99.58480895984914)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-41.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-39.pth.tar', 99.54817445014099)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-38.pth.tar', 99.53596294690495)
+
+Train: 48 [   0/15 (  0%)]  Loss: 1.488 (1.49)  Time: 1.585s,   80.73/s  (1.585s,   80.73/s)  LR: 8.645e-03  Data: 1.426 (1.426)
+Train: 48 [  14/15 (100%)]  Loss: 2.024 (2.06)  Time: 0.150s,  854.11/s  (0.261s,  490.82/s)  LR: 8.645e-03  Data: 0.000 (0.108)
+Test: [   0/63]  Time: 1.951 (1.951)  Loss:  0.2273 (0.2273)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.600 (0.263)  Loss:  0.0999 (0.1964)  Acc@1: 100.0000 (98.9277)  Acc@5: 100.0000 (99.8009)
+Test: [  63/63]  Time: 0.047 (0.237)  Loss:  0.1206 (0.1753)  Acc@1: 100.0000 (99.1086)  Acc@5: 100.0000 (99.8413)
+Test (EMA): [   0/63]  Time: 2.073 (2.073)  Loss:  0.4636 (0.4636)  Acc@1: 98.4375 (98.4375)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.264)  Loss:  0.3901 (0.5316)  Acc@1: 100.0000 (99.6017)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.239)  Loss:  0.3713 (0.5057)  Acc@1: 99.2000 (99.6459)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 99.63365497279334)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 99.62144346955728)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-44.pth.tar', 99.59702046308519)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 99.58480895984914)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-41.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-39.pth.tar', 99.54817445014099)
+
+Train: 49 [   0/15 (  0%)]  Loss: 2.021 (2.02)  Time: 1.538s,   83.23/s  (1.538s,   83.23/s)  LR: 8.591e-03  Data: 1.378 (1.378)
+Train: 49 [  14/15 (100%)]  Loss: 1.457 (1.75)  Time: 0.158s,  809.72/s  (0.270s,  473.85/s)  LR: 8.591e-03  Data: 0.000 (0.112)
+Test: [   0/63]  Time: 1.803 (1.803)  Loss:  0.2668 (0.2668)  Acc@1: 97.6562 (97.6562)  Acc@5: 100.0000 (100.0000)
+Test: [  50/63]  Time: 0.049 (0.244)  Loss:  0.1102 (0.2212)  Acc@1: 100.0000 (99.1115)  Acc@5: 100.0000 (99.8621)
+Test: [  63/63]  Time: 0.047 (0.233)  Loss:  0.1249 (0.1990)  Acc@1: 100.0000 (99.2795)  Acc@5: 100.0000 (99.8901)
+Test (EMA): [   0/63]  Time: 1.876 (1.876)  Loss:  0.4473 (0.4473)  Acc@1: 98.4375 (98.4375)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.153 (0.257)  Loss:  0.3708 (0.5101)  Acc@1: 100.0000 (99.6017)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.238)  Loss:  0.3523 (0.4846)  Acc@1: 99.2000 (99.6581)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-49.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 99.63365497279334)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 99.62144346955728)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-44.pth.tar', 99.59702046308519)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 99.58480895984914)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-41.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-42.pth.tar', 99.5725974566131)
+
+Train: 50 [   0/15 (  0%)]  Loss: 2.140 (2.14)  Time: 1.786s,   71.67/s  (1.786s,   71.67/s)  LR: 8.536e-03  Data: 1.627 (1.627)
+Train: 50 [  14/15 (100%)]  Loss: 2.340 (1.77)  Time: 0.149s,  857.88/s  (0.271s,  471.72/s)  LR: 8.536e-03  Data: 0.000 (0.118)
+Test: [   0/63]  Time: 1.897 (1.897)  Loss:  0.3098 (0.3098)  Acc@1: 95.3125 (95.3125)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.251)  Loss:  0.0748 (0.2288)  Acc@1: 100.0000 (98.7898)  Acc@5: 100.0000 (99.8468)
+Test: [  63/63]  Time: 0.048 (0.232)  Loss:  0.1262 (0.2060)  Acc@1: 100.0000 (99.0109)  Acc@5: 100.0000 (99.8779)
+Test (EMA): [   0/63]  Time: 1.701 (1.701)  Loss:  0.4324 (0.4324)  Acc@1: 98.4375 (98.4375)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.049 (0.258)  Loss:  0.3521 (0.4906)  Acc@1: 100.0000 (99.6017)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.238)  Loss:  0.3367 (0.4654)  Acc@1: 99.2000 (99.6581)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-49.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 99.63365497279334)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 99.62144346955728)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-44.pth.tar', 99.59702046308519)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 99.58480895984914)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-41.pth.tar', 99.5725974566131)
+
+Train: 51 [   0/15 (  0%)]  Loss: 1.752 (1.75)  Time: 1.516s,   84.45/s  (1.516s,   84.45/s)  LR: 8.480e-03  Data: 1.364 (1.364)
+Train: 51 [  14/15 (100%)]  Loss: 2.332 (1.89)  Time: 0.151s,  846.45/s  (0.260s,  492.57/s)  LR: 8.480e-03  Data: 0.000 (0.101)
+Test: [   0/63]  Time: 1.942 (1.942)  Loss:  0.2935 (0.2935)  Acc@1: 96.8750 (96.8750)  Acc@5: 100.0000 (100.0000)
+Test: [  50/63]  Time: 0.498 (0.253)  Loss:  0.1005 (0.1998)  Acc@1: 100.0000 (98.9124)  Acc@5: 100.0000 (99.8775)
+Test: [  63/63]  Time: 0.048 (0.231)  Loss:  0.1078 (0.1780)  Acc@1: 100.0000 (99.1086)  Acc@5: 100.0000 (99.9023)
+Test (EMA): [   0/63]  Time: 1.975 (1.975)  Loss:  0.4177 (0.4177)  Acc@1: 98.4375 (98.4375)  Acc@5: 99.2188 (99.2188)
+Test (EMA): [  50/63]  Time: 0.048 (0.255)  Loss:  0.3342 (0.4710)  Acc@1: 100.0000 (99.6324)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.235)  Loss:  0.3210 (0.4461)  Acc@1: 99.2000 (99.6825)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-49.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 99.63365497279334)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 99.62144346955728)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-44.pth.tar', 99.59702046308519)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 99.58480895984914)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-40.pth.tar', 99.5725974566131)
+
+Train: 52 [   0/15 (  0%)]  Loss: 2.297 (2.30)  Time: 1.625s,   78.76/s  (1.625s,   78.76/s)  LR: 8.423e-03  Data: 1.471 (1.471)
+Train: 52 [  14/15 (100%)]  Loss: 2.139 (1.92)  Time: 0.149s,  856.94/s  (0.277s,  462.41/s)  LR: 8.423e-03  Data: 0.000 (0.124)
+Test: [   0/63]  Time: 1.966 (1.966)  Loss:  0.3447 (0.3447)  Acc@1: 94.5312 (94.5312)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.245)  Loss:  0.1256 (0.2182)  Acc@1: 100.0000 (99.1115)  Acc@5: 100.0000 (99.8468)
+Test: [  63/63]  Time: 0.047 (0.229)  Loss:  0.1096 (0.1962)  Acc@1: 100.0000 (99.2795)  Acc@5: 100.0000 (99.8779)
+Test (EMA): [   0/63]  Time: 2.160 (2.160)  Loss:  0.4038 (0.4038)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test (EMA): [  50/63]  Time: 0.049 (0.258)  Loss:  0.3184 (0.4533)  Acc@1: 100.0000 (99.6324)  Acc@5: 100.0000 (99.9387)
+Test (EMA): [  63/63]  Time: 0.047 (0.240)  Loss:  0.3069 (0.4287)  Acc@1: 99.2000 (99.6825)  Acc@5: 100.0000 (99.9512)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-52.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-49.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 99.63365497279334)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 99.62144346955728)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-44.pth.tar', 99.59702046308519)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-43.pth.tar', 99.58480895984914)
+
+Train: 53 [   0/15 (  0%)]  Loss: 1.977 (1.98)  Time: 1.631s,   78.47/s  (1.631s,   78.47/s)  LR: 8.365e-03  Data: 1.481 (1.481)
+Train: 53 [  14/15 (100%)]  Loss: 1.964 (1.87)  Time: 0.148s,  863.34/s  (0.272s,  469.92/s)  LR: 8.365e-03  Data: 0.000 (0.116)
+Test: [   0/63]  Time: 1.764 (1.764)  Loss:  0.3794 (0.3794)  Acc@1: 96.8750 (96.8750)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.249)  Loss:  0.1436 (0.2964)  Acc@1: 100.0000 (99.0809)  Acc@5: 100.0000 (99.8315)
+Test: [  63/63]  Time: 0.049 (0.229)  Loss:  0.1555 (0.2716)  Acc@1: 100.0000 (99.2673)  Acc@5: 100.0000 (99.8657)
+Test (EMA): [   0/63]  Time: 1.584 (1.584)  Loss:  0.3918 (0.3918)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test (EMA): [  50/63]  Time: 0.049 (0.248)  Loss:  0.3049 (0.4376)  Acc@1: 100.0000 (99.6324)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.234)  Loss:  0.2925 (0.4133)  Acc@1: 99.2000 (99.6825)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-52.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-49.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 99.63365497279334)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 99.62144346955728)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-44.pth.tar', 99.59702046308519)
+
+Train: 54 [   0/15 (  0%)]  Loss: 2.267 (2.27)  Time: 1.584s,   80.83/s  (1.584s,   80.83/s)  LR: 8.307e-03  Data: 1.436 (1.436)
+Train: 54 [  14/15 (100%)]  Loss: 2.405 (1.96)  Time: 0.148s,  866.99/s  (0.258s,  495.77/s)  LR: 8.307e-03  Data: 0.000 (0.107)
+Test: [   0/63]  Time: 1.940 (1.940)  Loss:  0.3755 (0.3755)  Acc@1: 94.5312 (94.5312)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.251)  Loss:  0.1672 (0.2607)  Acc@1: 100.0000 (99.1268)  Acc@5: 100.0000 (99.8468)
+Test: [  63/63]  Time: 0.047 (0.243)  Loss:  0.1092 (0.2361)  Acc@1: 99.2000 (99.2795)  Acc@5: 100.0000 (99.8779)
+Test (EMA): [   0/63]  Time: 1.966 (1.966)  Loss:  0.3821 (0.3821)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test (EMA): [  50/63]  Time: 0.049 (0.262)  Loss:  0.2908 (0.4231)  Acc@1: 100.0000 (99.6170)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.241)  Loss:  0.2791 (0.3990)  Acc@1: 99.2000 (99.6703)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-52.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-49.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 99.63365497279334)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-45.pth.tar', 99.62144346955728)
+
+Train: 55 [   0/15 (  0%)]  Loss: 1.537 (1.54)  Time: 1.649s,   77.64/s  (1.649s,   77.64/s)  LR: 8.247e-03  Data: 1.497 (1.497)
+Train: 55 [  14/15 (100%)]  Loss: 2.355 (1.92)  Time: 0.149s,  860.51/s  (0.274s,  466.75/s)  LR: 8.247e-03  Data: 0.000 (0.119)
+Test: [   0/63]  Time: 1.646 (1.646)  Loss:  0.3643 (0.3643)  Acc@1: 95.3125 (95.3125)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.231)  Loss:  0.1497 (0.2622)  Acc@1: 100.0000 (98.9124)  Acc@5: 100.0000 (99.8468)
+Test: [  63/63]  Time: 0.048 (0.210)  Loss:  0.2072 (0.2397)  Acc@1: 99.2000 (99.1086)  Acc@5: 100.0000 (99.8779)
+Test (EMA): [   0/63]  Time: 1.979 (1.979)  Loss:  0.3716 (0.3716)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test (EMA): [  50/63]  Time: 0.049 (0.262)  Loss:  0.2773 (0.4081)  Acc@1: 100.0000 (99.6170)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.241)  Loss:  0.2668 (0.3845)  Acc@1: 99.2000 (99.6703)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-52.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-49.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-46.pth.tar', 99.63365497279334)
+
+Train: 56 [   0/15 (  0%)]  Loss: 2.277 (2.28)  Time: 1.710s,   74.85/s  (1.710s,   74.85/s)  LR: 8.187e-03  Data: 1.548 (1.548)
+Train: 56 [  14/15 (100%)]  Loss: 2.116 (1.98)  Time: 0.148s,  863.06/s  (0.267s,  478.85/s)  LR: 8.187e-03  Data: 0.000 (0.113)
+Test: [   0/63]  Time: 2.106 (2.106)  Loss:  0.3801 (0.3801)  Acc@1: 93.7500 (93.7500)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.048 (0.250)  Loss:  0.1495 (0.2017)  Acc@1: 100.0000 (99.0196)  Acc@5: 100.0000 (99.9081)
+Test: [  63/63]  Time: 0.047 (0.223)  Loss:  0.0920 (0.1807)  Acc@1: 100.0000 (99.2063)  Acc@5: 100.0000 (99.9267)
+Test (EMA): [   0/63]  Time: 1.580 (1.580)  Loss:  0.3621 (0.3621)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test (EMA): [  50/63]  Time: 0.609 (0.246)  Loss:  0.2639 (0.3935)  Acc@1: 100.0000 (99.6170)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.228)  Loss:  0.2554 (0.3703)  Acc@1: 99.2000 (99.6703)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-52.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-56.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-49.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 99.64586647602938)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-48.pth.tar', 99.64586647602938)
+
+Train: 57 [   0/15 (  0%)]  Loss: 0.9884 (0.988)  Time: 1.756s,   72.88/s  (1.756s,   72.88/s)  LR: 8.126e-03  Data: 1.600 (1.600)
+Train: 57 [  14/15 (100%)]  Loss: 1.655 (1.87)  Time: 0.148s,  864.33/s  (0.267s,  479.59/s)  LR: 8.126e-03  Data: 0.000 (0.117)
+Test: [   0/63]  Time: 1.924 (1.924)  Loss:  0.2749 (0.2749)  Acc@1: 97.6562 (97.6562)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.074 (0.249)  Loss:  0.1265 (0.2423)  Acc@1: 100.0000 (99.0656)  Acc@5: 100.0000 (99.8775)
+Test: [  63/63]  Time: 0.047 (0.234)  Loss:  0.1718 (0.2207)  Acc@1: 100.0000 (99.2551)  Acc@5: 100.0000 (99.9023)
+Test (EMA): [   0/63]  Time: 1.885 (1.885)  Loss:  0.3542 (0.3542)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test (EMA): [  50/63]  Time: 0.049 (0.245)  Loss:  0.2544 (0.3811)  Acc@1: 100.0000 (99.6170)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.224)  Loss:  0.2458 (0.3582)  Acc@1: 99.2000 (99.6703)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-52.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-56.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-57.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-49.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-47.pth.tar', 99.64586647602938)
+
+Train: 58 [   0/15 (  0%)]  Loss: 1.883 (1.88)  Time: 1.627s,   78.66/s  (1.627s,   78.66/s)  LR: 8.065e-03  Data: 1.471 (1.471)
+Train: 58 [  14/15 (100%)]  Loss: 2.057 (1.86)  Time: 0.150s,  852.68/s  (0.282s,  453.36/s)  LR: 8.065e-03  Data: 0.000 (0.127)
+Test: [   0/63]  Time: 1.867 (1.867)  Loss:  0.3872 (0.3872)  Acc@1: 96.0938 (96.0938)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.241)  Loss:  0.1250 (0.2807)  Acc@1: 100.0000 (98.9124)  Acc@5: 100.0000 (99.8468)
+Test: [  63/63]  Time: 0.047 (0.224)  Loss:  0.1495 (0.2537)  Acc@1: 100.0000 (99.1208)  Acc@5: 100.0000 (99.8779)
+Test (EMA): [   0/63]  Time: 2.097 (2.097)  Loss:  0.3477 (0.3477)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test (EMA): [  50/63]  Time: 0.049 (0.260)  Loss:  0.2434 (0.3688)  Acc@1: 100.0000 (99.6170)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.246)  Loss:  0.2363 (0.3461)  Acc@1: 99.2000 (99.6703)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-52.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-56.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-57.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-49.pth.tar', 99.65807797926543)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-50.pth.tar', 99.65807797926543)
+
+Train: 59 [   0/15 (  0%)]  Loss: 1.831 (1.83)  Time: 1.678s,   76.28/s  (1.678s,   76.28/s)  LR: 8.002e-03  Data: 1.517 (1.517)
+Train: 59 [  14/15 (100%)]  Loss: 2.239 (1.83)  Time: 0.159s,  806.88/s  (0.274s,  467.21/s)  LR: 8.002e-03  Data: 0.000 (0.115)
+Test: [   0/63]  Time: 1.824 (1.824)  Loss:  0.3335 (0.3335)  Acc@1: 96.8750 (96.8750)  Acc@5: 99.2188 (99.2188)
+Test: [  50/63]  Time: 0.049 (0.250)  Loss:  0.1459 (0.2589)  Acc@1: 100.0000 (99.2953)  Acc@5: 100.0000 (99.8621)
+Test: [  63/63]  Time: 0.047 (0.233)  Loss:  0.1377 (0.2355)  Acc@1: 100.0000 (99.4261)  Acc@5: 100.0000 (99.8901)
+Test (EMA): [   0/63]  Time: 1.789 (1.789)  Loss:  0.3398 (0.3398)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test (EMA): [  50/63]  Time: 0.049 (0.247)  Loss:  0.2333 (0.3569)  Acc@1: 100.0000 (99.6324)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.230)  Loss:  0.2266 (0.3346)  Acc@1: 99.2000 (99.6825)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-52.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-59.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-56.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-57.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-49.pth.tar', 99.65807797926543)
+
+Train: 60 [   0/15 (  0%)]  Loss: 1.211 (1.21)  Time: 1.596s,   80.19/s  (1.596s,   80.19/s)  LR: 7.939e-03  Data: 1.443 (1.443)
+Train: 60 [  14/15 (100%)]  Loss: 0.9596 (1.78)  Time: 0.148s,  862.20/s  (0.263s,  486.88/s)  LR: 7.939e-03  Data: 0.000 (0.110)
+Test: [   0/63]  Time: 1.886 (1.886)  Loss:  0.3015 (0.3015)  Acc@1: 96.0938 (96.0938)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.319 (0.260)  Loss:  0.1815 (0.2356)  Acc@1: 100.0000 (98.9277)  Acc@5: 100.0000 (99.8009)
+Test: [  63/63]  Time: 0.047 (0.238)  Loss:  0.1489 (0.2137)  Acc@1: 99.2000 (99.1208)  Acc@5: 100.0000 (99.8413)
+Test (EMA): [   0/63]  Time: 1.938 (1.938)  Loss:  0.3318 (0.3318)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test (EMA): [  50/63]  Time: 0.289 (0.259)  Loss:  0.2250 (0.3465)  Acc@1: 100.0000 (99.6324)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.049 (0.239)  Loss:  0.2177 (0.3244)  Acc@1: 99.2000 (99.6825)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-52.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-59.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-60.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-56.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-57.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-58.pth.tar', 99.67028948250147)
+
+Train: 61 [   0/15 (  0%)]  Loss: 1.759 (1.76)  Time: 1.654s,   77.39/s  (1.654s,   77.39/s)  LR: 7.875e-03  Data: 1.496 (1.496)
+Train: 61 [  14/15 (100%)]  Loss: 1.412 (1.89)  Time: 0.159s,  806.40/s  (0.260s,  492.23/s)  LR: 7.875e-03  Data: 0.000 (0.106)
+Test: [   0/63]  Time: 2.213 (2.213)  Loss:  0.4211 (0.4211)  Acc@1: 95.3125 (95.3125)  Acc@5: 98.4375 (98.4375)
+Test: [  50/63]  Time: 0.049 (0.243)  Loss:  0.1207 (0.2242)  Acc@1: 100.0000 (98.9277)  Acc@5: 100.0000 (99.8928)
+Test: [  63/63]  Time: 0.047 (0.225)  Loss:  0.0879 (0.2013)  Acc@1: 100.0000 (99.1330)  Acc@5: 100.0000 (99.9145)
+Test (EMA): [   0/63]  Time: 2.028 (2.028)  Loss:  0.3250 (0.3250)  Acc@1: 98.4375 (98.4375)  Acc@5: 100.0000 (100.0000)
+Test (EMA): [  50/63]  Time: 0.160 (0.257)  Loss:  0.2167 (0.3364)  Acc@1: 100.0000 (99.6324)  Acc@5: 100.0000 (99.9234)
+Test (EMA): [  63/63]  Time: 0.047 (0.238)  Loss:  0.2085 (0.3146)  Acc@1: 99.2000 (99.6825)  Acc@5: 100.0000 (99.9389)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-51.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-52.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-53.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-59.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-60.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-61.pth.tar', 99.68250098573752)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-54.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-55.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-56.pth.tar', 99.67028948250147)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/oxford_flowers/ssf/20240127-035709-vit_small_patch16_224_in21k-224/checkpoint-57.pth.tar', 99.67028948250147)
+
+Train: 62 [   0/15 (  0%)]  Loss: 1.395 (1.40)  Time: 1.596s,   80.20/s  (1.596s,   80.20/s)  LR: 7.810e-03  Data: 1.436 (1.436)

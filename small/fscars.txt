@@ -1,0 +1,574 @@
+/home/zxy/miniconda3/envs/ssfn/lib/python3.10/site-packages/torch/distributed/launch.py:180: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+Training with a single process on 1 GPUs.
+Data processing configuration for current model + dataset:
+	input_size: (3, 224, 224)
+	interpolation: bicubic
+	mean: (0.5, 0.5, 0.5)
+	std: (0.5, 0.5, 0.5)
+	crop_pct: 0.9
+ssf_scale_1
+ssf_shift_1
+patch_embed.ssf_scale_1
+patch_embed.ssf_shift_1
+blocks.0.ssf_scale_1
+blocks.0.ssf_shift_1
+blocks.0.ssf_scale_2
+blocks.0.ssf_shift_2
+blocks.0.attn.ssf_scale_1
+blocks.0.attn.ssf_shift_1
+blocks.0.attn.ssf_scale_2
+blocks.0.attn.ssf_shift_2
+blocks.0.mlp.ssf_scale_1
+blocks.0.mlp.ssf_shift_1
+blocks.0.mlp.ssf_scale_2
+blocks.0.mlp.ssf_shift_2
+blocks.1.ssf_scale_1
+blocks.1.ssf_shift_1
+blocks.1.ssf_scale_2
+blocks.1.ssf_shift_2
+blocks.1.attn.ssf_scale_1
+blocks.1.attn.ssf_shift_1
+blocks.1.attn.ssf_scale_2
+blocks.1.attn.ssf_shift_2
+blocks.1.mlp.ssf_scale_1
+blocks.1.mlp.ssf_shift_1
+blocks.1.mlp.ssf_scale_2
+blocks.1.mlp.ssf_shift_2
+blocks.2.ssf_scale_1
+blocks.2.ssf_shift_1
+blocks.2.ssf_scale_2
+blocks.2.ssf_shift_2
+blocks.2.attn.ssf_scale_1
+blocks.2.attn.ssf_shift_1
+blocks.2.attn.ssf_scale_2
+blocks.2.attn.ssf_shift_2
+blocks.2.mlp.ssf_scale_1
+blocks.2.mlp.ssf_shift_1
+blocks.2.mlp.ssf_scale_2
+blocks.2.mlp.ssf_shift_2
+blocks.3.ssf_scale_1
+blocks.3.ssf_shift_1
+blocks.3.ssf_scale_2
+blocks.3.ssf_shift_2
+blocks.3.attn.ssf_scale_1
+blocks.3.attn.ssf_shift_1
+blocks.3.attn.ssf_scale_2
+blocks.3.attn.ssf_shift_2
+blocks.3.mlp.ssf_scale_1
+blocks.3.mlp.ssf_shift_1
+blocks.3.mlp.ssf_scale_2
+blocks.3.mlp.ssf_shift_2
+blocks.4.ssf_scale_1
+blocks.4.ssf_shift_1
+blocks.4.ssf_scale_2
+blocks.4.ssf_shift_2
+blocks.4.attn.ssf_scale_1
+blocks.4.attn.ssf_shift_1
+blocks.4.attn.ssf_scale_2
+blocks.4.attn.ssf_shift_2
+blocks.4.mlp.ssf_scale_1
+blocks.4.mlp.ssf_shift_1
+blocks.4.mlp.ssf_scale_2
+blocks.4.mlp.ssf_shift_2
+blocks.5.ssf_scale_1
+blocks.5.ssf_shift_1
+blocks.5.ssf_scale_2
+blocks.5.ssf_shift_2
+blocks.5.attn.ssf_scale_1
+blocks.5.attn.ssf_shift_1
+blocks.5.attn.ssf_scale_2
+blocks.5.attn.ssf_shift_2
+blocks.5.mlp.ssf_scale_1
+blocks.5.mlp.ssf_shift_1
+blocks.5.mlp.ssf_scale_2
+blocks.5.mlp.ssf_shift_2
+blocks.6.ssf_scale_1
+blocks.6.ssf_shift_1
+blocks.6.ssf_scale_2
+blocks.6.ssf_shift_2
+blocks.6.attn.ssf_scale_1
+blocks.6.attn.ssf_shift_1
+blocks.6.attn.ssf_scale_2
+blocks.6.attn.ssf_shift_2
+blocks.6.mlp.ssf_scale_1
+blocks.6.mlp.ssf_shift_1
+blocks.6.mlp.ssf_scale_2
+blocks.6.mlp.ssf_shift_2
+blocks.7.ssf_scale_1
+blocks.7.ssf_shift_1
+blocks.7.ssf_scale_2
+blocks.7.ssf_shift_2
+blocks.7.attn.ssf_scale_1
+blocks.7.attn.ssf_shift_1
+blocks.7.attn.ssf_scale_2
+blocks.7.attn.ssf_shift_2
+blocks.7.mlp.ssf_scale_1
+blocks.7.mlp.ssf_shift_1
+blocks.7.mlp.ssf_scale_2
+blocks.7.mlp.ssf_shift_2
+blocks.8.ssf_scale_1
+blocks.8.ssf_shift_1
+blocks.8.ssf_scale_2
+blocks.8.ssf_shift_2
+blocks.8.attn.ssf_scale_1
+blocks.8.attn.ssf_shift_1
+blocks.8.attn.ssf_scale_2
+blocks.8.attn.ssf_shift_2
+blocks.8.mlp.ssf_scale_1
+blocks.8.mlp.ssf_shift_1
+blocks.8.mlp.ssf_scale_2
+blocks.8.mlp.ssf_shift_2
+blocks.9.ssf_scale_1
+blocks.9.ssf_shift_1
+blocks.9.ssf_scale_2
+blocks.9.ssf_shift_2
+blocks.9.attn.ssf_scale_1
+blocks.9.attn.ssf_shift_1
+blocks.9.attn.ssf_scale_2
+blocks.9.attn.ssf_shift_2
+blocks.9.mlp.ssf_scale_1
+blocks.9.mlp.ssf_shift_1
+blocks.9.mlp.ssf_scale_2
+blocks.9.mlp.ssf_shift_2
+blocks.10.ssf_scale_1
+blocks.10.ssf_shift_1
+blocks.10.ssf_scale_2
+blocks.10.ssf_shift_2
+blocks.10.attn.ssf_scale_1
+blocks.10.attn.ssf_shift_1
+blocks.10.attn.ssf_scale_2
+blocks.10.attn.ssf_shift_2
+blocks.10.mlp.ssf_scale_1
+blocks.10.mlp.ssf_shift_1
+blocks.10.mlp.ssf_scale_2
+blocks.10.mlp.ssf_shift_2
+blocks.11.ssf_scale_1
+blocks.11.ssf_shift_1
+blocks.11.ssf_scale_2
+blocks.11.ssf_shift_2
+blocks.11.attn.ssf_scale_1
+blocks.11.attn.ssf_shift_1
+blocks.11.attn.ssf_scale_2
+blocks.11.attn.ssf_shift_2
+blocks.11.mlp.ssf_scale_1
+blocks.11.mlp.ssf_shift_1
+blocks.11.mlp.ssf_scale_2
+blocks.11.mlp.ssf_shift_2
+head.weight
+head.bias
+freezing parameters finished!
+Model vit_small_patch16_224_in21k created, param count:21844036
+number of params for requires grad: 178372
+Using native Torch AMP. Training in mixed precision.
+Scheduled epochs: 310
+8144
+16185
+Train: 0 [   0/63 (  0%)]  Loss: 5.507 (5.51)  Time: 6.029s,   21.23/s  (6.029s,   21.23/s)  LR: 1.000e-07  Data: 2.856 (2.856)
+Train: 0 [  50/63 ( 81%)]  Loss: 5.602 (5.62)  Time: 0.652s,  196.26/s  (0.363s,  353.09/s)  LR: 1.000e-07  Data: 0.487 (0.144)
+Train: 0 [  62/63 (100%)]  Loss: 5.651 (5.62)  Time: 0.160s,  800.38/s  (0.341s,  375.39/s)  LR: 1.000e-07  Data: 0.000 (0.133)
+Test: [   0/126]  Time: 4.432 (4.432)  Loss:  5.9727 (5.9727)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  0.7812 ( 0.7812)
+Test: [  50/126]  Time: 0.175 (0.394)  Loss:  5.7148 (5.7166)  Acc@1:  0.0000 ( 0.2911)  Acc@5:  0.0000 ( 1.7923)
+Test: [ 100/126]  Time: 0.050 (0.373)  Loss:  5.3164 (5.7032)  Acc@1:  0.0000 ( 0.3481)  Acc@5:  2.3438 ( 1.8719)
+Test: [ 126/126]  Time: 0.054 (0.365)  Loss:  6.0625 (5.7006)  Acc@1:  0.0000 ( 0.3892)  Acc@5:  0.0000 ( 1.9524)
+Test (EMA): [   0/126]  Time: 3.388 (3.388)  Loss:  5.9727 (5.9727)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  0.7812 ( 0.7812)
+Test (EMA): [  50/126]  Time: 0.768 (0.377)  Loss:  5.7148 (5.7178)  Acc@1:  0.0000 ( 0.2911)  Acc@5:  0.0000 ( 1.8536)
+Test (EMA): [ 100/126]  Time: 0.048 (0.356)  Loss:  5.3164 (5.7044)  Acc@1:  0.0000 ( 0.3481)  Acc@5:  2.3438 ( 1.9106)
+Test (EMA): [ 126/126]  Time: 0.023 (0.355)  Loss:  6.0625 (5.7019)  Acc@1:  0.0000 ( 0.3892)  Acc@5:  0.0000 ( 1.9833)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.38924930491195553)
+
+Train: 1 [   0/63 (  0%)]  Loss: 5.635 (5.64)  Time: 2.877s,   44.48/s  (2.877s,   44.48/s)  LR: 2.000e-03  Data: 2.716 (2.716)
+Train: 1 [  50/63 ( 81%)]  Loss: 4.486 (5.11)  Time: 0.144s,  885.88/s  (0.301s,  425.84/s)  LR: 2.000e-03  Data: 0.002 (0.149)
+Train: 1 [  62/63 (100%)]  Loss: 4.743 (5.05)  Time: 0.154s,  833.04/s  (0.277s,  461.97/s)  LR: 2.000e-03  Data: 0.000 (0.126)
+Test: [   0/126]  Time: 3.391 (3.391)  Loss:  3.5586 (3.5586)  Acc@1: 19.5312 (19.5312)  Acc@5: 45.3125 (45.3125)
+Test: [  50/126]  Time: 0.629 (0.372)  Loss:  3.5840 (3.8515)  Acc@1: 33.5938 (15.1042)  Acc@5: 45.3125 (39.7672)
+Test: [ 100/126]  Time: 0.049 (0.344)  Loss:  3.4004 (3.8154)  Acc@1: 25.0000 (16.5532)  Acc@5: 55.4688 (41.4062)
+Test: [ 126/126]  Time: 0.023 (0.349)  Loss:  2.8242 (3.7892)  Acc@1: 59.6491 (17.7139)  Acc@5: 70.1754 (42.4467)
+Test (EMA): [   0/126]  Time: 3.229 (3.229)  Loss:  5.8867 (5.8867)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  0.7812 ( 0.7812)
+Test (EMA): [  50/126]  Time: 0.049 (0.335)  Loss:  5.6992 (5.6625)  Acc@1:  0.0000 ( 0.3064)  Acc@5:  0.0000 ( 1.8689)
+Test (EMA): [ 100/126]  Time: 0.049 (0.341)  Loss:  5.2930 (5.6495)  Acc@1:  0.0000 ( 0.3790)  Acc@5:  2.3438 ( 2.0111)
+Test (EMA): [ 126/126]  Time: 0.023 (0.344)  Loss:  6.0000 (5.6467)  Acc@1:  0.0000 ( 0.4078)  Acc@5:  0.0000 ( 2.1131)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.4077849860982391)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.38924930491195553)
+
+Train: 2 [   0/63 (  0%)]  Loss: 4.500 (4.50)  Time: 1.676s,   76.35/s  (1.676s,   76.35/s)  LR: 4.000e-03  Data: 1.523 (1.523)
+Train: 2 [  50/63 ( 81%)]  Loss: 4.771 (4.56)  Time: 0.641s,  199.63/s  (0.293s,  436.47/s)  LR: 4.000e-03  Data: 0.489 (0.137)
+Train: 2 [  62/63 (100%)]  Loss: 3.253 (4.47)  Time: 0.177s,  725.02/s  (0.274s,  466.65/s)  LR: 4.000e-03  Data: 0.000 (0.118)
+Test: [   0/126]  Time: 3.659 (3.659)  Loss:  2.2578 (2.2578)  Acc@1: 42.1875 (42.1875)  Acc@5: 79.6875 (79.6875)
+Test: [  50/126]  Time: 0.840 (0.361)  Loss:  2.0586 (2.6324)  Acc@1: 65.6250 (39.1544)  Acc@5: 85.1562 (70.2359)
+Test: [ 100/126]  Time: 0.048 (0.338)  Loss:  2.2090 (2.5272)  Acc@1: 54.6875 (42.6516)  Acc@5: 85.1562 (73.7624)
+Test: [ 126/126]  Time: 0.023 (0.337)  Loss:  1.1641 (2.4576)  Acc@1: 77.1930 (45.1653)  Acc@5: 91.2281 (75.7244)
+Test (EMA): [   0/126]  Time: 3.479 (3.479)  Loss:  5.7852 (5.7852)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  0.7812 ( 0.7812)
+Test (EMA): [  50/126]  Time: 0.443 (0.358)  Loss:  5.6484 (5.5905)  Acc@1:  0.0000 ( 0.5208)  Acc@5:  0.7812 ( 2.2365)
+Test (EMA): [ 100/126]  Time: 0.048 (0.357)  Loss:  5.2383 (5.5767)  Acc@1:  0.0000 ( 0.5337)  Acc@5:  2.3438 ( 2.3438)
+Test (EMA): [ 126/126]  Time: 0.023 (0.347)  Loss:  5.9062 (5.5737)  Acc@1:  0.0000 ( 0.5561)  Acc@5:  0.0000 ( 2.4158)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 0.5560704355885079)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.4077849860982391)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.38924930491195553)
+
+Train: 3 [   0/63 (  0%)]  Loss: 3.968 (3.97)  Time: 2.252s,   56.83/s  (2.252s,   56.83/s)  LR: 6.000e-03  Data: 2.096 (2.096)
+Train: 3 [  50/63 ( 81%)]  Loss: 4.409 (4.12)  Time: 1.130s,  113.25/s  (0.300s,  427.10/s)  LR: 6.000e-03  Data: 0.975 (0.139)
+Train: 3 [  62/63 (100%)]  Loss: 4.461 (4.15)  Time: 0.154s,  830.56/s  (0.282s,  453.16/s)  LR: 6.000e-03  Data: 0.000 (0.124)
+Test: [   0/126]  Time: 3.416 (3.416)  Loss:  2.2227 (2.2227)  Acc@1: 55.4688 (55.4688)  Acc@5: 71.8750 (71.8750)
+Test: [  50/126]  Time: 1.329 (0.361)  Loss:  1.4961 (2.2385)  Acc@1: 72.6562 (49.0809)  Acc@5: 92.9688 (79.1820)
+Test: [ 100/126]  Time: 0.049 (0.329)  Loss:  1.7900 (2.1297)  Acc@1: 67.9688 (52.8079)  Acc@5: 96.0938 (82.0312)
+Test: [ 126/126]  Time: 0.023 (0.345)  Loss:  0.8452 (2.0438)  Acc@1: 89.4737 (55.6379)  Acc@5: 96.4912 (83.6701)
+Test (EMA): [   0/126]  Time: 3.587 (3.587)  Loss:  5.6758 (5.6758)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  1.5625 ( 1.5625)
+Test (EMA): [  50/126]  Time: 0.845 (0.363)  Loss:  5.5742 (5.5047)  Acc@1:  0.0000 ( 0.7047)  Acc@5:  1.5625 ( 2.8339)
+Test (EMA): [ 100/126]  Time: 0.049 (0.335)  Loss:  5.1680 (5.4885)  Acc@1:  0.0000 ( 0.7116)  Acc@5:  4.6875 ( 3.0322)
+Test (EMA): [ 126/126]  Time: 0.025 (0.345)  Loss:  5.7812 (5.4847)  Acc@1:  0.0000 ( 0.7476)  Acc@5:  0.0000 ( 3.1325)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 0.7476058078467717)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 0.5560704355885079)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.4077849860982391)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.38924930491195553)
+
+Train: 4 [   0/63 (  0%)]  Loss: 3.074 (3.07)  Time: 3.079s,   41.57/s  (3.079s,   41.57/s)  LR: 8.000e-03  Data: 2.925 (2.925)
+Train: 4 [  50/63 ( 81%)]  Loss: 4.553 (3.85)  Time: 0.146s,  876.15/s  (0.304s,  421.63/s)  LR: 8.000e-03  Data: 0.002 (0.149)
+Train: 4 [  62/63 (100%)]  Loss: 4.524 (3.88)  Time: 0.192s,  665.06/s  (0.294s,  435.06/s)  LR: 8.000e-03  Data: 0.000 (0.135)
+Test: [   0/126]  Time: 3.238 (3.238)  Loss:  1.8193 (1.8193)  Acc@1: 50.7812 (50.7812)  Acc@5: 82.0312 (82.0312)
+Test: [  50/126]  Time: 1.378 (0.362)  Loss:  1.3252 (1.8775)  Acc@1: 69.5312 (55.8824)  Acc@5: 93.7500 (82.4755)
+Test: [ 100/126]  Time: 0.049 (0.345)  Loss:  0.9741 (1.7344)  Acc@1: 85.1562 (59.7540)  Acc@5: 94.5312 (85.3419)
+Test: [ 126/126]  Time: 0.025 (0.349)  Loss:  1.1182 (1.6758)  Acc@1: 71.9298 (61.6064)  Acc@5: 94.7368 (86.1044)
+Test (EMA): [   0/126]  Time: 2.963 (2.963)  Loss:  5.5508 (5.5508)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  2.3438 ( 2.3438)
+Test (EMA): [  50/126]  Time: 0.159 (0.349)  Loss:  5.4766 (5.4062)  Acc@1:  0.0000 ( 0.9191)  Acc@5:  3.1250 ( 3.7837)
+Test (EMA): [ 100/126]  Time: 0.049 (0.343)  Loss:  5.0820 (5.3873)  Acc@1:  1.5625 ( 0.9437)  Acc@5:  7.0312 ( 4.0455)
+Test (EMA): [ 126/126]  Time: 0.023 (0.348)  Loss:  5.6406 (5.3830)  Acc@1:  0.0000 ( 0.9762)  Acc@5:  0.0000 ( 4.1520)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 0.9762125424776027)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 0.7476058078467717)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 0.5560704355885079)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.4077849860982391)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.38924930491195553)
+
+Train: 5 [   0/63 (  0%)]  Loss: 4.416 (4.42)  Time: 2.437s,   52.53/s  (2.437s,   52.53/s)  LR: 1.000e-02  Data: 2.240 (2.240)
+Train: 5 [  50/63 ( 81%)]  Loss: 2.831 (3.78)  Time: 0.160s,  801.01/s  (0.294s,  435.22/s)  LR: 1.000e-02  Data: 0.001 (0.124)
+Train: 5 [  62/63 (100%)]  Loss: 4.413 (3.82)  Time: 0.170s,  752.53/s  (0.286s,  446.83/s)  LR: 1.000e-02  Data: 0.000 (0.117)
+Test: [   0/126]  Time: 3.553 (3.553)  Loss:  2.0293 (2.0293)  Acc@1: 44.5312 (44.5312)  Acc@5: 78.9062 (78.9062)
+Test: [  50/126]  Time: 0.899 (0.362)  Loss:  1.2695 (1.7938)  Acc@1: 78.1250 (59.0839)  Acc@5: 96.0938 (85.2788)
+Test: [ 100/126]  Time: 0.049 (0.343)  Loss:  1.3682 (1.6527)  Acc@1: 78.9062 (63.9001)  Acc@5: 93.7500 (88.3354)
+Test: [ 126/126]  Time: 0.023 (0.333)  Loss:  1.2988 (1.5839)  Acc@1: 77.1930 (66.2960)  Acc@5: 94.7368 (89.1999)
+Test (EMA): [   0/126]  Time: 3.497 (3.497)  Loss:  5.4141 (5.4141)  Acc@1:  0.0000 ( 0.0000)  Acc@5:  2.3438 ( 2.3438)
+Test (EMA): [  50/126]  Time: 1.818 (0.379)  Loss:  5.3633 (5.2957)  Acc@1:  0.0000 ( 1.3940)  Acc@5:  5.4688 ( 5.1777)
+Test (EMA): [ 100/126]  Time: 0.049 (0.353)  Loss:  4.9648 (5.2742)  Acc@1:  1.5625 ( 1.3072)  Acc@5: 10.1562 ( 5.5925)
+Test (EMA): [ 126/126]  Time: 0.023 (0.351)  Loss:  5.4922 (5.2695)  Acc@1:  0.0000 ( 1.3469)  Acc@5:  0.0000 ( 5.7584)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 1.3469261662032745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 0.9762125424776027)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 0.7476058078467717)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 0.5560704355885079)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.4077849860982391)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.38924930491195553)
+
+Train: 6 [   0/63 (  0%)]  Loss: 3.847 (3.85)  Time: 2.503s,   51.13/s  (2.503s,   51.13/s)  LR: 1.200e-02  Data: 2.346 (2.346)
+Train: 6 [  50/63 ( 81%)]  Loss: 3.920 (3.82)  Time: 0.161s,  795.16/s  (0.299s,  427.87/s)  LR: 1.200e-02  Data: 0.002 (0.135)
+Train: 6 [  62/63 (100%)]  Loss: 4.325 (3.76)  Time: 0.159s,  807.22/s  (0.284s,  450.81/s)  LR: 1.200e-02  Data: 0.000 (0.122)
+Test: [   0/126]  Time: 3.286 (3.286)  Loss:  1.5420 (1.5420)  Acc@1: 60.1562 (60.1562)  Acc@5: 85.9375 (85.9375)
+Test: [  50/126]  Time: 1.786 (0.374)  Loss:  1.8662 (1.6745)  Acc@1: 51.5625 (59.5435)  Acc@5: 86.7188 (85.9988)
+Test: [ 100/126]  Time: 0.049 (0.350)  Loss:  0.9414 (1.5309)  Acc@1: 84.3750 (64.2017)  Acc@5: 97.6562 (88.3354)
+Test: [ 126/126]  Time: 0.023 (0.354)  Loss:  0.9033 (1.4455)  Acc@1: 85.9649 (66.9385)  Acc@5: 92.9825 (89.4964)
+Test (EMA): [   0/126]  Time: 3.112 (3.112)  Loss:  5.2695 (5.2695)  Acc@1:  0.7812 ( 0.7812)  Acc@5:  4.6875 ( 4.6875)
+Test (EMA): [  50/126]  Time: 0.838 (0.364)  Loss:  5.2344 (5.1768)  Acc@1:  0.7812 ( 2.0221)  Acc@5:  7.8125 ( 7.4295)
+Test (EMA): [ 100/126]  Time: 0.048 (0.330)  Loss:  4.8477 (5.1520)  Acc@1:  1.5625 ( 1.8874)  Acc@5: 12.5000 ( 7.7584)
+Test (EMA): [ 126/126]  Time: 0.023 (0.343)  Loss:  5.3398 (5.1466)  Acc@1:  0.0000 ( 1.9895)  Acc@5:  3.5088 ( 7.9580)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 1.9894964473277725)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 1.3469261662032745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 0.9762125424776027)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 0.7476058078467717)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 0.5560704355885079)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.4077849860982391)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.38924930491195553)
+
+Train: 7 [   0/63 (  0%)]  Loss: 3.303 (3.30)  Time: 2.502s,   51.16/s  (2.502s,   51.16/s)  LR: 1.400e-02  Data: 2.345 (2.345)
+Train: 7 [  50/63 ( 81%)]  Loss: 4.093 (3.84)  Time: 0.161s,  792.59/s  (0.301s,  424.81/s)  LR: 1.400e-02  Data: 0.002 (0.143)
+Train: 7 [  62/63 (100%)]  Loss: 2.579 (3.77)  Time: 0.161s,  796.70/s  (0.283s,  453.10/s)  LR: 1.400e-02  Data: 0.000 (0.126)
+Test: [   0/126]  Time: 2.886 (2.886)  Loss:  1.1572 (1.1572)  Acc@1: 77.3438 (77.3438)  Acc@5: 89.8438 (89.8438)
+Test: [  50/126]  Time: 1.185 (0.351)  Loss:  1.2197 (1.6139)  Acc@1: 76.5625 (63.0515)  Acc@5: 94.5312 (86.9485)
+Test: [ 100/126]  Time: 0.049 (0.338)  Loss:  0.5342 (1.4706)  Acc@1: 93.7500 (67.2958)  Acc@5: 98.4375 (89.4183)
+Test: [ 126/126]  Time: 0.023 (0.345)  Loss:  1.4180 (1.3905)  Acc@1: 68.4211 (69.7992)  Acc@5: 96.4912 (90.5283)
+Test (EMA): [   0/126]  Time: 3.284 (3.284)  Loss:  5.1016 (5.1016)  Acc@1:  0.7812 ( 0.7812)  Acc@5: 10.9375 (10.9375)
+Test (EMA): [  50/126]  Time: 1.196 (0.359)  Loss:  5.0898 (5.0512)  Acc@1:  2.3438 ( 2.7114)  Acc@5: 10.9375 (10.1869)
+Test (EMA): [ 100/126]  Time: 0.049 (0.340)  Loss:  4.7305 (5.0236)  Acc@1:  3.1250 ( 2.7382)  Acc@5: 13.2812 (10.8137)
+Test (EMA): [ 126/126]  Time: 0.023 (0.350)  Loss:  5.1914 (5.0170)  Acc@1:  0.0000 ( 2.8792)  Acc@5:  3.5088 (11.1338)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 2.8792091442693852)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 1.9894964473277725)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 1.3469261662032745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 0.9762125424776027)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 0.7476058078467717)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 0.5560704355885079)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.4077849860982391)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.38924930491195553)
+
+Train: 8 [   0/63 (  0%)]  Loss: 2.806 (2.81)  Time: 2.198s,   58.23/s  (2.198s,   58.23/s)  LR: 1.600e-02  Data: 2.044 (2.044)
+Train: 8 [  50/63 ( 81%)]  Loss: 3.603 (3.50)  Time: 0.789s,  162.21/s  (0.292s,  438.13/s)  LR: 1.600e-02  Data: 0.630 (0.136)
+Train: 8 [  62/63 (100%)]  Loss: 4.466 (3.58)  Time: 0.147s,  872.76/s  (0.276s,  463.74/s)  LR: 1.600e-02  Data: 0.000 (0.120)
+Test: [   0/126]  Time: 3.300 (3.300)  Loss:  2.1328 (2.1328)  Acc@1: 41.4062 (41.4062)  Acc@5: 84.3750 (84.3750)
+Test: [  50/126]  Time: 0.699 (0.366)  Loss:  1.5439 (2.0137)  Acc@1: 79.6875 (57.5827)  Acc@5: 95.3125 (84.3750)
+Test: [ 100/126]  Time: 0.049 (0.333)  Loss:  1.9424 (1.8988)  Acc@1: 68.7500 (61.0226)  Acc@5: 88.2812 (86.6569)
+Test: [ 126/126]  Time: 0.023 (0.348)  Loss:  1.4678 (1.8294)  Acc@1: 82.4561 (63.7936)  Acc@5: 98.2456 (87.7294)
+Test (EMA): [   0/126]  Time: 3.603 (3.603)  Loss:  4.9297 (4.9297)  Acc@1:  3.1250 ( 3.1250)  Acc@5: 17.1875 (17.1875)
+Test (EMA): [  50/126]  Time: 0.394 (0.358)  Loss:  4.9531 (4.9206)  Acc@1:  4.6875 ( 4.1360)  Acc@5: 18.7500 (13.7561)
+Test (EMA): [ 100/126]  Time: 0.049 (0.344)  Loss:  4.5898 (4.8897)  Acc@1:  4.6875 ( 4.2698)  Acc@5: 16.4062 (14.6040)
+Test (EMA): [ 126/126]  Time: 0.037 (0.349)  Loss:  5.0312 (4.8819)  Acc@1:  0.0000 ( 4.3806)  Acc@5:  7.0175 (14.9459)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 4.380599320358357)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 2.8792091442693852)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 1.9894964473277725)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 1.3469261662032745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 0.9762125424776027)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 0.7476058078467717)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 0.5560704355885079)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.4077849860982391)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.38924930491195553)
+
+Train: 9 [   0/63 (  0%)]  Loss: 4.350 (4.35)  Time: 2.193s,   58.37/s  (2.193s,   58.37/s)  LR: 1.800e-02  Data: 2.040 (2.040)
+Train: 9 [  50/63 ( 81%)]  Loss: 4.363 (3.83)  Time: 0.583s,  219.68/s  (0.289s,  443.38/s)  LR: 1.800e-02  Data: 0.432 (0.127)
+Train: 9 [  62/63 (100%)]  Loss: 3.384 (3.84)  Time: 0.158s,  810.98/s  (0.288s,  444.95/s)  LR: 1.800e-02  Data: 0.000 (0.125)
+Test: [   0/126]  Time: 3.372 (3.372)  Loss:  1.8154 (1.8154)  Acc@1: 56.2500 (56.2500)  Acc@5: 85.9375 (85.9375)
+Test: [  50/126]  Time: 1.560 (0.372)  Loss:  1.3242 (1.6868)  Acc@1: 73.4375 (62.1324)  Acc@5: 91.4062 (87.1783)
+Test: [ 100/126]  Time: 0.049 (0.347)  Loss:  0.9990 (1.5183)  Acc@1: 84.3750 (67.0405)  Acc@5: 97.6562 (89.6968)
+Test: [ 126/126]  Time: 0.023 (0.359)  Loss:  1.2178 (1.4480)  Acc@1: 82.4561 (69.5829)  Acc@5: 96.4912 (90.5406)
+Test (EMA): [   0/126]  Time: 3.502 (3.502)  Loss:  4.7734 (4.7734)  Acc@1:  4.6875 ( 4.6875)  Acc@5: 25.0000 (25.0000)
+Test (EMA): [  50/126]  Time: 0.048 (0.350)  Loss:  4.8164 (4.7889)  Acc@1:  6.2500 ( 5.5760)  Acc@5: 25.0000 (18.2598)
+Test (EMA): [ 100/126]  Time: 0.049 (0.348)  Loss:  4.4492 (4.7543)  Acc@1:  6.2500 ( 5.8710)  Acc@5: 21.0938 (19.2296)
+Test (EMA): [ 126/126]  Time: 0.023 (0.350)  Loss:  4.8789 (4.7459)  Acc@1:  1.7544 ( 6.0673)  Acc@5:  7.0175 (19.6355)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 6.06734630825124)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 4.380599320358357)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 2.8792091442693852)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 1.9894964473277725)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 1.3469261662032745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 0.9762125424776027)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 0.7476058078467717)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 0.5560704355885079)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.4077849860982391)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-0.pth.tar', 0.38924930491195553)
+
+Train: 10 [   0/63 (  0%)]  Loss: 3.828 (3.83)  Time: 2.033s,   62.98/s  (2.033s,   62.98/s)  LR: 1.995e-02  Data: 1.874 (1.874)
+Train: 10 [  50/63 ( 81%)]  Loss: 3.906 (3.85)  Time: 0.163s,  786.12/s  (0.285s,  448.61/s)  LR: 1.995e-02  Data: 0.002 (0.131)
+Train: 10 [  62/63 (100%)]  Loss: 3.176 (3.77)  Time: 0.157s,  813.06/s  (0.273s,  469.54/s)  LR: 1.995e-02  Data: 0.000 (0.118)
+Test: [   0/126]  Time: 3.305 (3.305)  Loss:  1.7939 (1.7939)  Acc@1: 56.2500 (56.2500)  Acc@5: 75.7812 (75.7812)
+Test: [  50/126]  Time: 1.455 (0.358)  Loss:  1.1904 (1.6911)  Acc@1: 79.6875 (61.5196)  Acc@5: 94.5312 (85.7843)
+Test: [ 100/126]  Time: 0.049 (0.335)  Loss:  1.0293 (1.5487)  Acc@1: 83.5938 (65.7488)  Acc@5: 94.5312 (88.3431)
+Test: [ 126/126]  Time: 0.024 (0.330)  Loss:  0.8218 (1.4727)  Acc@1: 96.4912 (68.2793)  Acc@5: 100.0000 (89.3791)
+Test (EMA): [   0/126]  Time: 2.994 (2.994)  Loss:  4.6172 (4.6172)  Acc@1:  9.3750 ( 9.3750)  Acc@5: 32.0312 (32.0312)
+Test (EMA): [  50/126]  Time: 0.333 (0.350)  Loss:  4.6758 (4.6569)  Acc@1:  7.8125 ( 7.4295)  Acc@5: 35.9375 (22.8860)
+Test (EMA): [ 100/126]  Time: 0.049 (0.346)  Loss:  4.2969 (4.6187)  Acc@1:  7.8125 ( 7.8357)  Acc@5: 36.7188 (24.5282)
+Test (EMA): [ 126/126]  Time: 0.024 (0.341)  Loss:  4.7148 (4.6094)  Acc@1:  3.5088 ( 8.0692)  Acc@5: 14.0351 (24.9923)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 8.069199876310945)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 6.06734630825124)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 4.380599320358357)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 2.8792091442693852)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 1.9894964473277725)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 1.3469261662032745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 0.9762125424776027)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 0.7476058078467717)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 0.5560704355885079)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-1.pth.tar', 0.4077849860982391)
+
+Train: 11 [   0/63 (  0%)]  Loss: 2.866 (2.87)  Time: 1.950s,   65.64/s  (1.950s,   65.64/s)  LR: 1.993e-02  Data: 1.792 (1.792)
+Train: 11 [  50/63 ( 81%)]  Loss: 2.791 (3.57)  Time: 0.162s,  792.28/s  (0.285s,  449.79/s)  LR: 1.993e-02  Data: 0.002 (0.130)
+Train: 11 [  62/63 (100%)]  Loss: 3.969 (3.64)  Time: 0.160s,  800.87/s  (0.269s,  475.97/s)  LR: 1.993e-02  Data: 0.000 (0.114)
+Test: [   0/126]  Time: 2.970 (2.970)  Loss:  0.8369 (0.8369)  Acc@1: 85.1562 (85.1562)  Acc@5: 98.4375 (98.4375)
+Test: [  50/126]  Time: 0.248 (0.336)  Loss:  0.8569 (1.6816)  Acc@1: 89.8438 (60.3248)  Acc@5: 96.0938 (86.1673)
+Test: [ 100/126]  Time: 0.048 (0.329)  Loss:  1.5156 (1.5115)  Acc@1: 75.0000 (65.7874)  Acc@5: 94.5312 (89.0548)
+Test: [ 126/126]  Time: 0.023 (0.325)  Loss:  0.3884 (1.4378)  Acc@1: 98.2456 (68.1063)  Acc@5: 100.0000 (90.1514)
+Test (EMA): [   0/126]  Time: 3.559 (3.559)  Loss:  4.4531 (4.4531)  Acc@1: 14.0625 (14.0625)  Acc@5: 38.2812 (38.2812)
+Test (EMA): [  50/126]  Time: 1.276 (0.354)  Loss:  4.5273 (4.5260)  Acc@1: 13.2812 ( 9.8958)  Acc@5: 44.5312 (27.9871)
+Test (EMA): [ 100/126]  Time: 0.049 (0.339)  Loss:  4.1484 (4.4844)  Acc@1: 10.9375 (10.5198)  Acc@5: 50.7812 (30.1903)
+Test (EMA): [ 126/126]  Time: 0.023 (0.342)  Loss:  4.5547 (4.4748)  Acc@1:  5.2632 (10.7878)  Acc@5: 14.0351 (30.7445)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 10.787766450240282)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 8.069199876310945)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 6.06734630825124)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 4.380599320358357)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 2.8792091442693852)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 1.9894964473277725)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 1.3469261662032745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 0.9762125424776027)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 0.7476058078467717)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-2.pth.tar', 0.5560704355885079)
+
+Train: 12 [   0/63 (  0%)]  Loss: 3.861 (3.86)  Time: 2.449s,   52.27/s  (2.449s,   52.27/s)  LR: 1.992e-02  Data: 2.291 (2.291)
+Train: 12 [  50/63 ( 81%)]  Loss: 3.535 (3.70)  Time: 0.149s,  857.67/s  (0.291s,  439.87/s)  LR: 1.992e-02  Data: 0.002 (0.137)
+Train: 12 [  62/63 (100%)]  Loss: 3.594 (3.71)  Time: 0.159s,  807.22/s  (0.270s,  473.21/s)  LR: 1.992e-02  Data: 0.000 (0.116)
+Test: [   0/126]  Time: 3.374 (3.374)  Loss:  0.9819 (0.9819)  Acc@1: 82.8125 (82.8125)  Acc@5: 97.6562 (97.6562)
+Test: [  50/126]  Time: 1.552 (0.368)  Loss:  1.6689 (1.5548)  Acc@1: 63.2812 (64.6906)  Acc@5: 87.5000 (89.1238)
+Test: [ 100/126]  Time: 0.049 (0.334)  Loss:  0.9038 (1.4127)  Acc@1: 87.5000 (69.1600)  Acc@5: 97.6562 (90.9808)
+Test: [ 126/126]  Time: 0.023 (0.348)  Loss:  1.2246 (1.3414)  Acc@1: 84.2105 (71.6342)  Acc@5: 94.7368 (91.8814)
+Test (EMA): [   0/126]  Time: 2.952 (2.952)  Loss:  4.2930 (4.2930)  Acc@1: 18.7500 (18.7500)  Acc@5: 43.7500 (43.7500)
+Test (EMA): [  50/126]  Time: 0.962 (0.341)  Loss:  4.3789 (4.4012)  Acc@1: 19.5312 (12.4847)  Acc@5: 49.2188 (33.7623)
+Test (EMA): [ 100/126]  Time: 0.049 (0.340)  Loss:  4.0078 (4.3561)  Acc@1: 14.8438 (13.5752)  Acc@5: 61.7188 (36.2082)
+Test (EMA): [ 126/126]  Time: 0.023 (0.337)  Loss:  4.4062 (4.3458)  Acc@1:  7.0175 (13.8029)  Acc@5: 19.2982 (36.7686)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 13.802903923150158)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 10.787766450240282)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 8.069199876310945)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 6.06734630825124)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 4.380599320358357)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 2.8792091442693852)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 1.9894964473277725)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 1.3469261662032745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 0.9762125424776027)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-3.pth.tar', 0.7476058078467717)
+
+Train: 13 [   0/63 (  0%)]  Loss: 3.404 (3.40)  Time: 2.006s,   63.82/s  (2.006s,   63.82/s)  LR: 1.991e-02  Data: 1.857 (1.857)
+Train: 13 [  50/63 ( 81%)]  Loss: 3.774 (3.62)  Time: 0.160s,  802.38/s  (0.267s,  479.39/s)  LR: 1.991e-02  Data: 0.002 (0.109)
+Train: 13 [  62/63 (100%)]  Loss: 4.294 (3.70)  Time: 0.160s,  801.34/s  (0.262s,  488.18/s)  LR: 1.991e-02  Data: 0.000 (0.105)
+Test: [   0/126]  Time: 3.290 (3.290)  Loss:  1.3955 (1.3955)  Acc@1: 78.1250 (78.1250)  Acc@5: 92.1875 (92.1875)
+Test: [  50/126]  Time: 0.827 (0.347)  Loss:  0.9688 (1.8170)  Acc@1: 93.7500 (64.0778)  Acc@5: 98.4375 (88.3732)
+Test: [ 100/126]  Time: 0.049 (0.332)  Loss:  1.0830 (1.6862)  Acc@1: 90.6250 (69.0130)  Acc@5: 98.4375 (90.6095)
+Test: [ 126/126]  Time: 0.023 (0.351)  Loss:  0.9590 (1.5970)  Acc@1: 96.4912 (72.0358)  Acc@5: 100.0000 (91.8011)
+Test (EMA): [   0/126]  Time: 3.102 (3.102)  Loss:  4.1523 (4.1523)  Acc@1: 25.7812 (25.7812)  Acc@5: 45.3125 (45.3125)
+Test (EMA): [  50/126]  Time: 0.558 (0.350)  Loss:  4.2305 (4.2821)  Acc@1: 23.4375 (15.1961)  Acc@5: 53.9062 (38.7408)
+Test (EMA): [ 100/126]  Time: 0.049 (0.331)  Loss:  3.8770 (4.2335)  Acc@1: 20.3125 (16.7466)  Acc@5: 70.3125 (41.6151)
+Test (EMA): [ 126/126]  Time: 0.023 (0.339)  Loss:  4.2617 (4.2220)  Acc@1:  8.7719 (17.0158)  Acc@5: 33.3333 (42.2614)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 17.015755328713723)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 13.802903923150158)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 10.787766450240282)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 8.069199876310945)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 6.06734630825124)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 4.380599320358357)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 2.8792091442693852)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 1.9894964473277725)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 1.3469261662032745)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-4.pth.tar', 0.9762125424776027)
+
+Train: 14 [   0/63 (  0%)]  Loss: 4.309 (4.31)  Time: 2.870s,   44.60/s  (2.870s,   44.60/s)  LR: 1.989e-02  Data: 2.721 (2.721)
+Train: 14 [  50/63 ( 81%)]  Loss: 2.826 (3.79)  Time: 0.163s,  783.31/s  (0.268s,  477.09/s)  LR: 1.989e-02  Data: 0.002 (0.115)
+Train: 14 [  62/63 (100%)]  Loss: 4.310 (3.74)  Time: 0.147s,  868.31/s  (0.263s,  487.45/s)  LR: 1.989e-02  Data: 0.000 (0.109)
+Test: [   0/126]  Time: 3.434 (3.434)  Loss:  1.6074 (1.6074)  Acc@1: 53.1250 (53.1250)  Acc@5: 91.4062 (91.4062)
+Test: [  50/126]  Time: 0.324 (0.354)  Loss:  1.5117 (1.6382)  Acc@1: 66.4062 (62.2089)  Acc@5: 85.1562 (85.9681)
+Test: [ 100/126]  Time: 0.049 (0.344)  Loss:  1.2852 (1.4469)  Acc@1: 82.0312 (67.9610)  Acc@5: 96.0938 (89.4647)
+Test: [ 126/126]  Time: 0.023 (0.338)  Loss:  0.7686 (1.3417)  Acc@1: 87.7193 (71.2759)  Acc@5: 94.7368 (90.7136)
+Test (EMA): [   0/126]  Time: 2.952 (2.952)  Loss:  4.0039 (4.0039)  Acc@1: 31.2500 (31.2500)  Acc@5: 49.2188 (49.2188)
+Test (EMA): [  50/126]  Time: 0.854 (0.365)  Loss:  4.0820 (4.1664)  Acc@1: 31.2500 (18.0147)  Acc@5: 57.8125 (43.4283)
+Test (EMA): [ 100/126]  Time: 0.049 (0.334)  Loss:  3.7559 (4.1157)  Acc@1: 23.4375 (20.0186)  Acc@5: 76.5625 (46.8363)
+Test (EMA): [ 126/126]  Time: 0.023 (0.345)  Loss:  4.1133 (4.1025)  Acc@1: 14.0351 (20.5561)  Acc@5: 47.3684 (47.6058)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 20.55607043511712)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 17.015755328713723)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 13.802903923150158)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 10.787766450240282)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 8.069199876310945)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 6.06734630825124)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 4.380599320358357)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 2.8792091442693852)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 1.9894964473277725)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-5.pth.tar', 1.3469261662032745)
+
+Train: 15 [   0/63 (  0%)]  Loss: 2.642 (2.64)  Time: 2.038s,   62.80/s  (2.038s,   62.80/s)  LR: 1.988e-02  Data: 1.883 (1.883)
+Train: 15 [  50/63 ( 81%)]  Loss: 4.282 (3.85)  Time: 0.161s,  797.44/s  (0.270s,  474.38/s)  LR: 1.988e-02  Data: 0.002 (0.116)
+Train: 15 [  62/63 (100%)]  Loss: 3.465 (3.76)  Time: 0.146s,  874.04/s  (0.258s,  496.23/s)  LR: 1.988e-02  Data: 0.000 (0.104)
+Test: [   0/126]  Time: 3.044 (3.044)  Loss:  1.1758 (1.1758)  Acc@1: 79.6875 (79.6875)  Acc@5: 93.7500 (93.7500)
+Test: [  50/126]  Time: 0.735 (0.354)  Loss:  1.5576 (1.5472)  Acc@1: 68.7500 (64.3842)  Acc@5: 85.9375 (87.8370)
+Test: [ 100/126]  Time: 0.049 (0.342)  Loss:  0.6284 (1.3710)  Acc@1: 92.1875 (69.6241)  Acc@5: 99.2188 (90.7333)
+Test: [ 126/126]  Time: 0.023 (0.336)  Loss:  0.3152 (1.2903)  Acc@1: 98.2456 (72.2892)  Acc@5: 100.0000 (91.7702)
+Test (EMA): [   0/126]  Time: 3.345 (3.345)  Loss:  3.8750 (3.8750)  Acc@1: 34.3750 (34.3750)  Acc@5: 53.9062 (53.9062)
+Test (EMA): [  50/126]  Time: 0.298 (0.358)  Loss:  3.9395 (4.0574)  Acc@1: 35.9375 (20.6495)  Acc@5: 58.5938 (47.5950)
+Test (EMA): [ 100/126]  Time: 0.049 (0.334)  Loss:  3.6387 (4.0041)  Acc@1: 30.4688 (23.0817)  Acc@5: 80.4688 (51.3072)
+Test (EMA): [ 126/126]  Time: 0.023 (0.335)  Loss:  3.9883 (3.9890)  Acc@1: 21.0526 (23.6948)  Acc@5: 56.1404 (52.4807)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 23.694779115758784)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 20.55607043511712)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 17.015755328713723)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 13.802903923150158)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 10.787766450240282)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 8.069199876310945)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 6.06734630825124)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 4.380599320358357)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 2.8792091442693852)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-6.pth.tar', 1.9894964473277725)
+
+Train: 16 [   0/63 (  0%)]  Loss: 4.152 (4.15)  Time: 2.321s,   55.15/s  (2.321s,   55.15/s)  LR: 1.986e-02  Data: 2.174 (2.174)
+Train: 16 [  50/63 ( 81%)]  Loss: 4.134 (3.65)  Time: 0.158s,  810.86/s  (0.285s,  449.15/s)  LR: 1.986e-02  Data: 0.002 (0.131)
+Train: 16 [  62/63 (100%)]  Loss: 3.011 (3.64)  Time: 0.147s,  871.99/s  (0.278s,  459.97/s)  LR: 1.986e-02  Data: 0.000 (0.125)
+Test: [   0/126]  Time: 3.677 (3.677)  Loss:  0.8374 (0.8374)  Acc@1: 82.0312 (82.0312)  Acc@5: 96.8750 (96.8750)
+Test: [  50/126]  Time: 0.049 (0.339)  Loss:  1.1689 (1.4509)  Acc@1: 82.0312 (65.5637)  Acc@5: 92.9688 (89.4148)
+Test: [ 100/126]  Time: 0.049 (0.329)  Loss:  0.8647 (1.2874)  Acc@1: 85.9375 (71.0164)  Acc@5: 94.5312 (91.5377)
+Test: [ 126/126]  Time: 0.023 (0.347)  Loss:  0.4949 (1.2195)  Acc@1: 92.9825 (73.2901)  Acc@5: 98.2456 (92.4374)
+Test (EMA): [   0/126]  Time: 3.589 (3.589)  Loss:  3.7559 (3.7559)  Acc@1: 37.5000 (37.5000)  Acc@5: 58.5938 (58.5938)
+Test (EMA): [  50/126]  Time: 1.144 (0.357)  Loss:  3.8008 (3.9543)  Acc@1: 39.0625 (23.4069)  Acc@5: 60.1562 (51.2102)
+Test (EMA): [ 100/126]  Time: 0.439 (0.328)  Loss:  3.5156 (3.8987)  Acc@1: 35.9375 (26.1989)  Acc@5: 83.5938 (55.1129)
+Test (EMA): [ 126/126]  Time: 0.023 (0.339)  Loss:  3.8672 (3.8819)  Acc@1: 22.8070 (26.9076)  Acc@5: 63.1579 (56.4782)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 26.90763052468098)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 23.694779115758784)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 20.55607043511712)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 17.015755328713723)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 13.802903923150158)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 10.787766450240282)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 8.069199876310945)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 6.06734630825124)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 4.380599320358357)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-7.pth.tar', 2.8792091442693852)
+
+Train: 17 [   0/63 (  0%)]  Loss: 4.189 (4.19)  Time: 2.250s,   56.89/s  (2.250s,   56.89/s)  LR: 1.984e-02  Data: 2.090 (2.090)
+Train: 17 [  50/63 ( 81%)]  Loss: 4.103 (3.72)  Time: 0.156s,  818.42/s  (0.305s,  419.00/s)  LR: 1.984e-02  Data: 0.002 (0.150)
+Train: 17 [  62/63 (100%)]  Loss: 3.842 (3.71)  Time: 0.155s,  827.44/s  (0.281s,  455.54/s)  LR: 1.984e-02  Data: 0.000 (0.126)
+Test: [   0/126]  Time: 2.688 (2.688)  Loss:  1.2979 (1.2979)  Acc@1: 74.2188 (74.2188)  Acc@5: 92.1875 (92.1875)
+Test: [  50/126]  Time: 0.857 (0.351)  Loss:  1.5547 (1.7255)  Acc@1: 71.0938 (62.8830)  Acc@5: 91.4062 (87.2243)
+Test: [ 100/126]  Time: 0.049 (0.327)  Loss:  0.8550 (1.5413)  Acc@1: 90.6250 (68.6030)  Acc@5: 96.8750 (90.4471)
+Test: [ 126/126]  Time: 0.023 (0.349)  Loss:  0.7842 (1.4576)  Acc@1: 94.7368 (71.4551)  Acc@5: 98.2456 (91.5354)
+Test (EMA): [   0/126]  Time: 3.381 (3.381)  Loss:  3.6426 (3.6426)  Acc@1: 39.0625 (39.0625)  Acc@5: 63.2812 (63.2812)
+Test (EMA): [  50/126]  Time: 1.233 (0.357)  Loss:  3.6699 (3.8588)  Acc@1: 46.0938 (25.8732)  Acc@5: 60.9375 (54.9632)
+Test (EMA): [ 100/126]  Time: 0.166 (0.328)  Loss:  3.4102 (3.8007)  Acc@1: 41.4062 (28.9991)  Acc@5: 85.1562 (58.9341)
+Test (EMA): [ 126/126]  Time: 0.023 (0.343)  Loss:  3.7324 (3.7826)  Acc@1: 35.0877 (29.8363)  Acc@5: 66.6667 (60.4078)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 29.836268148342693)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 26.90763052468098)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 23.694779115758784)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 20.55607043511712)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 17.015755328713723)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 13.802903923150158)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 10.787766450240282)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 8.069199876310945)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 6.06734630825124)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-8.pth.tar', 4.380599320358357)
+
+Train: 18 [   0/63 (  0%)]  Loss: 4.442 (4.44)  Time: 2.327s,   55.00/s  (2.327s,   55.00/s)  LR: 1.982e-02  Data: 2.169 (2.169)
+Train: 18 [  50/63 ( 81%)]  Loss: 4.027 (3.61)  Time: 0.148s,  864.36/s  (0.293s,  437.59/s)  LR: 1.982e-02  Data: 0.002 (0.138)
+Train: 18 [  62/63 (100%)]  Loss: 2.393 (3.59)  Time: 0.157s,  815.66/s  (0.276s,  464.43/s)  LR: 1.982e-02  Data: 0.000 (0.122)
+Test: [   0/126]  Time: 3.496 (3.496)  Loss:  1.3047 (1.3047)  Acc@1: 72.6562 (72.6562)  Acc@5: 94.5312 (94.5312)
+Test: [  50/126]  Time: 0.805 (0.357)  Loss:  1.4004 (1.5605)  Acc@1: 76.5625 (66.5901)  Acc@5: 90.6250 (89.0165)
+Test: [ 100/126]  Time: 0.048 (0.331)  Loss:  0.8730 (1.3813)  Acc@1: 90.6250 (72.4087)  Acc@5: 97.6562 (91.8472)
+Test: [ 126/126]  Time: 0.024 (0.340)  Loss:  0.7373 (1.2982)  Acc@1: 92.9825 (75.0572)  Acc@5: 100.0000 (92.9379)
+Test (EMA): [   0/126]  Time: 2.814 (2.814)  Loss:  3.5215 (3.5215)  Acc@1: 42.1875 (42.1875)  Acc@5: 64.0625 (64.0625)
+Test (EMA): [  50/126]  Time: 0.465 (0.348)  Loss:  3.5547 (3.7672)  Acc@1: 47.6562 (28.8603)  Acc@5: 64.0625 (58.4559)
+Test (EMA): [ 100/126]  Time: 0.049 (0.339)  Loss:  3.3027 (3.7065)  Acc@1: 47.6562 (32.1086)  Acc@5: 85.1562 (62.3762)
+Test (EMA): [ 126/126]  Time: 0.023 (0.344)  Loss:  3.6016 (3.6867)  Acc@1: 35.0877 (33.0120)  Acc@5: 71.9298 (63.8616)
+Current checkpoints:
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-18.pth.tar', 33.01204819159262)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-17.pth.tar', 29.836268148342693)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-16.pth.tar', 26.90763052468098)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-15.pth.tar', 23.694779115758784)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-14.pth.tar', 20.55607043511712)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-13.pth.tar', 17.015755328713723)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-12.pth.tar', 13.802903923150158)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-11.pth.tar', 10.787766450240282)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-10.pth.tar', 8.069199876310945)
+ ('/mnt/82_store/zxy/vit_small_patch16_224_in21k/fgvc/stanford_cars/ssf/20240127-035847-vit_small_patch16_224_in21k-224/checkpoint-9.pth.tar', 6.06734630825124)
+
+Train: 19 [   0/63 (  0%)]  Loss: 2.400 (2.40)  Time: 1.953s,   65.53/s  (1.953s,   65.53/s)  LR: 1.980e-02  Data: 1.795 (1.795)
+Train: 19 [  50/63 ( 81%)]  Loss: 4.124 (3.56)  Time: 0.160s,  798.07/s  (0.270s,  474.13/s)  LR: 1.980e-02  Data: 0.002 (0.114)
+Train: 19 [  62/63 (100%)]  Loss: 4.081 (3.64)  Time: 0.147s,  870.78/s  (0.270s,  474.56/s)  LR: 1.980e-02  Data: 0.000 (0.115)
+Test: [   0/126]  Time: 3.584 (3.584)  Loss:  1.0439 (1.0439)  Acc@1: 80.4688 (80.4688)  Acc@5: 95.3125 (95.3125)
+Test: [  50/126]  Time: 0.397 (0.364)  Loss:  0.9258 (1.5420)  Acc@1: 83.5938 (66.3450)  Acc@5: 96.0938 (88.5570)
+Test: [ 100/126]  Time: 0.049 (0.343)  Loss:  0.8408 (1.3754)  Acc@1: 91.4062 (71.5424)  Acc@5: 98.4375 (91.4217)
+Test: [ 126/126]  Time: 0.023 (0.351)  Loss:  0.3684 (1.2908)  Acc@1: 98.2456 (74.2169)  Acc@5: 100.0000 (92.5795)
+Test (EMA): [   0/126]  Time: 3.669 (3.669)  Loss:  3.3965 (3.3965)  Acc@1: 45.3125 (45.3125)  Acc@5: 65.6250 (65.6250)
+Test (EMA): [  50/126]  Time: 0.770 (0.368)  Loss:  3.4453 (3.6808)  Acc@1: 49.2188 (31.4032)  Acc@5: 66.4062 (61.4124)
